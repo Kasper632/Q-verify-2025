@@ -1,0 +1,63 @@
+@model Dictionary<string, object>
+
+@{
+    ViewData["Title"] = "Prediction Result";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center">Prediction Result</h2>
+
+    @if (Model != null && Model.ContainsKey("result"))
+    {
+        <div class="alert @(Model["result"].ToString() == "Anomaly" ? "alert-danger" : "alert-success") text-center">
+            <h4>Result: @Model["result"]</h4>
+        </div>
+
+        @if (Model.ContainsKey("analysis_results"))
+        {
+            var analysisResults = Model["analysis_results"] as Dictionary<string, object>;
+            @if (analysisResults != null)
+            {
+                <h4 class="mt-4">Analysis Details</h4>
+                <table class="table table-bordered table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Feature</th>
+                            <th>Input Value</th>
+                            <th>Average</th>
+                            <th>Standard Deviation</th>
+                            <th>Deviation</th>
+                            <th>Z-score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in analysisResults)
+                        {
+                            var feature = item.Key;
+                            var values = item.Value as Dictionary<string, object>;
+
+                            <tr>
+                                <td>@feature</td>
+                                <td>@values["value"]</td>
+                                <td>@values["avg"]</td>
+                                <td>@values["std_dev"]</td>
+                                <td>@values["deviation"]</td>
+                                <td>@values["z_score"]</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        }
+    }
+    else
+    {
+        <div class="alert alert-warning text-center">
+            <p>No prediction data available.</p>
+        </div>
+    }
+
+    <div class="text-center mt-4">
+        <a href="/Anomaly/Index" class="btn btn-primary">Try Again</a>
+    </div>
+</div>

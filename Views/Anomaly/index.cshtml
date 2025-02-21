@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anomaly Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card shadow-lg p-4">
+            <h2 class="text-center mb-4">Anomaly Detection Form</h2>
+            <form method="post" asp-controller="Anomaly" asp-action="Predict">
+                <div class="mb-3">
+                    <label for="employees" class="form-label">Number of Employees</label>
+                    <input type="number" class="form-control" id="employees" name="employees" required>
+                </div>
+                <div class="mb-3">
+                    <label for="revenue" class="form-label">Revenue ($)</label>
+                    <input type="number" class="form-control" id="revenue" name="revenue" step="0.01" required>
+                </div>
+                <div class="mb-3">
+                    <label for="profitMargin" class="form-label">Profit Margin (%)</label>
+                    <input type="number" class="form-control" id="profitMargin" name="profitMargin" step="0.01"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <label for="creditRating" class="form-label">Credit Rating</label>
+                    <input type="number" class="form-control" id="creditRating" name="creditRating" step="0.01"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <label for="yearsInBusiness" class="form-label">Years in Business</label>
+                    <input type="number" class="form-control" id="yearsInBusiness" name="yearsInBusiness" required>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
