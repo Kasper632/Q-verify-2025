@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vP5kNnzNX3kkvExP/bteUB2n8dCVAF4r7t1btCvhS6N6AE7Med24QUgmFEpuVnx8Eho5k7IHmIRjZDUSACA2Jw==",
+  "success": true,
+  "projectFilePath": "/Users/kasperviggosson/GitHub/Q-verify-2025/Q-verify-2025.csproj",
+  "expectedPackageFiles": [
+    "/Users/kasperviggosson/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
