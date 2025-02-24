@@ -1,13 +1,19 @@
-# Q-verify-2025
+# Q-Verify 2025
 
-## Windows virtual environment
+## 🌍 Virtual Environment Setup
 
-python -m venv .venv – skapa en virtuell miljö
-.venv\Scripts\activate – aktivera miljön
-pip install -r requirements.txt – installera från "requirements.txt"
+För att köra projektet behöver du skapa och aktivera en **virtual environment** samt installera nödvändiga paket.
 
-## MacOS virtual environment
+### 🖥 Windows
+```sh
+python -m venv .venv  # Skapa en virtuell miljö
+.venv\Scripts\activate  # Aktivera miljön
+pip install -r requirements.txt  # Installera beroenden
+```
 
-python3 -m venv .venv – skapa en virtuell miljö
-source .venv/bin/activate – aktivera miljön
-pip install -r requirements.txt – installera från "requirements.txt"
+### 🍏 macOS & 🐧 Linux
+```sh
+python3 -m venv .venv  # Skapa en virtuell miljö
+source .venv/bin/activate  # Aktivera miljön
+pip install -r requirements.txt  # Installera beroenden
+```
