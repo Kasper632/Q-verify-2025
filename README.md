@@ -1,4 +1,4 @@
-# Q-Verify 2025
+# Q-verify 2025
 
 ## 🌍 Virtual Environment Setup
 
