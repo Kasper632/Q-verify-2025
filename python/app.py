@@ -2,60 +2,55 @@ from flask import Flask, request, jsonify
 import joblib
 import numpy as np
 import pandas as pd
+from sentence_transformers import SentenceTransformer
+from flask_cors import CORS
+from sklearn.decomposition import PCA
 
-# Ladda modellen
+# Load the Isolation Forest model
 model = joblib.load('python/AI-models/isolation_forest_model.pkl')
+bert_model = SentenceTransformer("all-MiniLM-L6-v2")
 
-# Läs in data för att beräkna medelvärde och standardavvikelse
-df = pd.read_csv('python/data/company_data.csv')
-average_values = df.mean(numeric_only=True).to_dict()
-std_values = df.std(numeric_only=True).to_dict()
-
+# Initialize the Flask app
 app = Flask(__name__)
+CORS(app) 
 
-@app.route('/predict', methods=["POST"])
+@app.route('/predict', methods=['POST'])
 def predict():
+    if 'file' not in request.files:
+        return jsonify({"succsess": False, 'error': 'No file part'})
+    
+    file = request.files['file']
+
+    if file.filename == '':
+        return jsonify({"succsess": False, 'error': 'No selected file'})
+    
     try:
-        # Hämta inmatad data från form
-        input_data = {
-            "employees": int(request.form["employees"]),
-            "revenue": float(request.form["revenue"]),
-            "profit_margin": float(request.form["profit_margin"]),
-            "credit_rating": float(request.form["credit_rating"]),
-            "years_in_business": int(request.form["years_in_business"])
-        }
+        file_data = pd.read_csv(file)
 
-        # Omvandla till numpy-array för prediktion
-        input_array = np.array(list(input_data.values())).reshape(1, -1)
+        string_columns = file_data.select_dtypes(include=['object']).columns
+        for column in string_columns:
+            embeddings = bert_model.encode(file_data[column].astype(str).tolist())
+            embeddings_df = pd.DataFrame(embeddings, columns=[f"{column}_{i}" for i in range(embeddings.shape[1])])
 
-        # Gör en prediktion (-1 = anomali, 1 = normal)
-        prediction = model.predict(input_array)
-        result = "Anomaly" if prediction[0] == -1 else "Normal"
+            file_data = file_data.drop(columns=[column])
+            file_data = pd.concat([file_data, embeddings_df], axis=1)
 
-        # Beräkna avvikelse och Z-score för varje värde
-        analysis_results = {}
-        for key, value in input_data.items():
-            avg_value = round(average_values[key], 2)
-            std_dev = round(std_values[key], 2)
-            deviation = round(value - avg_value, 2)
-            z_score = round((value - avg_value) / std_dev, 2) if std_dev != 0 else 0  # Undvik division med 0
+            x = file_data
+            predictions = model.predict(x)
+            predictions_adjusted = [1 if p == -1 else 0 for p in predictions]
+            accuracy = np.mean(predictions_adjusted)*100
 
-            analysis_results[key] = {
-                "value": value,
-                "avg": avg_value,
-                "std_dev": std_dev,
-                "deviation": deviation,
-                "z_score": z_score
-            }
-
-        # Returnera JSON med prediktionen och analysen
         return jsonify({
-            "result": result,
-            "analysis_results": analysis_results
+            "succsess": True,
+            'predictions': predictions,
+            'accuracy': accuracy,
+            "modelAccuracy": model.score(file_data)
+
         })
-
     except Exception as e:
-        return jsonify({"error": str(e)})
-
+        return jsonify({
+            "succsess": False,
+            'error': str(e)
+        })
 if __name__ == '__main__':
     app.run(debug=True)
