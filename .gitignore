@@ -1,5 +1,11 @@
+# Ignorera alla virtuella miljöer
 .venv/
 env/
 .env/
+
+# Ignorera objektfiler och byggmappar
 obj/
-/obj
+# Specifika objektfiler för .NET (om relevant)
+obj/debug/
+obj/debug/net8.0/
+obj/debug/net8.0/*
