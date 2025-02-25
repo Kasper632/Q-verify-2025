@@ -29,8 +29,18 @@
 @if (ViewData["AnalysisResult"] != null)
 {
     <h3>Analysis Result:</h3>
-    <pre>
-        @ViewData["AnalysisResult"]
-    </pre>
+    <ul>
+        @foreach (var anomaly in (Newtonsoft.Json.Linq.JArray)ViewData["AnalysisResult"])
+        {
+            <li>
+                @foreach (var property in anomaly)
+                {
+                    <strong>@property.Path:</strong> @property.First <br />
+                }
+                <hr />
+            </li>
+        }
+    </ul>
 }
+
 

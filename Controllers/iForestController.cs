@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Q_verify_2025.Controllers
 {
@@ -88,8 +89,20 @@ public async Task<IActionResult> Analyze()
 
             if (response.IsSuccessStatusCode)
             {
-                ViewData["Message"] = "Analysis completed successfully!";
-                ViewData["AnalysisResult"] = responseString;
+                // Deserialisera JSON och extrahera anomali-informationen
+                var jsonResponse = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseString);
+                var anomalies = jsonResponse["anomalies"] as Newtonsoft.Json.Linq.JArray;
+
+                // Om anomalies finns, skicka den till vyn
+                if (anomalies != null)
+                {
+                    ViewData["AnalysisResult"] = anomalies;
+                    ViewData["Message"] = "Analysis completed successfully!";
+                }
+                else
+                {
+                    ViewData["Message"] = "No anomalies found.";
+                }
             }
             else
             {
