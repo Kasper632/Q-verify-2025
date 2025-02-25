@@ -1,19 +1,27 @@
-import pandas as pd
-import numpy as np
 import os
+import numpy as np
+import pandas as pd
 from sentence_transformers import SentenceTransformer
 
-def generate_embeddings(data_file="data/generated_data.csv", output_file="data/embeddings.npy"):
+EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+DATA_DIR = "data"
+EMBEDDING_FILE = os.path.join(DATA_DIR, "embeddings.npy")
+
+def generate_embeddings(data_file):
+    """Laddar data, skapar NLP-embeddings och sparar dem."""
+    if not os.path.exists(data_file):
+        raise FileNotFoundError(f"Filen {data_file} finns inte.")
+
     df = pd.read_csv(data_file)
-    
-    model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
-    
-    # Skapa embeddings från företagsbeskrivningar
-    embeddings = model.encode(df["Description"].tolist(), convert_to_numpy=True)
 
-    os.makedirs("data", exist_ok=True)
-    np.save(output_file, embeddings)
-    print(f"Generated embeddings and saved to {output_file}")
+    # Välj den första textkolumnen att skapa embeddings på
+    text_column = df.select_dtypes(include=["object"]).columns[0]
 
-if __name__ == "__main__":
-    generate_embeddings()
+    model = SentenceTransformer(EMBEDDING_MODEL)
+    embeddings = model.encode(df[text_column].tolist(), convert_to_numpy=True)
+
+    # Skapa data-mapp och spara embeddings
+    os.makedirs(DATA_DIR, exist_ok=True)
+    np.save(EMBEDDING_FILE, embeddings)
+
+    return embeddings, text_column
