@@ -1,0 +1,5001 @@
+company_name	industry	city
+EduVision 0	Finance	Uppsala
+###	Education	Jönköping
+EduVision 2	Renewable Energy	Örebro
+AutoWorks 3	Food & Beverage	Uppsala
+RoboTech 4	Medical Devices	Örebro
+HealthSync 5	Healthcare	NULL
+AutoWorks 6	Technology	Stockholm
+EduVision 7	Renewable Energy	!!Error!!
+HealthSync 8	Automotive	Göteborg
+EduVision 9	Food & Beverage	Göteborg
+HealthSync 10	Medical Devices	Göteborg
+GreenFuture 11	Technology	Örebro
+GreenFuture 12	12345	Stockholm
+EduVision 13	Renewable Energy	Helsingborg
+GreenFuture 14	Education	Jönköping
+RoboTech 15	Food & Beverage	Örebro
+!!Error!!	Construction	Örebro
+AutoWorks 17	Food & Beverage	
+AutoWorks 18	Finance	Västerås
+FinTrust 19	Food & Beverage	
+TechNova 20	Education	Norrköping
+TechNova 21	Technology	Göteborg
+MediCare 22	Technology	Linköping
+AutoWorks 23	Food & Beverage	NULL
+BuildPro 24	Food & Beverage	Norrköping
+HealthSync 25	Unknown	Uppsala
+FinTrust 26	Renewable Energy	Malmö
+BuildPro 27	Automotive	###
+BuildPro 28	AI & Robotics	
+MediCare 29	Technology	Unknown
+AutoWorks 30	Finance	None
+MediCare 31	AI & Robotics	Norrköping
+EduVision 32	Finance	Stockholm
+HealthSync 33	AI & Robotics	Västerås
+HealthSync 34	Food & Beverage	Göteborg
+HealthSync 35	Food & Beverage	Norrköping
+MediCare 36	Renewable Energy	Göteborg
+GreenFuture 37	Food & Beverage	Västerås
+FinTrust 38	Finance	Jönköping
+RoboTech 39	Education	Uppsala
+MediCare 40	Education	Helsingborg
+FinTrust 41	Automotive	Jönköping
+BuildPro 42	AI & Robotics	Stockholm
+TechNova 43	Renewable Energy	Örebro
+AutoWorks 44	Education	Linköping
+BuildPro 45	Education	Jönköping
+Foodies 46	Food & Beverage	Jönköping
+MediCare 47	Automotive	Västerås
+GreenFuture 48	Healthcare	Norrköping
+Unknown	Education	Jönköping
+EduVision 50	Technology	FakeCity
+Foodies 51	Education	Helsingborg
+MediCare 52	Healthcare	Örebro
+FinTrust 53	Technology	Linköping
+FinTrust 54	Healthcare	Uppsala
+FinTrust 55	Technology	Jönköping
+NULL	Technology	FakeCity
+AutoWorks 57	AI & Robotics	Göteborg
+EduVision 58	Construction	Örebro
+FinTrust 59	Automotive	Norrköping
+Foodies 60	12345	Linköping
+HealthSync 61	Construction	Jönköping
+HealthSync 62	Food & Beverage	Stockholm
+EduVision 63	Construction	Norrköping
+HealthSync 64	Healthcare	Göteborg
+Unknown	Technology	Unknown
+MediCare 66	Renewable Energy	Göteborg
+AutoWorks 67	Healthcare	Malmö
+EduVision 68	###	Västerås
+Unknown	Technology	Stockholm
+AutoWorks 70	Medical Devices	Jönköping
+EduVision 71	Healthcare	Helsingborg
+FinTrust 72		Linköping
+MediCare 73	Construction	Stockholm
+RoboTech 74	Medical Devices	Norrköping
+Foodies 75	Finance	Unknown
+RoboTech 76	Technology	Stockholm
+AutoWorks 77	Food & Beverage	Helsingborg
+None	AI & Robotics	Uppsala
+EduVision 79	Technology	Jönköping
+RoboTech 80	AI & Robotics	###
+GreenFuture 81	12345	Linköping
+EduVision 82	Automotive	Unknown
+FinTrust 83	Renewable Energy	Malmö
+TechNova 84	AI & Robotics	Uppsala
+TechNova 85	Finance	Linköping
+AutoWorks 86	Medical Devices	Jönköping
+GreenFuture 87	Food & Beverage	###
+BuildPro 88	Medical Devices	Malmö
+HealthSync 89	Food & Beverage	Jönköping
+Unknown	Food & Beverage	Jönköping
+EduVision 91	AI & Robotics	Västerås
+GreenFuture 92	Construction	Örebro
+BuildPro 93	Healthcare	Malmö
+BuildPro 94	Medical Devices	Göteborg
+GreenFuture 95	Construction	Jönköping
+GreenFuture 96	Technology	Stockholm
+12345	AI & Robotics	Jönköping
+N/A	Automotive	Uppsala
+GreenFuture 99	Medical Devices	Uppsala
+###	Finance	Stockholm
+HealthSync 101	AI & Robotics	Malmö
+NULL	Education	Jönköping
+N/A	Technology	Norrköping
+BuildPro 104	Medical Devices	
+HealthSync 105	Healthcare	Stockholm
+BuildPro 106	Education	Västerås
+BuildPro 107	Automotive	Jönköping
+BuildPro 108	Automotive	Norrköping
+FinTrust 109	Education	
+EduVision 110	Education	Stockholm
+AutoWorks 111	Education	Helsingborg
+TechNova 112	Renewable Energy	Västerås
+MediCare 113	AI & Robotics	Helsingborg
+Foodies 114	Education	###
+AutoWorks 115	AI & Robotics	Norrköping
+NULL	Construction	Jönköping
+Unknown	Finance	Linköping
+MediCare 118	Healthcare	Norrköping
+12345	Finance	Uppsala
+BuildPro 120	Medical Devices	Stockholm
+RoboTech 121	Education	Uppsala
+AutoWorks 122	Food & Beverage	Göteborg
+EduVision 123	Medical Devices	Västerås
+MediCare 124	12345	Stockholm
+!!Error!!	Technology	Stockholm
+Foodies 126	Unknown	Linköping
+N/A	Food & Beverage	FakeCity
+MediCare 128	Construction	Helsingborg
+FakeCity	Finance	Örebro
+EduVision 130	Medical Devices	Göteborg
+FinTrust 131	Education	Norrköping
+BuildPro 132	Finance	Uppsala
+Foodies 133	Education	Linköping
+TechNova 134	Medical Devices	Jönköping
+Foodies 135	Healthcare	Norrköping
+GreenFuture 136	Renewable Energy	Helsingborg
+HealthSync 137	AI & Robotics	Västerås
+GreenFuture 138	AI & Robotics	Jönköping
+	AI & Robotics	Malmö
+TechNova 140	Food & Beverage	Uppsala
+HealthSync 141	Technology	!!Error!!
+BuildPro 142	Healthcare	Örebro
+MediCare 143	Healthcare	Jönköping
+RoboTech 144	Technology	Västerås
+BuildPro 145	Food & Beverage	Uppsala
+FinTrust 146	Renewable Energy	Stockholm
+Foodies 147	Healthcare	Västerås
+AutoWorks 148	Construction	Malmö
+BuildPro 149	Healthcare	Linköping
+Foodies 150	Construction	Linköping
+Foodies 151	Automotive	Göteborg
+GreenFuture 152	Education	Örebro
+NULL	AI & Robotics	Jönköping
+12345	Healthcare	Västerås
+BuildPro 155	Food & Beverage	Stockholm
+RoboTech 156	Finance	None
+Foodies 157	Construction	Örebro
+Foodies 158	Medical Devices	Norrköping
+TechNova 159	Healthcare	Örebro
+MediCare 160	Food & Beverage	Jönköping
+TechNova 161	AI & Robotics	None
+BuildPro 162	Healthcare	Jönköping
+MediCare 163	Renewable Energy	Uppsala
+GreenFuture 164	Renewable Energy	Örebro
+HealthSync 165	12345	Helsingborg
+HealthSync 166	Construction	Jönköping
+FinTrust 167	Healthcare	Linköping
+AutoWorks 168	Technology	Norrköping
+FinTrust 169	Automotive	Uppsala
+FinTrust 170	Healthcare	Västerås
+RoboTech 171	NULL	Linköping
+AutoWorks 172	Food & Beverage	Malmö
+MediCare 173	Food & Beverage	None
+GreenFuture 174	AI & Robotics	Norrköping
+AutoWorks 175	Food & Beverage	Västerås
+TechNova 176	Finance	Malmö
+BuildPro 177	AI & Robotics	Västerås
+HealthSync 178	Technology	Jönköping
+EduVision 179	Food & Beverage	Stockholm
+MediCare 180	Medical Devices	Jönköping
+BuildPro 181	Construction	Linköping
+HealthSync 182	Construction	Stockholm
+MediCare 183	Renewable Energy	Västerås
+TechNova 184	Medical Devices	Göteborg
+Foodies 185	Automotive	None
+HealthSync 186	Technology	Norrköping
+MediCare 187	Construction	Göteborg
+Foodies 188	Construction	Västerås
+N/A	Finance	Örebro
+RoboTech 190	Finance	Örebro
+EduVision 191	Food & Beverage	Jönköping
+MediCare 192	Education	Helsingborg
+MediCare 193	Automotive	Malmö
+GreenFuture 194	Medical Devices	Norrköping
+AutoWorks 195	Construction	Göteborg
+AutoWorks 196	AI & Robotics	Göteborg
+None	Finance	Jönköping
+!!Error!!	Technology	
+N/A	Finance	Uppsala
+RoboTech 200	Medical Devices	Örebro
+12345	Medical Devices	Malmö
+MediCare 202	Food & Beverage	Norrköping
+TechNova 203	Finance	Uppsala
+RoboTech 204	Medical Devices	Uppsala
+MediCare 205	Automotive	###
+RoboTech 206	Renewable Energy	Jönköping
+EduVision 207	Automotive	Stockholm
+BuildPro 208	Education	Västerås
+GreenFuture 209	AI & Robotics	Norrköping
+Foodies 210	Automotive	!!Error!!
+MediCare 211	Healthcare	Linköping
+Foodies 212	Healthcare	Uppsala
+RoboTech 213	Finance	Norrköping
+	Automotive	Uppsala
+	Education	Malmö
+GreenFuture 216	Finance	Göteborg
+FinTrust 217	Renewable Energy	Linköping
+12345	AI & Robotics	Uppsala
+HealthSync 219	Technology	Jönköping
+HealthSync 220	Finance	Stockholm
+GreenFuture 221	AI & Robotics	Uppsala
+AutoWorks 222	Medical Devices	Stockholm
+RoboTech 223	Construction	Malmö
+Foodies 224	Construction	Göteborg
+12345	Renewable Energy	Örebro
+FinTrust 226	Medical Devices	Unknown
+MediCare 227	Medical Devices	Uppsala
+HealthSync 228	AI & Robotics	Helsingborg
+GreenFuture 229	Automotive	!!Error!!
+MediCare 230	Finance	Helsingborg
+EduVision 231	Education	Malmö
+HealthSync 232	Renewable Energy	Malmö
+GreenFuture 233	Construction	Stockholm
+N/A	Renewable Energy	Linköping
+GreenFuture 235	Medical Devices	Göteborg
+GreenFuture 236	Medical Devices	Malmö
+EduVision 237	Construction	Örebro
+FakeCity	Finance	Örebro
+MediCare 239	Renewable Energy	Stockholm
+BuildPro 240	Healthcare	Jönköping
+TechNova 241	Renewable Energy	Västerås
+RoboTech 242	Renewable Energy	Örebro
+EduVision 243	AI & Robotics	Jönköping
+AutoWorks 244	Healthcare	Norrköping
+MediCare 245	Automotive	Malmö
+GreenFuture 246	Healthcare	Västerås
+EduVision 247	Technology	Jönköping
+NULL	Healthcare	12345
+BuildPro 249	Healthcare	Stockholm
+TechNova 250	Construction	Uppsala
+12345	Construction	Linköping
+AutoWorks 252	Renewable Energy	Göteborg
+FinTrust 253	Construction	Linköping
+MediCare 254	Medical Devices	FakeCity
+HealthSync 255	AI & Robotics	Jönköping
+MediCare 256	Finance	Uppsala
+GreenFuture 257	Technology	Stockholm
+MediCare 258	Automotive	Jönköping
+HealthSync 259	Construction	Västerås
+EduVision 260	Construction	Helsingborg
+FinTrust 261	Medical Devices	Göteborg
+FakeCity	Education	Unknown
+MediCare 263	Healthcare	Västerås
+AutoWorks 264	Renewable Energy	Stockholm
+!!Error!!	Food & Beverage	Stockholm
+MediCare 266	Education	Göteborg
+MediCare 267	Renewable Energy	Norrköping
+HealthSync 268	Finance	Jönköping
+EduVision 269	Education	12345
+	Technology	Helsingborg
+TechNova 271	Healthcare	Uppsala
+BuildPro 272	Automotive	Örebro
+Foodies 273	Education	Helsingborg
+BuildPro 274	Food & Beverage	Linköping
+HealthSync 275	Technology	Västerås
+GreenFuture 276	Renewable Energy	Norrköping
+FakeCity	Education	Malmö
+EduVision 278	Finance	Jönköping
+###	Finance	None
+MediCare 280	Construction	12345
+FinTrust 281	Finance	Örebro
+Foodies 282	AI & Robotics	
+TechNova 283	AI & Robotics	Jönköping
+BuildPro 284	Renewable Energy	Helsingborg
+RoboTech 285	Construction	Uppsala
+TechNova 286	Finance	Helsingborg
+RoboTech 287	Construction	Malmö
+AutoWorks 288	Healthcare	Norrköping
+BuildPro 289	Construction	Helsingborg
+HealthSync 290	Construction	Jönköping
+MediCare 291	Renewable Energy	Västerås
+FinTrust 292	Medical Devices	Norrköping
+TechNova 293	Automotive	Helsingborg
+AutoWorks 294	Automotive	Malmö
+GreenFuture 295	Technology	Malmö
+Foodies 296	Construction	Jönköping
+MediCare 297	Renewable Energy	Uppsala
+!!Error!!	Construction	Jönköping
+RoboTech 299	Finance	Göteborg
+None	Healthcare	Malmö
+MediCare 301	Education	Linköping
+HealthSync 302	Technology	Uppsala
+HealthSync 303	Construction	Västerås
+RoboTech 304	Finance	Uppsala
+Foodies 305	Food & Beverage	Helsingborg
+FakeCity	FakeCity	Göteborg
+AutoWorks 307	Construction	Helsingborg
+HealthSync 308	Automotive	Malmö
+EduVision 309	Technology	Jönköping
+RoboTech 310	###	Örebro
+FinTrust 311	AI & Robotics	Linköping
+HealthSync 312	Education	Uppsala
+NULL	Technology	Västerås
+HealthSync 314	Finance	Norrköping
+GreenFuture 315	Finance	Örebro
+TechNova 316	AI & Robotics	Örebro
+GreenFuture 317	AI & Robotics	Linköping
+AutoWorks 318	Technology	Norrköping
+Foodies 319	Technology	Västerås
+GreenFuture 320	Healthcare	Norrköping
+MediCare 321	Healthcare	Malmö
+BuildPro 322	Healthcare	Unknown
+FinTrust 323	AI & Robotics	!!Error!!
+FinTrust 324	AI & Robotics	Göteborg
+BuildPro 325	Finance	###
+MediCare 326	AI & Robotics	None
+BuildPro 327	###	None
+TechNova 328	Renewable Energy	Norrköping
+AutoWorks 329	Medical Devices	Stockholm
+Unknown	Healthcare	Malmö
+RoboTech 331	Finance	Norrköping
+AutoWorks 332	Food & Beverage	Norrköping
+NULL	Construction	Malmö
+	Medical Devices	Helsingborg
+BuildPro 335	Automotive	Göteborg
+EduVision 336	Automotive	Linköping
+MediCare 337	Finance	Helsingborg
+TechNova 338	Construction	Helsingborg
+HealthSync 339	Finance	Norrköping
+TechNova 340	Finance	Norrköping
+FinTrust 341	Renewable Energy	Uppsala
+FinTrust 342	Construction	Uppsala
+Unknown	Technology	Malmö
+MediCare 344	Medical Devices	Västerås
+###	Education	Norrköping
+Foodies 346	Technology	Linköping
+EduVision 347	AI & Robotics	Uppsala
+Foodies 348	Construction	N/A
+EduVision 349	Technology	Linköping
+BuildPro 350	12345	!!Error!!
+EduVision 351	FakeCity	Malmö
+RoboTech 352	Renewable Energy	Stockholm
+RoboTech 353	Medical Devices	12345
+GreenFuture 354	Construction	Linköping
+EduVision 355	Food & Beverage	Västerås
+HealthSync 356	Finance	Uppsala
+EduVision 357	Technology	Uppsala
+GreenFuture 358	None	Malmö
+BuildPro 359	Healthcare	None
+GreenFuture 360	Education	Jönköping
+BuildPro 361	Food & Beverage	Stockholm
+EduVision 362	Medical Devices	Helsingborg
+RoboTech 363	Automotive	Malmö
+HealthSync 364	Technology	Helsingborg
+TechNova 365	Automotive	Malmö
+EduVision 366	AI & Robotics	Göteborg
+NULL	Renewable Energy	Malmö
+FinTrust 368	Healthcare	Norrköping
+AutoWorks 369	Education	Örebro
+GreenFuture 370	Construction	Helsingborg
+FinTrust 371	Medical Devices	12345
+EduVision 372	None	Norrköping
+GreenFuture 373	Technology	Uppsala
+TechNova 374	Automotive	Stockholm
+N/A	Education	Göteborg
+GreenFuture 376	Finance	Stockholm
+BuildPro 377	Education	Örebro
+EduVision 378	Education	!!Error!!
+###	Finance	Norrköping
+FinTrust 380	Finance	###
+BuildPro 381	Automotive	FakeCity
+EduVision 382	Food & Beverage	Västerås
+AutoWorks 383	Medical Devices	Stockholm
+FinTrust 384	Education	Helsingborg
+AutoWorks 385	Education	Norrköping
+TechNova 386	Renewable Energy	Uppsala
+GreenFuture 387	Education	12345
+FinTrust 388	Automotive	Helsingborg
+EduVision 389	Renewable Energy	Linköping
+Foodies 390	Food & Beverage	Västerås
+MediCare 391	Automotive	Västerås
+Foodies 392	Construction	
+EduVision 393	Technology	Malmö
+TechNova 394	Healthcare	Linköping
+EduVision 395	Renewable Energy	Västerås
+AutoWorks 396	FakeCity	Västerås
+RoboTech 397	Medical Devices	Uppsala
+FinTrust 398	Automotive	Göteborg
+EduVision 399	Education	Örebro
+Foodies 400	Healthcare	Linköping
+MediCare 401	None	Linköping
+TechNova 402	Education	Linköping
+FinTrust 403	Food & Beverage	Stockholm
+BuildPro 404	Medical Devices	!!Error!!
+EduVision 405	Technology	Stockholm
+RoboTech 406	Automotive	Jönköping
+GreenFuture 407	Construction	Helsingborg
+Foodies 408	Automotive	Unknown
+HealthSync 409	Education	Norrköping
+HealthSync 410	Technology	Helsingborg
+MediCare 411	Finance	Uppsala
+FinTrust 412	Construction	Malmö
+TechNova 413	N/A	Uppsala
+HealthSync 414	Healthcare	Helsingborg
+EduVision 415	Healthcare	Göteborg
+BuildPro 416	Finance	NULL
+MediCare 417	Technology	Uppsala
+FakeCity	Unknown	Uppsala
+GreenFuture 419	Technology	Jönköping
+TechNova 420	Technology	Göteborg
+RoboTech 421	Renewable Energy	None
+BuildPro 422	Finance	Norrköping
+FakeCity	Food & Beverage	Göteborg
+HealthSync 424	Construction	Jönköping
+MediCare 425	Food & Beverage	Malmö
+TechNova 426	Medical Devices	Linköping
+FakeCity	Technology	Stockholm
+HealthSync 428	Automotive	Jönköping
+BuildPro 429	Automotive	Örebro
+HealthSync 430	Food & Beverage	Linköping
+Foodies 431	Automotive	Malmö
+TechNova 432	Education	Linköping
+MediCare 433	Technology	Helsingborg
+GreenFuture 434	Technology	Malmö
+Foodies 435	Technology	Unknown
+TechNova 436	Education	Stockholm
+AutoWorks 437	AI & Robotics	Helsingborg
+AutoWorks 438	AI & Robotics	Jönköping
+AutoWorks 439	Food & Beverage	Göteborg
+RoboTech 440	Education	Uppsala
+BuildPro 441	Medical Devices	None
+TechNova 442	Renewable Energy	Jönköping
+	Construction	Göteborg
+FinTrust 444	AI & Robotics	Malmö
+TechNova 445	Food & Beverage	Unknown
+EduVision 446	Education	Helsingborg
+HealthSync 447	Food & Beverage	Malmö
+TechNova 448	Medical Devices	Göteborg
+FinTrust 449	Technology	Jönköping
+HealthSync 450	Food & Beverage	Malmö
+BuildPro 451	Finance	###
+MediCare 452	AI & Robotics	Malmö
+BuildPro 453	Finance	Malmö
+Foodies 454	Technology	Uppsala
+FinTrust 455	Healthcare	Uppsala
+EduVision 456	Automotive	Norrköping
+EduVision 457	Automotive	Jönköping
+GreenFuture 458	Healthcare	Helsingborg
+RoboTech 459	Education	Linköping
+AutoWorks 460	Automotive	Göteborg
+BuildPro 461	AI & Robotics	Helsingborg
+HealthSync 462	!!Error!!	Stockholm
+RoboTech 463	Education	Uppsala
+GreenFuture 464	Food & Beverage	Jönköping
+RoboTech 465	Food & Beverage	NULL
+Foodies 466	Automotive	
+RoboTech 467	Construction	Stockholm
+GreenFuture 468	AI & Robotics	Helsingborg
+EduVision 469	Finance	Stockholm
+!!Error!!	Education	Stockholm
+MediCare 471	Construction	Malmö
+MediCare 472	AI & Robotics	Uppsala
+AutoWorks 473	Healthcare	Västerås
+BuildPro 474	Finance	Stockholm
+HealthSync 475	Automotive	Linköping
+BuildPro 476	Education	Malmö
+RoboTech 477	Healthcare	Stockholm
+FinTrust 478	Education	Stockholm
+BuildPro 479	Construction	Göteborg
+GreenFuture 480	Education	Malmö
+BuildPro 481	Medical Devices	Norrköping
+	Construction	Helsingborg
+FinTrust 483	Technology	Stockholm
+EduVision 484	Construction	Linköping
+RoboTech 485	Renewable Energy	Göteborg
+MediCare 486	Construction	Helsingborg
+NULL	AI & Robotics	Norrköping
+Foodies 488	Healthcare	Helsingborg
+EduVision 489	Food & Beverage	Stockholm
+MediCare 490	Finance	N/A
+###	Medical Devices	Stockholm
+GreenFuture 492	AI & Robotics	Göteborg
+EduVision 493	Education	NULL
+BuildPro 494	Finance	Malmö
+FakeCity	Food & Beverage	Stockholm
+Unknown	!!Error!!	Linköping
+Foodies 497	Renewable Energy	NULL
+TechNova 498	Education	Örebro
+MediCare 499	Automotive	12345
+FinTrust 500	Food & Beverage	Göteborg
+EduVision 501	Healthcare	Stockholm
+GreenFuture 502	AI & Robotics	Helsingborg
+EduVision 503	AI & Robotics	Norrköping
+BuildPro 504	Medical Devices	Göteborg
+MediCare 505	Technology	Helsingborg
+FinTrust 506	AI & Robotics	Malmö
+AutoWorks 507	Education	Linköping
+EduVision 508	Renewable Energy	Örebro
+NULL	N/A	Örebro
+AutoWorks 510	Automotive	
+MediCare 511	Renewable Energy	Linköping
+TechNova 512	AI & Robotics	
+!!Error!!		Norrköping
+MediCare 514	Food & Beverage	Örebro
+FakeCity	Finance	Malmö
+MediCare 516	Medical Devices	Göteborg
+HealthSync 517	Finance	FakeCity
+GreenFuture 518	Renewable Energy	Göteborg
+12345	Medical Devices	Örebro
+GreenFuture 520	Automotive	Helsingborg
+GreenFuture 521	Renewable Energy	Jönköping
+BuildPro 522	Healthcare	Unknown
+MediCare 523	Education	!!Error!!
+BuildPro 524	Renewable Energy	None
+EduVision 525	Healthcare	Malmö
+HealthSync 526	Construction	Malmö
+RoboTech 527	Renewable Energy	Malmö
+FinTrust 528	Renewable Energy	Västerås
+Foodies 529	Food & Beverage	Linköping
+BuildPro 530	Construction	Norrköping
+MediCare 531	Education	Unknown
+None	Renewable Energy	Jönköping
+RoboTech 533	Construction	FakeCity
+AutoWorks 534	Automotive	Jönköping
+FinTrust 535	Healthcare	Jönköping
+RoboTech 536	Healthcare	Göteborg
+BuildPro 537	Healthcare	Jönköping
+TechNova 538	AI & Robotics	Malmö
+MediCare 539	Education	Linköping
+EduVision 540	Technology	Malmö
+FakeCity	AI & Robotics	NULL
+MediCare 542	Medical Devices	Malmö
+FinTrust 543	Medical Devices	Linköping
+RoboTech 544	Technology	Jönköping
+MediCare 545	Construction	Stockholm
+FinTrust 546	Renewable Energy	Helsingborg
+BuildPro 547	###	Jönköping
+MediCare 548	Education	
+FinTrust 549	Technology	Västerås
+FinTrust 550	Food & Beverage	Jönköping
+EduVision 551	AI & Robotics	Malmö
+MediCare 552	Medical Devices	Linköping
+BuildPro 553	Construction	Jönköping
+GreenFuture 554	Education	Örebro
+TechNova 555	Automotive	Helsingborg
+BuildPro 556	Medical Devices	Jönköping
+NULL	Education	Uppsala
+RoboTech 558	Food & Beverage	Västerås
+MediCare 559	Technology	!!Error!!
+	Finance	Helsingborg
+FinTrust 561	Education	Västerås
+EduVision 562	Technology	Malmö
+HealthSync 563	N/A	Unknown
+HealthSync 564	Renewable Energy	Jönköping
+GreenFuture 565	Finance	Malmö
+TechNova 566	AI & Robotics	Göteborg
+HealthSync 567	AI & Robotics	Norrköping
+MediCare 568	Education	Göteborg
+AutoWorks 569	Renewable Energy	None
+BuildPro 570	Education	None
+TechNova 571	Automotive	Helsingborg
+FinTrust 572	Education	Göteborg
+MediCare 573	Renewable Energy	Västerås
+EduVision 574	Construction	Uppsala
+N/A	Technology	Västerås
+HealthSync 576	Healthcare	Malmö
+HealthSync 577	Food & Beverage	Uppsala
+Foodies 578	Healthcare	Helsingborg
+BuildPro 579	Technology	Stockholm
+Foodies 580	Medical Devices	Örebro
+MediCare 581	Renewable Energy	Linköping
+BuildPro 582	Construction	Stockholm
+MediCare 583	Medical Devices	Uppsala
+EduVision 584	Food & Beverage	Örebro
+FinTrust 585	12345	Norrköping
+EduVision 586	Automotive	Örebro
+NULL	Medical Devices	Stockholm
+RoboTech 588	Medical Devices	Norrköping
+HealthSync 589	Education	Norrköping
+AutoWorks 590	Food & Beverage	Stockholm
+Foodies 591	Technology	Malmö
+EduVision 592	Food & Beverage	Örebro
+TechNova 593	Education	Stockholm
+Foodies 594	Construction	Malmö
+TechNova 595	Renewable Energy	Göteborg
+Foodies 596	Technology	Linköping
+HealthSync 597	Healthcare	Uppsala
+FinTrust 598	Technology	Helsingborg
+RoboTech 599	Unknown	Göteborg
+Foodies 600	Finance	Örebro
+HealthSync 601	Food & Beverage	12345
+HealthSync 602	Food & Beverage	Jönköping
+MediCare 603	Medical Devices	Göteborg
+Foodies 604	Food & Beverage	Göteborg
+EduVision 605	12345	Stockholm
+BuildPro 606	12345	Göteborg
+RoboTech 607	Food & Beverage	Västerås
+None	Automotive	Västerås
+RoboTech 609	Healthcare	Jönköping
+BuildPro 610	Construction	Göteborg
+HealthSync 611	Finance	Västerås
+GreenFuture 612	Renewable Energy	Linköping
+HealthSync 613	Renewable Energy	Malmö
+Foodies 614	Technology	Linköping
+Foodies 615	Education	Uppsala
+AutoWorks 616	Construction	Örebro
+EduVision 617	Renewable Energy	Helsingborg
+12345	Renewable Energy	Jönköping
+EduVision 619	Food & Beverage	###
+TechNova 620	Automotive	Stockholm
+AutoWorks 621	Renewable Energy	Uppsala
+FinTrust 622	Education	Örebro
+FinTrust 623	Healthcare	Örebro
+GreenFuture 624	Automotive	
+AutoWorks 625	Technology	Malmö
+TechNova 626	Finance	Stockholm
+RoboTech 627	Education	Örebro
+RoboTech 628	AI & Robotics	Uppsala
+GreenFuture 629	Renewable Energy	Örebro
+FinTrust 630	Technology	Linköping
+MediCare 631	Medical Devices	Stockholm
+HealthSync 632	Medical Devices	Linköping
+	Food & Beverage	Uppsala
+EduVision 634	Finance	!!Error!!
+RoboTech 635	Construction	Västerås
+AutoWorks 636	Renewable Energy	N/A
+GreenFuture 637	Healthcare	Örebro
+BuildPro 638	Automotive	NULL
+RoboTech 639	Medical Devices	Stockholm
+RoboTech 640	Education	Helsingborg
+Foodies 641	AI & Robotics	Uppsala
+RoboTech 642	Construction	Malmö
+MediCare 643	12345	Uppsala
+AutoWorks 644	Healthcare	Västerås
+GreenFuture 645	Automotive	Jönköping
+MediCare 646	Education	Örebro
+GreenFuture 647	Healthcare	Göteborg
+AutoWorks 648	Automotive	Västerås
+GreenFuture 649	Construction	Helsingborg
+FinTrust 650	Automotive	Uppsala
+GreenFuture 651	Food & Beverage	Uppsala
+FinTrust 652	12345	Helsingborg
+AutoWorks 653	Education	Linköping
+FinTrust 654	Education	Helsingborg
+Foodies 655	Technology	Göteborg
+FinTrust 656	NULL	Göteborg
+Foodies 657	Finance	Jönköping
+MediCare 658	Education	Göteborg
+TechNova 659	Food & Beverage	12345
+EduVision 660	Education	Linköping
+Foodies 661	Automotive	Linköping
+HealthSync 662	Construction	Örebro
+BuildPro 663	Unknown	Norrköping
+Foodies 664	Finance	Jönköping
+FinTrust 665	Automotive	Uppsala
+MediCare 666	Construction	Uppsala
+GreenFuture 667	Education	Uppsala
+GreenFuture 668	AI & Robotics	Malmö
+HealthSync 669	Technology	Västerås
+GreenFuture 670	Education	Göteborg
+GreenFuture 671	!!Error!!	Örebro
+EduVision 672	Medical Devices	Stockholm
+MediCare 673	Automotive	Norrköping
+AutoWorks 674	Technology	Malmö
+EduVision 675	Education	Jönköping
+FakeCity	Renewable Energy	Helsingborg
+MediCare 677	12345	Göteborg
+TechNova 678	Construction	Västerås
+AutoWorks 679	Education	Malmö
+HealthSync 680	Construction	Jönköping
+AutoWorks 681	AI & Robotics	None
+NULL	Renewable Energy	Göteborg
+EduVision 683	Technology	Västerås
+GreenFuture 684	Education	Jönköping
+GreenFuture 685	Food & Beverage	Örebro
+GreenFuture 686	Technology	Norrköping
+EduVision 687	Education	Linköping
+AutoWorks 688	Renewable Energy	Helsingborg
+AutoWorks 689	Medical Devices	Stockholm
+GreenFuture 690	Medical Devices	Västerås
+	Healthcare	Helsingborg
+MediCare 692	Automotive	Örebro
+BuildPro 693	Construction	Helsingborg
+MediCare 694	Finance	Helsingborg
+RoboTech 695	Renewable Energy	Stockholm
+HealthSync 696	AI & Robotics	Helsingborg
+EduVision 697	Construction	Örebro
+TechNova 698	Finance	Västerås
+HealthSync 699	Healthcare	!!Error!!
+RoboTech 700	Medical Devices	Göteborg
+TechNova 701	Food & Beverage	Stockholm
+EduVision 702	Technology	Unknown
+FinTrust 703	Finance	Malmö
+Foodies 704	Medical Devices	Linköping
+FinTrust 705	Healthcare	Örebro
+TechNova 706	Technology	Uppsala
+MediCare 707	Automotive	FakeCity
+Foodies 708	Medical Devices	Norrköping
+HealthSync 709	Healthcare	Örebro
+GreenFuture 710	Food & Beverage	FakeCity
+TechNova 711	Medical Devices	Stockholm
+TechNova 712	AI & Robotics	Malmö
+GreenFuture 713	12345	Malmö
+Unknown	Education	Jönköping
+MediCare 715	Finance	Göteborg
+AutoWorks 716	Education	Norrköping
+FinTrust 717	Healthcare	Uppsala
+GreenFuture 718	Education	Linköping
+BuildPro 719	Renewable Energy	Uppsala
+MediCare 720	Finance	Uppsala
+AutoWorks 721	Construction	Göteborg
+TechNova 722	Renewable Energy	Linköping
+Foodies 723	Renewable Energy	Norrköping
+MediCare 724	Technology	Jönköping
+RoboTech 725	Automotive	Örebro
+EduVision 726	AI & Robotics	Örebro
+TechNova 727	Construction	Göteborg
+RoboTech 728	Renewable Energy	Västerås
+Foodies 729	AI & Robotics	Norrköping
+MediCare 730	AI & Robotics	Göteborg
+RoboTech 731	Automotive	Malmö
+None	Medical Devices	Malmö
+BuildPro 733	Finance	Malmö
+FinTrust 734	Healthcare	Örebro
+###	Healthcare	###
+TechNova 736	Healthcare	Stockholm
+HealthSync 737	Finance	Örebro
+TechNova 738	!!Error!!	Örebro
+GreenFuture 739	Technology	Stockholm
+AutoWorks 740	None	Göteborg
+GreenFuture 741	Finance	Stockholm
+NULL	Renewable Energy	Helsingborg
+GreenFuture 743	Healthcare	Stockholm
+EduVision 744	AI & Robotics	Västerås
+TechNova 745	Construction	###
+TechNova 746	Construction	Uppsala
+BuildPro 747	Education	Örebro
+FinTrust 748	Technology	None
+TechNova 749	Finance	###
+MediCare 750	Healthcare	Västerås
+TechNova 751	Healthcare	None
+MediCare 752	Finance	Göteborg
+EduVision 753	Renewable Energy	Helsingborg
+AutoWorks 754	Automotive	Västerås
+TechNova 755	Food & Beverage	Norrköping
+AutoWorks 756	Education	Uppsala
+FinTrust 757	Food & Beverage	Helsingborg
+FinTrust 758	Construction	Örebro
+HealthSync 759	Technology	Västerås
+BuildPro 760	Education	Norrköping
+MediCare 761	Education	N/A
+FinTrust 762	Finance	12345
+TechNova 763	Technology	Norrköping
+EduVision 764	Renewable Energy	Jönköping
+GreenFuture 765	Food & Beverage	Uppsala
+EduVision 766	Medical Devices	Göteborg
+EduVision 767	Food & Beverage	Västerås
+EduVision 768	Food & Beverage	None
+Foodies 769	Healthcare	!!Error!!
+AutoWorks 770	Education	Örebro
+BuildPro 771	Finance	Stockholm
+GreenFuture 772		Göteborg
+EduVision 773	Healthcare	Jönköping
+!!Error!!	Healthcare	Linköping
+EduVision 775	Finance	Uppsala
+MediCare 776	Technology	FakeCity
+FinTrust 777	AI & Robotics	Uppsala
+GreenFuture 778	Finance	Örebro
+	AI & Robotics	Malmö
+MediCare 780	Technology	None
+GreenFuture 781	Automotive	Västerås
+EduVision 782	Medical Devices	Helsingborg
+Foodies 783	Automotive	Norrköping
+AutoWorks 784	Finance	Stockholm
+Foodies 785	AI & Robotics	Göteborg
+BuildPro 786	Food & Beverage	Jönköping
+	Healthcare	Norrköping
+TechNova 788	Renewable Energy	Uppsala
+Foodies 789	Food & Beverage	
+MediCare 790	NULL	FakeCity
+EduVision 791	Food & Beverage	Stockholm
+RoboTech 792	None	Malmö
+TechNova 793	Finance	Norrköping
+Foodies 794	Food & Beverage	Malmö
+FinTrust 795	Technology	Norrköping
+EduVision 796	Renewable Energy	Linköping
+MediCare 797	AI & Robotics	Linköping
+Foodies 798	Education	Norrköping
+BuildPro 799	AI & Robotics	Helsingborg
+MediCare 800	Food & Beverage	Jönköping
+TechNova 801	Finance	Göteborg
+BuildPro 802	Finance	Jönköping
+MediCare 803	Food & Beverage	Unknown
+BuildPro 804	Automotive	Helsingborg
+EduVision 805	Education	Helsingborg
+RoboTech 806	Renewable Energy	Linköping
+FinTrust 807	Finance	Göteborg
+12345	Medical Devices	Stockholm
+BuildPro 809	Healthcare	Uppsala
+TechNova 810	Healthcare	Västerås
+MediCare 811	Healthcare	Jönköping
+RoboTech 812	Automotive	
+GreenFuture 813	Technology	Jönköping
+###	Construction	Stockholm
+BuildPro 815	FakeCity	Malmö
+MediCare 816	Technology	Jönköping
+AutoWorks 817	Food & Beverage	Helsingborg
+GreenFuture 818	Automotive	Stockholm
+BuildPro 819	Finance	Örebro
+Foodies 820	Finance	N/A
+None	NULL	N/A
+TechNova 822	Construction	Helsingborg
+FinTrust 823	Medical Devices	Stockholm
+MediCare 824	Healthcare	Göteborg
+AutoWorks 825	Renewable Energy	Göteborg
+BuildPro 826	Education	Malmö
+TechNova 827	Education	Stockholm
+MediCare 828	Food & Beverage	!!Error!!
+FinTrust 829	Food & Beverage	Linköping
+HealthSync 830	None	Helsingborg
+GreenFuture 831	Education	Helsingborg
+RoboTech 832	Food & Beverage	Helsingborg
+AutoWorks 833	Construction	Örebro
+Foodies 834	Finance	Malmö
+TechNova 835	Construction	Örebro
+None	AI & Robotics	Västerås
+EduVision 837	Food & Beverage	Uppsala
+Foodies 838	Education	Stockholm
+HealthSync 839	Construction	Helsingborg
+TechNova 840	Automotive	Västerås
+TechNova 841	Education	Västerås
+BuildPro 842	Renewable Energy	Malmö
+	Healthcare	Norrköping
+EduVision 844	Renewable Energy	Örebro
+Foodies 845	Automotive	Västerås
+EduVision 846	Construction	Uppsala
+FinTrust 847	Construction	Helsingborg
+HealthSync 848	FakeCity	Jönköping
+GreenFuture 849	Renewable Energy	Västerås
+RoboTech 850	AI & Robotics	Norrköping
+HealthSync 851	Technology	Linköping
+GreenFuture 852	12345	Jönköping
+None	Technology	Linköping
+HealthSync 854	Construction	Linköping
+Unknown	Technology	Örebro
+FinTrust 856	Medical Devices	Örebro
+FinTrust 857	Automotive	Göteborg
+BuildPro 858	Finance	Helsingborg
+AutoWorks 859	Education	Jönköping
+HealthSync 860	AI & Robotics	Malmö
+Foodies 861	Healthcare	Helsingborg
+EduVision 862	Education	Göteborg
+MediCare 863	Education	NULL
+TechNova 864	Renewable Energy	Jönköping
+GreenFuture 865	Food & Beverage	Uppsala
+Foodies 866	Automotive	Jönköping
+Foodies 867	AI & Robotics	Västerås
+BuildPro 868	AI & Robotics	Malmö
+BuildPro 869	Education	Norrköping
+TechNova 870	Finance	Malmö
+FinTrust 871	Finance	!!Error!!
+HealthSync 872	AI & Robotics	
+BuildPro 873	Automotive	Västerås
+TechNova 874	Healthcare	Stockholm
+RoboTech 875	Renewable Energy	Västerås
+HealthSync 876	Automotive	Göteborg
+###	Renewable Energy	Helsingborg
+EduVision 878	Finance	Uppsala
+Foodies 879	Finance	Örebro
+GreenFuture 880	NULL	Helsingborg
+EduVision 881	Automotive	Norrköping
+HealthSync 882	Finance	Jönköping
+Foodies 883	Automotive	Stockholm
+EduVision 884	Automotive	Västerås
+BuildPro 885	None	FakeCity
+BuildPro 886	Automotive	Uppsala
+HealthSync 887	AI & Robotics	Jönköping
+AutoWorks 888	Renewable Energy	Örebro
+FinTrust 889	AI & Robotics	Malmö
+GreenFuture 890	Food & Beverage	Stockholm
+AutoWorks 891	Construction	Jönköping
+Unknown	Unknown	Malmö
+TechNova 893	Food & Beverage	Jönköping
+Foodies 894	Food & Beverage	NULL
+EduVision 895	Education	Helsingborg
+	Renewable Energy	Linköping
+RoboTech 897	Technology	Västerås
+N/A	AI & Robotics	Jönköping
+FinTrust 899	Finance	Helsingborg
+MediCare 900	Finance	FakeCity
+TechNova 901	Finance	Västerås
+GreenFuture 902	Technology	Linköping
+NULL	Finance	Jönköping
+FinTrust 904	Healthcare	Malmö
+MediCare 905	Medical Devices	Norrköping
+12345	Technology	Jönköping
+TechNova 907	Renewable Energy	Örebro
+FinTrust 908	Finance	Jönköping
+GreenFuture 909	Education	Uppsala
+GreenFuture 910	Automotive	Jönköping
+HealthSync 911	Automotive	Jönköping
+AutoWorks 912	Renewable Energy	Jönköping
+FakeCity	Automotive	Helsingborg
+HealthSync 914	Education	Malmö
+HealthSync 915	Automotive	Jönköping
+GreenFuture 916	Renewable Energy	Örebro
+FinTrust 917	Healthcare	Örebro
+MediCare 918	Technology	Göteborg
+MediCare 919	Medical Devices	Västerås
+AutoWorks 920	Technology	Västerås
+TechNova 921	Renewable Energy	Västerås
+GreenFuture 922	Automotive	Jönköping
+TechNova 923	AI & Robotics	Linköping
+RoboTech 924	Automotive	12345
+Foodies 925	Construction	Jönköping
+###	Renewable Energy	Norrköping
+BuildPro 927	Construction	Jönköping
+Foodies 928	!!Error!!	Västerås
+TechNova 929	Healthcare	Jönköping
+AutoWorks 930	Healthcare	N/A
+MediCare 931	Unknown	Örebro
+	Automotive	None
+Foodies 933	Medical Devices	Helsingborg
+GreenFuture 934	Medical Devices	Jönköping
+Foodies 935	Renewable Energy	Örebro
+FinTrust 936	AI & Robotics	Unknown
+HealthSync 937	Construction	Norrköping
+RoboTech 938	Finance	Örebro
+BuildPro 939	Education	Västerås
+BuildPro 940	Renewable Energy	Stockholm
+BuildPro 941	AI & Robotics	Stockholm
+BuildPro 942	Technology	Västerås
+AutoWorks 943	Food & Beverage	Norrköping
+FinTrust 944	AI & Robotics	Örebro
+GreenFuture 945	Automotive	Västerås
+NULL	Education	Norrköping
+Foodies 947	Healthcare	Norrköping
+Foodies 948	Technology	Uppsala
+EduVision 949	Automotive	Malmö
+None	Food & Beverage	Jönköping
+HealthSync 951	Healthcare	Stockholm
+BuildPro 952	Renewable Energy	Västerås
+EduVision 953	Construction	Stockholm
+BuildPro 954	Construction	Örebro
+EduVision 955	Technology	Jönköping
+AutoWorks 956	Food & Beverage	Helsingborg
+GreenFuture 957	Construction	Västerås
+MediCare 958	Healthcare	Norrköping
+NULL	AI & Robotics	Västerås
+EduVision 960	Healthcare	Malmö
+	None	Malmö
+EduVision 962	Food & Beverage	Västerås
+RoboTech 963	Healthcare	Linköping
+EduVision 964	Food & Beverage	None
+GreenFuture 965	Food & Beverage	Jönköping
+BuildPro 966	Finance	Örebro
+BuildPro 967	Medical Devices	Malmö
+TechNova 968	Medical Devices	Uppsala
+Foodies 969	Technology	NULL
+BuildPro 970	Technology	Göteborg
+GreenFuture 971	Medical Devices	Malmö
+EduVision 972	AI & Robotics	Stockholm
+###	Automotive	Helsingborg
+12345	Technology	Malmö
+BuildPro 975	Education	Linköping
+Unknown	Healthcare	Stockholm
+Unknown	Construction	Jönköping
+RoboTech 978	Education	Jönköping
+Foodies 979	Food & Beverage	Linköping
+TechNova 980	Medical Devices	Västerås
+FinTrust 981	Automotive	Örebro
+HealthSync 982	Healthcare	Göteborg
+HealthSync 983	Education	Malmö
+GreenFuture 984	Renewable Energy	Uppsala
+GreenFuture 985	Construction	Göteborg
+12345	Medical Devices	Jönköping
+RoboTech 987	Technology	Jönköping
+MediCare 988	AI & Robotics	Västerås
+BuildPro 989	AI & Robotics	Norrköping
+GreenFuture 990	Medical Devices	Norrköping
+TechNova 991	Healthcare	Stockholm
+HealthSync 992	Unknown	Norrköping
+EduVision 993	Food & Beverage	Stockholm
+RoboTech 994	AI & Robotics	Stockholm
+AutoWorks 995	Medical Devices	Malmö
+RoboTech 996	Technology	Västerås
+HealthSync 997	Education	Stockholm
+AutoWorks 998	AI & Robotics	Linköping
+RoboTech 999	Renewable Energy	Jönköping
+!!Error!!	Healthcare	Västerås
+TechNova 1001	Medical Devices	Jönköping
+!!Error!!	Healthcare	Linköping
+###	Unknown	Norrköping
+HealthSync 1004	Food & Beverage	Uppsala
+AutoWorks 1005	!!Error!!	Linköping
+FinTrust 1006	Education	Helsingborg
+!!Error!!	Construction	Malmö
+TechNova 1008	Finance	Örebro
+Foodies 1009	Renewable Energy	Göteborg
+FinTrust 1010	AI & Robotics	Helsingborg
+Foodies 1011	Healthcare	Stockholm
+TechNova 1012	Food & Beverage	Norrköping
+TechNova 1013	Medical Devices	Malmö
+HealthSync 1014	Healthcare	Malmö
+TechNova 1015	Education	Uppsala
+FinTrust 1016	Food & Beverage	Unknown
+AutoWorks 1017	Education	Göteborg
+HealthSync 1018	Renewable Energy	Helsingborg
+RoboTech 1019	Medical Devices	Göteborg
+TechNova 1020	Medical Devices	Jönköping
+BuildPro 1021	Medical Devices	Göteborg
+MediCare 1022	Renewable Energy	Malmö
+BuildPro 1023	Construction	Stockholm
+BuildPro 1024	Finance	Uppsala
+RoboTech 1025	Food & Beverage	Linköping
+AutoWorks 1026	Construction	###
+HealthSync 1027	Automotive	Västerås
+Foodies 1028	Education	Linköping
+FinTrust 1029	Renewable Energy	Jönköping
+GreenFuture 1030	Renewable Energy	N/A
+RoboTech 1031	Medical Devices	Norrköping
+HealthSync 1032	Finance	Norrköping
+EduVision 1033	Technology	Göteborg
+HealthSync 1034	Automotive	Stockholm
+BuildPro 1035	Education	Norrköping
+RoboTech 1036	Education	Malmö
+GreenFuture 1037	Medical Devices	Unknown
+None	N/A	Norrköping
+RoboTech 1039	Renewable Energy	Örebro
+AutoWorks 1040	Medical Devices	Malmö
+HealthSync 1041	Food & Beverage	Göteborg
+AutoWorks 1042	Finance	Linköping
+Foodies 1043	Food & Beverage	Norrköping
+FinTrust 1044	Construction	Norrköping
+BuildPro 1045	Finance	
+MediCare 1046	Finance	N/A
+RoboTech 1047	Food & Beverage	12345
+	AI & Robotics	Norrköping
+N/A	Food & Beverage	Helsingborg
+MediCare 1050	Medical Devices	None
+Unknown	Medical Devices	Linköping
+EduVision 1052	Finance	Malmö
+EduVision 1053	AI & Robotics	Norrköping
+###	Technology	Norrköping
+FinTrust 1055	Renewable Energy	Jönköping
+AutoWorks 1056	Renewable Energy	Linköping
+AutoWorks 1057	Food & Beverage	Jönköping
+NULL	Medical Devices	Jönköping
+TechNova 1059	Healthcare	Uppsala
+FinTrust 1060	Education	Helsingborg
+BuildPro 1061	AI & Robotics	Uppsala
+EduVision 1062	Education	Örebro
+MediCare 1063	AI & Robotics	Stockholm
+BuildPro 1064	Automotive	Örebro
+Foodies 1065	Healthcare	Jönköping
+MediCare 1066	Renewable Energy	Norrköping
+MediCare 1067	FakeCity	Malmö
+BuildPro 1068	Automotive	Stockholm
+FinTrust 1069	Education	Uppsala
+None	Technology	Örebro
+BuildPro 1071	Construction	Uppsala
+Unknown	N/A	Örebro
+Foodies 1073	Renewable Energy	Göteborg
+EduVision 1074	!!Error!!	Malmö
+FinTrust 1075	###	Göteborg
+AutoWorks 1076	AI & Robotics	Jönköping
+GreenFuture 1077	Healthcare	Västerås
+GreenFuture 1078	Healthcare	Jönköping
+RoboTech 1079	AI & Robotics	Jönköping
+EduVision 1080	Technology	Helsingborg
+GreenFuture 1081	Technology	Norrköping
+Foodies 1082	Education	Helsingborg
+AutoWorks 1083	Construction	Helsingborg
+Foodies 1084	Construction	Västerås
+	Construction	Malmö
+	Automotive	Malmö
+RoboTech 1087	AI & Robotics	Malmö
+GreenFuture 1088	Renewable Energy	Norrköping
+Foodies 1089	Technology	NULL
+Foodies 1090	Renewable Energy	Göteborg
+MediCare 1091	Technology	Norrköping
+MediCare 1092	Automotive	Uppsala
+Foodies 1093	Healthcare	Göteborg
+GreenFuture 1094	AI & Robotics	Stockholm
+FinTrust 1095	AI & Robotics	Stockholm
+RoboTech 1096	Automotive	Jönköping
+AutoWorks 1097	Automotive	Norrköping
+MediCare 1098	Education	Helsingborg
+TechNova 1099	Food & Beverage	Jönköping
+RoboTech 1100	Food & Beverage	###
+AutoWorks 1101	AI & Robotics	Västerås
+AutoWorks 1102	Healthcare	Göteborg
+EduVision 1103	AI & Robotics	Helsingborg
+None	Automotive	Västerås
+###	Education	Norrköping
+RoboTech 1106	Renewable Energy	Helsingborg
+HealthSync 1107	Healthcare	Örebro
+AutoWorks 1108	Renewable Energy	Malmö
+BuildPro 1109	Medical Devices	Linköping
+EduVision 1110	AI & Robotics	Örebro
+Foodies 1111	Construction	Norrköping
+RoboTech 1112	Renewable Energy	N/A
+BuildPro 1113	Technology	Jönköping
+AutoWorks 1114	Technology	Uppsala
+HealthSync 1115	Medical Devices	Västerås
+Foodies 1116	Automotive	Helsingborg
+HealthSync 1117	Medical Devices	Helsingborg
+RoboTech 1118	Technology	Uppsala
+RoboTech 1119	Food & Beverage	Jönköping
+EduVision 1120	Construction	Göteborg
+Unknown	Renewable Energy	Uppsala
+MediCare 1122	Automotive	Linköping
+Foodies 1123	Renewable Energy	Malmö
+AutoWorks 1124	Renewable Energy	Jönköping
+RoboTech 1125	Medical Devices	Jönköping
+TechNova 1126	Finance	NULL
+EduVision 1127	Food & Beverage	Linköping
+BuildPro 1128	Education	Unknown
+Foodies 1129	Food & Beverage	Örebro
+HealthSync 1130	Food & Beverage	Linköping
+EduVision 1131	Construction	Göteborg
+TechNova 1132	Renewable Energy	Örebro
+MediCare 1133	Renewable Energy	Västerås
+MediCare 1134	Healthcare	N/A
+BuildPro 1135	Medical Devices	Jönköping
+MediCare 1136	Education	Jönköping
+FinTrust 1137	Education	Helsingborg
+HealthSync 1138	Construction	Stockholm
+BuildPro 1139	Food & Beverage	Västerås
+MediCare 1140	Healthcare	Göteborg
+Foodies 1141	Technology	Linköping
+BuildPro 1142	Automotive	Helsingborg
+	Automotive	Västerås
+AutoWorks 1144	Food & Beverage	FakeCity
+GreenFuture 1145	Technology	Linköping
+AutoWorks 1146	Renewable Energy	None
+BuildPro 1147	Automotive	Örebro
+GreenFuture 1148	Renewable Energy	Norrköping
+HealthSync 1149	Automotive	FakeCity
+TechNova 1150	Medical Devices	Jönköping
+MediCare 1151	Healthcare	Stockholm
+RoboTech 1152	Education	Norrköping
+TechNova 1153	Medical Devices	Jönköping
+AutoWorks 1154	Healthcare	Norrköping
+Foodies 1155	Technology	Norrköping
+RoboTech 1156	Education	Jönköping
+GreenFuture 1157	Technology	Linköping
+###	Finance	Stockholm
+12345	Construction	Uppsala
+!!Error!!	AI & Robotics	Linköping
+FinTrust 1161	Automotive	Linköping
+Foodies 1162	Technology	Uppsala
+MediCare 1163	AI & Robotics	Örebro
+EduVision 1164	Education	Linköping
+RoboTech 1165	Technology	Jönköping
+RoboTech 1166	Food & Beverage	Göteborg
+Foodies 1167	Construction	Helsingborg
+FinTrust 1168	Finance	Linköping
+GreenFuture 1169	Construction	Västerås
+AutoWorks 1170	Medical Devices	Stockholm
+MediCare 1171	Healthcare	Linköping
+TechNova 1172	Healthcare	Helsingborg
+FinTrust 1173	Renewable Energy	Örebro
+AutoWorks 1174	Food & Beverage	Göteborg
+TechNova 1175	Renewable Energy	12345
+AutoWorks 1176	Finance	Uppsala
+MediCare 1177	Medical Devices	Västerås
+GreenFuture 1178	Medical Devices	Linköping
+HealthSync 1179	AI & Robotics	Västerås
+FinTrust 1180	Finance	Jönköping
+FakeCity	Automotive	Helsingborg
+None	Technology	Malmö
+RoboTech 1183	Education	Jönköping
+TechNova 1184	Renewable Energy	Helsingborg
+RoboTech 1185	Automotive	Malmö
+TechNova 1186	Construction	Norrköping
+Foodies 1187	Renewable Energy	Helsingborg
+EduVision 1188	Food & Beverage	Örebro
+RoboTech 1189	Food & Beverage	Helsingborg
+FinTrust 1190	Medical Devices	###
+EduVision 1191	AI & Robotics	Göteborg
+TechNova 1192	Medical Devices	Uppsala
+GreenFuture 1193	Renewable Energy	!!Error!!
+FinTrust 1194	Technology	Uppsala
+HealthSync 1195	Education	Göteborg
+GreenFuture 1196	Food & Beverage	Göteborg
+RoboTech 1197	Food & Beverage	Helsingborg
+None	Renewable Energy	Örebro
+AutoWorks 1199	Medical Devices	Västerås
+AutoWorks 1200	Education	Västerås
+EduVision 1201	Construction	Stockholm
+Foodies 1202	Healthcare	Västerås
+FakeCity	AI & Robotics	###
+MediCare 1204	Construction	Norrköping
+FinTrust 1205	Medical Devices	Västerås
+GreenFuture 1206	Renewable Energy	N/A
+HealthSync 1207	Food & Beverage	Örebro
+AutoWorks 1208	Healthcare	Norrköping
+Foodies 1209	###	Linköping
+NULL	Renewable Energy	Stockholm
+HealthSync 1211	AI & Robotics	Norrköping
+EduVision 1212	Food & Beverage	Helsingborg
+TechNova 1213	Finance	Jönköping
+BuildPro 1214	Education	Västerås
+MediCare 1215	Finance	Stockholm
+FinTrust 1216	Finance	Göteborg
+RoboTech 1217	!!Error!!	Norrköping
+MediCare 1218	Construction	Örebro
+AutoWorks 1219	!!Error!!	Unknown
+FinTrust 1220	Food & Beverage	Stockholm
+HealthSync 1221	Healthcare	Göteborg
+RoboTech 1222	Healthcare	Göteborg
+Foodies 1223	AI & Robotics	Örebro
+TechNova 1224	Finance	Stockholm
+GreenFuture 1225	Finance	###
+EduVision 1226	Medical Devices	Helsingborg
+TechNova 1227	Medical Devices	Helsingborg
+MediCare 1228	Education	Örebro
+Foodies 1229	Medical Devices	Göteborg
+EduVision 1230	Automotive	Västerås
+MediCare 1231	Healthcare	Norrköping
+TechNova 1232	Technology	Västerås
+Foodies 1233	Technology	Stockholm
+AutoWorks 1234	Medical Devices	Örebro
+!!Error!!	Finance	Västerås
+BuildPro 1236	Technology	12345
+MediCare 1237	AI & Robotics	Helsingborg
+BuildPro 1238	Healthcare	Helsingborg
+RoboTech 1239	Medical Devices	###
+Foodies 1240	Education	Örebro
+BuildPro 1241	Healthcare	Göteborg
+FinTrust 1242	Food & Beverage	!!Error!!
+RoboTech 1243	Food & Beverage	Malmö
+FinTrust 1244	Construction	Göteborg
+EduVision 1245	Healthcare	Norrköping
+GreenFuture 1246	Healthcare	Linköping
+GreenFuture 1247	Technology	Linköping
+EduVision 1248	N/A	Helsingborg
+AutoWorks 1249	Automotive	Örebro
+12345	Finance	Norrköping
+Unknown	Healthcare	Norrköping
+GreenFuture 1252	AI & Robotics	Västerås
+Foodies 1253	Finance	Jönköping
+BuildPro 1254	Food & Beverage	Göteborg
+FinTrust 1255	Education	Västerås
+Foodies 1256	Finance	Örebro
+EduVision 1257	Education	Norrköping
+BuildPro 1258	Finance	Västerås
+FinTrust 1259	Technology	Stockholm
+EduVision 1260	Construction	Uppsala
+RoboTech 1261	Construction	Jönköping
+AutoWorks 1262	Construction	Uppsala
+RoboTech 1263	Education	Uppsala
+FinTrust 1264	Automotive	N/A
+GreenFuture 1265	Food & Beverage	Helsingborg
+BuildPro 1266	Automotive	Linköping
+AutoWorks 1267	Food & Beverage	Malmö
+TechNova 1268	Medical Devices	Västerås
+MediCare 1269	Food & Beverage	Uppsala
+GreenFuture 1270	Medical Devices	Örebro
+AutoWorks 1271	Food & Beverage	Stockholm
+FinTrust 1272	Food & Beverage	Helsingborg
+GreenFuture 1273	Food & Beverage	Jönköping
+GreenFuture 1274	Technology	Göteborg
+AutoWorks 1275	Construction	Göteborg
+FinTrust 1276	Food & Beverage	Stockholm
+GreenFuture 1277	AI & Robotics	Norrköping
+AutoWorks 1278	Medical Devices	Göteborg
+EduVision 1279	Renewable Energy	Linköping
+BuildPro 1280	Education	Göteborg
+BuildPro 1281	Renewable Energy	Stockholm
+GreenFuture 1282	Medical Devices	Stockholm
+AutoWorks 1283	Finance	Helsingborg
+12345	Medical Devices	!!Error!!
+Foodies 1285	AI & Robotics	Västerås
+GreenFuture 1286	!!Error!!	Linköping
+EduVision 1287	Construction	Örebro
+GreenFuture 1288	Medical Devices	Örebro
+EduVision 1289	Technology	Västerås
+FinTrust 1290	Construction	Göteborg
+MediCare 1291	AI & Robotics	Västerås
+MediCare 1292	Healthcare	12345
+GreenFuture 1293	AI & Robotics	N/A
+None	AI & Robotics	Uppsala
+TechNova 1295	Education	Uppsala
+RoboTech 1296	AI & Robotics	Göteborg
+BuildPro 1297	Healthcare	Helsingborg
+AutoWorks 1298	Food & Beverage	Göteborg
+FinTrust 1299	Medical Devices	Stockholm
+GreenFuture 1300		Helsingborg
+EduVision 1301	Medical Devices	Linköping
+TechNova 1302	Education	Stockholm
+EduVision 1303	Education	Göteborg
+Foodies 1304	Healthcare	N/A
+MediCare 1305	Construction	Norrköping
+TechNova 1306	Education	FakeCity
+MediCare 1307	Healthcare	Malmö
+EduVision 1308	AI & Robotics	Linköping
+AutoWorks 1309	Education	Linköping
+NULL	###	Uppsala
+EduVision 1311	Renewable Energy	Linköping
+MediCare 1312	Technology	Göteborg
+BuildPro 1313	Construction	Malmö
+BuildPro 1314	AI & Robotics	Jönköping
+BuildPro 1315	Renewable Energy	Örebro
+Foodies 1316	Healthcare	Linköping
+TechNova 1317	Construction	Uppsala
+HealthSync 1318	Renewable Energy	Stockholm
+EduVision 1319	Food & Beverage	Norrköping
+HealthSync 1320	Renewable Energy	Linköping
+Foodies 1321	Automotive	Linköping
+Foodies 1322	Medical Devices	Helsingborg
+None	Technology	Norrköping
+FinTrust 1324	Automotive	Norrköping
+RoboTech 1325	Construction	Jönköping
+Foodies 1326	Finance	Malmö
+HealthSync 1327	Education	Malmö
+MediCare 1328	AI & Robotics	Västerås
+HealthSync 1329	AI & Robotics	Stockholm
+EduVision 1330	Medical Devices	Helsingborg
+TechNova 1331	Technology	Stockholm
+TechNova 1332	Finance	NULL
+BuildPro 1333	Education	Unknown
+AutoWorks 1334	Technology	Jönköping
+EduVision 1335	Medical Devices	Jönköping
+Foodies 1336	Medical Devices	Jönköping
+RoboTech 1337	Education	Uppsala
+GreenFuture 1338	Finance	!!Error!!
+HealthSync 1339	Technology	Stockholm
+AutoWorks 1340	FakeCity	Linköping
+MediCare 1341	Construction	Malmö
+FinTrust 1342	Construction	Stockholm
+HealthSync 1343	Automotive	Unknown
+TechNova 1344	Education	Stockholm
+MediCare 1345	Medical Devices	Stockholm
+###	Food & Beverage	###
+HealthSync 1347	Food & Beverage	Västerås
+GreenFuture 1348	AI & Robotics	Örebro
+TechNova 1349	Healthcare	Uppsala
+MediCare 1350	Unknown	Uppsala
+HealthSync 1351	Medical Devices	Göteborg
+HealthSync 1352	Medical Devices	Uppsala
+FinTrust 1353	Automotive	
+Foodies 1354	Finance	Norrköping
+NULL	Technology	Västerås
+GreenFuture 1356	Technology	Västerås
+AutoWorks 1357	Healthcare	Jönköping
+GreenFuture 1358	Technology	Göteborg
+BuildPro 1359	Education	Västerås
+MediCare 1360	Finance	Norrköping
+RoboTech 1361	Food & Beverage	Helsingborg
+MediCare 1362	Medical Devices	Malmö
+###	Construction	12345
+EduVision 1364	Renewable Energy	Helsingborg
+Unknown	Healthcare	Uppsala
+MediCare 1366	Medical Devices	Stockholm
+TechNova 1367	Technology	Västerås
+MediCare 1368	Automotive	Norrköping
+N/A	NULL	Linköping
+FinTrust 1370	Medical Devices	Göteborg
+BuildPro 1371	Medical Devices	Jönköping
+None	Healthcare	Uppsala
+Unknown	Construction	Göteborg
+GreenFuture 1374	Food & Beverage	Helsingborg
+FinTrust 1375	Automotive	Uppsala
+BuildPro 1376	Technology	Västerås
+AutoWorks 1377	Renewable Energy	Jönköping
+HealthSync 1378	Finance	Helsingborg
+MediCare 1379	Food & Beverage	Stockholm
+N/A	Healthcare	Örebro
+MediCare 1381	Technology	Norrköping
+FinTrust 1382	Healthcare	Norrköping
+EduVision 1383	Food & Beverage	FakeCity
+FinTrust 1384	AI & Robotics	Norrköping
+RoboTech 1385	Renewable Energy	Västerås
+TechNova 1386	Technology	Linköping
+RoboTech 1387	Food & Beverage	Uppsala
+HealthSync 1388	Renewable Energy	Uppsala
+BuildPro 1389	Education	Unknown
+BuildPro 1390	Medical Devices	Uppsala
+Foodies 1391	Food & Beverage	Örebro
+BuildPro 1392	Food & Beverage	Göteborg
+Foodies 1393	AI & Robotics	Örebro
+EduVision 1394	Education	Linköping
+FinTrust 1395	Technology	Västerås
+TechNova 1396	Automotive	Uppsala
+GreenFuture 1397	AI & Robotics	Örebro
+AutoWorks 1398	Medical Devices	Stockholm
+MediCare 1399	Construction	Malmö
+TechNova 1400	Education	Jönköping
+RoboTech 1401	Automotive	12345
+Foodies 1402	Construction	Malmö
+HealthSync 1403	Medical Devices	Norrköping
+TechNova 1404	Medical Devices	Örebro
+BuildPro 1405	Education	Linköping
+TechNova 1406	Automotive	Jönköping
+Foodies 1407	Food & Beverage	Linköping
+TechNova 1408	Finance	Malmö
+FinTrust 1409	AI & Robotics	Norrköping
+EduVision 1410	Renewable Energy	Göteborg
+TechNova 1411	Construction	Jönköping
+BuildPro 1412	Automotive	Örebro
+MediCare 1413	Medical Devices	Linköping
+MediCare 1414	Construction	N/A
+Foodies 1415	Automotive	Linköping
+GreenFuture 1416	Automotive	Göteborg
+EduVision 1417	Finance	Uppsala
+AutoWorks 1418	Education	Göteborg
+MediCare 1419	Food & Beverage	Västerås
+AutoWorks 1420	Finance	Jönköping
+HealthSync 1421	!!Error!!	Jönköping
+MediCare 1422	Technology	Uppsala
+12345	Medical Devices	Örebro
+BuildPro 1424	Finance	Helsingborg
+TechNova 1425	Construction	Göteborg
+BuildPro 1426	Education	Malmö
+RoboTech 1427	Renewable Energy	Malmö
+RoboTech 1428	Construction	Göteborg
+AutoWorks 1429	Renewable Energy	Västerås
+EduVision 1430	FakeCity	Örebro
+AutoWorks 1431	AI & Robotics	12345
+BuildPro 1432	Technology	Helsingborg
+FinTrust 1433	Education	Helsingborg
+FinTrust 1434	Food & Beverage	Västerås
+FinTrust 1435	Automotive	Linköping
+BuildPro 1436	Automotive	Jönköping
+MediCare 1437	Construction	Linköping
+AutoWorks 1438	AI & Robotics	Linköping
+GreenFuture 1439	Medical Devices	Göteborg
+BuildPro 1440	Finance	Örebro
+HealthSync 1441	Technology	Västerås
+GreenFuture 1442	Construction	Uppsala
+EduVision 1443	Healthcare	Göteborg
+HealthSync 1444	Automotive	Malmö
+FinTrust 1445	Renewable Energy	Stockholm
+GreenFuture 1446	Education	Linköping
+AutoWorks 1447	Healthcare	Stockholm
+BuildPro 1448	!!Error!!	
+MediCare 1449	Construction	Uppsala
+RoboTech 1450	Finance	Västerås
+FinTrust 1451	Construction	Unknown
+HealthSync 1452	Finance	Jönköping
+HealthSync 1453	Medical Devices	Linköping
+12345	AI & Robotics	Örebro
+BuildPro 1455	Medical Devices	Göteborg
+GreenFuture 1456	Healthcare	Göteborg
+BuildPro 1457	Finance	Helsingborg
+GreenFuture 1458	AI & Robotics	Norrköping
+FakeCity	Finance	Norrköping
+TechNova 1460	Healthcare	FakeCity
+EduVision 1461	Medical Devices	None
+MediCare 1462	!!Error!!	Göteborg
+HealthSync 1463	Education	Göteborg
+GreenFuture 1464	Food & Beverage	Västerås
+BuildPro 1465	Finance	Stockholm
+AutoWorks 1466	Construction	Norrköping
+TechNova 1467	Healthcare	Malmö
+###	Construction	Västerås
+RoboTech 1469	Education	Västerås
+None	Automotive	Västerås
+FinTrust 1471	Technology	Örebro
+FinTrust 1472	Finance	Linköping
+FinTrust 1473		Västerås
+RoboTech 1474	Technology	Helsingborg
+None	Medical Devices	Örebro
+HealthSync 1476	Healthcare	Jönköping
+FinTrust 1477	Finance	!!Error!!
+FinTrust 1478	Renewable Energy	Helsingborg
+EduVision 1479	NULL	Malmö
+RoboTech 1480	Education	Göteborg
+GreenFuture 1481	Construction	Linköping
+AutoWorks 1482	Construction	Jönköping
+FinTrust 1483	Medical Devices	Göteborg
+EduVision 1484	Food & Beverage	None
+Unknown	Technology	Unknown
+Foodies 1486	Education	Göteborg
+FinTrust 1487	AI & Robotics	Stockholm
+FinTrust 1488	Healthcare	Örebro
+BuildPro 1489	Medical Devices	Linköping
+Foodies 1490	Education	Norrköping
+GreenFuture 1491	Finance	Linköping
+HealthSync 1492	Automotive	Norrköping
+FinTrust 1493	Finance	Göteborg
+TechNova 1494	Automotive	Jönköping
+EduVision 1495	Education	Norrköping
+Unknown	Renewable Energy	Jönköping
+RoboTech 1497	Construction	Malmö
+FinTrust 1498	Healthcare	Malmö
+FinTrust 1499	Renewable Energy	Västerås
+N/A	Construction	Stockholm
+AutoWorks 1501	Finance	Örebro
+GreenFuture 1502	Finance	Norrköping
+AutoWorks 1503	Automotive	Jönköping
+HealthSync 1504	Food & Beverage	Norrköping
+GreenFuture 1505	Automotive	Norrköping
+RoboTech 1506	Finance	Uppsala
+MediCare 1507	Construction	Uppsala
+GreenFuture 1508	Renewable Energy	Malmö
+EduVision 1509	Technology	Örebro
+TechNova 1510	Construction	Västerås
+HealthSync 1511	AI & Robotics	Stockholm
+Foodies 1512	AI & Robotics	Västerås
+BuildPro 1513	None	Stockholm
+MediCare 1514	Medical Devices	N/A
+FinTrust 1515	None	Göteborg
+AutoWorks 1516	Unknown	Örebro
+RoboTech 1517	Renewable Energy	Helsingborg
+EduVision 1518	Medical Devices	Uppsala
+MediCare 1519	Finance	Stockholm
+FinTrust 1520	Construction	Göteborg
+AutoWorks 1521	Technology	###
+AutoWorks 1522	Healthcare	Göteborg
+Foodies 1523	Healthcare	###
+Foodies 1524	Education	Västerås
+MediCare 1525	Finance	!!Error!!
+Foodies 1526	12345	Västerås
+RoboTech 1527	Medical Devices	Örebro
+FinTrust 1528	Automotive	Malmö
+BuildPro 1529	Construction	Örebro
+BuildPro 1530	Automotive	Jönköping
+EduVision 1531	Finance	Stockholm
+GreenFuture 1532	Construction	Malmö
+EduVision 1533	Technology	Norrköping
+Foodies 1534	Education	Malmö
+BuildPro 1535	Unknown	Uppsala
+BuildPro 1536	AI & Robotics	Uppsala
+MediCare 1537	Renewable Energy	Linköping
+BuildPro 1538	Renewable Energy	Jönköping
+FinTrust 1539	Automotive	Norrköping
+FinTrust 1540	Medical Devices	Västerås
+N/A	Food & Beverage	Helsingborg
+HealthSync 1542	Technology	###
+AutoWorks 1543	Food & Beverage	Linköping
+Foodies 1544	Automotive	Helsingborg
+TechNova 1545	Medical Devices	Örebro
+TechNova 1546	Technology	Helsingborg
+GreenFuture 1547	Education	Örebro
+RoboTech 1548	Finance	Helsingborg
+HealthSync 1549	Technology	Göteborg
+EduVision 1550	Healthcare	Stockholm
+NULL		Uppsala
+TechNova 1552	Education	Västerås
+TechNova 1553	Renewable Energy	Västerås
+	Healthcare	Stockholm
+12345	Medical Devices	Stockholm
+FinTrust 1556	Finance	Malmö
+BuildPro 1557	Food & Beverage	Helsingborg
+GreenFuture 1558	Education	Jönköping
+EduVision 1559	Automotive	Norrköping
+HealthSync 1560	Education	Uppsala
+BuildPro 1561	Education	Unknown
+BuildPro 1562	Medical Devices	Jönköping
+GreenFuture 1563	Construction	Jönköping
+HealthSync 1564	AI & Robotics	Malmö
+RoboTech 1565	AI & Robotics	Jönköping
+RoboTech 1566	Renewable Energy	Malmö
+EduVision 1567	Construction	Malmö
+MediCare 1568	Education	Malmö
+BuildPro 1569	Automotive	Västerås
+Unknown	Finance	Norrköping
+FinTrust 1571	AI & Robotics	Uppsala
+TechNova 1572	Education	Örebro
+HealthSync 1573	Technology	Norrköping
+Foodies 1574	Education	Jönköping
+None	Technology	Malmö
+AutoWorks 1576	Education	Uppsala
+MediCare 1577	Education	Norrköping
+MediCare 1578	Automotive	Linköping
+FinTrust 1579	Healthcare	Stockholm
+HealthSync 1580	Automotive	Stockholm
+FinTrust 1581	Renewable Energy	Jönköping
+BuildPro 1582	Technology	Helsingborg
+GreenFuture 1583	Unknown	Norrköping
+EduVision 1584	Renewable Energy	Linköping
+TechNova 1585	Construction	Göteborg
+RoboTech 1586	Automotive	Göteborg
+BuildPro 1587	Education	Malmö
+Foodies 1588	Renewable Energy	Göteborg
+Foodies 1589	Medical Devices	Jönköping
+RoboTech 1590	Construction	Uppsala
+BuildPro 1591	Construction	Jönköping
+BuildPro 1592	Renewable Energy	Uppsala
+FinTrust 1593	AI & Robotics	Uppsala
+MediCare 1594	Medical Devices	Malmö
+AutoWorks 1595	AI & Robotics	Malmö
+FakeCity	Education	Göteborg
+N/A	Finance	FakeCity
+GreenFuture 1598	Technology	Norrköping
+FinTrust 1599	Construction	Helsingborg
+BuildPro 1600	Medical Devices	Stockholm
+HealthSync 1601	Construction	!!Error!!
+HealthSync 1602	Renewable Energy	Norrköping
+AutoWorks 1603	Finance	Örebro
+BuildPro 1604	Healthcare	Jönköping
+None	Renewable Energy	Örebro
+EduVision 1606	Food & Beverage	Västerås
+FakeCity	Education	Uppsala
+Foodies 1608	Technology	Västerås
+TechNova 1609	AI & Robotics	Västerås
+BuildPro 1610	Food & Beverage	Helsingborg
+HealthSync 1611	Construction	Stockholm
+EduVision 1612	Automotive	Stockholm
+BuildPro 1613	Renewable Energy	Västerås
+MediCare 1614	Automotive	Helsingborg
+HealthSync 1615	Finance	Örebro
+AutoWorks 1616	Automotive	Jönköping
+MediCare 1617	Medical Devices	Helsingborg
+GreenFuture 1618	Construction	Linköping
+BuildPro 1619	Renewable Energy	Stockholm
+TechNova 1620	Food & Beverage	Malmö
+FakeCity	Construction	Västerås
+EduVision 1622	Medical Devices	Uppsala
+TechNova 1623	Automotive	Norrköping
+BuildPro 1624	Healthcare	Malmö
+MediCare 1625	AI & Robotics	Helsingborg
+TechNova 1626	Finance	Västerås
+RoboTech 1627	Renewable Energy	
+TechNova 1628	Automotive	Helsingborg
+EduVision 1629	Renewable Energy	Västerås
+HealthSync 1630	Finance	Linköping
+BuildPro 1631	Medical Devices	Uppsala
+TechNova 1632	AI & Robotics	Västerås
+MediCare 1633	Construction	Stockholm
+GreenFuture 1634	Technology	Stockholm
+FinTrust 1635	NULL	Stockholm
+Unknown	Construction	Norrköping
+MediCare 1637	Education	Malmö
+HealthSync 1638	Healthcare	Uppsala
+HealthSync 1639	Healthcare	Jönköping
+MediCare 1640	Renewable Energy	FakeCity
+BuildPro 1641	AI & Robotics	Norrköping
+RoboTech 1642		Örebro
+HealthSync 1643	Finance	Göteborg
+TechNova 1644	Renewable Energy	Göteborg
+BuildPro 1645	Food & Beverage	Stockholm
+TechNova 1646	Automotive	Örebro
+EduVision 1647	AI & Robotics	Stockholm
+RoboTech 1648	Education	!!Error!!
+EduVision 1649	Technology	Linköping
+None	Construction	Stockholm
+AutoWorks 1651	AI & Robotics	Jönköping
+AutoWorks 1652	Finance	Uppsala
+N/A	Automotive	Göteborg
+AutoWorks 1654	Technology	Västerås
+Foodies 1655	Medical Devices	Helsingborg
+FinTrust 1656	Medical Devices	Örebro
+AutoWorks 1657	Medical Devices	Örebro
+FinTrust 1658	AI & Robotics	Västerås
+FinTrust 1659	Education	Uppsala
+GreenFuture 1660	Food & Beverage	Örebro
+BuildPro 1661	AI & Robotics	Göteborg
+AutoWorks 1662	Education	Malmö
+RoboTech 1663	AI & Robotics	Unknown
+Foodies 1664	Healthcare	Jönköping
+BuildPro 1665	Finance	Helsingborg
+AutoWorks 1666	Food & Beverage	Stockholm
+AutoWorks 1667	AI & Robotics	Örebro
+MediCare 1668	Renewable Energy	Västerås
+EduVision 1669	AI & Robotics	Stockholm
+EduVision 1670	12345	Göteborg
+FinTrust 1671	Food & Beverage	Norrköping
+HealthSync 1672	Food & Beverage	Malmö
+Foodies 1673	Technology	Malmö
+FinTrust 1674	Medical Devices	Uppsala
+MediCare 1675	Automotive	Linköping
+GreenFuture 1676	Education	Helsingborg
+GreenFuture 1677	Food & Beverage	Linköping
+BuildPro 1678	Renewable Energy	Norrköping
+FinTrust 1679	N/A	Helsingborg
+MediCare 1680	Food & Beverage	Jönköping
+HealthSync 1681	Finance	Linköping
+FinTrust 1682	Renewable Energy	Uppsala
+TechNova 1683	Food & Beverage	Malmö
+HealthSync 1684	Healthcare	Göteborg
+NULL	NULL	Örebro
+BuildPro 1686	Finance	Malmö
+MediCare 1687	Education	Norrköping
+FinTrust 1688	Finance	Norrköping
+BuildPro 1689	Automotive	Norrköping
+Foodies 1690	AI & Robotics	Örebro
+RoboTech 1691	Construction	Göteborg
+TechNova 1692	Medical Devices	Malmö
+HealthSync 1693	Automotive	Göteborg
+N/A	Finance	Norrköping
+GreenFuture 1695	Construction	Uppsala
+MediCare 1696	Technology	Örebro
+FinTrust 1697	Construction	Linköping
+BuildPro 1698	Construction	Västerås
+HealthSync 1699	Food & Beverage	###
+MediCare 1700	Education	Västerås
+EduVision 1701	Construction	Norrköping
+MediCare 1702	Medical Devices	Malmö
+AutoWorks 1703	Automotive	Uppsala
+HealthSync 1704	Finance	Helsingborg
+AutoWorks 1705	AI & Robotics	Göteborg
+N/A	Technology	Uppsala
+Foodies 1707	Healthcare	Malmö
+HealthSync 1708	Construction	Jönköping
+RoboTech 1709	Finance	None
+BuildPro 1710	Finance	Helsingborg
+EduVision 1711	Renewable Energy	Norrköping
+BuildPro 1712	Healthcare	Västerås
+EduVision 1713	Automotive	Uppsala
+EduVision 1714	Food & Beverage	N/A
+AutoWorks 1715	Technology	Stockholm
+EduVision 1716	Education	Stockholm
+GreenFuture 1717	Finance	Göteborg
+!!Error!!	Healthcare	Jönköping
+AutoWorks 1719	AI & Robotics	Malmö
+AutoWorks 1720	Automotive	Göteborg
+BuildPro 1721	Medical Devices	Norrköping
+EduVision 1722	Renewable Energy	Örebro
+BuildPro 1723	Construction	Jönköping
+RoboTech 1724	Renewable Energy	Uppsala
+Foodies 1725	Automotive	Linköping
+HealthSync 1726	Construction	Västerås
+RoboTech 1727	Finance	Stockholm
+NULL	Healthcare	Örebro
+RoboTech 1729	Education	Malmö
+EduVision 1730	Renewable Energy	Linköping
+RoboTech 1731	Food & Beverage	Helsingborg
+GreenFuture 1732	Automotive	Norrköping
+RoboTech 1733	Automotive	Linköping
+	Finance	12345
+FinTrust 1735	Automotive	Västerås
+GreenFuture 1736	Medical Devices	Linköping
+RoboTech 1737	Healthcare	Örebro
+BuildPro 1738	Construction	Stockholm
+GreenFuture 1739	Healthcare	Örebro
+MediCare 1740	Food & Beverage	Helsingborg
+MediCare 1741	Healthcare	Jönköping
+TechNova 1742	Education	Stockholm
+TechNova 1743	AI & Robotics	Uppsala
+FinTrust 1744	AI & Robotics	Helsingborg
+GreenFuture 1745	Food & Beverage	Stockholm
+FinTrust 1746	Education	Västerås
+MediCare 1747	FakeCity	Västerås
+AutoWorks 1748	Renewable Energy	Stockholm
+EduVision 1749	Technology	Linköping
+EduVision 1750	AI & Robotics	Malmö
+BuildPro 1751	Technology	Helsingborg
+BuildPro 1752	Construction	Linköping
+MediCare 1753	Healthcare	Västerås
+FinTrust 1754	Medical Devices	Västerås
+None	Construction	Linköping
+EduVision 1756	AI & Robotics	!!Error!!
+FinTrust 1757	Construction	Örebro
+AutoWorks 1758	Automotive	Helsingborg
+TechNova 1759	Renewable Energy	Örebro
+Foodies 1760	Automotive	Malmö
+EduVision 1761	Finance	Jönköping
+AutoWorks 1762	Technology	Stockholm
+BuildPro 1763	Food & Beverage	Malmö
+TechNova 1764	N/A	Örebro
+BuildPro 1765	Medical Devices	N/A
+BuildPro 1766	NULL	Uppsala
+BuildPro 1767	Food & Beverage	Helsingborg
+MediCare 1768	Technology	Jönköping
+TechNova 1769	Renewable Energy	Malmö
+FinTrust 1770	Renewable Energy	Jönköping
+MediCare 1771	Construction	Helsingborg
+GreenFuture 1772	Technology	Norrköping
+HealthSync 1773	Education	Linköping
+BuildPro 1774	Technology	Uppsala
+Unknown	Technology	Örebro
+AutoWorks 1776	Education	Stockholm
+MediCare 1777	Healthcare	Jönköping
+RoboTech 1778	Technology	NULL
+MediCare 1779	Renewable Energy	12345
+EduVision 1780	Finance	Örebro
+HealthSync 1781	Medical Devices	Göteborg
+Foodies 1782	Construction	Jönköping
+EduVision 1783	Automotive	Stockholm
+BuildPro 1784	Medical Devices	Malmö
+12345	Education	FakeCity
+12345	Food & Beverage	Jönköping
+Unknown	Finance	Jönköping
+	Food & Beverage	Örebro
+EduVision 1789	AI & Robotics	Jönköping
+!!Error!!	Finance	Unknown
+MediCare 1791	Healthcare	Jönköping
+AutoWorks 1792	Construction	Jönköping
+AutoWorks 1793	Finance	Uppsala
+AutoWorks 1794	Renewable Energy	Göteborg
+HealthSync 1795	AI & Robotics	Norrköping
+FinTrust 1796	Technology	Malmö
+BuildPro 1797	Education	Västerås
+FinTrust 1798	Education	Malmö
+BuildPro 1799	Medical Devices	Örebro
+MediCare 1800	AI & Robotics	
+AutoWorks 1801	AI & Robotics	Stockholm
+AutoWorks 1802	Construction	Uppsala
+	Education	Uppsala
+EduVision 1804	Construction	Norrköping
+Foodies 1805	Technology	Örebro
+FinTrust 1806	AI & Robotics	Norrköping
+GreenFuture 1807	Food & Beverage	Norrköping
+Foodies 1808	Healthcare	Uppsala
+GreenFuture 1809	AI & Robotics	Helsingborg
+HealthSync 1810	Healthcare	Västerås
+GreenFuture 1811	Construction	Göteborg
+FinTrust 1812	AI & Robotics	Norrköping
+HealthSync 1813	AI & Robotics	Jönköping
+FinTrust 1814	Automotive	Norrköping
+GreenFuture 1815	Automotive	Örebro
+FinTrust 1816	Construction	Göteborg
+N/A	Automotive	Jönköping
+TechNova 1818	Technology	###
+HealthSync 1819	Finance	Stockholm
+Unknown	Food & Beverage	Västerås
+BuildPro 1821	Construction	Göteborg
+AutoWorks 1822	Renewable Energy	Göteborg
+Foodies 1823	AI & Robotics	Göteborg
+EduVision 1824	Automotive	Jönköping
+MediCare 1825	Healthcare	Linköping
+BuildPro 1826	12345	Örebro
+###	Finance	Örebro
+Foodies 1828	Food & Beverage	Helsingborg
+TechNova 1829	Automotive	Norrköping
+GreenFuture 1830	Construction	Helsingborg
+MediCare 1831	Automotive	Jönköping
+AutoWorks 1832	Healthcare	Västerås
+MediCare 1833	Medical Devices	Uppsala
+HealthSync 1834	!!Error!!	Helsingborg
+BuildPro 1835	Medical Devices	Linköping
+TechNova 1836	Automotive	Västerås
+BuildPro 1837	Renewable Energy	Linköping
+FinTrust 1838	Construction	Linköping
+FinTrust 1839	Automotive	Norrköping
+FinTrust 1840	N/A	Linköping
+RoboTech 1841	Renewable Energy	Uppsala
+FinTrust 1842	Construction	Göteborg
+BuildPro 1843	Construction	Västerås
+GreenFuture 1844	Medical Devices	Jönköping
+AutoWorks 1845	Medical Devices	Västerås
+Foodies 1846	AI & Robotics	FakeCity
+BuildPro 1847		Norrköping
+RoboTech 1848	Renewable Energy	Örebro
+TechNova 1849	Food & Beverage	Malmö
+RoboTech 1850	Construction	Västerås
+BuildPro 1851	Medical Devices	Malmö
+GreenFuture 1852	AI & Robotics	Stockholm
+TechNova 1853	Medical Devices	Norrköping
+AutoWorks 1854	Food & Beverage	N/A
+BuildPro 1855	Food & Beverage	Örebro
+RoboTech 1856	Renewable Energy	Malmö
+TechNova 1857	###	Linköping
+GreenFuture 1858	Medical Devices	Norrköping
+NULL	Technology	Jönköping
+GreenFuture 1860	Technology	Linköping
+AutoWorks 1861	Medical Devices	Västerås
+BuildPro 1862	Technology	Helsingborg
+AutoWorks 1863	Renewable Energy	Uppsala
+FinTrust 1864	Renewable Energy	Helsingborg
+AutoWorks 1865	Healthcare	Uppsala
+HealthSync 1866	Medical Devices	Malmö
+BuildPro 1867	Food & Beverage	Uppsala
+GreenFuture 1868	Construction	Stockholm
+EduVision 1869	Automotive	Uppsala
+	Construction	Stockholm
+RoboTech 1871	Technology	Norrköping
+EduVision 1872	Automotive	Malmö
+TechNova 1873	Technology	Göteborg
+RoboTech 1874	Automotive	Linköping
+FinTrust 1875	Medical Devices	Helsingborg
+GreenFuture 1876	Healthcare	Malmö
+EduVision 1877	Healthcare	Västerås
+HealthSync 1878	Automotive	Norrköping
+TechNova 1879	Technology	Stockholm
+BuildPro 1880	Education	Örebro
+BuildPro 1881	Automotive	Helsingborg
+RoboTech 1882	Education	Norrköping
+###	Construction	Norrköping
+EduVision 1884	Education	!!Error!!
+FinTrust 1885	Healthcare	Helsingborg
+Foodies 1886	AI & Robotics	Malmö
+Foodies 1887	Renewable Energy	Linköping
+GreenFuture 1888	Food & Beverage	Helsingborg
+Foodies 1889	Food & Beverage	Västerås
+RoboTech 1890	Food & Beverage	
+NULL	Medical Devices	Linköping
+AutoWorks 1892	Renewable Energy	Västerås
+AutoWorks 1893	Technology	Jönköping
+FinTrust 1894	Education	Helsingborg
+AutoWorks 1895	Healthcare	Göteborg
+RoboTech 1896	Construction	Linköping
+!!Error!!	Construction	Jönköping
+BuildPro 1898	Renewable Energy	!!Error!!
+FinTrust 1899	Automotive	Göteborg
+GreenFuture 1900	Technology	Göteborg
+Unknown	Technology	Örebro
+AutoWorks 1902	Medical Devices	Linköping
+RoboTech 1903	Medical Devices	Norrköping
+AutoWorks 1904	Healthcare	Norrköping
+RoboTech 1905	Automotive	Jönköping
+AutoWorks 1906	AI & Robotics	Jönköping
+GreenFuture 1907	Food & Beverage	Jönköping
+MediCare 1908	Medical Devices	None
+HealthSync 1909	Medical Devices	Norrköping
+AutoWorks 1910	Renewable Energy	Västerås
+TechNova 1911	Food & Beverage	Göteborg
+Foodies 1912	Construction	Örebro
+TechNova 1913	AI & Robotics	Jönköping
+EduVision 1914	Technology	Norrköping
+Foodies 1915	AI & Robotics	Linköping
+Foodies 1916	Automotive	Jönköping
+HealthSync 1917	Automotive	Örebro
+FinTrust 1918	Medical Devices	Uppsala
+EduVision 1919	Automotive	Jönköping
+HealthSync 1920	AI & Robotics	Västerås
+MediCare 1921	Food & Beverage	Norrköping
+GreenFuture 1922	Construction	Jönköping
+RoboTech 1923	Finance	Jönköping
+AutoWorks 1924	N/A	Jönköping
+AutoWorks 1925	Healthcare	Uppsala
+AutoWorks 1926	AI & Robotics	Jönköping
+AutoWorks 1927	Finance	Västerås
+!!Error!!	Unknown	Norrköping
+TechNova 1929	Finance	Norrköping
+GreenFuture 1930	Construction	Göteborg
+###	Technology	Uppsala
+!!Error!!	Finance	Västerås
+EduVision 1933	Education	None
+EduVision 1934	AI & Robotics	Örebro
+Foodies 1935	Education	Örebro
+AutoWorks 1936	Healthcare	Malmö
+AutoWorks 1937	Healthcare	Västerås
+	Healthcare	Norrköping
+RoboTech 1939	Renewable Energy	Malmö
+Foodies 1940	AI & Robotics	Norrköping
+FinTrust 1941	AI & Robotics	Göteborg
+BuildPro 1942	Renewable Energy	Stockholm
+EduVision 1943	Finance	Linköping
+GreenFuture 1944	Food & Beverage	Örebro
+FinTrust 1945	Food & Beverage	Helsingborg
+RoboTech 1946	AI & Robotics	Västerås
+EduVision 1947	Renewable Energy	Stockholm
+EduVision 1948	Renewable Energy	Stockholm
+Foodies 1949	Food & Beverage	Helsingborg
+AutoWorks 1950	Renewable Energy	Uppsala
+AutoWorks 1951	Food & Beverage	Helsingborg
+MediCare 1952	Healthcare	Uppsala
+GreenFuture 1953	Technology	Jönköping
+TechNova 1954	Food & Beverage	Helsingborg
+None	AI & Robotics	Örebro
+HealthSync 1956	Food & Beverage	Uppsala
+TechNova 1957	Automotive	Jönköping
+Foodies 1958	Renewable Energy	Jönköping
+GreenFuture 1959	AI & Robotics	FakeCity
+AutoWorks 1960	Healthcare	Stockholm
+AutoWorks 1961	Renewable Energy	Västerås
+TechNova 1962	Renewable Energy	Örebro
+GreenFuture 1963	Medical Devices	Örebro
+TechNova 1964	Construction	Örebro
+HealthSync 1965	Education	Stockholm
+EduVision 1966	AI & Robotics	Jönköping
+HealthSync 1967	Medical Devices	Uppsala
+HealthSync 1968	Automotive	Helsingborg
+GreenFuture 1969	Technology	Jönköping
+RoboTech 1970	Education	Norrköping
+MediCare 1971	Technology	Stockholm
+Foodies 1972	Food & Beverage	Linköping
+AutoWorks 1973	Food & Beverage	Linköping
+RoboTech 1974	Construction	Stockholm
+GreenFuture 1975	AI & Robotics	Västerås
+TechNova 1976	!!Error!!	Stockholm
+Foodies 1977	Healthcare	Norrköping
+MediCare 1978	Healthcare	Stockholm
+HealthSync 1979	Food & Beverage	Göteborg
+FinTrust 1980	Technology	Jönköping
+FinTrust 1981	AI & Robotics	FakeCity
+FinTrust 1982	Renewable Energy	Jönköping
+AutoWorks 1983	N/A	Malmö
+FinTrust 1984	Finance	Örebro
+GreenFuture 1985	AI & Robotics	Jönköping
+GreenFuture 1986	AI & Robotics	Örebro
+AutoWorks 1987	Technology	12345
+EduVision 1988	Automotive	Uppsala
+RoboTech 1989	Food & Beverage	Västerås
+EduVision 1990	Finance	Uppsala
+FakeCity	Education	Uppsala
+HealthSync 1992	AI & Robotics	Jönköping
+FinTrust 1993	Food & Beverage	Norrköping
+MediCare 1994	Education	Jönköping
+GreenFuture 1995	Healthcare	Örebro
+AutoWorks 1996	Automotive	Norrköping
+BuildPro 1997	Education	Örebro
+RoboTech 1998	Technology	Örebro
+AutoWorks 1999	Automotive	Linköping
+BuildPro 2000	Food & Beverage	Malmö
+EduVision 2001		Örebro
+BuildPro 2002	Food & Beverage	Malmö
+MediCare 2003	Healthcare	Uppsala
+###	Food & Beverage	Västerås
+HealthSync 2005	AI & Robotics	Helsingborg
+EduVision 2006	Food & Beverage	Jönköping
+TechNova 2007	Construction	Linköping
+FinTrust 2008	Food & Beverage	Stockholm
+FinTrust 2009	Education	Helsingborg
+TechNova 2010	AI & Robotics	12345
+GreenFuture 2011	Education	Örebro
+EduVision 2012	Finance	Malmö
+TechNova 2013	Construction	Örebro
+BuildPro 2014	Construction	Göteborg
+GreenFuture 2015	Technology	Örebro
+FinTrust 2016	Finance	Örebro
+EduVision 2017	Medical Devices	Helsingborg
+BuildPro 2018	Education	Uppsala
+TechNova 2019	Automotive	Västerås
+EduVision 2020	Finance	Västerås
+Foodies 2021	AI & Robotics	Göteborg
+	Medical Devices	
+MediCare 2023	Medical Devices	!!Error!!
+12345	AI & Robotics	Linköping
+BuildPro 2025	Healthcare	Göteborg
+TechNova 2026	AI & Robotics	Helsingborg
+RoboTech 2027	Education	Helsingborg
+EduVision 2028	Medical Devices	Västerås
+RoboTech 2029	Education	Göteborg
+MediCare 2030	Medical Devices	Linköping
+!!Error!!	Finance	Helsingborg
+Unknown	Education	Malmö
+NULL	Finance	FakeCity
+HealthSync 2034	Education	Göteborg
+AutoWorks 2035	Medical Devices	Helsingborg
+BuildPro 2036	Technology	Norrköping
+Foodies 2037	Education	Malmö
+Foodies 2038	Healthcare	Norrköping
+RoboTech 2039	Construction	Västerås
+!!Error!!	Medical Devices	Malmö
+RoboTech 2041	Medical Devices	Örebro
+BuildPro 2042	Healthcare	Göteborg
+Foodies 2043	Medical Devices	Uppsala
+HealthSync 2044	Food & Beverage	Linköping
+TechNova 2045	Automotive	Uppsala
+BuildPro 2046	Healthcare	Göteborg
+MediCare 2047	Renewable Energy	Linköping
+AutoWorks 2048	Healthcare	Örebro
+N/A	Food & Beverage	Örebro
+!!Error!!	Healthcare	Stockholm
+RoboTech 2051	Automotive	Västerås
+EduVision 2052	Food & Beverage	Göteborg
+BuildPro 2053	Education	Göteborg
+EduVision 2054	Food & Beverage	12345
+BuildPro 2055	Food & Beverage	Jönköping
+Foodies 2056	AI & Robotics	Göteborg
+RoboTech 2057	Automotive	###
+EduVision 2058	Finance	NULL
+FinTrust 2059	AI & Robotics	Helsingborg
+FinTrust 2060	Medical Devices	Norrköping
+BuildPro 2061	Medical Devices	Malmö
+MediCare 2062	AI & Robotics	Uppsala
+BuildPro 2063	Finance	Linköping
+MediCare 2064	Medical Devices	
+FinTrust 2065	Healthcare	Västerås
+HealthSync 2066	Food & Beverage	!!Error!!
+GreenFuture 2067	Education	Helsingborg
+RoboTech 2068	AI & Robotics	12345
+FinTrust 2069	AI & Robotics	Malmö
+Foodies 2070	Renewable Energy	Örebro
+MediCare 2071	AI & Robotics	Stockholm
+HealthSync 2072	Renewable Energy	!!Error!!
+RoboTech 2073	Food & Beverage	Uppsala
+HealthSync 2074	Automotive	Norrköping
+HealthSync 2075	Medical Devices	Örebro
+EduVision 2076	Medical Devices	Stockholm
+AutoWorks 2077	Healthcare	Uppsala
+FinTrust 2078	Healthcare	Uppsala
+TechNova 2079	Automotive	Göteborg
+GreenFuture 2080	Medical Devices	Malmö
+BuildPro 2081	Medical Devices	Västerås
+BuildPro 2082	None	Linköping
+GreenFuture 2083	Education	Örebro
+TechNova 2084	Healthcare	###
+BuildPro 2085	Education	Örebro
+MediCare 2086	12345	Stockholm
+EduVision 2087	Technology	Norrköping
+BuildPro 2088	AI & Robotics	Jönköping
+TechNova 2089	Medical Devices	FakeCity
+FinTrust 2090	Technology	Örebro
+AutoWorks 2091	Food & Beverage	Uppsala
+HealthSync 2092	Construction	Västerås
+EduVision 2093	Automotive	Helsingborg
+EduVision 2094	Food & Beverage	Göteborg
+TechNova 2095	Renewable Energy	
+Foodies 2096	Medical Devices	Norrköping
+Foodies 2097	Food & Beverage	Helsingborg
+HealthSync 2098	Education	Örebro
+EduVision 2099	Medical Devices	Linköping
+GreenFuture 2100	AI & Robotics	Linköping
+RoboTech 2101	AI & Robotics	Göteborg
+HealthSync 2102	Food & Beverage	!!Error!!
+	Technology	Göteborg
+GreenFuture 2104	Food & Beverage	Uppsala
+BuildPro 2105	Renewable Energy	Stockholm
+MediCare 2106	Healthcare	Malmö
+MediCare 2107	###	Västerås
+AutoWorks 2108	Healthcare	Linköping
+BuildPro 2109	Automotive	Linköping
+MediCare 2110	AI & Robotics	Västerås
+TechNova 2111	Construction	Stockholm
+Foodies 2112	None	Stockholm
+MediCare 2113	Technology	Malmö
+HealthSync 2114	Technology	Stockholm
+AutoWorks 2115	Automotive	Göteborg
+Foodies 2116	Food & Beverage	Linköping
+AutoWorks 2117	Education	Göteborg
+TechNova 2118	FakeCity	Uppsala
+EduVision 2119	Finance	Jönköping
+Foodies 2120	Technology	Örebro
+TechNova 2121	Food & Beverage	12345
+AutoWorks 2122	AI & Robotics	Örebro
+	Construction	Västerås
+BuildPro 2124	AI & Robotics	Helsingborg
+TechNova 2125	Education	Norrköping
+EduVision 2126	Medical Devices	Malmö
+Foodies 2127	Healthcare	Jönköping
+HealthSync 2128	Technology	None
+TechNova 2129	Automotive	Helsingborg
+TechNova 2130	Technology	Örebro
+###	Food & Beverage	Helsingborg
+N/A	Food & Beverage	Norrköping
+GreenFuture 2133	Renewable Energy	Örebro
+TechNova 2134	Finance	!!Error!!
+AutoWorks 2135	AI & Robotics	Uppsala
+AutoWorks 2136	Education	Helsingborg
+FinTrust 2137	Finance	Västerås
+TechNova 2138	Automotive	Malmö
+AutoWorks 2139	N/A	Göteborg
+GreenFuture 2140	Education	Stockholm
+FinTrust 2141	Healthcare	Göteborg
+MediCare 2142	Education	Göteborg
+AutoWorks 2143	Technology	Jönköping
+MediCare 2144	Medical Devices	None
+FinTrust 2145	Education	Västerås
+TechNova 2146	Construction	Göteborg
+HealthSync 2147	Healthcare	NULL
+RoboTech 2148	Healthcare	Jönköping
+EduVision 2149	Education	Västerås
+RoboTech 2150	Food & Beverage	Helsingborg
+MediCare 2151	Medical Devices	Malmö
+FinTrust 2152	Healthcare	Örebro
+Foodies 2153	NULL	Uppsala
+Foodies 2154	Education	Jönköping
+MediCare 2155	Construction	Linköping
+!!Error!!	AI & Robotics	Göteborg
+MediCare 2157	Healthcare	Norrköping
+BuildPro 2158	Technology	Linköping
+TechNova 2159	AI & Robotics	Jönköping
+RoboTech 2160	Medical Devices	Helsingborg
+RoboTech 2161	Technology	Unknown
+BuildPro 2162	Renewable Energy	Västerås
+BuildPro 2163	Construction	Stockholm
+HealthSync 2164	Construction	Norrköping
+RoboTech 2165	Education	Malmö
+Foodies 2166	Technology	Linköping
+EduVision 2167	!!Error!!	Norrköping
+N/A	Medical Devices	Malmö
+EduVision 2169	AI & Robotics	Örebro
+FinTrust 2170	AI & Robotics	Jönköping
+EduVision 2171	Food & Beverage	Örebro
+BuildPro 2172	Technology	Linköping
+!!Error!!	Food & Beverage	Jönköping
+TechNova 2174	Technology	Norrköping
+RoboTech 2175	Construction	Göteborg
+FinTrust 2176	Construction	Uppsala
+RoboTech 2177	Healthcare	Norrköping
+AutoWorks 2178	Finance	Helsingborg
+TechNova 2179	Technology	Unknown
+FinTrust 2180	###	Stockholm
+EduVision 2181	Technology	Göteborg
+MediCare 2182	Automotive	Göteborg
+AutoWorks 2183	Food & Beverage	FakeCity
+FakeCity	Automotive	Jönköping
+EduVision 2185	Food & Beverage	Helsingborg
+Unknown	NULL	Malmö
+BuildPro 2187	Automotive	Malmö
+AutoWorks 2188	Technology	Örebro
+FinTrust 2189	Construction	Norrköping
+AutoWorks 2190	Medical Devices	Stockholm
+BuildPro 2191	Medical Devices	Göteborg
+HealthSync 2192	Renewable Energy	Linköping
+TechNova 2193	Renewable Energy	Helsingborg
+EduVision 2194	Renewable Energy	Jönköping
+Foodies 2195	Healthcare	Örebro
+!!Error!!	Technology	Malmö
+BuildPro 2197	Automotive	Linköping
+BuildPro 2198	Food & Beverage	Helsingborg
+!!Error!!	Construction	###
+Foodies 2200	Food & Beverage	None
+FinTrust 2201	AI & Robotics	Norrköping
+!!Error!!	Education	N/A
+BuildPro 2203	AI & Robotics	Linköping
+RoboTech 2204	Technology	Uppsala
+GreenFuture 2205	Food & Beverage	Göteborg
+FinTrust 2206	Food & Beverage	Jönköping
+MediCare 2207	Healthcare	Göteborg
+Foodies 2208	Technology	###
+AutoWorks 2209	Finance	Stockholm
+BuildPro 2210	Renewable Energy	Helsingborg
+TechNova 2211	Construction	Jönköping
+GreenFuture 2212	Medical Devices	Linköping
+FinTrust 2213	AI & Robotics	Stockholm
+FinTrust 2214	Renewable Energy	Örebro
+HealthSync 2215	Education	Jönköping
+AutoWorks 2216	Food & Beverage	Norrköping
+BuildPro 2217	Renewable Energy	Göteborg
+FinTrust 2218	Renewable Energy	Linköping
+EduVision 2219	Automotive	12345
+AutoWorks 2220	Healthcare	Uppsala
+GreenFuture 2221	Education	Malmö
+EduVision 2222	Construction	Helsingborg
+TechNova 2223	Technology	Helsingborg
+HealthSync 2224	Education	Helsingborg
+Foodies 2225	Technology	Stockholm
+FinTrust 2226	Renewable Energy	Helsingborg
+TechNova 2227	Healthcare	Jönköping
+###	Education	Jönköping
+MediCare 2229	Construction	Helsingborg
+GreenFuture 2230	Construction	Örebro
+FinTrust 2231	Renewable Energy	Jönköping
+AutoWorks 2232	Finance	Stockholm
+FinTrust 2233	Food & Beverage	Göteborg
+AutoWorks 2234	Healthcare	Norrköping
+TechNova 2235	Education	Uppsala
+EduVision 2236	Technology	Stockholm
+GreenFuture 2237	Technology	Stockholm
+MediCare 2238	Food & Beverage	Norrköping
+MediCare 2239	Renewable Energy	Helsingborg
+Foodies 2240	Construction	Örebro
+Unknown	AI & Robotics	Västerås
+Unknown	AI & Robotics	Jönköping
+RoboTech 2243	Healthcare	###
+TechNova 2244	Renewable Energy	Uppsala
+FinTrust 2245	Medical Devices	Stockholm
+	AI & Robotics	Linköping
+TechNova 2247	Technology	Malmö
+HealthSync 2248	Education	Örebro
+NULL	Food & Beverage	Helsingborg
+Foodies 2250	Renewable Energy	Uppsala
+FinTrust 2251	Healthcare	NULL
+GreenFuture 2252	Food & Beverage	Linköping
+HealthSync 2253	AI & Robotics	Stockholm
+Foodies 2254	AI & Robotics	Helsingborg
+BuildPro 2255	Food & Beverage	Uppsala
+EduVision 2256	Food & Beverage	Göteborg
+GreenFuture 2257	Education	###
+GreenFuture 2258	Technology	Örebro
+EduVision 2259	Automotive	Västerås
+NULL	Medical Devices	Västerås
+MediCare 2261	Renewable Energy	Göteborg
+BuildPro 2262	Education	Örebro
+RoboTech 2263	Automotive	Västerås
+HealthSync 2264	Education	Uppsala
+RoboTech 2265	Construction	NULL
+Foodies 2266	Medical Devices	Linköping
+AutoWorks 2267	Finance	###
+GreenFuture 2268	Education	Norrköping
+RoboTech 2269	Food & Beverage	Uppsala
+MediCare 2270	N/A	Malmö
+HealthSync 2271	Education	Uppsala
+AutoWorks 2272	Medical Devices	Västerås
+MediCare 2273	Construction	Örebro
+GreenFuture 2274	Technology	Malmö
+HealthSync 2275	AI & Robotics	Västerås
+BuildPro 2276	Education	Linköping
+Foodies 2277	Healthcare	Jönköping
+TechNova 2278	Construction	Uppsala
+Foodies 2279	Healthcare	Norrköping
+Foodies 2280	Education	Helsingborg
+NULL	###	Malmö
+MediCare 2282	Food & Beverage	!!Error!!
+AutoWorks 2283	Healthcare	
+TechNova 2284	Healthcare	Helsingborg
+Foodies 2285	Education	!!Error!!
+HealthSync 2286	Education	Linköping
+HealthSync 2287	AI & Robotics	Västerås
+RoboTech 2288	Medical Devices	Örebro
+RoboTech 2289	Renewable Energy	Örebro
+	Finance	Malmö
+Foodies 2291	AI & Robotics	Örebro
+MediCare 2292	Automotive	Västerås
+EduVision 2293	Finance	Malmö
+BuildPro 2294	Automotive	Västerås
+TechNova 2295	Finance	Jönköping
+HealthSync 2296	Food & Beverage	Uppsala
+NULL	Food & Beverage	Stockholm
+TechNova 2298	Construction	Malmö
+RoboTech 2299	Automotive	FakeCity
+Foodies 2300	Automotive	Stockholm
+TechNova 2301	Automotive	Linköping
+TechNova 2302	AI & Robotics	Norrköping
+GreenFuture 2303	Medical Devices	Stockholm
+BuildPro 2304	AI & Robotics	Uppsala
+MediCare 2305	Renewable Energy	Västerås
+FinTrust 2306	Medical Devices	Göteborg
+BuildPro 2307	AI & Robotics	Göteborg
+RoboTech 2308	Food & Beverage	Norrköping
+EduVision 2309	Automotive	Västerås
+TechNova 2310	Finance	Örebro
+AutoWorks 2311	Medical Devices	Stockholm
+RoboTech 2312	Technology	Örebro
+Foodies 2313	Healthcare	Linköping
+Foodies 2314	Finance	Malmö
+EduVision 2315	Finance	Göteborg
+EduVision 2316	Technology	Helsingborg
+HealthSync 2317	Technology	Göteborg
+BuildPro 2318	Education	Örebro
+EduVision 2319	Automotive	Västerås
+TechNova 2320	Technology	Helsingborg
+AutoWorks 2321	Renewable Energy	Uppsala
+RoboTech 2322	AI & Robotics	Helsingborg
+AutoWorks 2323	Construction	Västerås
+HealthSync 2324	Food & Beverage	Malmö
+BuildPro 2325	Medical Devices	Jönköping
+AutoWorks 2326	Renewable Energy	Västerås
+None	Medical Devices	Malmö
+Foodies 2328	Construction	Norrköping
+NULL	Food & Beverage	!!Error!!
+HealthSync 2330	Medical Devices	Göteborg
+EduVision 2331	AI & Robotics	Linköping
+AutoWorks 2332	!!Error!!	Jönköping
+HealthSync 2333	Technology	Norrköping
+HealthSync 2334	Education	Örebro
+EduVision 2335	AI & Robotics	Stockholm
+EduVision 2336	Renewable Energy	Malmö
+TechNova 2337	None	Malmö
+FinTrust 2338	Education	Malmö
+AutoWorks 2339	Education	Västerås
+Foodies 2340	Education	Linköping
+EduVision 2341	Education	Norrköping
+GreenFuture 2342	Education	Malmö
+RoboTech 2343	Healthcare	Göteborg
+FinTrust 2344	Medical Devices	Västerås
+FinTrust 2345	N/A	Norrköping
+MediCare 2346	AI & Robotics	Uppsala
+FinTrust 2347	Automotive	Norrköping
+BuildPro 2348	Renewable Energy	
+TechNova 2349	Finance	Malmö
+EduVision 2350	Healthcare	Helsingborg
+RoboTech 2351	Automotive	Linköping
+FinTrust 2352	Renewable Energy	Stockholm
+HealthSync 2353	Medical Devices	Uppsala
+AutoWorks 2354	Food & Beverage	Uppsala
+MediCare 2355	Medical Devices	Jönköping
+RoboTech 2356	Finance	Norrköping
+RoboTech 2357	Finance	Örebro
+FinTrust 2358	Food & Beverage	Örebro
+FakeCity	Construction	Stockholm
+RoboTech 2360	Medical Devices	Stockholm
+HealthSync 2361	Automotive	Uppsala
+EduVision 2362	Medical Devices	Linköping
+AutoWorks 2363	Food & Beverage	Malmö
+RoboTech 2364	Renewable Energy	Malmö
+Foodies 2365	Education	Malmö
+BuildPro 2366	Automotive	Jönköping
+AutoWorks 2367	Technology	Örebro
+FinTrust 2368	Education	Göteborg
+GreenFuture 2369	FakeCity	Västerås
+Foodies 2370	Automotive	Örebro
+TechNova 2371	Education	Stockholm
+GreenFuture 2372	Medical Devices	Stockholm
+AutoWorks 2373	Construction	Göteborg
+AutoWorks 2374	###	Västerås
+HealthSync 2375	Construction	Jönköping
+MediCare 2376	Education	Örebro
+AutoWorks 2377	Automotive	Västerås
+Foodies 2378	Construction	Göteborg
+GreenFuture 2379	Healthcare	Stockholm
+BuildPro 2380	Renewable Energy	Örebro
+GreenFuture 2381	Education	Jönköping
+AutoWorks 2382	Medical Devices	Norrköping
+FinTrust 2383	Technology	Malmö
+NULL	Renewable Energy	Örebro
+AutoWorks 2385	AI & Robotics	Örebro
+HealthSync 2386	Technology	Jönköping
+RoboTech 2387	NULL	NULL
+BuildPro 2388	Finance	Malmö
+TechNova 2389	Medical Devices	Stockholm
+HealthSync 2390	AI & Robotics	Jönköping
+AutoWorks 2391	Renewable Energy	Malmö
+AutoWorks 2392	Medical Devices	Örebro
+BuildPro 2393	Renewable Energy	Uppsala
+MediCare 2394	Construction	Göteborg
+GreenFuture 2395	Renewable Energy	Uppsala
+FinTrust 2396	Unknown	Uppsala
+Foodies 2397	Technology	Linköping
+RoboTech 2398	Renewable Energy	Örebro
+FinTrust 2399	AI & Robotics	Västerås
+TechNova 2400	Medical Devices	Malmö
+FinTrust 2401	Medical Devices	Jönköping
+BuildPro 2402	Automotive	Västerås
+FakeCity	Finance	Stockholm
+RoboTech 2404	Healthcare	!!Error!!
+TechNova 2405	Healthcare	Unknown
+Foodies 2406	Technology	Malmö
+RoboTech 2407	Technology	Jönköping
+MediCare 2408	!!Error!!	Jönköping
+FinTrust 2409	Technology	Norrköping
+AutoWorks 2410	Unknown	NULL
+MediCare 2411	12345	Örebro
+RoboTech 2412	Finance	N/A
+HealthSync 2413	Technology	N/A
+Foodies 2414	Technology	Göteborg
+!!Error!!	Medical Devices	Jönköping
+TechNova 2416	Healthcare	Malmö
+HealthSync 2417	Food & Beverage	Uppsala
+RoboTech 2418	Medical Devices	Linköping
+FinTrust 2419	Technology	Västerås
+FinTrust 2420	Technology	Helsingborg
+GreenFuture 2421	Medical Devices	Unknown
+EduVision 2422	Healthcare	Malmö
+AutoWorks 2423	Automotive	Jönköping
+FinTrust 2424	Finance	Västerås
+RoboTech 2425	Construction	Jönköping
+MediCare 2426	Automotive	Jönköping
+MediCare 2427	Construction	Örebro
+MediCare 2428	Renewable Energy	Stockholm
+HealthSync 2429	Medical Devices	Linköping
+AutoWorks 2430	Technology	Stockholm
+GreenFuture 2431	Education	###
+BuildPro 2432	Healthcare	Västerås
+RoboTech 2433	Technology	Norrköping
+RoboTech 2434	AI & Robotics	Helsingborg
+EduVision 2435	Healthcare	Malmö
+EduVision 2436	Construction	Stockholm
+EduVision 2437	Medical Devices	Västerås
+AutoWorks 2438	Construction	Malmö
+EduVision 2439	Finance	Göteborg
+MediCare 2440	Education	Örebro
+AutoWorks 2441	Technology	Västerås
+BuildPro 2442	Education	Malmö
+BuildPro 2443	AI & Robotics	N/A
+FinTrust 2444	Finance	!!Error!!
+GreenFuture 2445	Healthcare	Jönköping
+TechNova 2446	Construction	Uppsala
+GreenFuture 2447	Construction	Örebro
+Foodies 2448	Finance	Stockholm
+BuildPro 2449	Technology	Helsingborg
+12345	Automotive	Jönköping
+Foodies 2451	Healthcare	Örebro
+TechNova 2452	Construction	Norrköping
+Foodies 2453	Construction	Linköping
+BuildPro 2454	AI & Robotics	Örebro
+	Medical Devices	Unknown
+HealthSync 2456	Food & Beverage	Helsingborg
+MediCare 2457	Food & Beverage	Västerås
+RoboTech 2458	!!Error!!	Malmö
+GreenFuture 2459	Automotive	Norrköping
+HealthSync 2460	Finance	12345
+BuildPro 2461	NULL	Stockholm
+RoboTech 2462	N/A	Örebro
+HealthSync 2463	Healthcare	Västerås
+TechNova 2464	Construction	Linköping
+GreenFuture 2465	AI & Robotics	Stockholm
+Foodies 2466	Medical Devices	Helsingborg
+Foodies 2467	Construction	Stockholm
+N/A	Construction	Linköping
+TechNova 2469	Medical Devices	Malmö
+RoboTech 2470	Construction	Malmö
+HealthSync 2471	Renewable Energy	Stockholm
+Foodies 2472	Renewable Energy	Uppsala
+AutoWorks 2473	Food & Beverage	Helsingborg
+FinTrust 2474	Healthcare	Linköping
+TechNova 2475	Technology	Uppsala
+BuildPro 2476	Healthcare	Linköping
+FakeCity	Technology	Örebro
+RoboTech 2478	Construction	Göteborg
+BuildPro 2479	Food & Beverage	12345
+AutoWorks 2480	Medical Devices	Helsingborg
+BuildPro 2481	Automotive	Stockholm
+TechNova 2482	!!Error!!	Helsingborg
+Foodies 2483	Finance	Malmö
+TechNova 2484	Education	Malmö
+Foodies 2485	FakeCity	Linköping
+HealthSync 2486		Norrköping
+TechNova 2487	12345	Norrköping
+HealthSync 2488	Education	Malmö
+Foodies 2489	Education	Göteborg
+Foodies 2490	Education	Stockholm
+FinTrust 2491	Renewable Energy	Stockholm
+FinTrust 2492	12345	Linköping
+EduVision 2493	AI & Robotics	Uppsala
+12345	Education	Malmö
+FinTrust 2495	Medical Devices	Göteborg
+RoboTech 2496		Jönköping
+TechNova 2497	Medical Devices	Linköping
+EduVision 2498	AI & Robotics	Malmö
+Foodies 2499	Healthcare	Uppsala
+MediCare 2500	Technology	Linköping
+FinTrust 2501	Construction	Västerås
+GreenFuture 2502	Construction	Jönköping
+Foodies 2503	Automotive	Göteborg
+FinTrust 2504	Finance	Malmö
+EduVision 2505	Education	Göteborg
+12345	Technology	Malmö
+MediCare 2507	Renewable Energy	Malmö
+TechNova 2508	Technology	Helsingborg
+MediCare 2509	Technology	Stockholm
+RoboTech 2510	Food & Beverage	Helsingborg
+EduVision 2511	Renewable Energy	Norrköping
+FinTrust 2512	Renewable Energy	Stockholm
+EduVision 2513	Renewable Energy	Helsingborg
+GreenFuture 2514	Renewable Energy	Uppsala
+FinTrust 2515	Technology	###
+MediCare 2516	Food & Beverage	Göteborg
+AutoWorks 2517	Renewable Energy	Norrköping
+BuildPro 2518	Healthcare	Västerås
+GreenFuture 2519	AI & Robotics	Örebro
+TechNova 2520	Automotive	Göteborg
+RoboTech 2521	Education	Malmö
+Foodies 2522	Construction	Linköping
+MediCare 2523	Automotive	Norrköping
+FinTrust 2524	Automotive	Norrköping
+EduVision 2525	Food & Beverage	Linköping
+Foodies 2526	Education	Malmö
+HealthSync 2527	Automotive	Malmö
+NULL	Construction	Göteborg
+HealthSync 2529	Education	Helsingborg
+MediCare 2530	Technology	Göteborg
+BuildPro 2531	Food & Beverage	Linköping
+AutoWorks 2532	AI & Robotics	Helsingborg
+RoboTech 2533	Automotive	Uppsala
+RoboTech 2534	AI & Robotics	Helsingborg
+EduVision 2535	N/A	Linköping
+RoboTech 2536	Unknown	Örebro
+NULL	Automotive	Helsingborg
+FinTrust 2538	Technology	Stockholm
+RoboTech 2539	Renewable Energy	Stockholm
+HealthSync 2540	Renewable Energy	Jönköping
+BuildPro 2541	Automotive	Göteborg
+Foodies 2542	Healthcare	Helsingborg
+AutoWorks 2543	Medical Devices	Norrköping
+BuildPro 2544	Food & Beverage	Helsingborg
+GreenFuture 2545	Automotive	Jönköping
+Foodies 2546	Healthcare	Jönköping
+MediCare 2547	Food & Beverage	Uppsala
+!!Error!!	Medical Devices	Norrköping
+GreenFuture 2549	Automotive	Stockholm
+!!Error!!	Food & Beverage	Göteborg
+MediCare 2551	Construction	Unknown
+GreenFuture 2552	Healthcare	Västerås
+GreenFuture 2553	Finance	Västerås
+HealthSync 2554	Education	Stockholm
+MediCare 2555	AI & Robotics	Norrköping
+FinTrust 2556	Food & Beverage	Örebro
+RoboTech 2557	Technology	NULL
+EduVision 2558	Medical Devices	Örebro
+BuildPro 2559	Finance	Örebro
+HealthSync 2560	Food & Beverage	N/A
+FinTrust 2561	Medical Devices	Helsingborg
+NULL	Renewable Energy	Örebro
+HealthSync 2563	Education	Norrköping
+AutoWorks 2564	Education	Helsingborg
+BuildPro 2565	Renewable Energy	Jönköping
+BuildPro 2566	Renewable Energy	Västerås
+GreenFuture 2567	Construction	Jönköping
+TechNova 2568	Automotive	Göteborg
+NULL	Medical Devices	Uppsala
+FinTrust 2570	Construction	Malmö
+RoboTech 2571	Automotive	Linköping
+MediCare 2572	Finance	Örebro
+###	Finance	Helsingborg
+BuildPro 2574	Technology	Göteborg
+TechNova 2575	Renewable Energy	None
+BuildPro 2576	Medical Devices	Norrköping
+RoboTech 2577	Education	Norrköping
+GreenFuture 2578	Medical Devices	Uppsala
+TechNova 2579	AI & Robotics	Helsingborg
+RoboTech 2580	Automotive	Norrköping
+GreenFuture 2581	Construction	Helsingborg
+BuildPro 2582	Medical Devices	N/A
+GreenFuture 2583	Education	Helsingborg
+RoboTech 2584	Finance	Linköping
+HealthSync 2585	Healthcare	Uppsala
+HealthSync 2586	Renewable Energy	Uppsala
+TechNova 2587	AI & Robotics	Jönköping
+BuildPro 2588	Technology	Norrköping
+RoboTech 2589	AI & Robotics	Västerås
+RoboTech 2590	Healthcare	Linköping
+AutoWorks 2591	12345	Jönköping
+RoboTech 2592	Medical Devices	Linköping
+None	###	Helsingborg
+EduVision 2594	Healthcare	Örebro
+RoboTech 2595	FakeCity	Stockholm
+HealthSync 2596	Education	
+AutoWorks 2597	Healthcare	Helsingborg
+BuildPro 2598	Technology	Stockholm
+RoboTech 2599	Healthcare	Linköping
+AutoWorks 2600	Healthcare	Norrköping
+MediCare 2601	Medical Devices	Göteborg
+BuildPro 2602	Automotive	Norrköping
+FakeCity	Education	###
+HealthSync 2604	Construction	Örebro
+FinTrust 2605	Education	Norrköping
+AutoWorks 2606	Construction	Västerås
+FinTrust 2607	Finance	Malmö
+GreenFuture 2608	Finance	Helsingborg
+HealthSync 2609	Construction	Malmö
+TechNova 2610	Renewable Energy	Stockholm
+MediCare 2611	Medical Devices	Linköping
+Foodies 2612	Finance	Uppsala
+GreenFuture 2613	AI & Robotics	Linköping
+MediCare 2614	Food & Beverage	Linköping
+BuildPro 2615	Medical Devices	###
+AutoWorks 2616	Healthcare	Göteborg
+TechNova 2617	Finance	Örebro
+EduVision 2618	Finance	Helsingborg
+EduVision 2619	Medical Devices	Norrköping
+EduVision 2620	Food & Beverage	Uppsala
+EduVision 2621	Renewable Energy	Jönköping
+HealthSync 2622	Renewable Energy	Västerås
+RoboTech 2623	Renewable Energy	Örebro
+FinTrust 2624	Finance	Stockholm
+BuildPro 2625	Renewable Energy	Stockholm
+HealthSync 2626	Food & Beverage	Uppsala
+NULL	Education	12345
+FinTrust 2628	Construction	Örebro
+AutoWorks 2629	Healthcare	Västerås
+TechNova 2630	Education	Linköping
+Foodies 2631	12345	Jönköping
+EduVision 2632	Medical Devices	Göteborg
+EduVision 2633	Automotive	Göteborg
+AutoWorks 2634	12345	###
+HealthSync 2635	Construction	Västerås
+Foodies 2636	AI & Robotics	!!Error!!
+FinTrust 2637	Technology	Helsingborg
+TechNova 2638	Construction	Linköping
+EduVision 2639	Healthcare	Linköping
+FinTrust 2640	NULL	Stockholm
+AutoWorks 2641	Finance	Norrköping
+TechNova 2642	Healthcare	Stockholm
+AutoWorks 2643	Education	Norrköping
+N/A	Finance	Jönköping
+	Medical Devices	###
+BuildPro 2646	Construction	Örebro
+MediCare 2647	Food & Beverage	Örebro
+NULL	Food & Beverage	Helsingborg
+FinTrust 2649	Construction	Helsingborg
+BuildPro 2650	Medical Devices	Helsingborg
+RoboTech 2651	AI & Robotics	Malmö
+BuildPro 2652	Renewable Energy	Örebro
+N/A	Healthcare	Malmö
+TechNova 2654	Construction	Örebro
+BuildPro 2655	Technology	Göteborg
+GreenFuture 2656	Finance	Helsingborg
+TechNova 2657	Education	Unknown
+NULL	Medical Devices	Norrköping
+FinTrust 2659	Education	Västerås
+TechNova 2660	Automotive	Jönköping
+GreenFuture 2661	Automotive	Jönköping
+FinTrust 2662	Healthcare	Malmö
+FinTrust 2663	Construction	Malmö
+BuildPro 2664	Healthcare	Göteborg
+BuildPro 2665	Education	Jönköping
+EduVision 2666	Food & Beverage	Uppsala
+TechNova 2667	Food & Beverage	Uppsala
+TechNova 2668	Renewable Energy	Linköping
+EduVision 2669	Healthcare	Örebro
+RoboTech 2670	Renewable Energy	Malmö
+GreenFuture 2671	Food & Beverage	Malmö
+GreenFuture 2672	Food & Beverage	Västerås
+AutoWorks 2673	Renewable Energy	Uppsala
+HealthSync 2674	AI & Robotics	Helsingborg
+BuildPro 2675	Healthcare	###
+EduVision 2676	Education	Stockholm
+TechNova 2677	Education	Uppsala
+EduVision 2678	Medical Devices	Stockholm
+RoboTech 2679	Renewable Energy	Örebro
+EduVision 2680	Automotive	Norrköping
+GreenFuture 2681	None	Malmö
+GreenFuture 2682	Medical Devices	Helsingborg
+BuildPro 2683	Food & Beverage	Norrköping
+Foodies 2684	Food & Beverage	!!Error!!
+FinTrust 2685	Finance	Göteborg
+FinTrust 2686	Finance	Linköping
+AutoWorks 2687	Food & Beverage	None
+EduVision 2688	Automotive	Stockholm
+BuildPro 2689	Finance	Örebro
+BuildPro 2690	Education	Linköping
+TechNova 2691	Education	Norrköping
+RoboTech 2692	Automotive	Helsingborg
+MediCare 2693	Construction	Örebro
+BuildPro 2694	Technology	Malmö
+BuildPro 2695	NULL	Örebro
+12345	Construction	Örebro
+FakeCity	Food & Beverage	Malmö
+EduVision 2698	Construction	Malmö
+NULL	Automotive	Västerås
+MediCare 2700	Renewable Energy	Malmö
+EduVision 2701	AI & Robotics	Västerås
+EduVision 2702	AI & Robotics	Örebro
+FinTrust 2703	Food & Beverage	Norrköping
+BuildPro 2704	Automotive	Uppsala
+GreenFuture 2705	Construction	Göteborg
+TechNova 2706	Renewable Energy	Västerås
+MediCare 2707	AI & Robotics	Helsingborg
+HealthSync 2708	Construction	Linköping
+EduVision 2709	Construction	Norrköping
+Foodies 2710	Technology	Örebro
+12345	Healthcare	Västerås
+TechNova 2712	Renewable Energy	Stockholm
+HealthSync 2713	Education	Norrköping
+N/A	Healthcare	Malmö
+TechNova 2715	AI & Robotics	Helsingborg
+HealthSync 2716	Finance	Göteborg
+Foodies 2717	Medical Devices	Jönköping
+HealthSync 2718	Technology	Örebro
+FinTrust 2719	Food & Beverage	Malmö
+GreenFuture 2720	Food & Beverage	Malmö
+FinTrust 2721	Medical Devices	Stockholm
+TechNova 2722	Education	Norrköping
+BuildPro 2723	Technology	Helsingborg
+EduVision 2724	NULL	12345
+BuildPro 2725	Construction	Uppsala
+EduVision 2726	Technology	Stockholm
+Foodies 2727	Construction	Norrköping
+BuildPro 2728	Food & Beverage	Norrköping
+HealthSync 2729	Finance	Linköping
+BuildPro 2730	Unknown	Göteborg
+FinTrust 2731	Renewable Energy	Örebro
+!!Error!!	Food & Beverage	Uppsala
+TechNova 2733	Food & Beverage	Jönköping
+TechNova 2734	Healthcare	Helsingborg
+N/A	Food & Beverage	Västerås
+Foodies 2736	Automotive	Malmö
+HealthSync 2737	Healthcare	Helsingborg
+RoboTech 2738	Education	Helsingborg
+HealthSync 2739	Technology	Örebro
+MediCare 2740	Technology	Unknown
+AutoWorks 2741	Medical Devices	Linköping
+FinTrust 2742	Renewable Energy	Västerås
+RoboTech 2743	Technology	Uppsala
+TechNova 2744	Technology	Malmö
+RoboTech 2745	Education	Örebro
+BuildPro 2746	Technology	Västerås
+FinTrust 2747	AI & Robotics	Norrköping
+Foodies 2748	Healthcare	Malmö
+NULL	Medical Devices	N/A
+GreenFuture 2750	AI & Robotics	Linköping
+TechNova 2751	Food & Beverage	Jönköping
+EduVision 2752	Construction	Helsingborg
+N/A	Food & Beverage	Örebro
+BuildPro 2754	Food & Beverage	Linköping
+RoboTech 2755	Renewable Energy	Uppsala
+AutoWorks 2756	Construction	Helsingborg
+AutoWorks 2757	Medical Devices	N/A
+RoboTech 2758	Healthcare	NULL
+EduVision 2759	FakeCity	Västerås
+GreenFuture 2760	Food & Beverage	Jönköping
+GreenFuture 2761	!!Error!!	Västerås
+EduVision 2762	Technology	12345
+EduVision 2763	Construction	Uppsala
+BuildPro 2764	Education	Göteborg
+FinTrust 2765	!!Error!!	Stockholm
+Foodies 2766	Education	Malmö
+Foodies 2767	AI & Robotics	Norrköping
+HealthSync 2768	Finance	Stockholm
+GreenFuture 2769	Food & Beverage	Linköping
+Foodies 2770	AI & Robotics	Örebro
+MediCare 2771	Healthcare	Örebro
+BuildPro 2772	Food & Beverage	Malmö
+RoboTech 2773	Medical Devices	Norrköping
+HealthSync 2774	Food & Beverage	Örebro
+BuildPro 2775	Renewable Energy	Västerås
+BuildPro 2776	Food & Beverage	Västerås
+Foodies 2777	Construction	Uppsala
+FinTrust 2778	Medical Devices	Norrköping
+HealthSync 2779	Renewable Energy	Norrköping
+AutoWorks 2780	Healthcare	Helsingborg
+GreenFuture 2781	Automotive	Helsingborg
+TechNova 2782	Renewable Energy	Jönköping
+BuildPro 2783	Automotive	Örebro
+BuildPro 2784	Automotive	Linköping
+MediCare 2785	Automotive	Linköping
+Foodies 2786	Finance	12345
+RoboTech 2787	Education	Helsingborg
+GreenFuture 2788	Food & Beverage	Helsingborg
+GreenFuture 2789	Technology	Malmö
+BuildPro 2790	Automotive	Uppsala
+EduVision 2791	Healthcare	Göteborg
+MediCare 2792	Technology	Örebro
+RoboTech 2793	Technology	Göteborg
+TechNova 2794	Renewable Energy	###
+BuildPro 2795	Automotive	Göteborg
+Foodies 2796	Construction	Stockholm
+Foodies 2797	Unknown	Norrköping
+RoboTech 2798	Medical Devices	Västerås
+GreenFuture 2799	Medical Devices	Uppsala
+HealthSync 2800	Medical Devices	Helsingborg
+NULL	Technology	Örebro
+EduVision 2802	Renewable Energy	Helsingborg
+Foodies 2803	Automotive	Västerås
+AutoWorks 2804	Healthcare	Helsingborg
+RoboTech 2805	Automotive	Norrköping
+RoboTech 2806	Education	Jönköping
+BuildPro 2807	Education	Uppsala
+BuildPro 2808	Healthcare	Norrköping
+BuildPro 2809	Construction	Uppsala
+TechNova 2810	Technology	Stockholm
+BuildPro 2811	Food & Beverage	Västerås
+Foodies 2812	Education	Uppsala
+Foodies 2813	AI & Robotics	Linköping
+BuildPro 2814	Finance	Malmö
+HealthSync 2815	AI & Robotics	Västerås
+TechNova 2816	AI & Robotics	Uppsala
+AutoWorks 2817	Renewable Energy	Örebro
+TechNova 2818	Technology	Norrköping
+HealthSync 2819	N/A	Örebro
+RoboTech 2820	Medical Devices	Jönköping
+AutoWorks 2821	Medical Devices	Linköping
+Foodies 2822	Healthcare	Örebro
+BuildPro 2823	AI & Robotics	Jönköping
+Foodies 2824	!!Error!!	Helsingborg
+MediCare 2825	!!Error!!	Uppsala
+TechNova 2826	Food & Beverage	Örebro
+RoboTech 2827	Finance	Uppsala
+AutoWorks 2828	Education	Västerås
+MediCare 2829	Technology	Uppsala
+!!Error!!	Automotive	Uppsala
+	###	Linköping
+RoboTech 2832	Technology	Norrköping
+HealthSync 2833	Healthcare	!!Error!!
+AutoWorks 2834	Education	Västerås
+AutoWorks 2835		Uppsala
+MediCare 2836	AI & Robotics	Göteborg
+FinTrust 2837	Construction	Göteborg
+HealthSync 2838	Finance	Jönköping
+AutoWorks 2839	Education	Stockholm
+HealthSync 2840	Technology	Malmö
+TechNova 2841		Linköping
+GreenFuture 2842	Medical Devices	Norrköping
+AutoWorks 2843	Renewable Energy	Norrköping
+GreenFuture 2844	Healthcare	Linköping
+GreenFuture 2845	Automotive	
+RoboTech 2846	Technology	Stockholm
+Foodies 2847	Education	Jönköping
+RoboTech 2848	Food & Beverage	Västerås
+GreenFuture 2849	Food & Beverage	
+FinTrust 2850	Renewable Energy	Örebro
+BuildPro 2851	Unknown	Malmö
+EduVision 2852	AI & Robotics	Helsingborg
+12345	Renewable Energy	Göteborg
+FinTrust 2854	Food & Beverage	Jönköping
+FinTrust 2855	Medical Devices	Norrköping
+	Construction	Örebro
+Foodies 2857	Food & Beverage	Jönköping
+TechNova 2858	Medical Devices	Linköping
+RoboTech 2859	Medical Devices	Västerås
+Foodies 2860	Food & Beverage	Göteborg
+HealthSync 2861	Food & Beverage	Göteborg
+RoboTech 2862	Food & Beverage	Uppsala
+MediCare 2863		Uppsala
+HealthSync 2864	Education	Göteborg
+12345	AI & Robotics	Jönköping
+HealthSync 2866	FakeCity	Stockholm
+EduVision 2867	Education	Uppsala
+HealthSync 2868	Renewable Energy	Stockholm
+HealthSync 2869	Automotive	Örebro
+EduVision 2870	Technology	Malmö
+BuildPro 2871	Renewable Energy	N/A
+FakeCity	Food & Beverage	Uppsala
+HealthSync 2873	Healthcare	Västerås
+Foodies 2874	Medical Devices	Norrköping
+HealthSync 2875	Medical Devices	FakeCity
+GreenFuture 2876	Healthcare	Malmö
+MediCare 2877	Medical Devices	Jönköping
+FinTrust 2878	Automotive	Malmö
+TechNova 2879	Medical Devices	Helsingborg
+AutoWorks 2880	Medical Devices	Norrköping
+GreenFuture 2881	Finance	N/A
+GreenFuture 2882	Healthcare	Västerås
+TechNova 2883	None	Jönköping
+RoboTech 2884	AI & Robotics	12345
+TechNova 2885	Medical Devices	Malmö
+!!Error!!	Education	NULL
+BuildPro 2887	Finance	Stockholm
+RoboTech 2888	AI & Robotics	Jönköping
+MediCare 2889	AI & Robotics	Malmö
+BuildPro 2890	Automotive	Malmö
+GreenFuture 2891	Medical Devices	Jönköping
+RoboTech 2892	Medical Devices	Helsingborg
+RoboTech 2893	Technology	Örebro
+FinTrust 2894	Food & Beverage	Linköping
+EduVision 2895	Automotive	Norrköping
+EduVision 2896	AI & Robotics	Norrköping
+TechNova 2897	Finance	Västerås
+None	Education	Göteborg
+FinTrust 2899	Renewable Energy	Jönköping
+EduVision 2900	Healthcare	Uppsala
+EduVision 2901	Renewable Energy	Malmö
+Foodies 2902	AI & Robotics	Malmö
+GreenFuture 2903	Medical Devices	Jönköping
+TechNova 2904	Food & Beverage	Uppsala
+MediCare 2905	Medical Devices	Helsingborg
+MediCare 2906	Renewable Energy	Jönköping
+RoboTech 2907	FakeCity	Helsingborg
+TechNova 2908	Medical Devices	Helsingborg
+RoboTech 2909	Education	Linköping
+MediCare 2910	Healthcare	FakeCity
+MediCare 2911	Food & Beverage	Örebro
+RoboTech 2912	Automotive	Örebro
+HealthSync 2913	Education	Malmö
+MediCare 2914	Technology	Jönköping
+Foodies 2915	Renewable Energy	Linköping
+RoboTech 2916	Food & Beverage	###
+EduVision 2917	Technology	Uppsala
+GreenFuture 2918	Renewable Energy	FakeCity
+TechNova 2919	Automotive	Malmö
+N/A	Automotive	Uppsala
+Foodies 2921	Technology	Örebro
+GreenFuture 2922	AI & Robotics	Malmö
+MediCare 2923	Healthcare	Västerås
+Foodies 2924	Medical Devices	Stockholm
+MediCare 2925	Automotive	Helsingborg
+TechNova 2926	Food & Beverage	!!Error!!
+GreenFuture 2927	Automotive	Norrköping
+TechNova 2928	Renewable Energy	Linköping
+Foodies 2929	AI & Robotics	Göteborg
+HealthSync 2930	Medical Devices	Linköping
+EduVision 2931	Healthcare	Norrköping
+TechNova 2932	Finance	Linköping
+GreenFuture 2933	AI & Robotics	Uppsala
+BuildPro 2934	Finance	None
+MediCare 2935	Finance	Västerås
+GreenFuture 2936	Education	Norrköping
+EduVision 2937	Medical Devices	Helsingborg
+HealthSync 2938	Renewable Energy	Göteborg
+RoboTech 2939	Education	Helsingborg
+GreenFuture 2940	AI & Robotics	Stockholm
+EduVision 2941	Construction	Örebro
+BuildPro 2942	AI & Robotics	Göteborg
+MediCare 2943	Technology	Örebro
+AutoWorks 2944	AI & Robotics	Västerås
+HealthSync 2945	FakeCity	Västerås
+RoboTech 2946	Technology	
+EduVision 2947	AI & Robotics	Göteborg
+FinTrust 2948	AI & Robotics	Uppsala
+EduVision 2949	Medical Devices	Västerås
+BuildPro 2950	Technology	Uppsala
+Foodies 2951	Construction	Linköping
+TechNova 2952	Medical Devices	Norrköping
+AutoWorks 2953	Healthcare	Stockholm
+BuildPro 2954	AI & Robotics	Jönköping
+MediCare 2955	Education	Linköping
+TechNova 2956	Finance	Stockholm
+HealthSync 2957	Finance	Västerås
+FinTrust 2958	Automotive	Stockholm
+TechNova 2959	Unknown	Malmö
+BuildPro 2960	Finance	Linköping
+AutoWorks 2961	Technology	Göteborg
+RoboTech 2962	Finance	Göteborg
+BuildPro 2963	Construction	Malmö
+EduVision 2964	Renewable Energy	NULL
+FinTrust 2965	Technology	Göteborg
+GreenFuture 2966	Renewable Energy	Jönköping
+AutoWorks 2967	Food & Beverage	Jönköping
+HealthSync 2968	Construction	Örebro
+MediCare 2969	Food & Beverage	Linköping
+MediCare 2970	Healthcare	Göteborg
+EduVision 2971	Finance	Uppsala
+MediCare 2972	Finance	Uppsala
+MediCare 2973	Renewable Energy	Jönköping
+AutoWorks 2974	Food & Beverage	###
+Unknown	Food & Beverage	Linköping
+HealthSync 2976	Healthcare	Göteborg
+BuildPro 2977	Renewable Energy	Västerås
+MediCare 2978	Food & Beverage	Helsingborg
+NULL	Renewable Energy	Norrköping
+MediCare 2980	Construction	Jönköping
+MediCare 2981	Finance	Örebro
+TechNova 2982	Renewable Energy	!!Error!!
+EduVision 2983	Technology	Västerås
+HealthSync 2984	Medical Devices	Stockholm
+Foodies 2985	Technology	Helsingborg
+MediCare 2986	Construction	Norrköping
+Foodies 2987	Construction	Uppsala
+BuildPro 2988	Renewable Energy	Västerås
+BuildPro 2989	Automotive	Norrköping
+HealthSync 2990	Finance	Norrköping
+RoboTech 2991	Medical Devices	Malmö
+MediCare 2992	Finance	Göteborg
+GreenFuture 2993	Education	N/A
+Foodies 2994	Food & Beverage	Göteborg
+TechNova 2995	Education	Uppsala
+BuildPro 2996	Technology	Linköping
+GreenFuture 2997	Automotive	Örebro
+RoboTech 2998	AI & Robotics	Malmö
+MediCare 2999	Renewable Energy	Uppsala
+AutoWorks 3000	Technology	Helsingborg
+BuildPro 3001	Automotive	Västerås
+RoboTech 3002	Construction	Linköping
+FinTrust 3003	Construction	Göteborg
+!!Error!!	Renewable Energy	Göteborg
+Foodies 3005	!!Error!!	Malmö
+GreenFuture 3006	Education	Göteborg
+HealthSync 3007	Finance	Göteborg
+###	AI & Robotics	Linköping
+RoboTech 3009	Medical Devices	FakeCity
+TechNova 3010	Renewable Energy	Göteborg
+N/A	Education	Örebro
+Foodies 3012	AI & Robotics	
+EduVision 3013	Medical Devices	Stockholm
+FinTrust 3014	AI & Robotics	Uppsala
+Foodies 3015	Medical Devices	Malmö
+FinTrust 3016	Automotive	Jönköping
+EduVision 3017	Education	Stockholm
+AutoWorks 3018	Automotive	Linköping
+MediCare 3019	Construction	Linköping
+AutoWorks 3020	AI & Robotics	Malmö
+Foodies 3021	FakeCity	Uppsala
+EduVision 3022	Automotive	Stockholm
+HealthSync 3023	Renewable Energy	Jönköping
+EduVision 3024	Construction	Norrköping
+RoboTech 3025	Technology	Örebro
+	Education	Jönköping
+RoboTech 3027	AI & Robotics	Helsingborg
+RoboTech 3028	Automotive	Helsingborg
+NULL	Construction	Linköping
+NULL	Medical Devices	!!Error!!
+FinTrust 3031	Renewable Energy	Helsingborg
+BuildPro 3032	###	Helsingborg
+RoboTech 3033	Construction	Malmö
+RoboTech 3034	Education	Västerås
+Foodies 3035		Västerås
+EduVision 3036	Healthcare	Uppsala
+BuildPro 3037	Technology	Västerås
+GreenFuture 3038	Renewable Energy	Uppsala
+Foodies 3039	Renewable Energy	Göteborg
+EduVision 3040	###	Linköping
+BuildPro 3041	Food & Beverage	Malmö
+!!Error!!	Renewable Energy	Göteborg
+Foodies 3043	Finance	Linköping
+HealthSync 3044	Finance	Örebro
+TechNova 3045	Food & Beverage	Göteborg
+EduVision 3046	Unknown	NULL
+BuildPro 3047	Food & Beverage	Västerås
+EduVision 3048	Construction	Uppsala
+RoboTech 3049	Medical Devices	Örebro
+TechNova 3050	Construction	Malmö
+RoboTech 3051	Unknown	Uppsala
+GreenFuture 3052	AI & Robotics	Norrköping
+TechNova 3053	Education	Örebro
+AutoWorks 3054	Construction	Stockholm
+MediCare 3055	Food & Beverage	Örebro
+BuildPro 3056	NULL	Örebro
+RoboTech 3057	Renewable Energy	Uppsala
+RoboTech 3058	Renewable Energy	Stockholm
+BuildPro 3059	Medical Devices	Västerås
+TechNova 3060	Automotive	Västerås
+GreenFuture 3061	Construction	Linköping
+HealthSync 3062	Automotive	Norrköping
+GreenFuture 3063	Finance	N/A
+FakeCity	Technology	Jönköping
+Foodies 3065	Education	Örebro
+BuildPro 3066	Finance	Göteborg
+TechNova 3067	Renewable Energy	Göteborg
+BuildPro 3068	Construction	Norrköping
+AutoWorks 3069	Finance	Linköping
+HealthSync 3070	Construction	Linköping
+AutoWorks 3071	Food & Beverage	Malmö
+GreenFuture 3072	Automotive	Stockholm
+GreenFuture 3073	Education	Linköping
+MediCare 3074	AI & Robotics	Malmö
+EduVision 3075	Finance	Stockholm
+GreenFuture 3076	Healthcare	Västerås
+MediCare 3077	Automotive	Göteborg
+BuildPro 3078	Construction	Västerås
+FinTrust 3079	N/A	Jönköping
+MediCare 3080	Healthcare	Helsingborg
+AutoWorks 3081	Automotive	Malmö
+GreenFuture 3082	Food & Beverage	Norrköping
+NULL	Medical Devices	Linköping
+GreenFuture 3084	Technology	Örebro
+Foodies 3085	Finance	Göteborg
+MediCare 3086	AI & Robotics	12345
+HealthSync 3087	Food & Beverage	Linköping
+HealthSync 3088	Education	Uppsala
+AutoWorks 3089	Technology	Örebro
+AutoWorks 3090	Food & Beverage	Göteborg
+BuildPro 3091	Food & Beverage	Linköping
+N/A	Automotive	Stockholm
+AutoWorks 3093	Construction	Linköping
+BuildPro 3094	Medical Devices	Uppsala
+EduVision 3095	Automotive	Stockholm
+GreenFuture 3096	Construction	Örebro
+HealthSync 3097	Construction	Malmö
+BuildPro 3098	Healthcare	Helsingborg
+RoboTech 3099	Medical Devices	Stockholm
+BuildPro 3100	Automotive	Malmö
+FinTrust 3101	AI & Robotics	Västerås
+RoboTech 3102	Technology	Stockholm
+AutoWorks 3103	Renewable Energy	Göteborg
+RoboTech 3104	Medical Devices	Västerås
+EduVision 3105	Construction	Jönköping
+EduVision 3106	Medical Devices	Norrköping
+Foodies 3107	Medical Devices	Jönköping
+MediCare 3108	Healthcare	Linköping
+RoboTech 3109	Education	Malmö
+BuildPro 3110	Construction	N/A
+12345	Construction	Norrköping
+TechNova 3112	Technology	Helsingborg
+	AI & Robotics	Uppsala
+HealthSync 3114	Construction	Uppsala
+MediCare 3115	Education	Malmö
+BuildPro 3116	None	!!Error!!
+HealthSync 3117	Technology	Norrköping
+TechNova 3118	Education	Uppsala
+MediCare 3119	Automotive	Uppsala
+TechNova 3120	Medical Devices	Malmö
+FinTrust 3121	Education	Malmö
+EduVision 3122	Education	Göteborg
+N/A	Technology	Norrköping
+NULL	Healthcare	Linköping
+RoboTech 3125	Renewable Energy	Linköping
+FinTrust 3126	AI & Robotics	Helsingborg
+AutoWorks 3127	Healthcare	Göteborg
+NULL	Construction	Göteborg
+FakeCity	Construction	Jönköping
+None	Construction	Helsingborg
+TechNova 3131	Finance	Örebro
+BuildPro 3132	Technology	Stockholm
+RoboTech 3133	Construction	Jönköping
+AutoWorks 3134	AI & Robotics	Malmö
+BuildPro 3135	AI & Robotics	Stockholm
+Foodies 3136	Food & Beverage	Helsingborg
+HealthSync 3137	Construction	Jönköping
+TechNova 3138	Healthcare	Helsingborg
+AutoWorks 3139	Healthcare	Malmö
+MediCare 3140	Education	Uppsala
+12345	Construction	Stockholm
+FinTrust 3142	Finance	Norrköping
+EduVision 3143	Healthcare	Uppsala
+Foodies 3144	Renewable Energy	Göteborg
+N/A	Renewable Energy	Örebro
+NULL	Education	Västerås
+TechNova 3147	Food & Beverage	Linköping
+MediCare 3148	Education	Stockholm
+BuildPro 3149	Finance	Göteborg
+Foodies 3150	Healthcare	12345
+EduVision 3151	Construction	N/A
+GreenFuture 3152	Finance	NULL
+Foodies 3153	AI & Robotics	Helsingborg
+AutoWorks 3154	Renewable Energy	Västerås
+MediCare 3155	Finance	Örebro
+EduVision 3156	Technology	Helsingborg
+MediCare 3157	Technology	Stockholm
+Foodies 3158	Renewable Energy	Stockholm
+AutoWorks 3159	Technology	None
+FinTrust 3160	Construction	!!Error!!
+GreenFuture 3161	Automotive	Norrköping
+EduVision 3162	###	Norrköping
+TechNova 3163	Automotive	Unknown
+AutoWorks 3164	Healthcare	Linköping
+MediCare 3165	Finance	Stockholm
+FinTrust 3166	AI & Robotics	Jönköping
+MediCare 3167	Food & Beverage	Göteborg
+EduVision 3168	Medical Devices	Västerås
+Foodies 3169	Automotive	Göteborg
+FinTrust 3170	Renewable Energy	Jönköping
+MediCare 3171	Construction	Malmö
+MediCare 3172	Construction	Helsingborg
+EduVision 3173	Food & Beverage	Linköping
+FinTrust 3174	Medical Devices	FakeCity
+HealthSync 3175	Unknown	Jönköping
+HealthSync 3176	Medical Devices	Göteborg
+HealthSync 3177	Medical Devices	Malmö
+GreenFuture 3178	Finance	Malmö
+Foodies 3179	Finance	Norrköping
+Foodies 3180	Construction	Uppsala
+BuildPro 3181	Medical Devices	Linköping
+Foodies 3182	AI & Robotics	Göteborg
+RoboTech 3183	Finance	
+Foodies 3184	Construction	Stockholm
+FinTrust 3185	Education	Linköping
+MediCare 3186	Automotive	Göteborg
+HealthSync 3187	Healthcare	Västerås
+Foodies 3188	Medical Devices	Norrköping
+RoboTech 3189	Finance	Stockholm
+AutoWorks 3190	AI & Robotics	None
+FinTrust 3191	Construction	Göteborg
+MediCare 3192	Medical Devices	Uppsala
+RoboTech 3193	Construction	Norrköping
+Foodies 3194	Education	Stockholm
+RoboTech 3195	Healthcare	Örebro
+TechNova 3196	Finance	Malmö
+RoboTech 3197	Finance	Uppsala
+Foodies 3198	Medical Devices	Västerås
+12345	Medical Devices	Örebro
+RoboTech 3200	Healthcare	Norrköping
+RoboTech 3201	Technology	Linköping
+GreenFuture 3202	Food & Beverage	Stockholm
+GreenFuture 3203	None	Norrköping
+GreenFuture 3204	Education	Örebro
+FinTrust 3205	Medical Devices	Västerås
+FinTrust 3206	Renewable Energy	###
+Foodies 3207	Automotive	12345
+RoboTech 3208	Medical Devices	Örebro
+!!Error!!	Renewable Energy	Jönköping
+FinTrust 3210	Food & Beverage	Helsingborg
+RoboTech 3211	Healthcare	Norrköping
+EduVision 3212	Education	Örebro
+FinTrust 3213	Construction	Uppsala
+HealthSync 3214	Healthcare	Jönköping
+RoboTech 3215	Renewable Energy	Örebro
+BuildPro 3216	Food & Beverage	Västerås
+Unknown	Food & Beverage	
+EduVision 3218	Medical Devices	Uppsala
+Foodies 3219	Renewable Energy	Linköping
+GreenFuture 3220	Healthcare	Örebro
+FinTrust 3221	Renewable Energy	Stockholm
+MediCare 3222	Education	Norrköping
+GreenFuture 3223	Education	Norrköping
+GreenFuture 3224	Medical Devices	Jönköping
+RoboTech 3225	Renewable Energy	FakeCity
+HealthSync 3226	Automotive	Norrköping
+GreenFuture 3227	Food & Beverage	NULL
+GreenFuture 3228	Education	Malmö
+AutoWorks 3229	Education	Malmö
+Foodies 3230	AI & Robotics	Stockholm
+BuildPro 3231	Finance	None
+TechNova 3232	Finance	Helsingborg
+AutoWorks 3233	Construction	Norrköping
+None	AI & Robotics	Stockholm
+TechNova 3235	Construction	Göteborg
+BuildPro 3236	Construction	None
+Foodies 3237	Technology	Malmö
+TechNova 3238	Construction	Malmö
+RoboTech 3239		Uppsala
+HealthSync 3240	Technology	12345
+GreenFuture 3241	Healthcare	###
+GreenFuture 3242	Medical Devices	Linköping
+MediCare 3243	Renewable Energy	Helsingborg
+MediCare 3244	AI & Robotics	Helsingborg
+Foodies 3245	Healthcare	Malmö
+MediCare 3246	Education	Jönköping
+TechNova 3247	Healthcare	###
+AutoWorks 3248	Technology	Uppsala
+HealthSync 3249	Renewable Energy	Malmö
+BuildPro 3250	AI & Robotics	Linköping
+RoboTech 3251	Healthcare	Göteborg
+FinTrust 3252	Renewable Energy	Norrköping
+AutoWorks 3253	Automotive	Västerås
+BuildPro 3254	Technology	Norrköping
+RoboTech 3255	Food & Beverage	Malmö
+EduVision 3256	Technology	Malmö
+TechNova 3257	Finance	Helsingborg
+TechNova 3258	Construction	Örebro
+HealthSync 3259	Automotive	Helsingborg
+FinTrust 3260	Finance	Malmö
+AutoWorks 3261	Finance	Malmö
+BuildPro 3262	Education	Helsingborg
+BuildPro 3263	AI & Robotics	Linköping
+EduVision 3264	Construction	Linköping
+RoboTech 3265	Automotive	Göteborg
+Foodies 3266	AI & Robotics	Norrköping
+FakeCity	Healthcare	12345
+TechNova 3268	Technology	Örebro
+HealthSync 3269	Medical Devices	Unknown
+###	Healthcare	Helsingborg
+BuildPro 3271	Education	Göteborg
+MediCare 3272	Food & Beverage	Linköping
+Foodies 3273	Technology	Stockholm
+Foodies 3274	Medical Devices	Uppsala
+EduVision 3275	AI & Robotics	Malmö
+NULL	Automotive	Jönköping
+MediCare 3277	Automotive	Norrköping
+RoboTech 3278	Construction	Jönköping
+HealthSync 3279	Renewable Energy	Göteborg
+GreenFuture 3280	AI & Robotics	Linköping
+FinTrust 3281	Renewable Energy	Örebro
+EduVision 3282	Construction	FakeCity
+RoboTech 3283	Construction	Jönköping
+TechNova 3284	Medical Devices	Uppsala
+BuildPro 3285	Education	Stockholm
+EduVision 3286	Healthcare	Norrköping
+TechNova 3287	Renewable Energy	Norrköping
+FinTrust 3288	Education	Västerås
+N/A	Renewable Energy	Linköping
+AutoWorks 3290	Technology	Helsingborg
+AutoWorks 3291	Finance	Jönköping
+FinTrust 3292	Education	Jönköping
+AutoWorks 3293	Renewable Energy	Jönköping
+FinTrust 3294	Healthcare	Västerås
+!!Error!!	Education	Uppsala
+AutoWorks 3296	Technology	Norrköping
+###	Technology	Helsingborg
+BuildPro 3298	Construction	Jönköping
+BuildPro 3299	AI & Robotics	Malmö
+GreenFuture 3300	Education	Örebro
+MediCare 3301	Renewable Energy	12345
+BuildPro 3302	Healthcare	Malmö
+FinTrust 3303	Education	Linköping
+###	Finance	Uppsala
+EduVision 3305	Medical Devices	Jönköping
+FinTrust 3306	Technology	Stockholm
+RoboTech 3307	Education	12345
+EduVision 3308	Technology	Örebro
+HealthSync 3309	Education	Helsingborg
+AutoWorks 3310	Automotive	Stockholm
+AutoWorks 3311	Automotive	Norrköping
+N/A	Automotive	Helsingborg
+EduVision 3313	Food & Beverage	Stockholm
+Foodies 3314	N/A	Örebro
+GreenFuture 3315	Education	Norrköping
+MediCare 3316	Technology	!!Error!!
+TechNova 3317	Construction	Örebro
+AutoWorks 3318	Technology	Norrköping
+MediCare 3319	Finance	###
+FinTrust 3320	Construction	Uppsala
+GreenFuture 3321	Technology	Örebro
+GreenFuture 3322	Education	Norrköping
+GreenFuture 3323	Food & Beverage	Västerås
+GreenFuture 3324	Unknown	Uppsala
+RoboTech 3325	Medical Devices	Helsingborg
+EduVision 3326	Education	Malmö
+Foodies 3327	AI & Robotics	Norrköping
+BuildPro 3328	Finance	Västerås
+BuildPro 3329	AI & Robotics	###
+Foodies 3330	None	Jönköping
+FinTrust 3331	Education	Västerås
+HealthSync 3332	Medical Devices	Örebro
+MediCare 3333	Medical Devices	Jönköping
+TechNova 3334	Healthcare	Malmö
+BuildPro 3335	Unknown	Västerås
+EduVision 3336	Healthcare	Jönköping
+HealthSync 3337	Finance	Stockholm
+MediCare 3338	Medical Devices	Västerås
+HealthSync 3339	Renewable Energy	Norrköping
+HealthSync 3340	###	Uppsala
+FinTrust 3341	Technology	Helsingborg
+FinTrust 3342	Healthcare	Göteborg
+Foodies 3343	Healthcare	Stockholm
+Unknown	Renewable Energy	Örebro
+!!Error!!	Technology	Västerås
+TechNova 3346	FakeCity	Norrköping
+TechNova 3347	Education	Norrköping
+TechNova 3348	Unknown	Uppsala
+AutoWorks 3349	Food & Beverage	Linköping
+EduVision 3350	Healthcare	Unknown
+RoboTech 3351	Healthcare	Västerås
+RoboTech 3352	Education	Linköping
+FakeCity	Finance	Jönköping
+EduVision 3354	Medical Devices	Göteborg
+EduVision 3355	Education	Jönköping
+GreenFuture 3356	Construction	Malmö
+RoboTech 3357	Technology	Västerås
+RoboTech 3358	Finance	Jönköping
+TechNova 3359	AI & Robotics	Jönköping
+RoboTech 3360	Automotive	Malmö
+FinTrust 3361	Finance	Malmö
+GreenFuture 3362	Food & Beverage	Göteborg
+AutoWorks 3363	Education	Göteborg
+BuildPro 3364	Renewable Energy	Malmö
+GreenFuture 3365	Healthcare	Helsingborg
+BuildPro 3366	NULL	Uppsala
+Foodies 3367	Technology	Linköping
+FinTrust 3368	Renewable Energy	N/A
+EduVision 3369	Healthcare	Västerås
+	Automotive	Norrköping
+RoboTech 3371	Education	None
+GreenFuture 3372	Construction	Malmö
+AutoWorks 3373	Construction	Örebro
+None	Education	Västerås
+RoboTech 3375	Automotive	Örebro
+EduVision 3376	Healthcare	Malmö
+TechNova 3377	Education	Helsingborg
+FinTrust 3378	Renewable Energy	Uppsala
+FinTrust 3379	Renewable Energy	Linköping
+GreenFuture 3380	Renewable Energy	Örebro
+TechNova 3381	Automotive	Linköping
+RoboTech 3382	Education	Malmö
+FakeCity	Technology	Uppsala
+MediCare 3384	Food & Beverage	Helsingborg
+EduVision 3385	Food & Beverage	Helsingborg
+RoboTech 3386	Medical Devices	Jönköping
+TechNova 3387	Renewable Energy	Örebro
+EduVision 3388	Technology	Norrköping
+MediCare 3389	Finance	Örebro
+HealthSync 3390	Finance	Jönköping
+GreenFuture 3391	Healthcare	Norrköping
+N/A	Healthcare	Unknown
+MediCare 3393	Medical Devices	N/A
+HealthSync 3394	Technology	
+Foodies 3395	Technology	Norrköping
+AutoWorks 3396	Technology	Örebro
+BuildPro 3397	Technology	Göteborg
+Foodies 3398	NULL	Jönköping
+RoboTech 3399	Automotive	Göteborg
+HealthSync 3400	Automotive	Helsingborg
+MediCare 3401	###	12345
+BuildPro 3402	Education	Norrköping
+GreenFuture 3403	Construction	Jönköping
+AutoWorks 3404	Automotive	Linköping
+Foodies 3405	Construction	Göteborg
+MediCare 3406	Construction	Linköping
+FinTrust 3407	Healthcare	Helsingborg
+FinTrust 3408	Education	Uppsala
+HealthSync 3409	Automotive	Jönköping
+None	Finance	Malmö
+TechNova 3411	Technology	Linköping
+GreenFuture 3412	Construction	Uppsala
+AutoWorks 3413	Automotive	Västerås
+Foodies 3414	Automotive	None
+FinTrust 3415	Medical Devices	Norrköping
+Foodies 3416	Construction	Linköping
+RoboTech 3417	Automotive	Linköping
+FakeCity	Healthcare	Linköping
+MediCare 3419	Food & Beverage	Malmö
+MediCare 3420	Automotive	Linköping
+HealthSync 3421	Medical Devices	###
+TechNova 3422	Unknown	Göteborg
+BuildPro 3423	Renewable Energy	Malmö
+AutoWorks 3424	Finance	Göteborg
+BuildPro 3425	Healthcare	Örebro
+Foodies 3426	Education	Linköping
+RoboTech 3427	Food & Beverage	None
+FinTrust 3428	Automotive	Örebro
+BuildPro 3429	Automotive	None
+###	Automotive	N/A
+TechNova 3431	Medical Devices	Västerås
+EduVision 3432	AI & Robotics	Örebro
+GreenFuture 3433	Technology	Malmö
+MediCare 3434	Finance	Örebro
+HealthSync 3435	Medical Devices	Västerås
+Foodies 3436	Healthcare	Linköping
+RoboTech 3437	Renewable Energy	Uppsala
+RoboTech 3438	Food & Beverage	Malmö
+EduVision 3439	Construction	Göteborg
+HealthSync 3440	Finance	Stockholm
+Foodies 3441	Healthcare	Linköping
+RoboTech 3442	Medical Devices	Örebro
+AutoWorks 3443	AI & Robotics	!!Error!!
+EduVision 3444	Automotive	Örebro
+AutoWorks 3445	Medical Devices	!!Error!!
+AutoWorks 3446	Renewable Energy	Stockholm
+TechNova 3447	Education	Stockholm
+HealthSync 3448	Healthcare	Uppsala
+AutoWorks 3449	Healthcare	Stockholm
+EduVision 3450	Finance	Uppsala
+Foodies 3451	Medical Devices	Örebro
+EduVision 3452	Automotive	Göteborg
+GreenFuture 3453	Finance	Uppsala
+GreenFuture 3454	Renewable Energy	Malmö
+BuildPro 3455	Healthcare	Helsingborg
+BuildPro 3456	Food & Beverage	Helsingborg
+AutoWorks 3457	Automotive	Göteborg
+	Construction	###
+RoboTech 3459	Food & Beverage	Malmö
+NULL	Medical Devices	Norrköping
+Foodies 3461	Construction	Örebro
+	Construction	Linköping
+HealthSync 3463	Healthcare	Helsingborg
+HealthSync 3464	Finance	Norrköping
+BuildPro 3465	Education	Linköping
+BuildPro 3466	Technology	Västerås
+GreenFuture 3467	Medical Devices	Jönköping
+TechNova 3468	Education	Västerås
+MediCare 3469	Healthcare	Västerås
+HealthSync 3470	Automotive	Norrköping
+FinTrust 3471	Medical Devices	Stockholm
+AutoWorks 3472	AI & Robotics	Stockholm
+TechNova 3473	AI & Robotics	Göteborg
+RoboTech 3474	Healthcare	Malmö
+GreenFuture 3475	Education	Linköping
+GreenFuture 3476	Technology	Jönköping
+EduVision 3477	Education	Göteborg
+GreenFuture 3478	Automotive	!!Error!!
+RoboTech 3479	Construction	Malmö
+MediCare 3480	Education	Norrköping
+Unknown	Food & Beverage	Örebro
+GreenFuture 3482	Construction	Örebro
+RoboTech 3483	Technology	Linköping
+Unknown	Automotive	Jönköping
+AutoWorks 3485	Renewable Energy	Norrköping
+BuildPro 3486	Medical Devices	Norrköping
+Foodies 3487	Food & Beverage	Stockholm
+HealthSync 3488	Technology	Uppsala
+RoboTech 3489	Education	Malmö
+HealthSync 3490	Education	Uppsala
+HealthSync 3491	Construction	Linköping
+BuildPro 3492	Construction	Jönköping
+MediCare 3493	AI & Robotics	Stockholm
+MediCare 3494	Technology	Helsingborg
+###	Healthcare	Linköping
+FinTrust 3496	Automotive	Uppsala
+EduVision 3497	Education	Västerås
+None	Renewable Energy	Västerås
+GreenFuture 3499	Automotive	Stockholm
+MediCare 3500	Healthcare	Örebro
+BuildPro 3501	Technology	Jönköping
+GreenFuture 3502	None	Stockholm
+GreenFuture 3503	Construction	Västerås
+AutoWorks 3504	Healthcare	Örebro
+EduVision 3505	AI & Robotics	Helsingborg
+Foodies 3506	Renewable Energy	Linköping
+HealthSync 3507	Medical Devices	Västerås
+HealthSync 3508	Renewable Energy	Stockholm
+TechNova 3509	AI & Robotics	N/A
+TechNova 3510	Food & Beverage	Linköping
+FinTrust 3511	Medical Devices	Malmö
+TechNova 3512	Automotive	Malmö
+AutoWorks 3513	Automotive	Västerås
+Foodies 3514	Healthcare	Linköping
+HealthSync 3515	Healthcare	Malmö
+GreenFuture 3516	Automotive	Uppsala
+BuildPro 3517	Medical Devices	!!Error!!
+Foodies 3518	Food & Beverage	Jönköping
+RoboTech 3519	Finance	Örebro
+HealthSync 3520	Food & Beverage	Örebro
+TechNova 3521	Technology	Stockholm
+EduVision 3522	Education	Stockholm
+HealthSync 3523	AI & Robotics	Västerås
+HealthSync 3524	Food & Beverage	Stockholm
+HealthSync 3525	Automotive	Norrköping
+FinTrust 3526	Finance	Stockholm
+###	AI & Robotics	Göteborg
+BuildPro 3528	Healthcare	Helsingborg
+EduVision 3529	Medical Devices	###
+MediCare 3530	Healthcare	Malmö
+FinTrust 3531	AI & Robotics	Linköping
+GreenFuture 3532	Automotive	Örebro
+MediCare 3533	Automotive	Linköping
+HealthSync 3534	Technology	Västerås
+AutoWorks 3535	Automotive	12345
+###	Renewable Energy	Helsingborg
+GreenFuture 3537	Automotive	Norrköping
+NULL	Automotive	Uppsala
+Foodies 3539	Finance	Göteborg
+GreenFuture 3540	Renewable Energy	Malmö
+TechNova 3541	Construction	Uppsala
+RoboTech 3542	Medical Devices	Linköping
+BuildPro 3543	Finance	###
+HealthSync 3544	Food & Beverage	Göteborg
+EduVision 3545	Education	Uppsala
+GreenFuture 3546	Construction	Örebro
+None	Finance	Uppsala
+AutoWorks 3548	Renewable Energy	Unknown
+RoboTech 3549	Technology	Malmö
+MediCare 3550	Education	Malmö
+Foodies 3551	Technology	Uppsala
+GreenFuture 3552	Education	Malmö
+RoboTech 3553	Finance	Stockholm
+Foodies 3554	###	Jönköping
+Foodies 3555	Automotive	Jönköping
+AutoWorks 3556	Construction	Västerås
+FinTrust 3557	Technology	Jönköping
+HealthSync 3558	Technology	!!Error!!
+GreenFuture 3559	Automotive	Västerås
+MediCare 3560	Education	Stockholm
+FinTrust 3561	Construction	Jönköping
+RoboTech 3562	Renewable Energy	Göteborg
+EduVision 3563	Medical Devices	Helsingborg
+FinTrust 3564	AI & Robotics	Jönköping
+TechNova 3565	Construction	Helsingborg
+TechNova 3566	Automotive	Göteborg
+	Construction	Göteborg
+BuildPro 3568	Education	###
+EduVision 3569	Renewable Energy	Västerås
+RoboTech 3570	Automotive	Uppsala
+GreenFuture 3571	AI & Robotics	Göteborg
+EduVision 3572	AI & Robotics	Norrköping
+TechNova 3573	Healthcare	Jönköping
+AutoWorks 3574	Healthcare	Västerås
+RoboTech 3575	Automotive	Malmö
+AutoWorks 3576	AI & Robotics	Göteborg
+RoboTech 3577	AI & Robotics	Linköping
+Foodies 3578	N/A	Örebro
+RoboTech 3579	Automotive	Jönköping
+FinTrust 3580	Food & Beverage	Malmö
+HealthSync 3581	Renewable Energy	Västerås
+TechNova 3582	Automotive	Malmö
+EduVision 3583	Medical Devices	Örebro
+BuildPro 3584	Healthcare	Göteborg
+Foodies 3585	Medical Devices	Uppsala
+HealthSync 3586	Renewable Energy	Linköping
+Foodies 3587	Automotive	
+AutoWorks 3588	AI & Robotics	Helsingborg
+BuildPro 3589	Medical Devices	Norrköping
+Foodies 3590	Renewable Energy	Göteborg
+BuildPro 3591	Medical Devices	Linköping
+RoboTech 3592	Finance	
+AutoWorks 3593	Renewable Energy	Västerås
+Foodies 3594	Automotive	Uppsala
+None	###	Jönköping
+RoboTech 3596	AI & Robotics	Jönköping
+GreenFuture 3597	Education	Örebro
+HealthSync 3598	Technology	Örebro
+HealthSync 3599	Finance	Helsingborg
+GreenFuture 3600	Technology	Örebro
+TechNova 3601	Finance	Malmö
+MediCare 3602	Medical Devices	Västerås
+TechNova 3603	Technology	NULL
+HealthSync 3604	Technology	Göteborg
+AutoWorks 3605	Medical Devices	Malmö
+TechNova 3606	Healthcare	Göteborg
+HealthSync 3607	Finance	Helsingborg
+RoboTech 3608	Finance	Stockholm
+EduVision 3609	Healthcare	Malmö
+AutoWorks 3610	Education	Norrköping
+Unknown	Food & Beverage	Jönköping
+EduVision 3612	Finance	Örebro
+Unknown	Education	Västerås
+HealthSync 3614	Finance	Malmö
+BuildPro 3615	Medical Devices	Göteborg
+HealthSync 3616	Renewable Energy	Uppsala
+Foodies 3617	NULL	Helsingborg
+GreenFuture 3618	Finance	Malmö
+Foodies 3619	Automotive	Örebro
+EduVision 3620	Education	Norrköping
+MediCare 3621	Construction	Västerås
+RoboTech 3622	Food & Beverage	Linköping
+HealthSync 3623	Education	Örebro
+TechNova 3624	Construction	Norrköping
+TechNova 3625	Healthcare	Västerås
+RoboTech 3626	Technology	Helsingborg
+BuildPro 3627	AI & Robotics	Stockholm
+RoboTech 3628	Healthcare	Linköping
+FinTrust 3629	Medical Devices	Norrköping
+BuildPro 3630	Technology	Göteborg
+AutoWorks 3631	Renewable Energy	Malmö
+FinTrust 3632	Automotive	Göteborg
+MediCare 3633	Healthcare	Norrköping
+BuildPro 3634	Medical Devices	Göteborg
+EduVision 3635	Construction	Helsingborg
+BuildPro 3636	Food & Beverage	Malmö
+HealthSync 3637	Healthcare	Unknown
+TechNova 3638	AI & Robotics	Göteborg
+RoboTech 3639	AI & Robotics	Uppsala
+BuildPro 3640	Healthcare	Västerås
+FinTrust 3641	Medical Devices	Jönköping
+FakeCity	Technology	FakeCity
+AutoWorks 3643	AI & Robotics	Örebro
+Foodies 3644	Renewable Energy	Malmö
+None	Medical Devices	Göteborg
+AutoWorks 3646		Malmö
+NULL	Renewable Energy	Malmö
+HealthSync 3648	Healthcare	Örebro
+AutoWorks 3649	Technology	Helsingborg
+TechNova 3650	Construction	Jönköping
+TechNova 3651	Automotive	Örebro
+Foodies 3652	Food & Beverage	Linköping
+Foodies 3653	AI & Robotics	Linköping
+BuildPro 3654	Food & Beverage	Malmö
+Foodies 3655	Medical Devices	Uppsala
+###	Automotive	Malmö
+BuildPro 3657	Automotive	Helsingborg
+FinTrust 3658	AI & Robotics	Malmö
+TechNova 3659	AI & Robotics	###
+GreenFuture 3660	Technology	!!Error!!
+###	Finance	Stockholm
+AutoWorks 3662	Renewable Energy	Jönköping
+MediCare 3663	Automotive	Norrköping
+FinTrust 3664	12345	Uppsala
+RoboTech 3665	Medical Devices	Malmö
+Foodies 3666	Renewable Energy	Uppsala
+RoboTech 3667	Healthcare	Västerås
+RoboTech 3668	Technology	###
+HealthSync 3669	Healthcare	
+GreenFuture 3670	Education	Uppsala
+RoboTech 3671	Finance	Linköping
+HealthSync 3672	Education	
+FinTrust 3673	Construction	Uppsala
+BuildPro 3674	Renewable Energy	NULL
+	Automotive	Västerås
+Foodies 3676	Technology	Stockholm
+HealthSync 3677	Medical Devices	Norrköping
+GreenFuture 3678	Medical Devices	Norrköping
+FinTrust 3679	Automotive	Örebro
+FinTrust 3680	Renewable Energy	Örebro
+TechNova 3681	Finance	###
+AutoWorks 3682	Healthcare	Jönköping
+TechNova 3683	AI & Robotics	NULL
+FinTrust 3684	Automotive	Örebro
+HealthSync 3685	Food & Beverage	Uppsala
+GreenFuture 3686	NULL	Örebro
+###	AI & Robotics	Jönköping
+NULL	Medical Devices	Linköping
+TechNova 3689	Education	Linköping
+HealthSync 3690	AI & Robotics	Norrköping
+BuildPro 3691	Automotive	Jönköping
+MediCare 3692	Construction	Norrköping
+BuildPro 3693	Automotive	Göteborg
+AutoWorks 3694	Automotive	Örebro
+FinTrust 3695	Construction	Göteborg
+TechNova 3696	Food & Beverage	Stockholm
+12345	Finance	Malmö
+FinTrust 3698	Technology	Jönköping
+Unknown	Finance	Jönköping
+None	None	N/A
+Foodies 3701	Education	Jönköping
+Foodies 3702	Food & Beverage	Örebro
+TechNova 3703	Healthcare	Västerås
+Foodies 3704	Education	Västerås
+MediCare 3705	Healthcare	Norrköping
+None	Food & Beverage	Linköping
+BuildPro 3707	Technology	Norrköping
+EduVision 3708	Medical Devices	Helsingborg
+RoboTech 3709	###	Jönköping
+BuildPro 3710	Finance	Norrköping
+GreenFuture 3711	AI & Robotics	Örebro
+GreenFuture 3712	Food & Beverage	Stockholm
+AutoWorks 3713	Technology	Uppsala
+TechNova 3714	Finance	Unknown
+N/A	Automotive	Örebro
+RoboTech 3716	!!Error!!	Norrköping
+MediCare 3717	Food & Beverage	Jönköping
+AutoWorks 3718	Renewable Energy	Malmö
+EduVision 3719	!!Error!!	Linköping
+FinTrust 3720	Medical Devices	Malmö
+EduVision 3721	Technology	Linköping
+GreenFuture 3722	Education	Helsingborg
+FinTrust 3723	Finance	Uppsala
+GreenFuture 3724	Medical Devices	Malmö
+Foodies 3725	AI & Robotics	Malmö
+EduVision 3726	Construction	Linköping
+FinTrust 3727	Renewable Energy	Göteborg
+RoboTech 3728	Renewable Energy	Uppsala
+RoboTech 3729	Technology	Linköping
+BuildPro 3730	Medical Devices	Västerås
+EduVision 3731	Technology	Jönköping
+Foodies 3732	Renewable Energy	Stockholm
+TechNova 3733	Healthcare	Malmö
+FinTrust 3734	Finance	Helsingborg
+Foodies 3735	Renewable Energy	Jönköping
+HealthSync 3736	Technology	Helsingborg
+FinTrust 3737	Technology	
+GreenFuture 3738	N/A	Örebro
+HealthSync 3739	Construction	Uppsala
+HealthSync 3740	Medical Devices	Göteborg
+TechNova 3741	Healthcare	Örebro
+Foodies 3742	NULL	Helsingborg
+MediCare 3743	Education	Helsingborg
+AutoWorks 3744	Food & Beverage	Örebro
+HealthSync 3745	Renewable Energy	Helsingborg
+BuildPro 3746	Healthcare	Jönköping
+RoboTech 3747	Education	Uppsala
+None	###	Västerås
+EduVision 3749	Food & Beverage	Norrköping
+GreenFuture 3750	Food & Beverage	###
+RoboTech 3751	Healthcare	Örebro
+MediCare 3752	Construction	FakeCity
+GreenFuture 3753	Medical Devices	Jönköping
+GreenFuture 3754	Finance	Helsingborg
+FinTrust 3755	Construction	###
+RoboTech 3756	Automotive	Västerås
+FinTrust 3757	Medical Devices	Malmö
+MediCare 3758	AI & Robotics	Norrköping
+TechNova 3759	Technology	Helsingborg
+FinTrust 3760	Education	Helsingborg
+MediCare 3761	Automotive	Västerås
+HealthSync 3762	Medical Devices	Jönköping
+GreenFuture 3763	Construction	Malmö
+MediCare 3764	Finance	Uppsala
+HealthSync 3765	Healthcare	Uppsala
+MediCare 3766	Healthcare	Västerås
+GreenFuture 3767	Food & Beverage	Örebro
+TechNova 3768	Automotive	Jönköping
+!!Error!!	Construction	Linköping
+BuildPro 3770	Automotive	Helsingborg
+GreenFuture 3771		Helsingborg
+BuildPro 3772	Food & Beverage	N/A
+EduVision 3773	Automotive	Linköping
+AutoWorks 3774	Healthcare	
+GreenFuture 3775	Medical Devices	Malmö
+FinTrust 3776	Automotive	Linköping
+HealthSync 3777	Finance	Västerås
+EduVision 3778	Renewable Energy	Örebro
+HealthSync 3779	Construction	Norrköping
+TechNova 3780	Renewable Energy	Linköping
+FinTrust 3781	Education	Linköping
+Foodies 3782	AI & Robotics	Göteborg
+TechNova 3783	Construction	###
+EduVision 3784	Construction	Linköping
+FakeCity	Healthcare	Helsingborg
+Foodies 3786	Medical Devices	Norrköping
+EduVision 3787	Medical Devices	Göteborg
+TechNova 3788	Construction	Göteborg
+RoboTech 3789	Construction	Västerås
+Foodies 3790	Food & Beverage	Stockholm
+FinTrust 3791	Automotive	Linköping
+GreenFuture 3792	Construction	N/A
+EduVision 3793	Automotive	Jönköping
+BuildPro 3794	Finance	Göteborg
+TechNova 3795	Automotive	FakeCity
+MediCare 3796	Medical Devices	Stockholm
+RoboTech 3797	Food & Beverage	Västerås
+TechNova 3798	Technology	Norrköping
+RoboTech 3799	N/A	Uppsala
+RoboTech 3800	Construction	Jönköping
+FinTrust 3801	AI & Robotics	Örebro
+TechNova 3802	Finance	Norrköping
+GreenFuture 3803	Food & Beverage	Norrköping
+!!Error!!	Food & Beverage	Uppsala
+MediCare 3805	FakeCity	Uppsala
+TechNova 3806	AI & Robotics	Stockholm
+BuildPro 3807	Education	Jönköping
+HealthSync 3808	Renewable Energy	Stockholm
+TechNova 3809	Finance	FakeCity
+EduVision 3810	Technology	Västerås
+HealthSync 3811	Technology	NULL
+TechNova 3812	Food & Beverage	Norrköping
+GreenFuture 3813	Construction	Linköping
+HealthSync 3814	Education	Göteborg
+RoboTech 3815	Construction	None
+FinTrust 3816	Food & Beverage	Malmö
+GreenFuture 3817	Food & Beverage	Örebro
+TechNova 3818	Medical Devices	Helsingborg
+GreenFuture 3819	Automotive	N/A
+Unknown	Education	Helsingborg
+	AI & Robotics	Unknown
+AutoWorks 3822	AI & Robotics	Helsingborg
+EduVision 3823	Medical Devices	N/A
+AutoWorks 3824	AI & Robotics	Stockholm
+BuildPro 3825	Medical Devices	Jönköping
+TechNova 3826	Finance	Stockholm
+BuildPro 3827	Finance	Helsingborg
+EduVision 3828	Construction	Norrköping
+FinTrust 3829	Healthcare	Malmö
+HealthSync 3830	Automotive	Linköping
+FinTrust 3831	Automotive	Stockholm
+GreenFuture 3832	Education	Stockholm
+MediCare 3833	Finance	Göteborg
+Foodies 3834	Construction	Linköping
+RoboTech 3835	Medical Devices	Unknown
+BuildPro 3836	Medical Devices	Uppsala
+GreenFuture 3837	Education	Helsingborg
+GreenFuture 3838	Renewable Energy	Linköping
+MediCare 3839	Automotive	Örebro
+MediCare 3840	Construction	Göteborg
+EduVision 3841	Medical Devices	Göteborg
+GreenFuture 3842	AI & Robotics	Jönköping
+Foodies 3843	Healthcare	FakeCity
+Foodies 3844	Medical Devices	Örebro
+EduVision 3845	Education	Linköping
+RoboTech 3846	Education	Norrköping
+GreenFuture 3847	Automotive	Malmö
+AutoWorks 3848	Education	Linköping
+GreenFuture 3849	Finance	Göteborg
+Unknown	Finance	Linköping
+AutoWorks 3851	AI & Robotics	Helsingborg
+FinTrust 3852	Renewable Energy	Helsingborg
+AutoWorks 3853	Construction	Uppsala
+TechNova 3854	Education	Helsingborg
+HealthSync 3855	Renewable Energy	Jönköping
+	AI & Robotics	Uppsala
+GreenFuture 3857	Medical Devices	Göteborg
+N/A	Healthcare	Västerås
+Foodies 3859	Technology	Uppsala
+BuildPro 3860	Technology	Västerås
+TechNova 3861	Medical Devices	Linköping
+Foodies 3862	Healthcare	Malmö
+TechNova 3863	Technology	Örebro
+AutoWorks 3864	AI & Robotics	Helsingborg
+FinTrust 3865	AI & Robotics	Örebro
+FinTrust 3866	N/A	Helsingborg
+Foodies 3867	Renewable Energy	!!Error!!
+AutoWorks 3868	12345	Västerås
+GreenFuture 3869	Healthcare	Norrköping
+Foodies 3870	Medical Devices	Malmö
+HealthSync 3871	Construction	Göteborg
+!!Error!!	AI & Robotics	Västerås
+BuildPro 3873	Food & Beverage	Helsingborg
+HealthSync 3874	Medical Devices	Uppsala
+None	Technology	Helsingborg
+Foodies 3876	Healthcare	Malmö
+FinTrust 3877	Healthcare	Västerås
+TechNova 3878	Technology	Helsingborg
+GreenFuture 3879	AI & Robotics	Västerås
+###	Technology	Uppsala
+MediCare 3881	Automotive	Malmö
+TechNova 3882	AI & Robotics	Uppsala
+MediCare 3883	AI & Robotics	Jönköping
+	Healthcare	Västerås
+NULL	Automotive	Norrköping
+FinTrust 3886	Renewable Energy	Uppsala
+TechNova 3887	FakeCity	Örebro
+12345	Healthcare	NULL
+AutoWorks 3889	Technology	Malmö
+FinTrust 3890	Automotive	Stockholm
+AutoWorks 3891	Construction	Norrköping
+AutoWorks 3892	Healthcare	Uppsala
+FinTrust 3893	Finance	Västerås
+AutoWorks 3894	Healthcare	NULL
+HealthSync 3895	Food & Beverage	Norrköping
+GreenFuture 3896	Renewable Energy	Malmö
+EduVision 3897	Healthcare	Jönköping
+TechNova 3898	Technology	Västerås
+Foodies 3899	Automotive	Malmö
+HealthSync 3900	Medical Devices	Linköping
+GreenFuture 3901	Healthcare	Malmö
+GreenFuture 3902	Construction	Linköping
+RoboTech 3903	Education	Linköping
+MediCare 3904	Renewable Energy	Malmö
+BuildPro 3905	Food & Beverage	Helsingborg
+N/A	Automotive	Stockholm
+MediCare 3907	AI & Robotics	Göteborg
+Foodies 3908	Food & Beverage	Uppsala
+BuildPro 3909	Education	
+MediCare 3910	Food & Beverage	Göteborg
+EduVision 3911	Automotive	Uppsala
+FinTrust 3912	Renewable Energy	Göteborg
+TechNova 3913	Food & Beverage	Linköping
+EduVision 3914	Technology	Malmö
+GreenFuture 3915	Medical Devices	Örebro
+N/A	Technology	Västerås
+BuildPro 3917	Education	Jönköping
+RoboTech 3918	Healthcare	Malmö
+RoboTech 3919	AI & Robotics	Malmö
+AutoWorks 3920	AI & Robotics	Helsingborg
+MediCare 3921	Medical Devices	Linköping
+Foodies 3922	Education	Stockholm
+RoboTech 3923	Renewable Energy	Uppsala
+RoboTech 3924	Food & Beverage	Jönköping
+EduVision 3925	Technology	Uppsala
+GreenFuture 3926	Renewable Energy	Norrköping
+RoboTech 3927	Automotive	Uppsala
+HealthSync 3928	Education	Norrköping
+Foodies 3929	Finance	Malmö
+GreenFuture 3930	Automotive	Örebro
+FinTrust 3931	Construction	Västerås
+TechNova 3932	Education	Örebro
+MediCare 3933	Technology	Malmö
+GreenFuture 3934	Technology	Göteborg
+TechNova 3935	Renewable Energy	FakeCity
+GreenFuture 3936	Construction	Malmö
+EduVision 3937	Finance	Stockholm
+GreenFuture 3938	Education	Uppsala
+MediCare 3939	AI & Robotics	!!Error!!
+MediCare 3940	N/A	Norrköping
+RoboTech 3941	Healthcare	Örebro
+TechNova 3942	Healthcare	
+BuildPro 3943	Construction	Stockholm
+MediCare 3944	Renewable Energy	###
+RoboTech 3945	Finance	Göteborg
+None	Education	Malmö
+Foodies 3947	Automotive	Jönköping
+HealthSync 3948	AI & Robotics	Göteborg
+GreenFuture 3949	Medical Devices	Uppsala
+RoboTech 3950	Construction	Norrköping
+AutoWorks 3951	AI & Robotics	Örebro
+	Automotive	Göteborg
+HealthSync 3953	Healthcare	Malmö
+Foodies 3954	Healthcare	Jönköping
+TechNova 3955	AI & Robotics	!!Error!!
+FinTrust 3956	Renewable Energy	Norrköping
+FinTrust 3957	Food & Beverage	Malmö
+EduVision 3958	Finance	Stockholm
+MediCare 3959	Finance	Linköping
+MediCare 3960	Medical Devices	Helsingborg
+Foodies 3961	Medical Devices	Jönköping
+RoboTech 3962	Food & Beverage	Helsingborg
+HealthSync 3963	Education	Jönköping
+AutoWorks 3964	Healthcare	
+MediCare 3965	Medical Devices	Jönköping
+FinTrust 3966	Renewable Energy	Västerås
+N/A	Education	Örebro
+12345	Food & Beverage	Linköping
+FinTrust 3969	Education	Linköping
+RoboTech 3970	Medical Devices	Västerås
+EduVision 3971	Medical Devices	Uppsala
+BuildPro 3972	Food & Beverage	Göteborg
+RoboTech 3973	Automotive	Norrköping
+BuildPro 3974	Education	Örebro
+BuildPro 3975	Medical Devices	Linköping
+Foodies 3976	Food & Beverage	Linköping
+HealthSync 3977	AI & Robotics	Stockholm
+Foodies 3978	Education	Göteborg
+TechNova 3979	Food & Beverage	###
+GreenFuture 3980	Automotive	Göteborg
+BuildPro 3981	Medical Devices	Örebro
+TechNova 3982	Food & Beverage	Västerås
+HealthSync 3983	Automotive	Malmö
+MediCare 3984	Renewable Energy	Göteborg
+BuildPro 3985	Renewable Energy	Göteborg
+AutoWorks 3986	AI & Robotics	N/A
+GreenFuture 3987	Renewable Energy	Norrköping
+GreenFuture 3988	Finance	Helsingborg
+AutoWorks 3989	AI & Robotics	Uppsala
+RoboTech 3990	Construction	Malmö
+RoboTech 3991	Construction	Västerås
+GreenFuture 3992	Finance	Norrköping
+BuildPro 3993	Education	N/A
+AutoWorks 3994	Medical Devices	Norrköping
+None	Renewable Energy	Jönköping
+###	AI & Robotics	Stockholm
+HealthSync 3997	AI & Robotics	N/A
+GreenFuture 3998	AI & Robotics	Jönköping
+EduVision 3999	Automotive	Malmö
+EduVision 4000	Finance	Örebro
+RoboTech 4001	Food & Beverage	Norrköping
+HealthSync 4002	Technology	Örebro
+MediCare 4003	Renewable Energy	Örebro
+AutoWorks 4004	Food & Beverage	Jönköping
+Foodies 4005	Automotive	Jönköping
+TechNova 4006	AI & Robotics	Malmö
+N/A	Food & Beverage	Linköping
+HealthSync 4008	Finance	
+12345	Renewable Energy	Jönköping
+MediCare 4010	Healthcare	Helsingborg
+MediCare 4011	Construction	Jönköping
+Foodies 4012	Healthcare	Malmö
+Foodies 4013	Medical Devices	Uppsala
+FinTrust 4014	Technology	Unknown
+RoboTech 4015	Medical Devices	Göteborg
+RoboTech 4016	Renewable Energy	Stockholm
+AutoWorks 4017	Healthcare	Unknown
+FinTrust 4018	Construction	Västerås
+BuildPro 4019	Technology	Norrköping
+FinTrust 4020		Norrköping
+EduVision 4021	Medical Devices	Linköping
+RoboTech 4022	Automotive	Göteborg
+	AI & Robotics	Västerås
+BuildPro 4024	Healthcare	Uppsala
+	Technology	Linköping
+GreenFuture 4026	Automotive	Malmö
+AutoWorks 4027	Education	Västerås
+GreenFuture 4028	Healthcare	Jönköping
+MediCare 4029	Food & Beverage	Örebro
+TechNova 4030	Finance	FakeCity
+TechNova 4031	Automotive	Helsingborg
+TechNova 4032	Healthcare	Örebro
+RoboTech 4033	Construction	Stockholm
+EduVision 4034	Food & Beverage	Linköping
+EduVision 4035	Medical Devices	Norrköping
+GreenFuture 4036	Finance	None
+MediCare 4037	Food & Beverage	Linköping
+FinTrust 4038	Technology	Uppsala
+HealthSync 4039	Technology	Stockholm
+HealthSync 4040	Education	Jönköping
+FakeCity	Technology	None
+BuildPro 4042	AI & Robotics	Uppsala
+EduVision 4043	Finance	12345
+RoboTech 4044	Renewable Energy	Unknown
+RoboTech 4045	N/A	Göteborg
+FinTrust 4046	Education	Helsingborg
+FinTrust 4047	Construction	Västerås
+GreenFuture 4048	AI & Robotics	Göteborg
+TechNova 4049	Education	Uppsala
+Foodies 4050	AI & Robotics	Örebro
+HealthSync 4051	AI & Robotics	Stockholm
+EduVision 4052	Finance	Helsingborg
+EduVision 4053	Finance	Jönköping
+MediCare 4054	Technology	Linköping
+BuildPro 4055	Finance	Västerås
+RoboTech 4056	Technology	Linköping
+Foodies 4057	Healthcare	Stockholm
+HealthSync 4058	Construction	Uppsala
+MediCare 4059		Jönköping
+EduVision 4060	Construction	Stockholm
+MediCare 4061	Healthcare	None
+Unknown	Education	Göteborg
+Foodies 4063	Automotive	NULL
+Foodies 4064	Food & Beverage	Göteborg
+MediCare 4065	Renewable Energy	Stockholm
+N/A	Finance	Uppsala
+Foodies 4067	Technology	Helsingborg
+BuildPro 4068	Renewable Energy	Linköping
+BuildPro 4069	AI & Robotics	Norrköping
+MediCare 4070	Medical Devices	Helsingborg
+AutoWorks 4071	Automotive	Västerås
+FinTrust 4072	Education	Jönköping
+EduVision 4073	Finance	Norrköping
+BuildPro 4074	NULL	Helsingborg
+RoboTech 4075	Construction	Malmö
+FinTrust 4076	Medical Devices	Linköping
+FinTrust 4077	Medical Devices	Stockholm
+FinTrust 4078	Construction	Stockholm
+MediCare 4079	Construction	FakeCity
+TechNova 4080	None	Stockholm
+HealthSync 4081	Finance	Göteborg
+HealthSync 4082	Technology	Västerås
+FinTrust 4083	Medical Devices	Stockholm
+HealthSync 4084	AI & Robotics	Örebro
+TechNova 4085	Food & Beverage	Jönköping
+Foodies 4086	Renewable Energy	Norrköping
+FinTrust 4087	Technology	Jönköping
+Foodies 4088	Food & Beverage	Västerås
+GreenFuture 4089	Technology	Helsingborg
+RoboTech 4090	AI & Robotics	Uppsala
+Foodies 4091	Medical Devices	Jönköping
+RoboTech 4092	AI & Robotics	Stockholm
+AutoWorks 4093	Food & Beverage	Örebro
+GreenFuture 4094	Medical Devices	Norrköping
+MediCare 4095	Food & Beverage	Stockholm
+GreenFuture 4096	Construction	Stockholm
+GreenFuture 4097	Medical Devices	Örebro
+MediCare 4098	Automotive	Stockholm
+RoboTech 4099	Healthcare	Helsingborg
+Foodies 4100	Education	Stockholm
+FakeCity	AI & Robotics	Uppsala
+AutoWorks 4102	Technology	Linköping
+Foodies 4103	Renewable Energy	Västerås
+Foodies 4104	Finance	Uppsala
+MediCare 4105	Medical Devices	Örebro
+EduVision 4106	Automotive	Linköping
+HealthSync 4107	Construction	Jönköping
+MediCare 4108	Healthcare	Linköping
+FinTrust 4109	Automotive	Stockholm
+MediCare 4110	Healthcare	Västerås
+Foodies 4111	Medical Devices	Uppsala
+TechNova 4112	Education	Linköping
+RoboTech 4113	Medical Devices	Örebro
+RoboTech 4114	Medical Devices	Linköping
+BuildPro 4115	Medical Devices	Örebro
+AutoWorks 4116	Technology	Helsingborg
+EduVision 4117	Renewable Energy	Örebro
+RoboTech 4118	Automotive	Jönköping
+HealthSync 4119	Automotive	Örebro
+GreenFuture 4120	Healthcare	N/A
+BuildPro 4121	Renewable Energy	Stockholm
+FinTrust 4122	Education	Västerås
+HealthSync 4123	Medical Devices	Uppsala
+GreenFuture 4124	Food & Beverage	Malmö
+Foodies 4125	AI & Robotics	Örebro
+Foodies 4126	Renewable Energy	FakeCity
+MediCare 4127	Education	Stockholm
+HealthSync 4128	Renewable Energy	Göteborg
+EduVision 4129	Medical Devices	Uppsala
+HealthSync 4130	Automotive	Örebro
+MediCare 4131	Education	Västerås
+Foodies 4132	Education	Uppsala
+EduVision 4133	Finance	Linköping
+Foodies 4134	Construction	Helsingborg
+MediCare 4135	Construction	Malmö
+AutoWorks 4136	Technology	!!Error!!
+BuildPro 4137	Construction	12345
+EduVision 4138	NULL	Norrköping
+MediCare 4139	Renewable Energy	Stockholm
+RoboTech 4140	Medical Devices	Unknown
+EduVision 4141	Finance	Linköping
+EduVision 4142	AI & Robotics	Jönköping
+TechNova 4143	Construction	Örebro
+FinTrust 4144	Renewable Energy	Helsingborg
+GreenFuture 4145	None	Norrköping
+MediCare 4146	Renewable Energy	Västerås
+FinTrust 4147	Automotive	Linköping
+MediCare 4148	Healthcare	Stockholm
+EduVision 4149	Finance	Stockholm
+Foodies 4150	Education	Västerås
+HealthSync 4151	Food & Beverage	!!Error!!
+RoboTech 4152	Education	Stockholm
+BuildPro 4153	Food & Beverage	Västerås
+FakeCity	Education	Uppsala
+AutoWorks 4155	Construction	Göteborg
+MediCare 4156	Renewable Energy	Linköping
+MediCare 4157	Healthcare	Stockholm
+FakeCity	AI & Robotics	Malmö
+AutoWorks 4159	Food & Beverage	Linköping
+MediCare 4160	Renewable Energy	Malmö
+BuildPro 4161	Education	Örebro
+Foodies 4162	Construction	Helsingborg
+HealthSync 4163	Finance	Göteborg
+HealthSync 4164	Renewable Energy	Jönköping
+TechNova 4165	Medical Devices	Jönköping
+BuildPro 4166	Medical Devices	Jönköping
+12345	Unknown	Uppsala
+GreenFuture 4168	Renewable Energy	Uppsala
+FinTrust 4169	Renewable Energy	Örebro
+FinTrust 4170	Finance	Helsingborg
+MediCare 4171	Healthcare	Örebro
+AutoWorks 4172	Automotive	Göteborg
+!!Error!!	Food & Beverage	Malmö
+AutoWorks 4174	Technology	Västerås
+RoboTech 4175	AI & Robotics	Linköping
+AutoWorks 4176	Renewable Energy	Örebro
+12345	Renewable Energy	Stockholm
+AutoWorks 4178	Renewable Energy	Malmö
+12345	Healthcare	Malmö
+EduVision 4180	Healthcare	Norrköping
+BuildPro 4181	Technology	Linköping
+TechNova 4182	Healthcare	!!Error!!
+EduVision 4183	Education	Jönköping
+HealthSync 4184	AI & Robotics	
+EduVision 4185	Finance	Göteborg
+Foodies 4186	Healthcare	Helsingborg
+FakeCity	Construction	Jönköping
+TechNova 4188	FakeCity	Stockholm
+TechNova 4189	Food & Beverage	NULL
+TechNova 4190	Renewable Energy	Jönköping
+HealthSync 4191	Construction	Göteborg
+FakeCity	Education	Stockholm
+HealthSync 4193	Renewable Energy	Göteborg
+BuildPro 4194	AI & Robotics	Norrköping
+FinTrust 4195	None	Stockholm
+HealthSync 4196	Automotive	Örebro
+MediCare 4197	Healthcare	Norrköping
+EduVision 4198	Automotive	Linköping
+GreenFuture 4199	Technology	Stockholm
+BuildPro 4200	Food & Beverage	Uppsala
+HealthSync 4201	Education	N/A
+MediCare 4202	Education	Helsingborg
+EduVision 4203	Technology	Linköping
+TechNova 4204	Education	Norrköping
+TechNova 4205	Automotive	Västerås
+FinTrust 4206	Automotive	NULL
+FinTrust 4207	Construction	Helsingborg
+HealthSync 4208	Finance	Linköping
+TechNova 4209	Technology	None
+Foodies 4210	Education	Uppsala
+AutoWorks 4211	Construction	Linköping
+EduVision 4212	Healthcare	Örebro
+EduVision 4213	Medical Devices	Malmö
+EduVision 4214	Education	Helsingborg
+BuildPro 4215	Automotive	Malmö
+Unknown	Education	N/A
+FakeCity	Healthcare	Stockholm
+BuildPro 4218	Technology	Örebro
+TechNova 4219	Education	Malmö
+12345	AI & Robotics	Göteborg
+MediCare 4221	Healthcare	Jönköping
+AutoWorks 4222	Technology	Stockholm
+TechNova 4223	AI & Robotics	Uppsala
+BuildPro 4224	Healthcare	Norrköping
+Foodies 4225	Technology	Västerås
+Foodies 4226	Technology	Norrköping
+BuildPro 4227	Technology	12345
+BuildPro 4228	Food & Beverage	Västerås
+GreenFuture 4229	Education	Jönköping
+N/A	Renewable Energy	Malmö
+TechNova 4231	Technology	Västerås
+MediCare 4232	Automotive	Västerås
+GreenFuture 4233	Healthcare	Helsingborg
+MediCare 4234	Finance	Stockholm
+EduVision 4235	AI & Robotics	Göteborg
+GreenFuture 4236	AI & Robotics	Göteborg
+RoboTech 4237	Technology	Örebro
+FinTrust 4238	Healthcare	Västerås
+Foodies 4239	Finance	Västerås
+	Construction	Linköping
+HealthSync 4241	Construction	None
+Foodies 4242	Construction	Jönköping
+HealthSync 4243	Education	Stockholm
+HealthSync 4244	Renewable Energy	Stockholm
+HealthSync 4245	Medical Devices	Stockholm
+EduVision 4246	Healthcare	Linköping
+HealthSync 4247	Automotive	Örebro
+EduVision 4248	Construction	Stockholm
+FinTrust 4249	Medical Devices	Norrköping
+BuildPro 4250	Finance	Helsingborg
+HealthSync 4251	Automotive	Uppsala
+EduVision 4252	Education	Uppsala
+GreenFuture 4253	Technology	Uppsala
+EduVision 4254	AI & Robotics	Uppsala
+TechNova 4255	Technology	Västerås
+RoboTech 4256	Healthcare	Jönköping
+GreenFuture 4257	Construction	None
+BuildPro 4258	AI & Robotics	Stockholm
+GreenFuture 4259	AI & Robotics	Malmö
+TechNova 4260	AI & Robotics	Jönköping
+TechNova 4261	Renewable Energy	Jönköping
+Foodies 4262	Automotive	Linköping
+AutoWorks 4263	Automotive	Malmö
+MediCare 4264	N/A	Norrköping
+MediCare 4265	Healthcare	Linköping
+###	Healthcare	Stockholm
+HealthSync 4267	Automotive	Malmö
+FinTrust 4268	Automotive	!!Error!!
+###	Construction	Västerås
+EduVision 4270	Finance	Helsingborg
+MediCare 4271	Education	Uppsala
+MediCare 4272	Renewable Energy	Jönköping
+GreenFuture 4273	Healthcare	Linköping
+TechNova 4274	Food & Beverage	Linköping
+GreenFuture 4275	Education	Unknown
+MediCare 4276	Automotive	Jönköping
+RoboTech 4277	Technology	Örebro
+FinTrust 4278	AI & Robotics	Linköping
+HealthSync 4279	Technology	Jönköping
+BuildPro 4280	Technology	Norrköping
+AutoWorks 4281	Technology	Norrköping
+###	Renewable Energy	Linköping
+GreenFuture 4283	Healthcare	Uppsala
+Foodies 4284	Construction	None
+EduVision 4285	Medical Devices	Jönköping
+Foodies 4286	Technology	Linköping
+FinTrust 4287	Medical Devices	Malmö
+N/A	AI & Robotics	Örebro
+EduVision 4289	Healthcare	Stockholm
+MediCare 4290	Construction	Linköping
+TechNova 4291	Renewable Energy	Malmö
+GreenFuture 4292	Finance	Uppsala
+Foodies 4293	Finance	12345
+RoboTech 4294	Construction	Örebro
+Foodies 4295	Finance	Helsingborg
+MediCare 4296	Renewable Energy	Helsingborg
+FakeCity	Medical Devices	Linköping
+BuildPro 4298	Education	Stockholm
+12345	AI & Robotics	Norrköping
+AutoWorks 4300	Education	Helsingborg
+Foodies 4301	Finance	Malmö
+AutoWorks 4302	Food & Beverage	Helsingborg
+HealthSync 4303	Healthcare	Malmö
+GreenFuture 4304	Technology	12345
+EduVision 4305	Food & Beverage	Uppsala
+TechNova 4306	Technology	Västerås
+HealthSync 4307	Technology	Västerås
+BuildPro 4308	Technology	Örebro
+FinTrust 4309	Medical Devices	Jönköping
+GreenFuture 4310	Construction	Helsingborg
+AutoWorks 4311	Medical Devices	Norrköping
+RoboTech 4312	Automotive	Uppsala
+HealthSync 4313	!!Error!!	Uppsala
+FinTrust 4314	Technology	Stockholm
+FinTrust 4315	Renewable Energy	Uppsala
+MediCare 4316	Finance	Helsingborg
+BuildPro 4317	Automotive	Örebro
+N/A	Medical Devices	Jönköping
+Foodies 4319	Education	Norrköping
+BuildPro 4320	Finance	Stockholm
+HealthSync 4321	Automotive	12345
+EduVision 4322	Medical Devices	Norrköping
+Foodies 4323	Automotive	Uppsala
+FinTrust 4324	AI & Robotics	Helsingborg
+EduVision 4325	Automotive	Jönköping
+FinTrust 4326	Medical Devices	Örebro
+RoboTech 4327	Renewable Energy	Örebro
+BuildPro 4328	Finance	Norrköping
+!!Error!!	Construction	Helsingborg
+Foodies 4330	Food & Beverage	Norrköping
+TechNova 4331	Medical Devices	Malmö
+GreenFuture 4332	Medical Devices	Örebro
+12345	Technology	Uppsala
+RoboTech 4334	Automotive	12345
+MediCare 4335	Renewable Energy	Göteborg
+RoboTech 4336	Medical Devices	Göteborg
+BuildPro 4337	AI & Robotics	Jönköping
+EduVision 4338	Education	Norrköping
+HealthSync 4339	AI & Robotics	Örebro
+GreenFuture 4340	Renewable Energy	NULL
+12345	Healthcare	12345
+MediCare 4342	Food & Beverage	NULL
+MediCare 4343	Technology	
+NULL	Technology	N/A
+TechNova 4345	Renewable Energy	Linköping
+TechNova 4346	Healthcare	Stockholm
+TechNova 4347	Unknown	Helsingborg
+TechNova 4348	Medical Devices	Göteborg
+MediCare 4349	Automotive	Jönköping
+TechNova 4350	Education	12345
+TechNova 4351	Healthcare	Malmö
+EduVision 4352	Renewable Energy	FakeCity
+Foodies 4353	AI & Robotics	Jönköping
+RoboTech 4354	Finance	Örebro
+GreenFuture 4355	Finance	Örebro
+AutoWorks 4356	None	Örebro
+GreenFuture 4357	Renewable Energy	Stockholm
+GreenFuture 4358	Healthcare	Göteborg
+EduVision 4359	Food & Beverage	Örebro
+AutoWorks 4360	Automotive	Helsingborg
+Foodies 4361	Construction	Norrköping
+RoboTech 4362	Automotive	Västerås
+HealthSync 4363	Renewable Energy	Norrköping
+N/A	Healthcare	Malmö
+AutoWorks 4365	Automotive	Göteborg
+	Finance	Uppsala
+MediCare 4367	Healthcare	Västerås
+BuildPro 4368	Unknown	Uppsala
+FinTrust 4369	AI & Robotics	Norrköping
+Foodies 4370	AI & Robotics	Göteborg
+HealthSync 4371	Healthcare	Uppsala
+HealthSync 4372	Automotive	Jönköping
+MediCare 4373	Education	Västerås
+Foodies 4374	AI & Robotics	Stockholm
+	Food & Beverage	Norrköping
+AutoWorks 4376	Medical Devices	Norrköping
+TechNova 4377	Renewable Energy	Uppsala
+BuildPro 4378	Finance	Norrköping
+TechNova 4379		Göteborg
+Foodies 4380	Education	Göteborg
+BuildPro 4381	Education	Stockholm
+GreenFuture 4382	AI & Robotics	Stockholm
+RoboTech 4383	Healthcare	Norrköping
+GreenFuture 4384	Education	Helsingborg
+MediCare 4385	Food & Beverage	Malmö
+FinTrust 4386	Healthcare	Jönköping
+EduVision 4387	Healthcare	Västerås
+HealthSync 4388	Automotive	Norrköping
+Foodies 4389	Technology	Stockholm
+HealthSync 4390	Technology	Linköping
+BuildPro 4391	Finance	Norrköping
+TechNova 4392	Renewable Energy	Uppsala
+AutoWorks 4393	Medical Devices	Uppsala
+BuildPro 4394	Food & Beverage	None
+TechNova 4395	Construction	Jönköping
+Foodies 4396	Healthcare	Norrköping
+EduVision 4397	Renewable Energy	Malmö
+HealthSync 4398	Technology	Malmö
+HealthSync 4399	Construction	Västerås
+RoboTech 4400	Technology	Helsingborg
+TechNova 4401	Healthcare	Göteborg
+AutoWorks 4402	Construction	Stockholm
+Foodies 4403	Finance	Örebro
+HealthSync 4404	Construction	Linköping
+12345	Construction	Örebro
+AutoWorks 4406	Finance	
+GreenFuture 4407	Healthcare	Örebro
+EduVision 4408	Medical Devices	Västerås
+FinTrust 4409	Education	Norrköping
+Foodies 4410	Construction	Linköping
+AutoWorks 4411	Renewable Energy	Malmö
+EduVision 4412	AI & Robotics	NULL
+BuildPro 4413	Finance	Västerås
+EduVision 4414	Healthcare	Västerås
+HealthSync 4415	Technology	Uppsala
+RoboTech 4416	Healthcare	None
+BuildPro 4417		Göteborg
+FinTrust 4418	Renewable Energy	Linköping
+HealthSync 4419	Technology	Västerås
+GreenFuture 4420	Food & Beverage	Stockholm
+###	Food & Beverage	Helsingborg
+MediCare 4422	Medical Devices	Stockholm
+MediCare 4423	None	Helsingborg
+EduVision 4424	FakeCity	Örebro
+FinTrust 4425	Healthcare	!!Error!!
+FinTrust 4426	Finance	Jönköping
+TechNova 4427	Education	Örebro
+BuildPro 4428	Construction	Helsingborg
+GreenFuture 4429	Medical Devices	Jönköping
+AutoWorks 4430	Finance	Västerås
+GreenFuture 4431	Healthcare	Stockholm
+MediCare 4432	Renewable Energy	Jönköping
+BuildPro 4433	Food & Beverage	Västerås
+RoboTech 4434	Construction	Uppsala
+Foodies 4435	Healthcare	Linköping
+MediCare 4436	Automotive	Helsingborg
+AutoWorks 4437	Education	Norrköping
+Foodies 4438	Construction	Örebro
+Foodies 4439	Education	!!Error!!
+GreenFuture 4440	Construction	Uppsala
+N/A	Construction	Göteborg
+BuildPro 4442	Education	Stockholm
+BuildPro 4443	AI & Robotics	Norrköping
+AutoWorks 4444	Finance	Linköping
+AutoWorks 4445	AI & Robotics	FakeCity
+HealthSync 4446	Finance	Uppsala
+MediCare 4447	Technology	Örebro
+MediCare 4448	Renewable Energy	Jönköping
+EduVision 4449	Education	Uppsala
+FinTrust 4450	Medical Devices	Göteborg
+TechNova 4451	Food & Beverage	Malmö
+TechNova 4452	Medical Devices	Helsingborg
+GreenFuture 4453	Education	Uppsala
+Foodies 4454	Technology	Göteborg
+EduVision 4455	Medical Devices	Helsingborg
+GreenFuture 4456	Renewable Energy	Örebro
+EduVision 4457	AI & Robotics	Linköping
+Foodies 4458	AI & Robotics	Helsingborg
+RoboTech 4459	Technology	Linköping
+GreenFuture 4460	Medical Devices	Örebro
+GreenFuture 4461	AI & Robotics	Stockholm
+FinTrust 4462	Medical Devices	Jönköping
+Foodies 4463	Technology	Jönköping
+MediCare 4464	Automotive	Västerås
+AutoWorks 4465	N/A	Norrköping
+!!Error!!	Education	Helsingborg
+AutoWorks 4467	Education	Helsingborg
+GreenFuture 4468	###	Helsingborg
+BuildPro 4469	Automotive	Örebro
+BuildPro 4470	Medical Devices	Uppsala
+###	Automotive	Örebro
+Foodies 4472	Education	Örebro
+TechNova 4473	Medical Devices	Göteborg
+HealthSync 4474	Education	Västerås
+Foodies 4475	Finance	Västerås
+FakeCity	Finance	Malmö
+GreenFuture 4477	AI & Robotics	Uppsala
+HealthSync 4478	Education	Norrköping
+RoboTech 4479	Construction	Stockholm
+GreenFuture 4480	None	Jönköping
+RoboTech 4481	Technology	Göteborg
+MediCare 4482	Construction	Västerås
+FinTrust 4483	Medical Devices	Norrköping
+None	Finance	Uppsala
+HealthSync 4485	AI & Robotics	Västerås
+HealthSync 4486	Food & Beverage	Västerås
+AutoWorks 4487	Food & Beverage	Unknown
+12345	Healthcare	
+TechNova 4489	Renewable Energy	Helsingborg
+HealthSync 4490	Finance	Malmö
+Foodies 4491	Food & Beverage	Göteborg
+RoboTech 4492	N/A	Örebro
+Foodies 4493	Healthcare	Uppsala
+HealthSync 4494	Technology	Västerås
+BuildPro 4495	Finance	Stockholm
+HealthSync 4496	Finance	Uppsala
+FinTrust 4497	Medical Devices	Norrköping
+FinTrust 4498	Food & Beverage	Helsingborg
+Foodies 4499	Automotive	Norrköping
+RoboTech 4500	Education	Linköping
+Foodies 4501	Finance	Stockholm
+AutoWorks 4502	Finance	Örebro
+RoboTech 4503	Food & Beverage	Linköping
+EduVision 4504	Education	Västerås
+MediCare 4505	12345	Malmö
+RoboTech 4506	AI & Robotics	Norrköping
+HealthSync 4507	Automotive	Uppsala
+GreenFuture 4508	N/A	Stockholm
+GreenFuture 4509	Healthcare	Jönköping
+None	Medical Devices	Uppsala
+N/A	NULL	Linköping
+TechNova 4512	Education	Norrköping
+HealthSync 4513	Medical Devices	Göteborg
+FinTrust 4514	Automotive	Stockholm
+GreenFuture 4515	NULL	Göteborg
+GreenFuture 4516	Healthcare	Malmö
+AutoWorks 4517	Construction	Göteborg
+HealthSync 4518	Food & Beverage	Norrköping
+GreenFuture 4519	Automotive	Jönköping
+TechNova 4520	AI & Robotics	Linköping
+RoboTech 4521	Food & Beverage	Helsingborg
+RoboTech 4522	Healthcare	Västerås
+HealthSync 4523	Finance	Västerås
+FinTrust 4524	Food & Beverage	Jönköping
+BuildPro 4525	Healthcare	Västerås
+Foodies 4526	!!Error!!	Uppsala
+EduVision 4527	AI & Robotics	Malmö
+FinTrust 4528	Finance	Uppsala
+HealthSync 4529	Food & Beverage	NULL
+HealthSync 4530	Food & Beverage	Malmö
+GreenFuture 4531	AI & Robotics	Örebro
+RoboTech 4532	Healthcare	Linköping
+MediCare 4533	Finance	Västerås
+Unknown	Finance	Örebro
+BuildPro 4535	Education	Malmö
+Foodies 4536	Food & Beverage	Malmö
+BuildPro 4537	Renewable Energy	Unknown
+FinTrust 4538	Food & Beverage	None
+TechNova 4539	N/A	Göteborg
+TechNova 4540	Automotive	Västerås
+BuildPro 4541	AI & Robotics	Unknown
+RoboTech 4542	Renewable Energy	Linköping
+HealthSync 4543	Healthcare	Stockholm
+EduVision 4544	AI & Robotics	None
+FinTrust 4545	Food & Beverage	Göteborg
+Unknown	Finance	Örebro
+FinTrust 4547	Finance	Malmö
+Unknown	Construction	Jönköping
+TechNova 4549	Medical Devices	Linköping
+HealthSync 4550	Finance	Uppsala
+FinTrust 4551	Technology	Linköping
+FinTrust 4552	Construction	Uppsala
+GreenFuture 4553	Education	Helsingborg
+EduVision 4554	N/A	NULL
+TechNova 4555	Healthcare	Norrköping
+HealthSync 4556	Food & Beverage	Örebro
+FinTrust 4557	12345	Malmö
+BuildPro 4558	AI & Robotics	
+N/A	Food & Beverage	Göteborg
+AutoWorks 4560	Healthcare	Örebro
+FinTrust 4561	Finance	Helsingborg
+TechNova 4562		Norrköping
+Unknown	Healthcare	Uppsala
+###	Finance	Västerås
+AutoWorks 4565	!!Error!!	Linköping
+TechNova 4566	Construction	Jönköping
+MediCare 4567	Finance	Örebro
+FinTrust 4568	Healthcare	Västerås
+Unknown	Construction	Uppsala
+FinTrust 4570	Renewable Energy	Stockholm
+TechNova 4571	Healthcare	Helsingborg
+HealthSync 4572	Automotive	Uppsala
+RoboTech 4573	Technology	Göteborg
+BuildPro 4574	Finance	Jönköping
+BuildPro 4575	Finance	Västerås
+MediCare 4576	Medical Devices	Helsingborg
+HealthSync 4577	Healthcare	Jönköping
+FinTrust 4578	Finance	Örebro
+BuildPro 4579	Food & Beverage	Helsingborg
+RoboTech 4580	Renewable Energy	Norrköping
+GreenFuture 4581	Renewable Energy	Västerås
+Foodies 4582	Healthcare	Örebro
+AutoWorks 4583	Automotive	Linköping
+HealthSync 4584	Technology	Västerås
+GreenFuture 4585	Education	Jönköping
+Foodies 4586	Automotive	Linköping
+MediCare 4587	Medical Devices	Göteborg
+HealthSync 4588	Construction	Linköping
+HealthSync 4589	Finance	Stockholm
+Foodies 4590	Medical Devices	Jönköping
+RoboTech 4591	Technology	Linköping
+MediCare 4592	Healthcare	Örebro
+MediCare 4593	Healthcare	Stockholm
+TechNova 4594	Healthcare	Göteborg
+HealthSync 4595	AI & Robotics	Linköping
+TechNova 4596	Healthcare	Uppsala
+RoboTech 4597	Construction	Uppsala
+GreenFuture 4598	Automotive	Linköping
+12345	Food & Beverage	Malmö
+GreenFuture 4600	Finance	Örebro
+FinTrust 4601	Medical Devices	Malmö
+HealthSync 4602	Finance	Stockholm
+BuildPro 4603	Education	Stockholm
+RoboTech 4604	Education	Norrköping
+GreenFuture 4605	Technology	Jönköping
+RoboTech 4606	Technology	Linköping
+!!Error!!	Education	Göteborg
+TechNova 4608	Construction	Göteborg
+RoboTech 4609	Renewable Energy	Göteborg
+HealthSync 4610	Healthcare	Göteborg
+TechNova 4611	Healthcare	Helsingborg
+FinTrust 4612	Technology	Örebro
+Foodies 4613	Construction	Linköping
+RoboTech 4614	Finance	Stockholm
+GreenFuture 4615	Medical Devices	Malmö
+HealthSync 4616	Medical Devices	Örebro
+BuildPro 4617	Education	Helsingborg
+Foodies 4618	Automotive	Helsingborg
+MediCare 4619	Automotive	Norrköping
+RoboTech 4620	Renewable Energy	Göteborg
+GreenFuture 4621	Construction	Stockholm
+FinTrust 4622	Education	Uppsala
+GreenFuture 4623	AI & Robotics	Helsingborg
+!!Error!!	Renewable Energy	Helsingborg
+	Medical Devices	Örebro
+GreenFuture 4626	Renewable Energy	Stockholm
+TechNova 4627	Education	Helsingborg
+AutoWorks 4628	Healthcare	Uppsala
+	Renewable Energy	Malmö
+HealthSync 4630	Medical Devices	Linköping
+BuildPro 4631	AI & Robotics	Norrköping
+AutoWorks 4632	AI & Robotics	Linköping
+FinTrust 4633	Construction	Helsingborg
+	Healthcare	Göteborg
+AutoWorks 4635	Education	Uppsala
+EduVision 4636	Medical Devices	Stockholm
+AutoWorks 4637	Healthcare	Västerås
+TechNova 4638	Food & Beverage	Stockholm
+HealthSync 4639	Food & Beverage	Göteborg
+FinTrust 4640	Food & Beverage	Jönköping
+MediCare 4641	Renewable Energy	Uppsala
+HealthSync 4642	Technology	Jönköping
+MediCare 4643	Education	Västerås
+MediCare 4644	Technology	Stockholm
+GreenFuture 4645	Technology	Malmö
+Foodies 4646	Technology	Jönköping
+AutoWorks 4647	Food & Beverage	Göteborg
+AutoWorks 4648	Medical Devices	Linköping
+BuildPro 4649	Medical Devices	Norrköping
+FinTrust 4650	None	Örebro
+FinTrust 4651	Construction	Helsingborg
+TechNova 4652	Finance	!!Error!!
+HealthSync 4653	Medical Devices	Helsingborg
+BuildPro 4654	Education	Stockholm
+TechNova 4655	Renewable Energy	Linköping
+MediCare 4656	Medical Devices	Västerås
+MediCare 4657	AI & Robotics	Uppsala
+AutoWorks 4658	AI & Robotics	Örebro
+EduVision 4659	Education	Västerås
+BuildPro 4660	Finance	Jönköping
+EduVision 4661	Renewable Energy	Västerås
+TechNova 4662	Automotive	Helsingborg
+GreenFuture 4663	Healthcare	Norrköping
+RoboTech 4664	Renewable Energy	Norrköping
+MediCare 4665	Technology	Norrköping
+TechNova 4666	Healthcare	Linköping
+RoboTech 4667	Medical Devices	Norrköping
+GreenFuture 4668	AI & Robotics	Helsingborg
+Foodies 4669	Finance	Linköping
+Foodies 4670	Construction	Västerås
+HealthSync 4671	Construction	
+Foodies 4672	Technology	Örebro
+TechNova 4673	FakeCity	Uppsala
+AutoWorks 4674	Technology	Norrköping
+TechNova 4675	Construction	Örebro
+	Construction	Stockholm
+FinTrust 4677	AI & Robotics	Norrköping
+Foodies 4678	Medical Devices	Stockholm
+MediCare 4679	Technology	Linköping
+Foodies 4680	N/A	Västerås
+GreenFuture 4681	Food & Beverage	None
+AutoWorks 4682	Finance	Uppsala
+AutoWorks 4683	Medical Devices	Helsingborg
+Foodies 4684	Technology	Örebro
+Foodies 4685	Food & Beverage	Norrköping
+RoboTech 4686	Medical Devices	NULL
+TechNova 4687	Healthcare	Stockholm
+FinTrust 4688	Medical Devices	Västerås
+FinTrust 4689	Technology	Jönköping
+AutoWorks 4690	Construction	Unknown
+TechNova 4691	Construction	Uppsala
+EduVision 4692	Technology	Unknown
+N/A	Technology	Västerås
+RoboTech 4694	Construction	Jönköping
+FakeCity	Healthcare	N/A
+EduVision 4696	Automotive	Uppsala
+Foodies 4697	Technology	Stockholm
+HealthSync 4698	Unknown	Uppsala
+HealthSync 4699	Medical Devices	None
+HealthSync 4700	Finance	Västerås
+Foodies 4701	Food & Beverage	Linköping
+MediCare 4702	Automotive	Malmö
+HealthSync 4703	Construction	Stockholm
+RoboTech 4704	Education	Linköping
+AutoWorks 4705	Technology	Uppsala
+Unknown	Automotive	Helsingborg
+BuildPro 4707	Construction	Uppsala
+RoboTech 4708	Finance	FakeCity
+GreenFuture 4709	Healthcare	Linköping
+Foodies 4710	Food & Beverage	Västerås
+RoboTech 4711	Automotive	Uppsala
+BuildPro 4712	Finance	Göteborg
+MediCare 4713	AI & Robotics	Uppsala
+MediCare 4714	Education	Västerås
+MediCare 4715	Renewable Energy	NULL
+Unknown	Technology	Västerås
+AutoWorks 4717	Automotive	Västerås
+AutoWorks 4718	Finance	Uppsala
+GreenFuture 4719	AI & Robotics	Jönköping
+MediCare 4720	Renewable Energy	Göteborg
+Foodies 4721	AI & Robotics	Linköping
+FakeCity	Healthcare	Jönköping
+AutoWorks 4723	Automotive	Jönköping
+FinTrust 4724	Education	Jönköping
+GreenFuture 4725	Medical Devices	Helsingborg
+FinTrust 4726	Medical Devices	Helsingborg
+HealthSync 4727	Technology	###
+BuildPro 4728	NULL	Västerås
+TechNova 4729	!!Error!!	Örebro
+Foodies 4730	Technology	Malmö
+Foodies 4731	Healthcare	Göteborg
+MediCare 4732	Renewable Energy	!!Error!!
+FinTrust 4733	Construction	Norrköping
+MediCare 4734	None	Stockholm
+Foodies 4735	Automotive	Helsingborg
+Foodies 4736	Technology	!!Error!!
+TechNova 4737	Automotive	Helsingborg
+GreenFuture 4738	Education	Uppsala
+HealthSync 4739	AI & Robotics	Jönköping
+RoboTech 4740	Finance	Linköping
+TechNova 4741	Education	Göteborg
+RoboTech 4742	Technology	Stockholm
+!!Error!!	Medical Devices	
+HealthSync 4744	Technology	12345
+FinTrust 4745	Healthcare	Uppsala
+AutoWorks 4746	Education	Västerås
+HealthSync 4747	AI & Robotics	Västerås
+AutoWorks 4748	Technology	NULL
+RoboTech 4749	Construction	Västerås
+None	Food & Beverage	Norrköping
+EduVision 4751	Renewable Energy	Västerås
+BuildPro 4752	Renewable Energy	Linköping
+GreenFuture 4753	Healthcare	Helsingborg
+FinTrust 4754	Medical Devices	Jönköping
+MediCare 4755	Food & Beverage	Jönköping
+BuildPro 4756	Education	Malmö
+EduVision 4757	Technology	Norrköping
+RoboTech 4758	12345	Helsingborg
+GreenFuture 4759	Construction	Linköping
+AutoWorks 4760	###	Örebro
+Foodies 4761	Technology	Norrköping
+EduVision 4762	Construction	Uppsala
+EduVision 4763	Medical Devices	Linköping
+HealthSync 4764	Automotive	Norrköping
+TechNova 4765	AI & Robotics	Göteborg
+Foodies 4766	Renewable Energy	!!Error!!
+AutoWorks 4767	Medical Devices	NULL
+AutoWorks 4768	Education	Stockholm
+RoboTech 4769	Finance	Örebro
+GreenFuture 4770	Food & Beverage	Göteborg
+AutoWorks 4771	Education	Malmö
+HealthSync 4772	Medical Devices	Helsingborg
+N/A	Food & Beverage	Stockholm
+Foodies 4774	Renewable Energy	Stockholm
+TechNova 4775	Healthcare	!!Error!!
+NULL	Renewable Energy	###
+AutoWorks 4777	Healthcare	Göteborg
+AutoWorks 4778	Healthcare	Göteborg
+NULL	Finance	Jönköping
+FinTrust 4780	Healthcare	Linköping
+HealthSync 4781	Healthcare	Norrköping
+FinTrust 4782	Education	Göteborg
+MediCare 4783	Construction	Malmö
+MediCare 4784	FakeCity	Stockholm
+HealthSync 4785	AI & Robotics	Unknown
+AutoWorks 4786	AI & Robotics	Linköping
+TechNova 4787	Medical Devices	Stockholm
+HealthSync 4788	Finance	Uppsala
+EduVision 4789	Food & Beverage	Norrköping
+MediCare 4790	Medical Devices	Stockholm
+GreenFuture 4791	Construction	Linköping
+Foodies 4792	Construction	Västerås
+MediCare 4793	Automotive	Malmö
+FinTrust 4794	Renewable Energy	Göteborg
+FinTrust 4795	AI & Robotics	Örebro
+AutoWorks 4796	Technology	Malmö
+FinTrust 4797	Education	Norrköping
+FinTrust 4798	Construction	Stockholm
+GreenFuture 4799	Technology	Linköping
+HealthSync 4800	AI & Robotics	Linköping
+AutoWorks 4801	Food & Beverage	Linköping
+None	NULL	Helsingborg
+AutoWorks 4803	Finance	Linköping
+TechNova 4804	Medical Devices	Helsingborg
+Foodies 4805	Construction	Örebro
+RoboTech 4806	Finance	Malmö
+EduVision 4807	AI & Robotics	Jönköping
+MediCare 4808	Renewable Energy	12345
+FinTrust 4809	Healthcare	Västerås
+MediCare 4810	Technology	Norrköping
+Foodies 4811	Education	Linköping
+BuildPro 4812	Healthcare	Göteborg
+MediCare 4813	Medical Devices	Helsingborg
+TechNova 4814	Education	Malmö
+RoboTech 4815	Finance	Jönköping
+Foodies 4816	AI & Robotics	Stockholm
+AutoWorks 4817	Food & Beverage	Norrköping
+MediCare 4818	Medical Devices	Jönköping
+RoboTech 4819	Medical Devices	Norrköping
+EduVision 4820	Education	Stockholm
+EduVision 4821	Medical Devices	Örebro
+FinTrust 4822	Food & Beverage	NULL
+GreenFuture 4823	Renewable Energy	Linköping
+	Education	Örebro
+GreenFuture 4825	Technology	Göteborg
+GreenFuture 4826	Construction	Stockholm
+GreenFuture 4827	Medical Devices	Norrköping
+MediCare 4828	AI & Robotics	Göteborg
+AutoWorks 4829	AI & Robotics	Malmö
+TechNova 4830	Food & Beverage	Linköping
+EduVision 4831	Education	Helsingborg
+TechNova 4832	Technology	Helsingborg
+EduVision 4833	Automotive	Örebro
+FinTrust 4834	AI & Robotics	Norrköping
+BuildPro 4835	Finance	Uppsala
+NULL	Healthcare	Linköping
+AutoWorks 4837	Food & Beverage	Malmö
+MediCare 4838	Education	Jönköping
+BuildPro 4839	Healthcare	!!Error!!
+GreenFuture 4840	Automotive	Göteborg
+EduVision 4841	Automotive	12345
+TechNova 4842	Food & Beverage	Göteborg
+EduVision 4843	Construction	Stockholm
+EduVision 4844	AI & Robotics	Västerås
+EduVision 4845	Automotive	Västerås
+None	Automotive	Helsingborg
+HealthSync 4847	Automotive	Malmö
+AutoWorks 4848	Technology	Linköping
+FinTrust 4849	Technology	Malmö
+Foodies 4850	Technology	Malmö
+HealthSync 4851	Renewable Energy	Malmö
+Foodies 4852	Renewable Energy	Stockholm
+EduVision 4853	AI & Robotics	Göteborg
+AutoWorks 4854	Finance	Linköping
+FinTrust 4855	Education	Uppsala
+HealthSync 4856	Education	!!Error!!
+TechNova 4857	Construction	Västerås
+TechNova 4858	Education	Linköping
+FinTrust 4859	Medical Devices	Jönköping
+RoboTech 4860	Finance	Norrköping
+EduVision 4861	Finance	Göteborg
+RoboTech 4862	Construction	Malmö
+BuildPro 4863	Automotive	Göteborg
+FinTrust 4864	Healthcare	Helsingborg
+AutoWorks 4865	Technology	Malmö
+TechNova 4866	Finance	Uppsala
+RoboTech 4867	Medical Devices	Stockholm
+FinTrust 4868	Technology	Stockholm
+MediCare 4869	Renewable Energy	Stockholm
+BuildPro 4870	Construction	Stockholm
+BuildPro 4871	Food & Beverage	Göteborg
+FinTrust 4872	Automotive	Örebro
+NULL	Renewable Energy	Uppsala
+TechNova 4874	Food & Beverage	Örebro
+GreenFuture 4875	Renewable Energy	Jönköping
+Foodies 4876	AI & Robotics	Göteborg
+EduVision 4877	Food & Beverage	Helsingborg
+BuildPro 4878	Healthcare	Malmö
+TechNova 4879	Technology	Uppsala
+Foodies 4880	Medical Devices	Göteborg
+BuildPro 4881	!!Error!!	Örebro
+Foodies 4882	Healthcare	Jönköping
+FakeCity	Medical Devices	Norrköping
+AutoWorks 4884	Renewable Energy	Örebro
+	Food & Beverage	Malmö
+Foodies 4886	Healthcare	Örebro
+BuildPro 4887	Finance	###
+RoboTech 4888	Renewable Energy	
+	Medical Devices	Stockholm
+FinTrust 4890	Finance	Västerås
+TechNova 4891	Construction	Göteborg
+MediCare 4892	Finance	Linköping
+EduVision 4893	Construction	Helsingborg
+FinTrust 4894	Renewable Energy	Norrköping
+Foodies 4895	Automotive	NULL
+NULL	Finance	Västerås
+HealthSync 4897	Automotive	Uppsala
+GreenFuture 4898	AI & Robotics	None
+Unknown	Technology	Norrköping
+MediCare 4900	Automotive	Göteborg
+RoboTech 4901	Construction	Helsingborg
+MediCare 4902	Automotive	Stockholm
+AutoWorks 4903	Automotive	Stockholm
+Foodies 4904	Renewable Energy	Unknown
+Foodies 4905	Construction	Linköping
+MediCare 4906	Renewable Energy	Linköping
+GreenFuture 4907	AI & Robotics	Örebro
+TechNova 4908	Construction	Jönköping
+GreenFuture 4909	Technology	Göteborg
+RoboTech 4910	Medical Devices	Uppsala
+TechNova 4911	Finance	N/A
+BuildPro 4912	Healthcare	Västerås
+TechNova 4913	Finance	Örebro
+EduVision 4914	Food & Beverage	Västerås
+EduVision 4915	Construction	Jönköping
+GreenFuture 4916	Healthcare	Uppsala
+AutoWorks 4917	Finance	Norrköping
+GreenFuture 4918	AI & Robotics	Stockholm
+GreenFuture 4919	Renewable Energy	Linköping
+RoboTech 4920	AI & Robotics	Helsingborg
+MediCare 4921	Renewable Energy	Göteborg
+FinTrust 4922	Technology	Helsingborg
+TechNova 4923	Renewable Energy	Västerås
+RoboTech 4924	Renewable Energy	Norrköping
+BuildPro 4925	Finance	Uppsala
+!!Error!!	Healthcare	Stockholm
+BuildPro 4927	Food & Beverage	Uppsala
+Foodies 4928	AI & Robotics	Stockholm
+EduVision 4929	Finance	Helsingborg
+RoboTech 4930	Education	Linköping
+EduVision 4931	Automotive	NULL
+FinTrust 4932	Education	Göteborg
+RoboTech 4933	Finance	Jönköping
+RoboTech 4934	Finance	Uppsala
+!!Error!!	AI & Robotics	Linköping
+HealthSync 4936	Healthcare	Malmö
+GreenFuture 4937	Medical Devices	Helsingborg
+HealthSync 4938	Healthcare	Helsingborg
+RoboTech 4939	Renewable Energy	Unknown
+Foodies 4940	Medical Devices	Linköping
+GreenFuture 4941	Food & Beverage	###
+!!Error!!	Food & Beverage	Malmö
+GreenFuture 4943	Finance	Uppsala
+FinTrust 4944	AI & Robotics	Göteborg
+BuildPro 4945	Healthcare	Stockholm
+HealthSync 4946	Medical Devices	Linköping
+BuildPro 4947	Construction	###
+BuildPro 4948	Food & Beverage	Uppsala
+TechNova 4949	Construction	Malmö
+TechNova 4950	Construction	Jönköping
+BuildPro 4951	Finance	Linköping
+FinTrust 4952	Healthcare	Unknown
+FinTrust 4953	Renewable Energy	Malmö
+AutoWorks 4954	Education	Linköping
+Foodies 4955	AI & Robotics	Västerås
+TechNova 4956	Education	Uppsala
+TechNova 4957	Automotive	Norrköping
+EduVision 4958	AI & Robotics	Malmö
+GreenFuture 4959	Finance	Linköping
+RoboTech 4960	Food & Beverage	Göteborg
+HealthSync 4961	Food & Beverage	Stockholm
+AutoWorks 4962	Automotive	Norrköping
+GreenFuture 4963	Food & Beverage	Helsingborg
+None	AI & Robotics	Västerås
+!!Error!!	Technology	Jönköping
+Foodies 4966	Finance	Norrköping
+RoboTech 4967	Renewable Energy	Jönköping
+GreenFuture 4968	Unknown	Göteborg
+RoboTech 4969	Food & Beverage	Norrköping
+EduVision 4970	Healthcare	Göteborg
+TechNova 4971	Food & Beverage	Uppsala
+TechNova 4972	Medical Devices	Unknown
+HealthSync 4973	Automotive	Stockholm
+FinTrust 4974	Automotive	Helsingborg
+HealthSync 4975	Finance	Jönköping
+Foodies 4976	Finance	Malmö
+TechNova 4977	Education	Helsingborg
+GreenFuture 4978	Finance	Norrköping
+TechNova 4979	NULL	Göteborg
+HealthSync 4980	Automotive	Jönköping
+GreenFuture 4981	Construction	Linköping
+HealthSync 4982	Technology	12345
+RoboTech 4983	Healthcare	Göteborg
+EduVision 4984	Food & Beverage	Linköping
+RoboTech 4985	FakeCity	FakeCity
+AutoWorks 4986	AI & Robotics	Linköping
+GreenFuture 4987	Food & Beverage	Malmö
+TechNova 4988	Education	Linköping
+GreenFuture 4989	Automotive	Västerås
+HealthSync 4990	Education	Unknown
+FinTrust 4991	Automotive	Malmö
+Foodies 4992	Automotive	Helsingborg
+HealthSync 4993	Education	Örebro
+MediCare 4994	Renewable Energy	Linköping
+GreenFuture 4995	Food & Beverage	Uppsala
+FakeCity	Education	Linköping
+BuildPro 4997	Technology	Uppsala
+Foodies 4998	Education	Västerås
+Foodies 4999	Finance	Helsingborg
