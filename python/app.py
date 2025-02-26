@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-import joblib
 import numpy as np
 import pandas as pd
 import os
@@ -8,20 +7,8 @@ from sklearn.ensemble import IsolationForest
 
 app = Flask(__name__)
 
-MODEL_PATH = "models/isolation_forest_model.pkl"
 DATA_DIR = "wwwroot/uploads"
-
 os.makedirs(DATA_DIR, exist_ok=True)
-os.makedirs("models", exist_ok=True)
-
-def load_model():
-    return joblib.load(MODEL_PATH) if os.path.exists(MODEL_PATH) else None
-
-def train_and_save_model(embeddings, contamination=0.05):
-    model = IsolationForest(n_estimators=100, contamination=contamination, random_state=42)
-    model.fit(embeddings)
-    joblib.dump(model, MODEL_PATH)
-    return model
 
 @app.route("/process-file", methods=["POST"])
 def process_file():
@@ -52,20 +39,18 @@ def process_file():
         return jsonify({"error": "No valid text column found for embeddings."}), 400
 
     # Skapa embeddings från textkolumnen
-    model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+    model = SentenceTransformer("python/AI-models/restored-model")
     embeddings = model.encode(df[text_column].tolist(), convert_to_numpy=True)
 
-    # Ladda eller träna Isolation Forest
-    iforest = load_model()
-    if iforest is None:
-        iforest = train_and_save_model(embeddings)
+    # Träna Isolation Forest direkt utan att spara
+    iforest = IsolationForest(n_estimators=100, contamination='auto', random_state=42)
+    iforest.fit(embeddings)
 
     # Identifiera anomalier
     df["Anomaly"] = iforest.predict(embeddings)
     anomalies = df[df["Anomaly"] == -1]
     
     print(f"Anomalies: {anomalies}")  # Skriver ut anomalier
-    print(df.head())
 
     anomaly_list = anomalies.to_dict(orient="records")
 

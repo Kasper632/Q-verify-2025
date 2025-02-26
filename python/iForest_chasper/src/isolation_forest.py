@@ -5,9 +5,9 @@ from sklearn.ensemble import IsolationForest
 
 MODEL_PATH = "models/isolation_forest_model.pkl"
 
-def train_and_save_model(embeddings, contamination=0.05):
+def train_and_save_model(embeddings):
     """Tränar Isolation Forest-modellen och sparar den."""
-    model = IsolationForest(n_estimators=100, contamination=contamination, random_state=42)
+    model = IsolationForest(n_estimators=100, contamination='auto', random_state=42)
     model.fit(embeddings)
 
     os.makedirs(os.path.dirname(MODEL_PATH), exist_ok=True)
