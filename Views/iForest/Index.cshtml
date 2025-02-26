@@ -28,19 +28,27 @@
 
 @if (ViewData["AnalysisResult"] != null)
 {
-    <h3>Analysis Result:</h3>
-    <ul>
-        @foreach (var anomaly in (Newtonsoft.Json.Linq.JArray)ViewData["AnalysisResult"])
-        {
-            <li>
-                @foreach (var property in anomaly)
-                {
-                    <strong>@property.Path:</strong> @property.First <br />
-                }
-                <hr />
-            </li>
-        }
-    </ul>
+    var analysisResult = (Newtonsoft.Json.Linq.JArray)ViewData["AnalysisResult"];
+    
+    if (analysisResult.Count == 0)
+    {
+        <h3 class="text-success">Inga anomalier upptäckta i filen...</h3>
+    }
+    else
+    {
+        <h3>Analysis Result:</h3>
+        <ul>
+            @foreach (var anomaly in analysisResult)
+            {
+                <li>
+                    @foreach (var property in anomaly)
+                    {
+                        <strong>@property.Path:</strong> @property.First <br />
+                    }
+                    <hr />
+                </li>
+            }
+        </ul>
+    }
 }
-
 

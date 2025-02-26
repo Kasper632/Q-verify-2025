@@ -51,6 +51,7 @@ namespace Q_verify_2025.Controllers
                 ViewData["Message"] = $"File '{file.FileName}' uploaded successfully!";
                 ViewData["Uploaded"] = true; // Indikerar att filen har laddats upp
                 ViewData["FilePath"] = filePath; // Skicka filens sökväg till vyn
+                
             }
             catch (Exception ex)
             {

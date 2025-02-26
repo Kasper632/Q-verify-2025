@@ -4,7 +4,7 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer
 
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-DATA_DIR = "data"
+DATA_DIR = "wwwroot/uploads"
 EMBEDDING_FILE = os.path.join(DATA_DIR, "embeddings.npy")
 
 def generate_embeddings(data_file):
@@ -25,3 +25,8 @@ def generate_embeddings(data_file):
     np.save(EMBEDDING_FILE, embeddings)
 
     return embeddings, text_column
+
+# Exempel på hur du kan anropa funktionen
+if __name__ == "__main__":
+    data_file = "wwwroot/uploads/data.csv"
+    generate_embeddings(data_file)

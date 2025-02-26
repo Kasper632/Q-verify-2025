@@ -9,7 +9,7 @@ from sklearn.ensemble import IsolationForest
 app = Flask(__name__)
 
 MODEL_PATH = "models/isolation_forest_model.pkl"
-DATA_DIR = "data"
+DATA_DIR = "wwwroot/uploads"
 
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs("models", exist_ok=True)
@@ -25,14 +25,22 @@ def train_and_save_model(embeddings, contamination=0.05):
 
 @app.route("/process-file", methods=["POST"])
 def process_file():
-    if "file" not in request.files:
-        return jsonify({"error": "No file uploaded"}), 400
+    # Första steg: Hämta den uppladdade filen
+    file = request.files.get('file')
+    if not file:
+        return jsonify({"error": "No file uploaded."}), 400
+    
+    # Kontrollera filens format baserat på filändelse
+    file_extension = file.filename.split('.')[-1].lower()
 
-    file = request.files["file"]
-    file_path = os.path.join(DATA_DIR, file.filename)
-    file.save(file_path)
-
-    df = pd.read_csv(file_path)
+    if file_extension == "csv":
+        # Läs CSV-fil
+        df = pd.read_csv(file)
+    elif file_extension == "json":
+        # Läs JSON-fil
+        df = pd.read_json(file)
+    else:
+        return jsonify({"error": "Unsupported file type. Please upload a CSV or JSON file."}), 400
 
     # Hämta alla kolumnnamn
     columns = df.columns.tolist()
@@ -54,6 +62,9 @@ def process_file():
     # Identifiera anomalier
     df["Anomaly"] = iforest.predict(embeddings)
     anomalies = df[df["Anomaly"] == -1]
+    
+    print(f"Anomalies: {anomalies}")  # Skriver ut anomalier
+    print(df.head())
 
     anomaly_list = anomalies.to_dict(orient="records")
 
@@ -63,6 +74,7 @@ def process_file():
         "text_column_used": text_column,
         "anomalies": anomaly_list
     })
+
 
 if __name__ == '__main__':
     app.run(debug=True)
