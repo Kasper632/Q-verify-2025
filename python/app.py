@@ -25,20 +25,21 @@ def train_and_save_model(embeddings, contamination=0.05):
 
 @app.route("/process-file", methods=["POST"])
 def process_file():
-    # Första steg: Hämta den uppladdade filen
-    file = request.files.get('file')
-    if not file:
-        return jsonify({"error": "No file uploaded."}), 400
-    
-    # Kontrollera filens format baserat på filändelse
-    file_extension = file.filename.split('.')[-1].lower()
+    # Hitta den senaste uppladdade filen i wwwroot/uploads
+    uploaded_files = [f for f in os.listdir(DATA_DIR) if os.path.isfile(os.path.join(DATA_DIR, f))]
+    if not uploaded_files:
+        return jsonify({"error": "No uploaded files found."}), 400
 
+    # Hitta den senaste filen baserat på ändringstid
+    latest_file = max(uploaded_files, key=lambda f: os.path.getmtime(os.path.join(DATA_DIR, f)))
+    latest_file_path = os.path.join(DATA_DIR, latest_file)
+
+    # Läs den senaste uppladdade filen baserat på filtyp
+    file_extension = latest_file.split('.')[-1].lower()
     if file_extension == "csv":
-        # Läs CSV-fil
-        df = pd.read_csv(file)
+        df = pd.read_csv(latest_file_path)
     elif file_extension == "json":
-        # Läs JSON-fil
-        df = pd.read_json(file)
+        df = pd.read_json(latest_file_path)
     else:
         return jsonify({"error": "Unsupported file type. Please upload a CSV or JSON file."}), 400
 
@@ -74,7 +75,6 @@ def process_file():
         "text_column_used": text_column,
         "anomalies": anomaly_list
     })
-
 
 if __name__ == '__main__':
     app.run(debug=True)
