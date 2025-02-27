@@ -19,7 +19,7 @@
     </div>
 }
 
-@if (ViewData["Uploaded"] != null && (bool)ViewData["Uploaded"] == true)
+@if (ViewData["Uploaded"] != null && ViewData["Uploaded"] is bool uploaded && uploaded)
 {
     <form asp-controller="IsolationForest" asp-action="Analyze" method="post">
         <button type="submit" class="btn btn-success mt-3">Analysera</button>
@@ -43,7 +43,9 @@
                 <li>
                     @foreach (var property in anomaly)
                     {
-                        <strong>@property.Path:</strong> @property.First<br />
+                        <strong>@property.Path:</strong> @property.First
+
+                        <br />
                     }
                     <hr />
                 </li>

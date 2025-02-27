@@ -4,7 +4,6 @@
 
 <head>
     <link rel="stylesheet" href="@Url.Content("~/css/bootstrap.min.css")">
-    <link rel="stylesheet" href="@Url.Content("~/css/Q_verify_2025.styles.css")">
 </head>
 
 <h2>Anomaly Detection</h2>
@@ -29,43 +28,43 @@
 <script>
     document.getElementById("uploadForm").addEventListener("submit", function (e) {
         e.preventDefault();
-        
+
         var formData = new FormData();
         var fileInput = document.getElementById("fileUpload");
         formData.append("file", fileInput.files[0]);
-        
+
         fetch("/api/anomaly/detect-anomalies", {
             method: "POST",
             body: formData
         })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to fetch from the server: ' + response.statusText);
-            }
-            return response.json();
-        })
-        .then(data => {
-            if (data.success) {
-                let results = "<ul>";
-                
-                // Kontrollera att predictions och accuracy finns och är array
-                if (Array.isArray(data.predictions) && Array.isArray(data.accuracy)) {
-                    data.predictions.forEach((prediction, index) => {
-                        results += `<li>Example ${index + 1}: Prediction = ${prediction}, Accuracy = ${data.accuracy[index]}%</li>`;
-                    });
-                    results += "</ul>";
-                    document.getElementById("predictionResults").innerHTML = results;
-                    document.getElementById("accuracy").innerHTML = `Overall Model Accuracy: ${data.modelAccuracy}%`;
-                } else {
-                    document.getElementById("predictionResults").innerHTML = "No valid predictions returned.";
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to fetch from the server: ' + response.statusText);
                 }
-            } else {
-                alert("An error occurred during the prediction.");
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert("Something went wrong during the request. Please try again.");
-        });
+                return response.json();
+            })
+            .then(data => {
+                if (data.success) {
+                    let results = "<ul>";
+
+                    // Kontrollera att predictions och accuracy finns och är array
+                    if (Array.isArray(data.predictions) && Array.isArray(data.accuracy)) {
+                        data.predictions.forEach((prediction, index) => {
+                            results += `<li>Example ${index + 1}: Prediction = ${prediction}, Accuracy = ${data.accuracy[index]}%</li>`;
+                        });
+                        results += "</ul>";
+                        document.getElementById("predictionResults").innerHTML = results;
+                        document.getElementById("accuracy").innerHTML = `Overall Model Accuracy: ${data.modelAccuracy}%`;
+                    } else {
+                        document.getElementById("predictionResults").innerHTML = "No valid predictions returned.";
+                    }
+                } else {
+                    alert("An error occurred during the prediction.");
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert("Something went wrong during the request. Please try again.");
+            });
     });
 </script>
