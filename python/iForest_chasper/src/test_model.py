@@ -13,6 +13,9 @@ def test_local_model():
         "Det här är ett test.",
         "Vi använder en lokal modell för att skapa embeddings.",
         "Sentimentanalys är en viktig del av NLP.",
+        "Charles Åkerstedt, charles.akerstedt@gmail.com",
+        "Tindra Jutterström, filip.nyden@gmail.com",
+        "Filip Nydén, Filip Nydén",
     ]
     
     # Skapa embeddings för test-texten
