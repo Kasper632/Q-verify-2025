@@ -1,8 +1,54 @@
 ﻿@{
     ViewData["Title"] = "Om projektet";
 }
-<h3>@ViewData["Title"]</h3>
 
-<div>
-    <p>Detta projekt drivs av Kasper Viggosson, Charles Åkerstedt, Tindra Jutterström, Filip Nydén och Julia Larje.</p>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">@ViewData["Title"]</h1>
+
+    <div class="row">
+        <!-- Vänster kolumn: Projektbeskrivning & Team -->
+        <div class="col-md-6">
+            <div class="card mb-4 bg-transparent border-0">
+                <div class="card-body">
+                    <h4 class="card-title">Projektbeskrivning</h4>
+                    <p class="card-text">
+                    Detta projekt, som genomförs i samarbete mellan studenter från Örebro Universitet och Quale Consulting AB,
+                    syftar till att utveckla en AI-baserad lösning för att identifiera felaktig och ofullständig data inom olika datauppsättningar.
+                    Genom att kombinera naturlig språkbehandling (NLP) och maskininlärningsmodeller som Isolation Forest, strävar vi efter att effektivisera datakvalitetskontroller,
+                    upptäcka avvikelser och minska manuellt arbete. Projektet omfattar både teknisk utveckling och en metodisk analys av hur dessa AI-modeller kan integreras i befintliga system för att skapa långsiktigt värde.                </div>
+            </div>
+
+            <div class="card mb-4 bg-transparent border-0">
+    <div class="card mb-4 bg-transparent border-0">
+    <div class="card-body">
+        <h4 class="card-title">Projektgruppen</h4>
+        <p class="card-text">
+            Detta projekt drivs av 
+            <strong><a href="https://www.linkedin.com/in/kasper-viggosson-1a4a02278/" class="team-member" target="_blank">Kasper Viggosson</a></strong>, 
+            <strong><a href="https://www.linkedin.com/in/charles-%C3%A5kerstedt-74817192/" class="team-member" target="_blank">Charles Åkerstedt</a></strong>, 
+            <strong><a href="https://www.linkedin.com/in/tindra-jutterstrom/" class="team-member" target="_blank">Tindra Jutterström</a></strong>, 
+            <strong><a href="https://www.linkedin.com/in/filip-nyd%C3%A9n-98a51b228/" class="team-member" target="_blank">Filip Nydén</a></strong> och 
+            <strong><a href="https://www.linkedin.com/in/julia-larje-4ab0b317b/" class="team-member" target="_blank">Julia Larje</a></strong>.
+        </p>
+    </div>
+</div>
+
+</div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card mb-4 bg-transparent border-0">
+                <div class="card-body">
+                    <h4 class="card-title">Följ vår blogg</h4>
+                    <p class="card-text">Håll dig uppdaterad med vårt arbete genom att besöka vår blogg:</p>
+                    <img src="~/images/blog.png" alt="Blogg" class="card-img-top blog-image">
+                    <br><br>
+                    <a href="https://qverify2025grupp18.blogspot.com/" target="_blank" class="text-primary text-decoration-none fw-semibold">
+                     Besök bloggen →
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
