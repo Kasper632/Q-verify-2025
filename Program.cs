@@ -10,7 +10,7 @@ builder.Services.Configure<FormOptions>(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddHttpClient<iForestController>();
+builder.Services.AddHttpClient<IsolationForestController>();
 
 var app = builder.Build();
 

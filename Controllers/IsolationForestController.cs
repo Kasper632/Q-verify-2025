@@ -10,12 +10,12 @@ using Newtonsoft.Json;
 
 namespace Q_verify_2025.Controllers
 {
-    public class iForestController : Controller
+    public class IsolationForestController : Controller
     {
         private readonly HttpClient _httpClient;
         private readonly string _uploadPath;
 
-        public iForestController(HttpClient httpClient)
+        public IsolationForestController(HttpClient httpClient)
         {
             _httpClient = httpClient;
             _uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");

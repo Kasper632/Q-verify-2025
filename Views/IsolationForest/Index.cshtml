@@ -4,7 +4,7 @@
 
 <h1>Upload CSV File</h1>
 
-<form asp-controller="iForest" asp-action="UploadFile" method="post" enctype="multipart/form-data">
+<form asp-controller="IsolationForest" asp-action="UploadFile" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label for="file">Choose a CSV file:</label>
         <input type="file" name="file" class="form-control" accept=".csv" required />
@@ -21,7 +21,7 @@
 
 @if (ViewData["Uploaded"] != null && (bool)ViewData["Uploaded"] == true)
 {
-    <form asp-controller="iForest" asp-action="Analyze" method="post">
+    <form asp-controller="IsolationForest" asp-action="Analyze" method="post">
         <button type="submit" class="btn btn-success mt-3">Analysera</button>
     </form>
 }
@@ -29,7 +29,7 @@
 @if (ViewData["AnalysisResult"] != null)
 {
     var analysisResult = (Newtonsoft.Json.Linq.JArray)ViewData["AnalysisResult"];
-    
+
     if (analysisResult.Count == 0)
     {
         <h3 class="text-success">Inga anomalier upptäckta i filen...</h3>
@@ -43,7 +43,7 @@
                 <li>
                     @foreach (var property in anomaly)
                     {
-                        <strong>@property.Path:</strong> @property.First <br />
+                        <strong>@property.Path:</strong> @property.First<br />
                     }
                     <hr />
                 </li>
@@ -51,4 +51,3 @@
         </ul>
     }
 }
-
