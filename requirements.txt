@@ -4,6 +4,7 @@ charset-normalizer==3.4.1
 click==8.1.8
 filelock==3.17.0
 Flask==3.1.0
+flask-cors==5.0.1
 fsspec==2025.2.0
 huggingface-hub==0.29.1
 idna==3.10
