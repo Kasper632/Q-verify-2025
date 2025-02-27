@@ -19,7 +19,7 @@ namespace Q_verify_2025.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
         {
             return View();
         }

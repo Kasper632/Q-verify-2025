@@ -50,7 +50,7 @@ def process_file():
     df["Anomaly"] = iforest.predict(embeddings)
     anomalies = df[df["Anomaly"] == -1]
     
-    print(f"Anomalies: {anomalies}")  # Skriver ut anomalier
+    # print(f"Anomalies: {anomalies}")  # Skriver ut anomalier
 
     anomaly_list = anomalies.to_dict(orient="records")
 
