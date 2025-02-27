@@ -1,63 +1,71 @@
-@model Dictionary<string, object>
-
 @{
-    ViewData["Title"] = "Prediction Result";
+    ViewData["Title"] = "Anomaly Detection";
 }
 
-<div class="container mt-4">
-    <h2 class="text-center">Prediction Result</h2>
+<head>
+    <link rel="stylesheet" href="@Url.Content("~/css/bootstrap.min.css")">
+    <link rel="stylesheet" href="@Url.Content("~/css/Q_verify_2025.styles.css")">
+</head>
 
-    @if (Model != null && Model.ContainsKey("result"))
-    {
-        <div class="alert @(Model["result"].ToString() == "Anomaly" ? "alert-danger" : "alert-success") text-center">
-            <h4>Result: @Model["result"]</h4>
-        </div>
+<h2>Anomaly Detection</h2>
 
-        @if (Model.ContainsKey("analysis_results"))
-        {
-            var analysisResults = Model["analysis_results"] as Dictionary<string, object>;
-            @if (analysisResults != null)
-            {
-                <h4 class="mt-4">Analysis Details</h4>
-                <table class="table table-bordered table-striped">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th>Feature</th>
-                            <th>Input Value</th>
-                            <th>Average</th>
-                            <th>Standard Deviation</th>
-                            <th>Deviation</th>
-                            <th>Z-score</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var item in analysisResults)
-                        {
-                            var feature = item.Key;
-                            var values = item.Value as Dictionary<string, object>;
-
-                            <tr>
-                                <td>@feature</td>
-                                <td>@values["value"]</td>
-                                <td>@values["avg"]</td>
-                                <td>@values["std_dev"]</td>
-                                <td>@values["deviation"]</td>
-                                <td>@values["z_score"]</td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
-            }
-        }
-    }
-    else
-    {
-        <div class="alert alert-warning text-center">
-            <p>No prediction data available.</p>
-        </div>
-    }
-
-    <div class="text-center mt-4">
-        <a href="/Anomaly/Index" class="btn btn-primary">Try Again</a>
+<form id="uploadForm" enctype="multipart/form-data">
+    <div>
+        <label for="fileUpload">Upload your data file (CSV, JSON, TXT):</label>
+        <input type="file" id="fileUpload" name="fileUpload" />
     </div>
+    <button type="submit">Upload and Predict</button>
+</form>
+
+<div id="results" style="margin-top: 20px;">
+    <h3>Results:</h3>
+    <div id="predictionResults"></div>
+    <div id="accuracy"></div>
 </div>
+
+<script src="@Url.Content("~/js/jquery.min.js")"></script>
+<script src="@Url.Content("~/js/bootstrap.bundle.min.js")"></script>
+
+<script>
+    document.getElementById("uploadForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        
+        var formData = new FormData();
+        var fileInput = document.getElementById("fileUpload");
+        formData.append("file", fileInput.files[0]);
+        
+        fetch("/api/anomaly/detect-anomalies", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to fetch from the server: ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (data.success) {
+                let results = "<ul>";
+                
+                // Kontrollera att predictions och accuracy finns och är array
+                if (Array.isArray(data.predictions) && Array.isArray(data.accuracy)) {
+                    data.predictions.forEach((prediction, index) => {
+                        results += `<li>Example ${index + 1}: Prediction = ${prediction}, Accuracy = ${data.accuracy[index]}%</li>`;
+                    });
+                    results += "</ul>";
+                    document.getElementById("predictionResults").innerHTML = results;
+                    document.getElementById("accuracy").innerHTML = `Overall Model Accuracy: ${data.modelAccuracy}%`;
+                } else {
+                    document.getElementById("predictionResults").innerHTML = "No valid predictions returned.";
+                }
+            } else {
+                alert("An error occurred during the prediction.");
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert("Something went wrong during the request. Please try again.");
+        });
+    });
+</script>

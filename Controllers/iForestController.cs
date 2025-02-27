@@ -49,9 +49,7 @@ namespace Q_verify_2025.Controllers
                 }
 
                 ViewData["Message"] = $"File '{file.FileName}' uploaded successfully!";
-                ViewData["Uploaded"] = true; // Indikerar att filen har laddats upp
-                ViewData["FilePath"] = filePath; // Skicka filens sökväg till vyn
-                
+                ViewData["Uploaded"] = true;
             }
             catch (Exception ex)
             {
@@ -61,63 +59,59 @@ namespace Q_verify_2025.Controllers
             return View("Index");
         }
 
-   [HttpPost]
-public async Task<IActionResult> Analyze()
-{
-    try
-    {
-        string apiUrl = "http://localhost:5000/process-file"; // Flask-API URL
-
-        // Hitta den senaste uppladdade filen i wwwroot/uploads
-        var uploadedFiles = Directory.GetFiles(_uploadPath);
-        if (uploadedFiles.Length == 0)
+        [HttpPost]
+        public async Task<IActionResult> Analyze()
         {
-            ViewData["Message"] = "No uploaded file found.";
+            try
+            {
+                string apiUrl = "http://localhost:5000/process-file";
+
+                var uploadedFiles = Directory.GetFiles(_uploadPath);
+                if (uploadedFiles.Length == 0)
+                {
+                    ViewData["Message"] = "No uploaded file found.";
+                    return View("Index");
+                }
+
+                string uploadedFilePath = uploadedFiles.OrderByDescending(f => new FileInfo(f).CreationTime).First();
+                string uploadedFileName = Path.GetFileName(uploadedFilePath);
+
+                using (var fileStream = new FileStream(uploadedFilePath, FileMode.Open, FileAccess.Read))
+                using (var content = new MultipartFormDataContent())
+                {
+                    content.Add(new StreamContent(fileStream), "file", uploadedFileName);
+
+                    var response = await _httpClient.PostAsync(apiUrl, content);
+                    var responseString = await response.Content.ReadAsStringAsync();
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var jsonResponse = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseString);
+                        var anomalies = jsonResponse["anomalies"] as Newtonsoft.Json.Linq.JArray;
+
+                        if (anomalies != null)
+                        {
+                            ViewData["AnalysisResult"] = anomalies;
+                            ViewData["Message"] = "Analysis completed successfully!";
+                        }
+                        else
+                        {
+                            ViewData["Message"] = "No anomalies found.";
+                        }
+                    }
+                    else
+                    {
+                        ViewData["Message"] = $"Error during analysis: {responseString}";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewData["Message"] = $"Error analyzing file: {ex.Message}";
+            }
+
             return View("Index");
         }
 
-        // Använd den senaste filen
-        string uploadedFilePath = uploadedFiles.OrderByDescending(f => new FileInfo(f).CreationTime).First();
-        string uploadedFileName = Path.GetFileName(uploadedFilePath);
-
-        using (var fileStream = new FileStream(uploadedFilePath, FileMode.Open, FileAccess.Read))
-        using (var content = new MultipartFormDataContent())
-        {
-            content.Add(new StreamContent(fileStream), "file", uploadedFileName);
-
-            var response = await _httpClient.PostAsync(apiUrl, content);
-            var responseString = await response.Content.ReadAsStringAsync();
-
-            if (response.IsSuccessStatusCode)
-            {
-                // Deserialisera JSON och extrahera anomali-informationen
-                var jsonResponse = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseString);
-                var anomalies = jsonResponse["anomalies"] as Newtonsoft.Json.Linq.JArray;
-
-                // Om anomalies finns, skicka den till vyn
-                if (anomalies != null)
-                {
-                    ViewData["AnalysisResult"] = anomalies;
-                    ViewData["Message"] = "Analysis completed successfully!";
-                }
-                else
-                {
-                    ViewData["Message"] = "No anomalies found.";
-                }
-            }
-            else
-            {
-                ViewData["Message"] = $"Error during analysis: {responseString}";
-            }
-        }
     }
-    catch (Exception ex)
-    {
-        ViewData["Message"] = $"Error analyzing file: {ex.Message}";
-    }
-
-    return View("Index");
-}
-
-}
 }
