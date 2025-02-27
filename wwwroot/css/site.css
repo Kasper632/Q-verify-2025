@@ -29,6 +29,13 @@ body {
   max-width: 300px; /* Maxbredd för att hindra att logotypen blir större än 300px */
   height: 100px; /* Behåll bildens proportioner */
   margin-left: 4em;
+  
+}
+
+.container {
+
+  margin-bottom: 70px;
+
 }
 
 /* Navbar styling */
@@ -73,7 +80,15 @@ body {
   background-color: white;
 }
 
+.nav-link {
+  color: #333; 
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
 
+.nav-link:hover {
+  color: #fb2590;
+  transform: scale(1.1);
+}
 
 /* Responsive design - Hamburger menu */
 @media (max-width: 767px) {
