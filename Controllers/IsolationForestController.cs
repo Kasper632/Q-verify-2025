@@ -10,12 +10,12 @@ using Newtonsoft.Json;
 
 namespace Q_verify_2025.Controllers
 {
-    public class iForestController : Controller
+    public class IsolationForestController : Controller
     {
         private readonly HttpClient _httpClient;
         private readonly string _uploadPath;
 
-        public iForestController(HttpClient httpClient)
+        public IsolationForestController(HttpClient httpClient)
         {
             _httpClient = httpClient;
             _uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
@@ -87,16 +87,20 @@ namespace Q_verify_2025.Controllers
                     if (response.IsSuccessStatusCode)
                     {
                         var jsonResponse = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseString);
-                        var anomalies = jsonResponse["anomalies"] as Newtonsoft.Json.Linq.JArray;
 
-                        if (anomalies != null)
+                        if (jsonResponse != null)
                         {
-                            ViewData["AnalysisResult"] = anomalies;
-                            ViewData["Message"] = "Analysis completed successfully!";
-                        }
-                        else
-                        {
-                            ViewData["Message"] = "No anomalies found.";
+                            var anomalies = jsonResponse["anomalies"] as Newtonsoft.Json.Linq.JArray;
+
+                            if (anomalies != null)
+                            {
+                                ViewData["AnalysisResult"] = anomalies;
+                                ViewData["Message"] = "Analysis completed successfully!";
+                            }
+                            else
+                            {
+                                ViewData["Message"] = "No anomalies found.";
+                            }
                         }
                     }
                     else
