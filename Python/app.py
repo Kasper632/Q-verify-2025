@@ -48,7 +48,7 @@ def process_file():
 
     df["Anomaly"] = iforest.predict(embeddings)
     anomalies = df[df["Anomaly"] == -1]
-    
+
     anomaly_list = anomalies.to_dict(orient="records")
 
     return jsonify({

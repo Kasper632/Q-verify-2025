@@ -1,33 +1,118 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+      font-size: 16px;
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
-header {
-  background-image: url('/images/qualeheader.png');  
-  background-size: cover; 
-  background-position: top;
-  color: #D90452;
-  padding: 3em 0; 
-  text-align: center;
-  font-family: "Source Code Pro", serif;
-  font-optical-sizing: auto;
+/* header.css */
+.header {
+  background-image: url('/images/qualeheader.png');
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-img {
+  
+  max-width: 300px; /* Maxbredd för att hindra att logotypen blir större än 300px */
+  height: 100px; /* Behåll bildens proportioner */
+  margin-left: 4em;
+}
+
+/* Navbar styling */
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end; /* Gör så att navbaren hamnar till höger */
+  align-items: center;
+  width: 100%; /* Viktigt för att ta upp hela bredden */
+  margin-bottom: 125px;
+  flex-direction: row;
+}
+
+.navbar-nav {
+  
+  display: flex-end;
+  margin-left: 260px;
+  margin-right: 100px;
+  margin-bottom: 30px;
+  padding: 0;
+  flex-direction: row;
+}
+
+.nav-item {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-item:hover {
+  color: #258cfb;
+  text-decoration: solid;
+}
+
+/* Hamburger menu */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+
+
+/* Responsive design - Hamburger menu */
+@media (max-width: 767px) {
+  .navbar {
+      display: block;
+      text-align: center;
+      width: 100%;
+  }
+
+  .navbar-nav {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      text-align: right;
+      padding-left: 0;
+      margin-left: 300px;
+  }
+
+  .navbar-nav.show {
+      display: flex;
+  }
+
+  .nav-item {
+      margin-left: 300px;
+      padding: 10px 0;
+  }
+
+  .nav-item a {
+      color: #fff;
+  }
+
+  .nav-item:hover {
+      background-color: #258cfb;
+      color: white;
+  }
+
+  .navbar-toggler {
+      display: block;
+  }
+
+  
 }
