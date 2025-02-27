@@ -4,28 +4,25 @@ import pandas as pd
 import os
 from sentence_transformers import SentenceTransformer
 from sklearn.ensemble import IsolationForest
-from flask_cors import CORS
-from sklearn.decomposition import PCA
-import joblib
-
-# model = joblib.load('python/AI-models/isolation_forest_model.pkl')
-bert_model = SentenceTransformer("all-MiniLM-L6-v2")
+from scipy.spatial.distance import euclidean
 
 app = Flask(__name__)
-CORS(app) 
 
 DATA_DIR = "wwwroot/uploads"
 os.makedirs(DATA_DIR, exist_ok=True)
 
 @app.route("/process-file", methods=["POST"])
 def process_file():
+    # Hitta den senaste uppladdade filen i wwwroot/uploads
     uploaded_files = [f for f in os.listdir(DATA_DIR) if os.path.isfile(os.path.join(DATA_DIR, f))]
     if not uploaded_files:
         return jsonify({"error": "No uploaded files found."}), 400
 
+    # Hitta den senaste filen baserat på ändringstid
     latest_file = max(uploaded_files, key=lambda f: os.path.getmtime(os.path.join(DATA_DIR, f)))
     latest_file_path = os.path.join(DATA_DIR, latest_file)
 
+    # Läs den senaste uppladdade filen baserat på filtyp
     file_extension = latest_file.split('.')[-1].lower()
     if file_extension == "csv":
         df = pd.read_csv(latest_file_path)
@@ -34,68 +31,74 @@ def process_file():
     else:
         return jsonify({"error": "Unsupported file type. Please upload a CSV or JSON file."}), 400
 
+    if df.empty:
+        return jsonify({"error": "Uploaded file is empty."}), 400
+
+    # Hämta alla kolumnnamn
     columns = df.columns.tolist()
 
-    text_column = df.select_dtypes(include=['object']).columns[0] if len(df.select_dtypes(include=['object']).columns) > 0 else None
-    if text_column is None:
-        return jsonify({"error": "No valid text column found for embeddings."}), 400
+    # Hitta alla textkolumner
+    text_columns = df.select_dtypes(include=['object']).columns.tolist()
+    if not text_columns:
+        return jsonify({"error": "No valid text columns found for embeddings."}), 400
 
+    # Skapa embeddings för varje textkolumn och lagra dem
     model = SentenceTransformer("python/AI-models/restored-model")
-    embeddings = model.encode(df[text_column].tolist(), convert_to_numpy=True)
+    column_embeddings = {
+        col: model.encode(df[col].astype(str).tolist(), convert_to_numpy=True) for col in text_columns
+    }
 
-    iforest = IsolationForest(n_estimators=100, contamination='auto', random_state=42)
-    iforest.fit(embeddings)
+    # Kombinera alla embeddings till en stor matris
+    combined_embeddings = np.hstack([column_embeddings[col] for col in text_columns])
 
-    df["Anomaly"] = iforest.predict(embeddings)
-    anomalies = df[df["Anomaly"] == -1]
+    # Träna Isolation Forest
+    iforest = IsolationForest(n_estimators=10000, contamination='auto', random_state=42)
+    iforest.fit(combined_embeddings)
+
+    # Identifiera anomalier
+    df["Anomaly"] = iforest.predict(combined_embeddings)
+    anomalies = df[df["Anomaly"] == -1].copy()
+
+    # Beräkna medelvärde av normaldata för jämförelse
+    normal_embeddings = combined_embeddings[df["Anomaly"] == 1]
+    avg_embedding = np.mean(normal_embeddings, axis=0) if len(normal_embeddings) > 0 else np.zeros_like(combined_embeddings[0])
+
+    # Lägg till en förklarande orsak till varför en rad är en anomali
+    anomalies["AnomalyReason"] = ""
+
+    for index, row in anomalies.iterrows():
+        reasons = []
+
+        # Hämta embedding för denna rad
+        row_embedding = combined_embeddings[index]
+        
+        # Beräkna avvikelse per kolumn
+        col_deviation = {col: np.mean(np.abs(column_embeddings[col][index] - np.mean(column_embeddings[col], axis=0))) for col in text_columns}
+        
+        # Hitta den **genomsnittliga avvikelsen** för alla kolumner
+        avg_col_deviation = np.mean(list(col_deviation.values()))
+
+        # Dynamiskt välja endast kolumner med hög avvikelse
+        anomalous_cols = [col for col, dev in col_deviation.items() if dev > avg_col_deviation * 1]  # 1.2x tröskel
+
+        # Bygg dynamisk förklaring
+        if len(anomalous_cols) > 1:
+            reason = f"{' och '.join(anomalous_cols)} skapar en avvikelse."
+        elif len(anomalous_cols) == 1:
+            reason = f"{anomalous_cols[0]} har en ovanlig semantisk struktur."
+        else:
+            reason = "Okänd avvikelse upptäckt."
+
+        anomalies.at[index, "AnomalyReason"] = reason
 
     anomaly_list = anomalies.to_dict(orient="records")
 
     return jsonify({
         "message": "File processed successfully",
         "columns": columns,
-        "text_column_used": text_column,
+        "text_columns_used": text_columns,
         "anomalies": anomaly_list
     })
-
-@app.route('/predict', methods=['POST'])
-def predict():
-    if 'file' not in request.files:
-        return jsonify({"succsess": False, 'error': 'No file part'})
-    
-    file = request.files['file']
-
-    if file.filename == '':
-        return jsonify({"succsess": False, 'error': 'No selected file'})
-    
-    try:
-        file_data = pd.read_csv(file)
-
-        string_columns = file_data.select_dtypes(include=['object']).columns
-        for column in string_columns:
-            embeddings = bert_model.encode(file_data[column].astype(str).tolist())
-            embeddings_df = pd.DataFrame(embeddings, columns=[f"{column}_{i}" for i in range(embeddings.shape[1])])
-
-            file_data = file_data.drop(columns=[column])
-            file_data = pd.concat([file_data, embeddings_df], axis=1)
-
-            x = file_data
-            predictions = model.predict(x)
-            predictions_adjusted = [1 if p == -1 else 0 for p in predictions]
-            accuracy = np.mean(predictions_adjusted)*100
-
-        return jsonify({
-            "succsess": True,
-            'predictions': predictions,
-            'accuracy': accuracy,
-            "modelAccuracy": model.score(file_data)
-
-        })
-    except Exception as e:
-        return jsonify({
-            "succsess": False,
-            'error': str(e)
-        })
 
 if __name__ == '__main__':
     app.run(debug=True)

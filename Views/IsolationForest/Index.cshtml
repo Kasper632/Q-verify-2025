@@ -4,7 +4,7 @@
 
 <h1>Upload CSV File</h1>
 
-<form asp-controller="IsolationForest" asp-action="UploadFile" method="post" enctype="multipart/form-data">
+<form asp-controller="iForest" asp-action="UploadFile" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label for="file">Choose a CSV file:</label>
         <input type="file" name="file" class="form-control" accept=".csv" required />
@@ -19,9 +19,9 @@
     </div>
 }
 
-@if (ViewData["Uploaded"] != null && ViewData["Uploaded"] is bool uploaded && uploaded)
+@if (ViewData["Uploaded"] != null && (bool)ViewData["Uploaded"] == true)
 {
-    <form asp-controller="IsolationForest" asp-action="Analyze" method="post">
+    <form asp-controller="iForest" asp-action="Analyze" method="post">
         <button type="submit" class="btn btn-success mt-3">Analysera</button>
     </form>
 }
@@ -43,13 +43,22 @@
                 <li>
                     @foreach (var property in anomaly)
                     {
-                        <strong>@property.Path:</strong> @property.First
-
-                        <br />
+                        if (property.Path != "AnomalyReason")
+                        {
+                            <strong>@property.Path:</strong> @property.First <br />
+                        }
                     }
+
+                    <!-- Visa den identifierade anledningen till anomalien -->
+                    @if (anomaly["AnomalyReason"] != null && !string.IsNullOrEmpty(anomaly["AnomalyReason"].ToString()))
+                    {
+                        <strong style="color:red">Orsak:</strong> @anomaly["AnomalyReason"]<br />
+                    }
+
                     <hr />
                 </li>
             }
         </ul>
     }
 }
+
