@@ -1,15 +1,20 @@
 @{
     ViewData["Title"] = "Upload CSV File";
 }
-
-<h1>Upload CSV File</h1>
+<br>
+<br>
+<br>
+<br>
+<h4>Ladda upp datafil för validering</h4>
+<br>
 
 <form asp-controller="IsolationForest" asp-action="UploadFile" method="post" enctype="multipart/form-data">
     <div class="form-group">
-        <label for="file">Choose a CSV file:</label>
+        
         <input type="file" name="file" class="form-control" accept=".csv" required />
+        <p><em>Följande format stöds: CSV, JSON</em></p>
     </div>
-    <button type="submit" class="btn btn-primary mt-2">Upload</button>
+    <button type="submit" class="btn btn-primary mt-2">Ladda upp</button>
 </form>
 
 @if (ViewData["Message"] != null)
