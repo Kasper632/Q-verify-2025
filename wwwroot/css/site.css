@@ -23,7 +23,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.12);
+
 
 }
 
@@ -36,15 +37,17 @@ body {
   
 }
 
+
+
 h1.text-center.mb-4 {
   font-family: 'SignPainter', cursive;
 }
+
 .container {
 
   margin-bottom: 70px;
 
 }
-
 /* Navbar styling */
 .navbar-collapse {
   display: flex;
