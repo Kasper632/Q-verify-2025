@@ -13,6 +13,42 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.btn {
+    transform: scale(0.75);
+    color: #ce003b;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #ce003b;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    margin-left: -17px;  
+  }
+  
+  .btn:hover {
+    color: white;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    background-color:#ce003b;
+    z-index: -1;
+    
+  }
+  
+  .btn:hover::before {
+    width: 160%;
+  }
 /* header.css */
 .header {
   background-image: url('/images/qualeheader.png');
@@ -24,8 +60,7 @@ body {
   align-items: center;
   padding: 0 20px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.12);
-
-
+    
 }
 
 .logo-img {
@@ -112,9 +147,9 @@ h1.text-center.mb-4 {
   max-width: 75%;  /* Gör så att bilden inte blir bredare än sin container */
   height: auto;     /* Bevarar bildens proportioner */
   object-fit: cover; /* Ser till att bilden skalar snyggt */
-  border-top-left-radius: 8px;  /* Rundade hörn om det behövs */
-  border-top-right-radius: 8px;
+
 }
+
 
 .team-member {
   color: #ce003b; 
