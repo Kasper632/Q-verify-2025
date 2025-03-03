@@ -1,33 +1,209 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+      font-size: 16px;
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+    
+    font-family: 'Poppins', sans-serif;
 }
 
-header {
-  background-image: url('/images/qualeheader.png');  
-  background-size: cover; 
-  background-position: top;
-  color: #D90452;
-  padding: 3em 0; 
+.btn {
+    transform: scale(0.75);
+    color: #ce003b;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #ce003b;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    margin-left: -17px;  
+  }
+  
+  .btn:hover {
+    color: white;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    background-color:#ce003b;
+    z-index: -1;
+    
+  }
+  
+  .btn:hover::before {
+    width: 160%;
+  }
+/* header.css */
+.header {
+  background-image: url('/images/qualeheader.png');
+  background-size: cover;
+  height: 180px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.12);
+    
+}
+
+.logo-img {
+  
+  max-width: 300px; /* Maxbredd för att hindra att logotypen blir större än 300px */
+  width: auto;
+  height: 75px; /* Behåll bildens proportioner */
+  margin-left: 4em;
+  
+}
+
+
+
+h1.text-center.mb-4 {
+  font-family: 'SignPainter', cursive;
+}
+
+.container {
+
+  margin-bottom: 70px;
+
+}
+/* Navbar styling */
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end; /* Gör så att navbaren hamnar till höger */
+  align-items: center;
+  width: 100%; /* Viktigt för att ta upp hela bredden */
+  margin-bottom: 125px;
+  flex-direction: row;
+}
+
+.navbar-nav {
+  
+  display: flex-end;
+  margin-left: 260px;
+  margin-right: 100px;
+  margin-bottom: 30px;
+  padding: 0;
+  flex-direction: row;
+}
+
+.nav-item {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.nav-item:hover {
+  color: #258cfb;
+  text-decoration: solid;
+}
+
+/* Hamburger menu */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+.nav-link {
+  color: #333; 
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.nav-link:hover {
+  
+  transform: scale(1.1);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1px; /* Justera tjockleken efter behov */
+  text-underline-offset: 3px; /* Justera avståndet från texten */
+  text-decoration-color: #ce003b;
+}
+
+.blog-image {
+  max-width: 75%;  /* Gör så att bilden inte blir bredare än sin container */
+  height: auto;     /* Bevarar bildens proportioner */
+  object-fit: cover; /* Ser till att bilden skalar snyggt */
+
+}
+
+
+.team-member {
+  color: #ce003b; 
+  text-decoration: none; /
+}
+
+.team-member:hover {
+  color: #000000; 
+  text-decoration: underline; 
+}
+
+
+.footer .container {
   text-align: center;
-  font-family: "Source Code Pro", serif;
-  font-optical-sizing: auto;
+  margin-top: 40px; /* Justera detta värde efter behov */
+}
+/* Responsive design - Hamburger menu */
+@media (max-width: 767px) {
+  .navbar {
+      display: block;
+      text-align: center;
+      width: 100%;
+  }
+
+  .navbar-nav {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      text-align: right;
+      padding-left: 0;
+      margin-left: 300px;
+  }
+
+  .navbar-nav.show {
+      display: flex;
+  }
+
+  .nav-item {
+      margin-left: 300px;
+      padding: 10px 0;
+  }
+
+  .nav-item a {
+      color: #fff;
+  }
+
+  .nav-item:hover {
+      background-color: #258cfb;
+      color: white;
+  }
+
+  .navbar-toggler {
+      display: block;
+  }
+
+  
 }

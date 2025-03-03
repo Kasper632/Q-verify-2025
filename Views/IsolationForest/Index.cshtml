@@ -1,29 +1,33 @@
 @{
     ViewData["Title"] = "Upload CSV File";
 }
-
-<h1>Upload CSV File</h1>
+<br>
+<br>
+<br>
+<h4>Ladda upp datafil för validering</h4>
+<br>
 
 <form asp-controller="IsolationForest" asp-action="UploadFile" method="post" enctype="multipart/form-data">
     <div class="form-group">
-        <label for="file">Choose a CSV file:</label>
+        
         <input type="file" name="file" class="form-control" accept=".csv" required />
+        <p><em>Följande format stöds: CSV, JSON</em></p>
     </div>
-    <button type="submit" class="btn btn-primary mt-2">Upload</button>
+    <button type="submit" class="btn">Ladda upp</button>
 </form>
 
 @if (ViewData["Message"] != null)
 {
-    <div class="alert alert-info mt-3">
-        @ViewData["Message"]
-    </div>
+        <div class="alert alert-info mt-3">
+            @ViewData["Message"]
+        </div>
 }
 
-@if (ViewData["Uploaded"] != null && ViewData["Uploaded"] is bool uploaded && uploaded)
+@if (ViewData["Uploaded"] != null && (bool)ViewData["Uploaded"] == true)
 {
-    <form asp-controller="IsolationForest" asp-action="Analyze" method="post">
-        <button type="submit" class="btn btn-success mt-3">Analysera</button>
-    </form>
+        <form asp-controller="IsolationForest" asp-action="Analyze" method="post">
+            <button type="submit" class="btn btn-success mt-3">Analysera</button>
+        </form>
 }
 
 @if (ViewData["AnalysisResult"] != null)
@@ -32,24 +36,35 @@
 
     if (analysisResult.Count == 0)
     {
-        <h3 class="text-success">Inga anomalier upptäckta i filen...</h3>
+                <h3 class="text-success">Inga anomalier upptäckta i filen...</h3>
     }
     else
     {
-        <h3>Analysis Result:</h3>
-        <ul>
-            @foreach (var anomaly in analysisResult)
-            {
-                <li>
-                    @foreach (var property in anomaly)
+                <h3>Analysis Result:</h3>
+                <ul>
+                    @foreach (var anomaly in analysisResult)
                     {
-                        <strong>@property.Path:</strong> @property.First
+                            <li>
+                                @foreach (var property in anomaly)
+                                {
+                                        if (property.Path != "AnomalyReason")
+                                        {
+                                                <strong>@property.Path:</strong> @property.First<br />
+                                        }
+                                }
 
-                        <br />
+                                <!-- Visa den identifierade anledningen till anomalien -->
+                                @if (anomaly["AnomalyReason"] != null && !string.IsNullOrEmpty(anomaly["AnomalyReason"].ToString()))
+                                {
+                                        <strong style="color:red">Orsak:</strong> @anomaly["AnomalyReason"]
+                        
+                                        <br />
+                                }
+
+                                <hr />
+                            </li>
                     }
-                    <hr />
-                </li>
-            }
-        </ul>
+                </ul>
     }
 }
+
