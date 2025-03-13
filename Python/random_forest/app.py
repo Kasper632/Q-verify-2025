@@ -3,19 +3,19 @@ import numpy as np
 import pandas as pd
 import os
 import joblib
-from sentence_transformers import SentenceTransformer
-
+from transformers import DistilBertForSequenceClassification, DistilBertTokenizer
 app = Flask(__name__)
 
 DATA_DIR = "wwwroot/uploads"
-MODEL_PATH = "Python/AI-models/random_forest_model3.pkl"
+MODEL_PATH = "Python/AI-models/random_forest_model.pkl"
 
 os.makedirs(DATA_DIR, exist_ok=True)
 
 # Load trained model
 rf = joblib.load(MODEL_PATH)
 
-model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+model = DistilBertForSequenceClassification.from_pretrained('Python/AI-models/fine_tuned_distilbert_50k', num_labels=2)
+tokenizer = DistilBertTokenizer.from_pretrained('Python/AI-models/fine_tuned_distilbert_50k')
 
 @app.route("/process-file", methods=["POST"])
 def process_file():

@@ -2,9 +2,9 @@ from flask import Flask, request, jsonify
 import numpy as np
 import pandas as pd
 import os
-from sentence_transformers import SentenceTransformer
 from sklearn.ensemble import IsolationForest
 from scipy.spatial.distance import euclidean
+from transformers import DistilBertForSequenceClassification, DistilBertTokenizer
 
 app = Flask(__name__)
 
@@ -43,7 +43,8 @@ def process_file():
         return jsonify({"error": "No valid text columns found for embeddings."}), 400
 
     # Skapa embeddings för varje textkolumn och lagra dem
-    model = SentenceTransformer("python/AI-models/restored-model")
+    model = DistilBertForSequenceClassification.from_pretrained('Python/AI-models/fine_tuned_distilbert_50k', num_labels=2)
+    tokenizer = DistilBertTokenizer.from_pretrained('Python/AI-models/fine_tuned_distilbert_50k')    
     column_embeddings = {
         col: model.encode(df[col].astype(str).tolist(), convert_to_numpy=True) for col in text_columns
     }
