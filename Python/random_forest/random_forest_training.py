@@ -10,7 +10,7 @@ from sklearn.metrics import classification_report
 
 # Paths
 DATA_PATH = "wwwroot/uploads/allData.json"
-MODEL_PATH = "Python/AI-models/random_forest_model3.pkl"
+MODEL_PATH = "Python/AI-models/random_forest_model.pkl"
 
 # Load data
 with open(DATA_PATH, "r", encoding="utf-8") as f:
