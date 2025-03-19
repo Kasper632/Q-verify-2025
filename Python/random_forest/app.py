@@ -3,6 +3,8 @@ import numpy as np
 import pandas as pd
 import os
 import torch
+import re
+from datetime import datetime
 from sklearn.ensemble import RandomForestClassifier
 from transformers import DistilBertModel, DistilBertTokenizer
 
@@ -12,7 +14,7 @@ DATA_DIR = "wwwroot/uploads"
 os.makedirs(DATA_DIR, exist_ok=True)
 
 # Ladda din egen finjusterade DistilBERT-modell
-model_path = "Python/AI-models/fine_tuned_distilbert_50k"
+model_path = "Python/AI-models/fine_tuned_distilbert_50k_Email_Name"
 tokenizer = DistilBertTokenizer.from_pretrained(model_path)
 model = DistilBertModel.from_pretrained(model_path)
 
@@ -24,6 +26,58 @@ def get_embeddings(text_list):
         outputs = model(**inputs)
 
     return outputs.last_hidden_state[:, 0, :].numpy()  # Hämtar [CLS]-tokenens embedding
+
+# Funktion för att normalisera personnummer och extrahera kön
+def extract_info(personnummer):
+    clean_pnr = re.sub(r'\D', '', personnummer)  # Ta bort icke-numeriska tecken
+
+    if len(clean_pnr) not in [10, 12]:  
+        return None, None, None, None, "Avvikelse: Felaktig längd"
+
+    if len(clean_pnr) == 12:
+        clean_pnr = clean_pnr[2:]  # Ta bort sekelskiftesprefix
+
+    year, month, day = clean_pnr[:2], clean_pnr[2:4], clean_pnr[4:6]
+    last_four = clean_pnr[-4:]
+
+    gender_digit = int(last_four[-2])
+    gender = "Kvinna" if gender_digit % 2 == 0 else "Man"
+
+    return year, month, day, gender, None  # Ingen avvikelse om allt är rätt
+
+# Funktion för att kontrollera om årtalet är rimligt
+def is_valid_year(year):
+    if not year:
+        return 0  # Saknar data
+
+    year_int = int(year)
+    current_year = datetime.now().year  # Helt årtal (t.ex. 2025)
+
+    # Om årtalet är 00-25 (för 2000-2025), sätt prefix till 20
+    if year_int <= current_year % 100:
+        century_prefix = 20
+    else:
+        century_prefix = 19  # Annars är det 1900-talet
+
+    full_year = int(f"{century_prefix}{year_int:02d}")  # Se till att årtalet är två siffror
+
+    if full_year < 1925 or full_year > current_year:
+        return 0  # Orimligt år
+
+    return 1  # Rimligt år
+
+# Funktion för att validera om datumet är rimligt
+def is_valid_date(year, month, day):
+    if not year or not month or not day:
+        return 0  # Saknar data
+
+    if not (1 <= int(month) <= 12):
+        return 0  # Ogiltig månad
+
+    if not (1 <= int(day) <= 31):
+        return 0  # Ogiltig dag
+
+    return 1  # Ser rimligt ut
 
 @app.route("/process-file", methods=["POST"])
 def process_file():
@@ -106,11 +160,29 @@ def process_file():
 
     anomaly_list = anomalies.to_dict(orient="records")
 
+    # Personnummer-validering
+    df["personnummer"] = df["text"].apply(lambda x: x.split(",")[-1].strip())  # Extrahera personnummer
+    df[["year", "month", "day", "gender", "anomaly"]] = df["personnummer"].apply(lambda pnr: pd.Series(extract_info(pnr)))
+
+    df["valid_date"] = df.apply(lambda row: is_valid_date(row["year"], row["month"], row["day"]), axis=1)
+    df["valid_year"] = df["year"].apply(is_valid_year)
+
+    # Lägg till avvikelse om året är orimligt
+    df["anomaly"] = df.apply(lambda row: "Avvikelse: Orimligt årtal" if row["valid_year"] == 0 and row["anomaly"] is None else row["anomaly"], axis=1)
+
+    df["validation_result"] = df.apply(
+        lambda row: "Ogiltigt" if row["anomaly"] else "Giltigt", axis=1
+    )
+
+    # Lägg till personnummer-anomalier i resultaten
+    anomalies_personnummer = df[df["validation_result"] == "Ogiltigt"]
+
     return jsonify({
         "message": "File processed successfully",
         "columns": columns,
         "text_columns_used": text_columns,
-        "anomalies": anomaly_list
+        "anomalies": anomaly_list,
+        "personnummer_anomalies": anomalies_personnummer.to_dict(orient="records")
     })
 
 if __name__ == '__main__':
