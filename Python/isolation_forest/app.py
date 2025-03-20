@@ -2,14 +2,28 @@ from flask import Flask, request, jsonify
 import numpy as np
 import pandas as pd
 import os
+import torch
 from sklearn.ensemble import IsolationForest
-from scipy.spatial.distance import euclidean
-from transformers import DistilBertForSequenceClassification, DistilBertTokenizer
+from transformers import DistilBertModel, DistilBertTokenizer
 
 app = Flask(__name__)
 
 DATA_DIR = "wwwroot/uploads"
 os.makedirs(DATA_DIR, exist_ok=True)
+
+# Ladda din egen finjusterade DistilBERT-modell
+model_path = "Python/AI-models/fine_tuned_distilbert_50k"
+tokenizer = DistilBertTokenizer.from_pretrained(model_path)
+model = DistilBertModel.from_pretrained(model_path)
+
+def get_embeddings(text_list):
+    """Skapar DistilBERT-embeddings för en lista med texter"""
+    inputs = tokenizer(text_list, padding=True, truncation=True, return_tensors="pt")
+
+    with torch.no_grad():  # Inaktiverar gradientberäkning
+        outputs = model(**inputs)
+
+    return outputs.last_hidden_state[:, 0, :].numpy()  # Hämtar [CLS]-tokenens embedding
 
 @app.route("/process-file", methods=["POST"])
 def process_file():
@@ -22,7 +36,7 @@ def process_file():
     latest_file = max(uploaded_files, key=lambda f: os.path.getmtime(os.path.join(DATA_DIR, f)))
     latest_file_path = os.path.join(DATA_DIR, latest_file)
 
-    # Läs den senaste uppladdade filen baserat på filtyp
+    # Läs filen baserat på filtyp
     file_extension = latest_file.split('.')[-1].lower()
     if file_extension == "csv":
         df = pd.read_csv(latest_file_path)
@@ -42,27 +56,19 @@ def process_file():
     if not text_columns:
         return jsonify({"error": "No valid text columns found for embeddings."}), 400
 
-    # Skapa embeddings för varje textkolumn och lagra dem
-    model = DistilBertForSequenceClassification.from_pretrained('Python/AI-models/fine_tuned_distilbert_50k', num_labels=2)
-    tokenizer = DistilBertTokenizer.from_pretrained('Python/AI-models/fine_tuned_distilbert_50k')    
-    column_embeddings = {
-        col: model.encode(df[col].astype(str).tolist(), convert_to_numpy=True) for col in text_columns
-    }
+    # Skapa embeddings för varje textkolumn
+    column_embeddings = {col: get_embeddings(df[col].astype(str).tolist()) for col in text_columns}
 
     # Kombinera alla embeddings till en stor matris
     combined_embeddings = np.hstack([column_embeddings[col] for col in text_columns])
 
     # Träna Isolation Forest
-    iforest = IsolationForest(n_estimators=10000, contamination='auto', random_state=42)
+    iforest = IsolationForest(n_estimators=100, contamination='auto', random_state=42)
     iforest.fit(combined_embeddings)
 
     # Identifiera anomalier
     df["Anomaly"] = iforest.predict(combined_embeddings)
     anomalies = df[df["Anomaly"] == -1].copy()
-
-    # Beräkna medelvärde av normaldata för jämförelse
-    normal_embeddings = combined_embeddings[df["Anomaly"] == 1]
-    avg_embedding = np.mean(normal_embeddings, axis=0) if len(normal_embeddings) > 0 else np.zeros_like(combined_embeddings[0])
 
     # Lägg till en förklarande orsak till varför en rad är en anomali
     anomalies["AnomalyReason"] = ""
@@ -70,17 +76,17 @@ def process_file():
     for index, row in anomalies.iterrows():
         reasons = []
 
-        # Hämta embedding för denna rad
-        row_embedding = combined_embeddings[index]
-        
         # Beräkna avvikelse per kolumn
-        col_deviation = {col: np.mean(np.abs(column_embeddings[col][index] - np.mean(column_embeddings[col], axis=0))) for col in text_columns}
-        
+        col_deviation = {
+            col: np.mean(np.abs(column_embeddings[col][index] - np.mean(column_embeddings[col], axis=0)))
+            for col in text_columns
+        }
+
         # Hitta den **genomsnittliga avvikelsen** för alla kolumner
         avg_col_deviation = np.mean(list(col_deviation.values()))
 
         # Dynamiskt välja endast kolumner med hög avvikelse
-        anomalous_cols = [col for col, dev in col_deviation.items() if dev > avg_col_deviation * 1]  # 1.2x tröskel
+        anomalous_cols = [col for col, dev in col_deviation.items() if dev > avg_col_deviation]
 
         # Bygg dynamisk förklaring
         if len(anomalous_cols) > 1:

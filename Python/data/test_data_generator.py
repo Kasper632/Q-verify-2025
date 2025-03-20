@@ -95,5 +95,3 @@ for _ in range(10):
 file_path = "Python/data/testdata.json"
 with open(file_path, "w", encoding="utf-8") as f:
     json.dump(data, f, indent=4, ensure_ascii=False)
-
-file_path

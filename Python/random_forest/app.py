@@ -14,8 +14,8 @@ os.makedirs(DATA_DIR, exist_ok=True)
 # Load trained model
 rf = joblib.load(MODEL_PATH)
 
-model = DistilBertForSequenceClassification.from_pretrained('Python/AI-models/fine_tuned_distilbert_50k', num_labels=2)
-tokenizer = DistilBertTokenizer.from_pretrained('Python/AI-models/fine_tuned_distilbert_50k')
+model = DistilBertForSequenceClassification.from_pretrained('Python/AI-models/fine_tuned_distilbert_50k_Email_Name', num_labels=2)
+tokenizer = DistilBertTokenizer.from_pretrained('Python/AI-models/fine_tuned_distilbert_50k_Email_Name')
 
 @app.route("/process-file", methods=["POST"])
 def process_file():
@@ -27,7 +27,7 @@ def process_file():
     latest_file_path = os.path.join(DATA_DIR, latest_file)
 
     file_extension = latest_file.split('.')[-1].lower()
-    if file_extension == "csv":
+    if file_extension == "csv": 
         df = pd.read_csv(latest_file_path)
     elif file_extension == "json":
         df = pd.read_json(latest_file_path)

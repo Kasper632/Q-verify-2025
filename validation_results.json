@@ -1,0 +1,37 @@
+[
+    {
+        "text":"Kasper Viggosson, kasper.viggosson@outlook.com, 810163395",
+        "personnummer":"810163395",
+        "gender":null,
+        "validation_result":"Ogiltigt",
+        "anomaly":"Avvikelse: Felaktig längd"
+    },
+    {
+        "text":"Charles Åkerstedt, charles.akerstedt@gmail.com, 1199103160822",
+        "personnummer":"1199103160822",
+        "gender":null,
+        "validation_result":"Ogiltigt",
+        "anomaly":"Avvikelse: Felaktig längd"
+    },
+    {
+        "text":"Tindra Jutterström, tindra.jutterstrom@hotmail.com, 190011253781",
+        "personnummer":"190011253781",
+        "gender":"Kvinna",
+        "validation_result":"Giltigt",
+        "anomaly":null
+    },
+    {
+        "text":"Filip Nydén, filip.nyden@gmail.com, 199303160832",
+        "personnummer":"199303160832",
+        "gender":"Man",
+        "validation_result":"Giltigt",
+        "anomaly":null
+    },
+    {
+        "text":"Julia Larje, julia.larje@gmail.com, 200011062345",
+        "personnummer":"200011062345",
+        "gender":"Kvinna",
+        "validation_result":"Giltigt",
+        "anomaly":null
+    }
+]
