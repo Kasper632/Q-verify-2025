@@ -9,7 +9,7 @@ För att köra projektet behöver du skapa och aktivera en **virtual environment
 ```sh
 python -m venv .venv  # Skapa en virtuell miljö
 .venv\Scripts\activate  # Aktivera miljön
-pip install -r requirements.txt  # Installera beroenden
+pip install -r Python/requirements.txt  # Installera beroenden
 ```
 
 ### 🍏 macOS & 🐧 Linux
@@ -17,7 +17,7 @@ pip install -r requirements.txt  # Installera beroenden
 ```sh
 python3 -m venv .venv  # Skapa en virtuell miljö
 source .venv/bin/activate  # Aktivera miljön
-pip install -r requirements.txt  # Installera beroenden
+pip install -r Python/requirements.txt  # Installera beroenden
 ```
 
 ## Lägga till modellen i projektet
@@ -27,15 +27,12 @@ Följ stegen nedan för att lägga till modellen i projektet:
 1. **Ladda ner modellfilerna**  
    Hämta följande filer från Teams:
 
-   - `checkpoint-2568`
-   - `trained_model2`
+   - `fine_tuned_distilbert_50k_Email_Name`
+   - `fine_tuned_distilbert_50k_gender`
 
 2. **Placera filer i rätt katalog**  
    Lägg till dem i `Python`-mappen i en undermapp som heter `AI-models`.
 
-3. **Återställ modellen**  
-   Kör följande script för att återställa modellen:
+## Köra projektet
 
-```sh
-python Python/isolation_forest/src/restore_model.py
-```
+Kör `app.py` som ligger i Python-mappen och sedan `Program.cs`.
