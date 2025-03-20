@@ -12,24 +12,31 @@ app = Flask(__name__)
 DATA_DIR = 'wwwroot/uploads'
 
 # Ladda in modeller och tokenizers
-email_model = DistilBertForSequenceClassification.from_pretrained("Python/AI-models/fine_tuned_distilbert_50k")
-email_tokenizer = DistilBertTokenizer.from_pretrained("Python/AI-models/fine_tuned_distilbert_50k")
+email_model = DistilBertForSequenceClassification.from_pretrained("Python/AI-models/fine_tuned_distilbert_50k_Email_Name")
+email_tokenizer = DistilBertTokenizer.from_pretrained("Python/AI-models/fine_tuned_distilbert_50k_Email_Name")
 
 gender_model = DistilBertForSequenceClassification.from_pretrained("Python/AI-models/fine_tuned_distilbert_50k_gender")
 gender_tokenizer = DistilBertTokenizer.from_pretrained("Python/AI-models/fine_tuned_distilbert_50k_gender")
 
+# Funktion för att extrahera och validera personnummer
 def extract_info(personnummer):
-    clean_pnr = re.sub(r'\D', '', personnummer)
+    clean_pnr = re.sub(r'\D', '', personnummer)  # Ta bort icke-numeriska tecken
+
     if len(clean_pnr) not in [10, 12]:  
         return None, None, None, None, "Avvikelse: Felaktig längd"
+
     if len(clean_pnr) == 12:
-        clean_pnr = clean_pnr[2:]
+        clean_pnr = clean_pnr[2:]  # Ta bort sekelskiftesprefix
+
     year, month, day = clean_pnr[:2], clean_pnr[2:4], clean_pnr[4:6]
     last_four = clean_pnr[-4:]
+
     gender_digit = int(last_four[-2])
     gender = "Kvinna" if gender_digit % 2 == 0 else "Man"
-    return year, month, day, gender, None
 
+    return year, month, day, gender, None  # Ingen avvikelse om allt är rätt
+
+# Funktion för att kontrollera om årtalet är rimligt
 def is_valid_year(year):
     if not year:
         return 0  # Saknar data
@@ -63,7 +70,6 @@ def is_valid_date(year, month, day):
     return 1  # Ser rimligt ut
 
 # Uppdaterad funktion för att validera personnummer
-
 def validate_personnummer(pnr):
     # Extrahera information från personnumret
     year, month, day, gender, error = extract_info(pnr)
@@ -103,8 +109,9 @@ def process_uploaded_file(file_path):
         prediction = outputs.logits.argmax(dim=-1).detach().numpy()[0]
         personnummer_valid = validate_personnummer(entry['personalnumber'])
         predicted_gender = predict_gender(entry['name'])
-        personnummer_gender = personnummer_valid.get("gender", "") if isinstance(personnummer_valid, dict) else "Okänd"
+        personnummer_gender = personnummer_valid["gender"] if isinstance(personnummer_valid, dict) else personnummer_valid
         gender_match = predicted_gender == personnummer_gender
+        
         results.append({
             "name": entry["name"],
             "email": entry["email"],
@@ -121,9 +128,11 @@ def process_file():
     uploaded_files = [f for f in os.listdir(DATA_DIR) if os.path.isfile(os.path.join(DATA_DIR, f))]
     if not uploaded_files:
         return jsonify({"error": "No uploaded files found."}), 400
+    
     latest_file = max(uploaded_files, key=lambda f: os.path.getmtime(os.path.join(DATA_DIR, f)))
     latest_file_path = os.path.join(DATA_DIR, latest_file)
     file_extension = latest_file.split('.')[-1].lower()
+    
     if file_extension == "csv":
         df = pd.read_csv(latest_file_path)
     elif file_extension == "json":
@@ -136,10 +145,12 @@ def process_file():
         file_result = process_uploaded_file(latest_file_path)
     except ValueError as e:
         return jsonify({"error": str(e)}), 400
+    
     response = {
         "message": file_result["message"],
         "anomalies": file_result["anomalies"]
     }
+    
     return jsonify(response)
 
 if __name__ == '__main__':
