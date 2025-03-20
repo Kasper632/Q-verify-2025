@@ -40,10 +40,7 @@ def is_valid_year(year):
 
     full_year = int(f"{century_prefix}{year_int:02d}")  # Se till att årtalet är två siffror
 
-    print(f"DEBUG: year={year}, year_int={year_int}, current_year={current_year}, full_year={full_year}")
-
     if full_year < 1925 or full_year > current_year:
-        print(f"DEBUG: {full_year} flaggas som ogiltigt!")
         return 0  # Orimligt år
 
     return 1  # Rimligt år
@@ -83,7 +80,6 @@ def train_random_forest():
 
     predictions = model.predict(X_test)
     accuracy = accuracy_score(y_test, predictions)
-    print(f"Modellens noggrannhet: {accuracy * 100:.2f}%")
 
     return model
 
