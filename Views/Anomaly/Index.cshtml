@@ -2,18 +2,15 @@
     ViewData["Title"] = "Anomaly Detection";
 }
 <br>
-<br>
-<br>
 <h4>Ladda upp datafil för validering</h4>
 <br>
 
 <form asp-controller="Anomaly" asp-action="UploadFile" method="post" enctype="multipart/form-data">
     <div class="form-group">
-
-        <input type="file" name="file" class="form-control" accept=".csv" required />
+        <input type="file" name="file" class="form-control" accept=".csv,.json" required />
         <p><em>Följande format stöds: CSV, JSON</em></p>
     </div>
-    <button type="submit" class="btn">Ladda upp</button>
+    <button type="submit" class="btn btn-primary">Ladda upp</button>
 </form>
 
 @if (ViewData["Message"] != null)
@@ -36,36 +33,77 @@
 
     if (analysisResult.Count == 0)
     {
-        <h3 class="text-success">Inga anomalier upptäckta i filen...</h3>
+        <h3 class="text-success mt-3">Inga anomalier upptäckta i filen...</h3>
     }
     else
     {
-        <h3>Analysis Result:</h3>
-        <ul>
-            @foreach (var anomaly in analysisResult)
-            {
-                <li>
-                    @foreach (var property in anomaly)
-                    {
-                        if (property.Path != "AnomalyReason")
+        var columnMappings = new Dictionary<string, string>
+        {
+            { "email", "E-post" },
+            { "name", "Namn" },
+            { "name_email_validity", "E-post giltighet" },
+            { "personnummer", "Personnummer" },
+            { "personnummer_valid", "Personnummer giltighet" }
+        };
+
+        <h3 class="mt-3">Analysresultat:</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped mt-3">
+                <thead class="thead-dark">
+                    <tr>
+                        @foreach (var property in analysisResult[0])
                         {
-                            <strong>@property.Path:</strong> @property.First
-
-                            <br />
+                            var fieldName = property.Path.Split('.').Last();
+                            <th>@(columnMappings.ContainsKey(fieldName) ? columnMappings[fieldName] : fieldName)</th>
                         }
-                    }
-
-                    <!-- Visa den identifierade anledningen till anomalien -->
-                    @if (anomaly["AnomalyReason"] != null && !string.IsNullOrEmpty(anomaly["AnomalyReason"].ToString()))
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var anomaly in analysisResult)
                     {
-                        <strong style="color:red">Orsak:</strong> @anomaly["AnomalyReason"]
+                        <tr>
+                            @foreach (var property in anomaly)
+                            {
+                                var fieldName = property.Path.Split('.').Last();
 
-                        <br />
+                                @if (fieldName == "name_email_validity")
+                                {
+                                <td class="text-center @(property.First.ToString() == "1" ? "text-success" : "text-danger")">
+                                    <strong>@(property.First.ToString() == "1" ? "Godkänt" : "Avvikelse")</strong>
+                                </td>
+                                }
+                                else if (fieldName == "personnummer_valid")
+                                {
+                                    var personnummerValidity = property.First?.ToString() ?? string.Empty;
+
+                                    if (!string.IsNullOrEmpty(personnummerValidity) && personnummerValidity.Contains("Avvikelse"))
+                                    {
+                                        <td class="text-center text-danger">
+                                            <strong>@personnummerValidity</strong> 
+                                        </td>
+                                    }
+                                    else if (!string.IsNullOrEmpty(personnummerValidity))
+                                    {
+                                        <td class="text-center text-success">
+                                            <strong>Godkänt</strong>
+                                        </td>
+                                    }
+                                    else
+                                    {
+                                        <td class="text-center text-danger">
+                                            <strong>Felaktigt</strong>
+                                        </td>
+                                    }
+                                }
+                                else if (fieldName != "AnomalyReason")
+                                {
+                                    <td>@property.First</td>
+                                }
+                            }
+                        </tr>
                     }
-
-                    <hr />
-                </li>
-            }
-        </ul>
+                </tbody>
+            </table>
+        </div>
     }
 }
