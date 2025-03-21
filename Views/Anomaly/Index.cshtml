@@ -15,16 +15,21 @@
 
 @if (ViewData["Message"] != null)
 {
-    <div class="alert alert-info mt-3">
-        @ViewData["Message"]
-    </div>
+        <div class="alert alert-info mt-3">
+            @ViewData["Message"]
+        </div>
+}
+
+@if (ViewData["FileInfo"] != null)
+{
+    @Html.Partial("FileInfoPartial", ViewData["FileInfo"])
 }
 
 @if (ViewData["Uploaded"] != null && (bool)ViewData["Uploaded"] == true)
 {
-    <form asp-controller="Anomaly" asp-action="Analyze" method="post">
-        <button type="submit" class="btn btn-success mt-3">Analysera</button>
-    </form>
+        <form asp-controller="Anomaly" asp-action="Analyze" method="post">
+            <button type="submit" class="btn btn-success mt-3">Analysera</button>
+        </form>
 }
 
 @if (ViewData["AnalysisResult"] != null)
@@ -33,41 +38,41 @@
 
     if (analysisResult.Count == 0)
     {
-        <h3 class="text-success mt-3">Inga anomalier upptäckta i filen...</h3>
+                <h3 class="text-success mt-3">Inga anomalier upptäckta i filen...</h3>
     }
 
-    <h3 class="mt-3">Analysresultat:</h3>
-    <div class="table-responsive">
-        <table class="table table-bordered table-striped mt-3">
-            <thead class="thead-dark">
-                <tr>
-                    <th>Namn</th>
-                    <th>E-post</th>
-                    <th>Personnummer</th>
-                    <th>E-post giltighet</th>
-                    <th>Kön baserat på personnummer</th>
-                    <th>Förutsagt kön</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var anomaly in analysisResult)
-                {
+        <h3 class="mt-3">Analysresultat:</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped mt-3">
+                <thead class="thead-dark">
                     <tr>
-                        <td>@anomaly["name"]</td>
-                        <td>@anomaly["email"]</td>
-                        <td>@anomaly["personnummer"]</td>
-                        <td
-                            class="text-center @(anomaly["name_email_validity"].ToString() == "1" ? "text-success" : "text-danger")">
-                            @(anomaly["name_email_validity"].ToString() == "1" ? "Godkänt" : "Avvikelse")
-                        </td>
-                        <td
-                            class="text-center @(anomaly["personnummer_gender"].ToString().Contains("Godkänt") ? "text-success" : "text-danger")">
-                            @anomaly["personnummer_gender"]
-                        </td>
-                        <td>@anomaly["predicted_gender"]</td>
+                        <th>Namn</th>
+                        <th>E-post</th>
+                        <th>Personnummer</th>
+                        <th>E-post giltighet</th>
+                        <th>Kön baserat på personnummer</th>
+                        <th>Förutsagt kön</th>
                     </tr>
-                }
-            </tbody>
-        </table>
-    </div>
+                </thead>
+                <tbody>
+                    @foreach (var anomaly in analysisResult)
+                    {
+                            <tr>
+                                <td>@anomaly["name"]</td>
+                                <td>@anomaly["email"]</td>
+                                <td>@anomaly["personnummer"]</td>
+                                <td
+                                    class="text-center @(anomaly["name_email_validity"].ToString() == "1" ? "text-success" : "text-danger")">
+                                    @(anomaly["name_email_validity"].ToString() == "1" ? "Godkänt" : "Avvikelse")
+                                </td>
+                                <td
+                                    class="text-center @(anomaly["personnummer_gender"].ToString().Contains("Godkänt") ? "text-success" : "text-danger")">
+                                    @anomaly["personnummer_gender"]
+                                </td>
+                                <td>@anomaly["predicted_gender"]</td>
+                            </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
 }
