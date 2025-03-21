@@ -94,36 +94,51 @@ def predict_gender(name):
     prediction = outputs.logits.argmax(dim=-1).detach().numpy()[0]
     return "Kvinna" if prediction == 1 else "Man"
 
-# Funktion för att bearbeta uppladdad fil
+# Funktion för att förutsäga kön baserat på namn
 def process_uploaded_file(file_path):
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
     except Exception as e:
         raise ValueError(f"Error reading file: {e}")
+
     if not data:
         raise ValueError("Uploaded file is empty.")
+
     results = []
     for entry in data:
         combined_data = f"{entry['name']} {entry['email']}"
         inputs = email_tokenizer([combined_data], padding=True, truncation=True, return_tensors="pt")
         outputs = email_model(**inputs)
         prediction = outputs.logits.argmax(dim=-1).detach().numpy()[0]
+
         personnummer_valid = validate_personnummer(entry['personalnumber'])
-        predicted_gender = predict_gender(entry['name'])
-        personnummer_gender = personnummer_valid["gender"] if isinstance(personnummer_valid, dict) else personnummer_valid
-        gender_match = predicted_gender == personnummer_gender
-        
+
+        if isinstance(personnummer_valid, dict):
+            personnummer_gender = personnummer_valid["gender"]
+            predicted_gender = predict_gender(entry['name'])
+
+            if personnummer_gender != predicted_gender:
+                gender_result = f"Avvikelse: Namn tyder på {predicted_gender.lower()} men personnummer tyder på {personnummer_gender.lower()}"
+            else:
+                gender_result = "Godkänt"
+        else:
+            gender_result = personnummer_valid  # Här finns en avvikelse
+            predicted_gender = predict_gender(entry["name"])
+
         results.append({
             "name": entry["name"],
             "email": entry["email"],
             "personnummer": entry["personalnumber"],
             "name_email_validity": int(prediction),
             "predicted_gender": predicted_gender,
-            "personnummer_gender": personnummer_gender,
-            "gender_match": gender_match
+            "personnummer_gender": gender_result
         })
-    return {"message": "File processed successfully", "anomalies": results}
+
+    return {
+        "message": "File processed successfully",
+        "anomalies": results
+    }
 
 # Route för att ladda upp filer
 @app.route("/process-file", methods=["POST"])
