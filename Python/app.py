@@ -8,10 +8,10 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-# Definiera sökväg för uppladdade filer
+# Sökväg för uppladdade filer
 DATA_DIR = 'wwwroot/uploads'
 
-# Ladda in modeller och tokenizers
+# Ladda in modeller och tokenizers för e-post och kön
 email_model = DistilBertForSequenceClassification.from_pretrained("Python/AI-models/fine_tuned_distilbert_50k_Email_Name")
 email_tokenizer = DistilBertTokenizer.from_pretrained("Python/AI-models/fine_tuned_distilbert_50k_Email_Name")
 
@@ -58,20 +58,20 @@ def is_valid_year(year, prefix=""):
 
     return 1
 
-# Funktion för att validera om datumet är rimligt
+# Funktion för att validera om månad/dag är rimligt
 def is_valid_date(year, month, day):
     if not year or not month or not day:
-        return 0  # Saknar data
+        return "Avvikelse: Saknar datumkomponent"
 
     if not (1 <= int(month) <= 12):
-        return 0  # Ogiltig månad
+        return "Avvikelse: Ogiltig månad"
 
     if not (1 <= int(day) <= 31):
-        return 0  # Ogiltig dag
+        return "Avvikelse: Ogiltig dag"
 
-    return 1  # Ser rimligt ut
+    return None
 
-# Uppdaterad funktion för att validera personnummer
+# Funktion för att validera personnummer
 def validate_personnummer(pnr):
     year, month, day, gender, prefix, error = extract_info(pnr)
     
@@ -81,17 +81,20 @@ def validate_personnummer(pnr):
     if is_valid_year(year, prefix) == 0:
         return "Avvikelse: Ogiltigt år"
 
-    if is_valid_date(year, month, day) == 0:
-        return "Avvikelse: Ogiltigt datum"
+    date_error = is_valid_date(year, month, day)
+    if date_error:
+        return date_error
 
     return {"year": year, "month": month, "day": day, "gender": gender}
 
+# Funktion för att förutsäga kön baserat på namn
 def predict_gender(name):
     inputs = gender_tokenizer([name], padding=True, truncation=True, return_tensors="pt")
     outputs = gender_model(**inputs)
     prediction = outputs.logits.argmax(dim=-1).detach().numpy()[0]
     return "Kvinna" if prediction == 1 else "Man"
 
+# Funktion för att bearbeta uppladdad fil
 def process_uploaded_file(file_path):
     try:
         with open(file_path, "r", encoding="utf-8") as f:
@@ -122,6 +125,7 @@ def process_uploaded_file(file_path):
         })
     return {"message": "File processed successfully", "anomalies": results}
 
+# Route för att ladda upp filer
 @app.route("/process-file", methods=["POST"])
 def process_file():
     uploaded_files = [f for f in os.listdir(DATA_DIR) if os.path.isfile(os.path.join(DATA_DIR, f))]
