@@ -86,7 +86,7 @@ namespace Q_verify_2025.Controllers
                     return View("Index");
                 }
 
-                string uploadedFilePath = uploadedFiles.OrderByDescending(f => new FileInfo(f).CreationTime).First();
+                string uploadedFilePath = uploadedFiles.OrderByDescending(f => new FileInfo(f).LastWriteTime).First();
                 string uploadedFileName = Path.GetFileName(uploadedFilePath);
 
                 // Skicka filinformationen till vyn också
