@@ -54,7 +54,7 @@ namespace Q_verify_2025.Controllers
                 var fileInfoModel = new FileInfoModel
                 {
                     FileName = file.FileName,
-                    FileSize = Math.Round(file.Length / 1024.0, 2),  // Storlek i KB
+                    FileSize = Math.Round(file.Length / 1024.0, 2),
                     FileFormat = Path.GetExtension(file.FileName).ToUpper(),
                     UploadTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
                 };
@@ -89,7 +89,7 @@ namespace Q_verify_2025.Controllers
                 string uploadedFilePath = uploadedFiles.OrderByDescending(f => new FileInfo(f).LastWriteTime).First();
                 string uploadedFileName = Path.GetFileName(uploadedFilePath);
 
-                // Skicka filinformationen till vyn också
+               
                 var fileInfo = new FileInfo(uploadedFilePath);
                 var fileInfoModel = new FileInfoModel
                 {

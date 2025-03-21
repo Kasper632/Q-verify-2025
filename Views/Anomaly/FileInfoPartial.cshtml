@@ -1,21 +1,11 @@
 @model Q_verify_2025.Models.FileInfoModel
 
-@if (ViewData["FileInfo"] != null)
+@if (Model != null)
 {
-    var fileInfoModel = (Q_verify_2025.Models.FileInfoModel)ViewData["FileInfo"];
     <div class="alert alert-secondary mt-3 d-flex flex-wrap">
-        <span class="me-3"><strong>Fil:</strong> @fileInfoModel.FileName</span>
-        <span class="me-3"><strong>Storlek:</strong> @fileInfoModel.FileSize KB</span>
-        <span class="me-3"><strong>Format:</strong> @fileInfoModel.FileFormat</span>
-        <span class="me-3"><strong>Uppladdad:</strong> @fileInfoModel.UploadTime</span>
-
-        @if (fileInfoModel.AnomalyCount > 0)
-        {
-            <span class="me-3"><strong>Antal avvikelser:</strong> @fileInfoModel.AnomalyCount</span>
-        }
-        else
-        {
-            <span class="me-3"><strong>Inga avvikelser hittades.</strong></span>
-        }
+        <span class="me-3"><strong>Fil:</strong> @Model.FileName</span>
+        <span class="me-3"><strong>Storlek:</strong> @Model.FileSize KB</span>
+        <span class="me-3"><strong>Format:</strong> @Model.FileFormat</span>
+        <span class="me-3"><strong>Uppladdad:</strong> @Model.UploadTime</span>
     </div>
 }

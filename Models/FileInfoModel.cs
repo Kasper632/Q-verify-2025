@@ -6,6 +6,6 @@ namespace Q_verify_2025.Models
         public double FileSize { get; set; }
         public string FileFormat { get; set; }
         public string UploadTime { get; set; }
-        public int AnomalyCount { get; set; }
+        public int AnomalyCount { get; set; } = 0;
     }
 }
