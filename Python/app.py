@@ -20,41 +20,43 @@ gender_tokenizer = DistilBertTokenizer.from_pretrained("Python/AI-models/fine_tu
 
 # Funktion för att extrahera och validera personnummer
 def extract_info(personnummer):
-    clean_pnr = re.sub(r'\D', '', personnummer)  # Ta bort icke-numeriska tecken
+    clean_pnr = re.sub(r'\D', '', personnummer)
 
-    if len(clean_pnr) not in [10, 12]:  
-        return None, None, None, None, "Avvikelse: Felaktig längd"
+    if len(clean_pnr) not in [10, 12]:
+        return None, None, None, None, None, "Avvikelse: Felaktig längd"
 
+    century_prefix = ""
     if len(clean_pnr) == 12:
-        clean_pnr = clean_pnr[2:]  # Ta bort sekelskiftesprefix
+        century_prefix = clean_pnr[:2]
+        clean_pnr = clean_pnr[2:]
 
     year, month, day = clean_pnr[:2], clean_pnr[2:4], clean_pnr[4:6]
     last_four = clean_pnr[-4:]
-
     gender_digit = int(last_four[-2])
     gender = "Kvinna" if gender_digit % 2 == 0 else "Man"
 
-    return year, month, day, gender, None  # Ingen avvikelse om allt är rätt
+    return year, month, day, gender, century_prefix, None
 
 # Funktion för att kontrollera om årtalet är rimligt
-def is_valid_year(year):
+def is_valid_year(year, prefix=""):
     if not year:
-        return 0  # Saknar data
+        return 0
 
     year_int = int(year)
-    current_year = datetime.now().year  # Helt årtal (t.ex. 2025)
+    current_year = datetime.now().year
 
-    if year_int <= current_year % 100:
-        century_prefix = 20
+    if prefix:
+        full_year = int(f"{prefix}{year}")
     else:
-        century_prefix = 19
-
-    full_year = int(f"{century_prefix}{year_int:02d}")
+        if year_int <= current_year % 100:
+            full_year = 2000 + year_int
+        else:
+            full_year = 1900 + year_int
 
     if full_year < 1925 or full_year > current_year:
-        return 0  # Orimligt år
+        return 0
 
-    return 1  # Rimligt år
+    return 1
 
 # Funktion för att validera om datumet är rimligt
 def is_valid_date(year, month, day):
@@ -71,17 +73,14 @@ def is_valid_date(year, month, day):
 
 # Uppdaterad funktion för att validera personnummer
 def validate_personnummer(pnr):
-    # Extrahera information från personnumret
-    year, month, day, gender, error = extract_info(pnr)
+    year, month, day, gender, prefix, error = extract_info(pnr)
     
     if error:
-        return error  # Returnera fel om längden var felaktig
+        return error
 
-    # Kontrollera om året är rimligt
-    if is_valid_year(year) == 0:
+    if is_valid_year(year, prefix) == 0:
         return "Avvikelse: Ogiltigt år"
 
-    # Kontrollera om datumet är rimligt
     if is_valid_date(year, month, day) == 0:
         return "Avvikelse: Ogiltigt datum"
 
