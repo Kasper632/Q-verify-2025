@@ -13,13 +13,6 @@
     <button type="submit" class="btn btn-primary">Ladda upp</button>
 </form>
 
-@if (ViewData["Message"] != null)
-{
-        <div class="alert alert-info mt-3">
-            @ViewData["Message"]
-        </div>
-}
-
 @if (ViewData["FileInfo"] != null)
 {
     @Html.Partial("FileInfoPartial", ViewData["FileInfo"])
