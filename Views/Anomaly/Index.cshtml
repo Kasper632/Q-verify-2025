@@ -29,13 +29,12 @@
 @if (ViewData["AnalysisResult"] != null)
 {
     var analysisResult = (Newtonsoft.Json.Linq.JArray)ViewData["AnalysisResult"];
-    int anomalyCount = 0; // Räknar anomalier
+    int anomalyCount = 0;
 
-    // Räkna anomalier först
     foreach (var anomaly in analysisResult)
     {
-        bool hasAnomaly = anomaly["name_email_validity"].ToString() != "1" || 
-                          !anomaly["personnummer_gender"].ToString().Contains("Godkänt");
+        bool hasAnomaly = anomaly["name_email_validity"].ToString() != "1" ||
+        !anomaly["personnummer_gender"].ToString().Contains("Godkänt");
 
         if (hasAnomaly)
         {
@@ -43,7 +42,6 @@
         }
     }
 
-    // Placera anomalycountern före analysresultatet, och nu kommer den att visa korrekt antal
     <h6 class="@(anomalyCount > 0 ? "text-danger bg-light" : "text-success bg-light")">
         @(anomalyCount > 0 ? "Antal avvikelser: " + anomalyCount : "Inga avvikelser upptäckta!")
     </h6>
@@ -64,17 +62,19 @@
             <tbody>
                 @foreach (var anomaly in analysisResult)
                 {
-                    bool hasAnomaly = anomaly["name_email_validity"].ToString() != "1" || 
-                                      !anomaly["personnummer_gender"].ToString().Contains("Godkänt");
+                    bool hasAnomaly = anomaly["name_email_validity"].ToString() != "1" ||
+                    !anomaly["personnummer_gender"].ToString().Contains("Godkänt");
 
                     <tr>
                         <td>@anomaly["name"]</td>
                         <td>@anomaly["email"]</td>
                         <td>@anomaly["personnummer"]</td>
-                        <td class="text-center @(anomaly["name_email_validity"].ToString() == "1" ? "text-success" : "text-danger")">
+                        <td
+                            class="text-center @(anomaly["name_email_validity"].ToString() == "1" ? "text-success" : "text-danger")">
                             @(anomaly["name_email_validity"].ToString() == "1" ? "Godkänt" : "Avvikelse")
                         </td>
-                        <td class="text-center @(anomaly["personnummer_gender"].ToString().Contains("Godkänt") ? "text-success" : "text-danger")">
+                        <td
+                            class="text-center @(anomaly["personnummer_gender"].ToString().Contains("Godkänt") ? "text-success" : "text-danger")">
                             @anomaly["personnummer_gender"]
                         </td>
                         <td>@anomaly["predicted_gender"]</td>
