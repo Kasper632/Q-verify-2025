@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   flask-backend:
     build:
@@ -8,11 +6,16 @@ services:
     ports:
       - "5000:5000"
     restart: always
+    volumes:
+      - ./Python/AI-models:/app/Python/AI-models
+      - ./wwwroot/uploads:/app/wwwroot/uploads
 
   dotnet-frontend:
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "5161:5161"
+      - "5161:8080"
     restart: always
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production

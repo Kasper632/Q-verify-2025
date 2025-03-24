@@ -12,11 +12,11 @@ app = Flask(__name__)
 DATA_DIR = 'wwwroot/uploads'
 
 # Ladda in modeller och tokenizers för e-post och kön
-email_model = DistilBertForSequenceClassification.from_pretrained("Python/AI-models/fine_tuned_distilbert_50k_Email_Name")
-email_tokenizer = DistilBertTokenizer.from_pretrained("Python/AI-models/fine_tuned_distilbert_50k_Email_Name")
+email_model = DistilBertForSequenceClassification.from_pretrained("./Python/AI-models/fine_tuned_distilbert_50k_Email_Name")
+email_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/fine_tuned_distilbert_50k_Email_Name")
 
-gender_model = DistilBertForSequenceClassification.from_pretrained("Python/AI-models/fine_tuned_distilbert_50k_gender")
-gender_tokenizer = DistilBertTokenizer.from_pretrained("Python/AI-models/fine_tuned_distilbert_50k_gender")
+gender_model = DistilBertForSequenceClassification.from_pretrained("./Python/AI-models/fine_tuned_distilbert_50k_gender")
+gender_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/fine_tuned_distilbert_50k_gender")
 
 # Funktion för att extrahera och validera personnummer
 def extract_info(personnummer):
@@ -172,4 +172,4 @@ def process_file():
     return jsonify(response)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
