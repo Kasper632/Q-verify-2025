@@ -1,11 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Http;
-using System;
-using System.IO;
-using System.Net.Http;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Q_verify_2025.Models;
 
@@ -15,11 +8,13 @@ namespace Q_verify_2025.Controllers
     {
         private readonly HttpClient _httpClient;
         private readonly string _uploadPath;
+        private readonly string _flaskUrl;
 
-        public AnomalyController(HttpClient httpClient)
+        public AnomalyController(HttpClient httpClient, IConfiguration configuration)
         {
             _httpClient = httpClient;
             _uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+            _flaskUrl = configuration["ApiSettings:FlaskUrl"];
 
             if (!Directory.Exists(_uploadPath))
             {
@@ -77,7 +72,7 @@ namespace Q_verify_2025.Controllers
         {
             try
             {
-                string apiUrl = "http://localhost:5000/process-file";
+                string apiUrl = $"{_flaskUrl}/process-file";
 
                 var uploadedFiles = Directory.GetFiles(_uploadPath);
                 if (uploadedFiles.Length == 0)
@@ -89,7 +84,7 @@ namespace Q_verify_2025.Controllers
                 string uploadedFilePath = uploadedFiles.OrderByDescending(f => new FileInfo(f).LastWriteTime).First();
                 string uploadedFileName = Path.GetFileName(uploadedFilePath);
 
-               
+
                 var fileInfo = new FileInfo(uploadedFilePath);
                 var fileInfoModel = new FileInfoModel
                 {
