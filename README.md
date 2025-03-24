@@ -39,7 +39,14 @@ Kör `app.py` som ligger i Python-mappen och sedan `Program.cs`.
 
 ## Docker-kommandon
 
-`docker-compose up --build` # Bygger om och startar alla tjänster definierade i `docker-compose.yml`-filen. Använd detta när du har gjort ändringar i koden eller Dockerfilerna.
-`docker-compose start` # Starta containers
-`docker-compose stop` # Stoppa containers
-`docker-compose down` # Stoppar och tar bort alla containrar, nätverk och volymer skapade av docker-compose up. Det här kommandot rensar upp miljön helt.
+- **`docker-compose up --build`**  
+  Bygger om och startar alla tjänster definierade i `docker-compose.yml`-filen. Använd detta när du har gjort ändringar i koden eller Dockerfilerna.
+
+- **`docker-compose start`**  
+  Startar containrar som redan har skapats.
+
+- **`docker-compose stop`**  
+  Stoppar containrar utan att ta bort dem.
+
+- **`docker-compose down`**  
+  Stoppar och tar bort alla containrar, nätverk och volymer skapade av `docker-compose up`. Det här kommandot rensar upp miljön helt.
