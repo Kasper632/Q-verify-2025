@@ -7,6 +7,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Q_verify_2025.Models;
 
 namespace Q_verify_2025.Controllers
 {
@@ -48,8 +49,19 @@ namespace Q_verify_2025.Controllers
                     file.CopyTo(stream);
                 }
 
+                // Skapa en FileInfoModel och skicka den till vyn
+                var fileInfo = new FileInfo(filePath);
+                var fileInfoModel = new FileInfoModel
+                {
+                    FileName = file.FileName,
+                    FileSize = Math.Round(file.Length / 1024.0, 2),
+                    FileFormat = Path.GetExtension(file.FileName).ToUpper(),
+                    UploadTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+                };
+
                 ViewData["Message"] = $"File '{file.FileName}' uploaded successfully!";
                 ViewData["Uploaded"] = true;
+                ViewData["FileInfo"] = fileInfoModel; // Skicka filinformationen till vyn
             }
             catch (Exception ex)
             {
@@ -58,6 +70,7 @@ namespace Q_verify_2025.Controllers
 
             return View("Index");
         }
+
 
         [HttpPost]
         public async Task<IActionResult> Analyze()
@@ -73,8 +86,20 @@ namespace Q_verify_2025.Controllers
                     return View("Index");
                 }
 
-                string uploadedFilePath = uploadedFiles.OrderByDescending(f => new FileInfo(f).CreationTime).First();
+                string uploadedFilePath = uploadedFiles.OrderByDescending(f => new FileInfo(f).LastWriteTime).First();
                 string uploadedFileName = Path.GetFileName(uploadedFilePath);
+
+               
+                var fileInfo = new FileInfo(uploadedFilePath);
+                var fileInfoModel = new FileInfoModel
+                {
+                    FileName = uploadedFileName,
+                    FileSize = Math.Round(fileInfo.Length / 1024.0, 2),  // Storlek i KB
+                    FileFormat = Path.GetExtension(uploadedFileName).ToUpper(),
+                    UploadTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+                };
+
+                ViewData["FileInfo"] = fileInfoModel;
 
                 using (var fileStream = new FileStream(uploadedFilePath, FileMode.Open, FileAccess.Read))
                 using (var content = new MultipartFormDataContent())
@@ -116,6 +141,5 @@ namespace Q_verify_2025.Controllers
 
             return View("Index");
         }
-
     }
 }

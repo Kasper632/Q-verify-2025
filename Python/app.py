@@ -8,10 +8,10 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-# Definiera sökväg för uppladdade filer
+# Sökväg för uppladdade filer
 DATA_DIR = 'wwwroot/uploads'
 
-# Ladda in modeller och tokenizers
+# Ladda in modeller och tokenizers för e-post och kön
 email_model = DistilBertForSequenceClassification.from_pretrained("Python/AI-models/fine_tuned_distilbert_50k_Email_Name")
 email_tokenizer = DistilBertTokenizer.from_pretrained("Python/AI-models/fine_tuned_distilbert_50k_Email_Name")
 
@@ -20,109 +20,127 @@ gender_tokenizer = DistilBertTokenizer.from_pretrained("Python/AI-models/fine_tu
 
 # Funktion för att extrahera och validera personnummer
 def extract_info(personnummer):
-    clean_pnr = re.sub(r'\D', '', personnummer)  # Ta bort icke-numeriska tecken
+    clean_pnr = re.sub(r'\D', '', personnummer)
 
-    if len(clean_pnr) not in [10, 12]:  
-        return None, None, None, None, "Avvikelse: Felaktig längd"
+    if len(clean_pnr) not in [10, 12]:
+        return None, None, None, None, None, "Avvikelse: Felaktig längd"
 
+    century_prefix = ""
     if len(clean_pnr) == 12:
-        clean_pnr = clean_pnr[2:]  # Ta bort sekelskiftesprefix
+        century_prefix = clean_pnr[:2]
+        clean_pnr = clean_pnr[2:]
 
     year, month, day = clean_pnr[:2], clean_pnr[2:4], clean_pnr[4:6]
     last_four = clean_pnr[-4:]
-
     gender_digit = int(last_four[-2])
     gender = "Kvinna" if gender_digit % 2 == 0 else "Man"
 
-    return year, month, day, gender, None  # Ingen avvikelse om allt är rätt
+    return year, month, day, gender, century_prefix, None
 
 # Funktion för att kontrollera om årtalet är rimligt
-def is_valid_year(year):
+def is_valid_year(year, prefix=""):
     if not year:
-        return 0  # Saknar data
+        return 0
 
     year_int = int(year)
-    current_year = datetime.now().year  # Helt årtal (t.ex. 2025)
+    current_year = datetime.now().year
 
-    if year_int <= current_year % 100:
-        century_prefix = 20
+    if prefix:
+        full_year = int(f"{prefix}{year}")
     else:
-        century_prefix = 19
-
-    full_year = int(f"{century_prefix}{year_int:02d}")
+        if year_int <= current_year % 100:
+            full_year = 2000 + year_int
+        else:
+            full_year = 1900 + year_int
 
     if full_year < 1925 or full_year > current_year:
-        return 0  # Orimligt år
+        return 0
 
-    return 1  # Rimligt år
+    return 1
 
-# Funktion för att validera om datumet är rimligt
+# Funktion för att validera om månad/dag är rimligt
 def is_valid_date(year, month, day):
     if not year or not month or not day:
-        return 0  # Saknar data
+        return "Avvikelse: Saknar datumkomponent"
 
     if not (1 <= int(month) <= 12):
-        return 0  # Ogiltig månad
+        return "Avvikelse: Ogiltig månad"
 
     if not (1 <= int(day) <= 31):
-        return 0  # Ogiltig dag
+        return "Avvikelse: Ogiltig dag"
 
-    return 1  # Ser rimligt ut
+    return None
 
-# Uppdaterad funktion för att validera personnummer
+# Funktion för att validera personnummer
 def validate_personnummer(pnr):
-    # Extrahera information från personnumret
-    year, month, day, gender, error = extract_info(pnr)
+    year, month, day, gender, prefix, error = extract_info(pnr)
     
     if error:
-        return error  # Returnera fel om längden var felaktig
+        return error
 
-    # Kontrollera om året är rimligt
-    if is_valid_year(year) == 0:
+    if is_valid_year(year, prefix) == 0:
         return "Avvikelse: Ogiltigt år"
 
-    # Kontrollera om datumet är rimligt
-    if is_valid_date(year, month, day) == 0:
-        return "Avvikelse: Ogiltigt datum"
+    date_error = is_valid_date(year, month, day)
+    if date_error:
+        return date_error
 
     return {"year": year, "month": month, "day": day, "gender": gender}
 
+# Funktion för att förutsäga kön baserat på namn
 def predict_gender(name):
     inputs = gender_tokenizer([name], padding=True, truncation=True, return_tensors="pt")
     outputs = gender_model(**inputs)
     prediction = outputs.logits.argmax(dim=-1).detach().numpy()[0]
     return "Kvinna" if prediction == 1 else "Man"
 
+# Funktion för att förutsäga kön baserat på namn
 def process_uploaded_file(file_path):
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
     except Exception as e:
         raise ValueError(f"Error reading file: {e}")
+
     if not data:
         raise ValueError("Uploaded file is empty.")
+
     results = []
     for entry in data:
         combined_data = f"{entry['name']} {entry['email']}"
         inputs = email_tokenizer([combined_data], padding=True, truncation=True, return_tensors="pt")
         outputs = email_model(**inputs)
         prediction = outputs.logits.argmax(dim=-1).detach().numpy()[0]
+
         personnummer_valid = validate_personnummer(entry['personalnumber'])
-        predicted_gender = predict_gender(entry['name'])
-        personnummer_gender = personnummer_valid["gender"] if isinstance(personnummer_valid, dict) else personnummer_valid
-        gender_match = predicted_gender == personnummer_gender
-        
+
+        if isinstance(personnummer_valid, dict):
+            personnummer_gender = personnummer_valid["gender"]
+            predicted_gender = predict_gender(entry['name'])
+
+            if personnummer_gender != predicted_gender:
+                gender_result = f"Avvikelse: Namn tyder på {predicted_gender.lower()} men personnummer tyder på {personnummer_gender.lower()}"
+            else:
+                gender_result = "Godkänt"
+        else:
+            gender_result = personnummer_valid  # Här finns en avvikelse
+            predicted_gender = predict_gender(entry["name"])
+
         results.append({
             "name": entry["name"],
             "email": entry["email"],
             "personnummer": entry["personalnumber"],
             "name_email_validity": int(prediction),
             "predicted_gender": predicted_gender,
-            "personnummer_gender": personnummer_gender,
-            "gender_match": gender_match
+            "personnummer_gender": gender_result
         })
-    return {"message": "File processed successfully", "anomalies": results}
 
+    return {
+        "message": "File processed successfully",
+        "anomalies": results
+    }
+
+# Route för att ladda upp filer
 @app.route("/process-file", methods=["POST"])
 def process_file():
     uploaded_files = [f for f in os.listdir(DATA_DIR) if os.path.isfile(os.path.join(DATA_DIR, f))]
