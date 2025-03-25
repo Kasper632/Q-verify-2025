@@ -18,6 +18,9 @@ email_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/fine_t
 gender_model = DistilBertForSequenceClassification.from_pretrained("./Python/AI-models/fine_tuned_distilbert_50k_gender")
 gender_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/fine_tuned_distilbert_50k_gender")
 
+maximo_model = DistilBertForSequenceClassification.from_pretrained("./Python/AI-models/maximo_model")
+maximo_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/maximo_model")
+
 # Funktion för att extrahera och validera personnummer
 def extract_info(personnummer):
     clean_pnr = re.sub(r'\D', '', personnummer)
@@ -174,7 +177,37 @@ def process_personal_data():
 # ----------------- MAXIMO -----------------
 
 def process_maximo_data(file_path):
-    print("Processing Maximo data...")    
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception as e:
+        raise ValueError(f"Error reading file: {e}")
+
+    if not data:
+        raise ValueError("Uploaded file is empty.")
+
+    results = []
+    for entry in data:
+        combined_data = f"{entry['competences']} {entry['pmnum']} {entry['cxlineroutenr']} {entry['location']} {entry['description']}"
+        inputs = maximo_tokenizer([combined_data], padding=True, truncation=True, return_tensors="pt")
+        outputs = maximo_model(**inputs)
+        prediction = outputs.logits.argmax(dim=-1).detach().numpy()[0]
+
+        # Lägg till endast avvikande poster (ex. prediction == 1)
+        if prediction == 0:
+            results.append({
+                "competences": entry["competences"],
+                "pmnum": entry["pmnum"],
+                "cxlineroutenr": entry["cxlineroutenr"],
+                "location": entry["location"],
+                "description": entry["description"],
+                "prediction": int(prediction)
+            })
+
+    return {
+        "message": "File processed successfully",
+        "anomalies": results
+    }
 
 # Route för att hantera maximo-data
 @app.route("/maximo-data", methods=["POST"])
