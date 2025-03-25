@@ -193,15 +193,51 @@ def process_maximo_data(file_path):
         outputs = maximo_model(**inputs)
         prediction = outputs.logits.argmax(dim=-1).detach().numpy()[0]
 
-        # Lägg till endast avvikande poster (ex. prediction == 1)
-        if prediction == 0:
+        errors = []
+
+        # Validering för 'pmnum' och 'description'
+        if entry['pmnum'][0] != entry['description'][0]:
+            errors.append(f"pmnum first letter '{entry['pmnum'][0]}' doesn't match description first letter '{entry['description'][0]}'")
+
+        # Validering för 'location' och 'description'
+        description_last_word = entry['description'].split()[-1]
+        if entry['location'] != description_last_word:
+            errors.append(f"location '{entry['location']}' doesn't match last word of description '{description_last_word}'")
+
+        # Validering för 'competences' och 'description'
+        mac = ""
+        # Leta efter "Maskin" och hämta numret som följer
+        words = entry['description'].split(" ")
+        for i, word in enumerate(words):
+            if "Maskin" in word:
+                if i + 1 < len(words):
+                    mac = words[i + 1]  # Ta ordet efter "Maskin"
+                break
+        expected_competence = ""
+        if mac == "5":
+            expected_competence = "EL"
+        elif mac == "6":
+            expected_competence = "SIGNAL"
+        else:
+            expected_competence = "BANA"
+        
+        if entry['competences'] != expected_competence:
+            errors.append(f"competences '{entry['competences']}' doesn't match expected competence for 'Maskin {mac}'")
+
+        # Validering för 'cxlineroutenr' och 'description'
+        if entry['cxlineroutenr'] != entry['description'].split(" ")[-2]:  # Assuming number is second-to-last word
+            errors.append(f"cxlineroutenr '{entry['cxlineroutenr']}' doesn't match number in description '{entry['description'].split()[-2]}'")
+
+        # Om det finns några fel, lägg till resultatet
+        if errors:
             results.append({
                 "competences": entry["competences"],
                 "pmnum": entry["pmnum"],
                 "cxlineroutenr": entry["cxlineroutenr"],
                 "location": entry["location"],
                 "description": entry["description"],
-                "prediction": int(prediction)
+                "prediction": int(prediction),
+                "errors": errors
             })
 
     return {

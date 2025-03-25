@@ -51,29 +51,33 @@
                     <th>Cxlineroutenr</th>
                     <th>Location</th>
                     <th>Description</th>
+                    <th>Errors</th> <!-- Ny kolumn för att visa fel -->
                 </tr>
             </thead>
             <tbody>
                 @foreach (var anomaly in analysisResult)
                 {
-                    @* bool hasAnomaly = anomaly["name_email_validity"].ToString() != "1" ||
-                    !anomaly["personnummer_gender"].ToString().Contains("Godkänt"); *@
-
                     <tr>
                         <td>@anomaly["competences"]</td>
                         <td>@anomaly["pmnum"]</td>
                         <td>@anomaly["cxlineroutenr"]</td>
                         <td>@anomaly["location"]</td>
                         <td>@anomaly["description"]</td>
-                        @* <td
-                            class="text-center @(anomaly["name_email_validity"].ToString() == "1" ? "text-success" : "text-danger")">
-                            @(anomaly["name_email_validity"].ToString() == "1" ? "Godkänt" : "Avvikelse")
+                        <td>
+                            @if (anomaly["errors"] != null)
+                            {
+                                <ul>
+                                    @foreach (var error in anomaly["errors"])
+                                    {
+                                        <li>@error</li>
+                                    }
+                                </ul>
+                            }
+                            else
+                            {
+                                <span>Inga fel</span>
+                            }
                         </td>
-                        <td
-                            class="text-center @(anomaly["personnummer_gender"].ToString().Contains("Godkänt") ? "text-success" : "text-danger")">
-                            @anomaly["personnummer_gender"]
-                        </td>
-                        <td>@anomaly["predicted_gender"]</td> *@
                     </tr>
                 }
             </tbody>
