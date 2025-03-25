@@ -1,0 +1,8002 @@
+[
+  {
+    "valid": 1,
+    "pmnum": "STRU0022",
+    "description": "Säk bes Maskin 2 627 J.Teo",
+    "location": "J.Teo",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0023",
+    "description": "Uh bes Maskin 3 630 J.Krd",
+    "location": "J.Krd",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0006",
+    "description": "Säk bes Maskin 5 626 J.Vfo",
+    "location": "J.Vfo",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0039",
+    "description": "Säk bes Maskin 1 627 J.Lek-Få",
+    "location": "J.Lek-Få",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0031",
+    "description": "Säk bes Maskin 5 733 J.Vdi",
+    "location": "J.Vdi",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0008",
+    "description": "Säk bes Maskin 1 627 J.VB",
+    "location": "J.VB",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0044",
+    "description": "Säk bes Maskin 2 627 J=TYE",
+    "location": "J=TYE",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0027",
+    "description": "Säk bes Maskin 5 733 J.Få",
+    "location": "J.Få",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0003",
+    "description": "Uh bes Maskin 1 735 J.Om-Hd",
+    "location": "J.Om-Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0005",
+    "description": "Uh bes Maskin 1 640 J.TEO",
+    "location": "J.TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0010",
+    "description": "Uh bes Maskin 6 626 J.Haa-Tye",
+    "location": "J.Haa-Tye",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0044",
+    "description": "Uh bes Maskin 2 656 J=VB",
+    "location": "J=VB",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0047",
+    "description": "Uh bes Maskin 3 630 J.Fabg",
+    "location": "J.Fabg",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0009",
+    "description": "Säk bes Maskin 5 627 J.Vb",
+    "location": "J.Vb",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0046",
+    "description": "Uh bes Maskin 1 656 J=EA",
+    "location": "J=EA",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0004",
+    "description": "Uh bes Maskin 3 627 J=FABP-HE",
+    "location": "J=FABP-HE",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0044",
+    "description": "Säk bes Maskin 5 656 J.Hre",
+    "location": "J.Hre",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0050",
+    "description": "Säk bes Maskin 6 640 J.Tou",
+    "location": "J.Tou",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0009",
+    "description": "Uh bes Maskin 2 656 J.Tye-Teo",
+    "location": "J.Tye-Teo",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0005",
+    "description": "Säk bes Maskin 5 735 J.Hd",
+    "location": "J.Hd",
+    "competences": "EL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0025",
+    "description": "Uh bes Maskin 6 627 J.Lrd",
+    "location": "J.Lrd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0025",
+    "description": "Säk bes Maskin 2 627 J.Tou",
+    "location": "J.Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0001",
+    "description": "Säk bes Maskin 3 627 J.Lrd",
+    "location": "J.Lrd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0008",
+    "description": "Säk bes Maskin 1 626 J.LEK",
+    "location": "J.LEK",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0002",
+    "description": "Säk bes Maskin 1 733 J.FABP-HE",
+    "location": "J.FABP-HE",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0007",
+    "description": "Säk bes Maskin 1 735 J.Teo-Fabg",
+    "location": "J.Teo-Fabg",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0038",
+    "description": "Uh bes Maskin 5 626 J.Lek",
+    "location": "J.Lek",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0013",
+    "description": "Uh bes Maskin 1 656 J.Hre-Vdi",
+    "location": "J.Hre-Vdi",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0015",
+    "description": "Säk bes Maskin 2 630 J=FÅ",
+    "location": "J=FÅ",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0027",
+    "description": "Uh bes Maskin 5 640 J.Mdn",
+    "location": "J.Mdn",
+    "competences": "EL",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0064",
+    "description": "Säk bes Maskin 1 565 J.Tye-Teo",
+    "location": "J.Tye-Teo",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0001",
+    "description": "Säk bes Maskin 1 626 J=BP",
+    "location": "J=BP",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0012",
+    "description": "Säk bes Maskin 2 626 J.Mdn",
+    "location": "J.Mdn",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0023",
+    "description": "Uh bes Maskin 1 627 J.Mdn",
+    "location": "J.Mdn",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0005",
+    "description": "Säk bes Maskin 5 626 J.Vb",
+    "location": "J.Vb",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0023",
+    "description": "Säk bes Maskin 5 627 J.Haa-Tye",
+    "location": "J.Haa-Tye",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0025",
+    "description": "Säk bes Maskin 3 640 J=LEK",
+    "location": "J=LEK",
+    "competences": "BANA",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0042",
+    "description": "Uh bes Maskin 2 626 J.Btp-Hd",
+    "location": "J.Btp-Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0007",
+    "description": "Säk bes Maskin 3 627 J=VRÖ",
+    "location": "J=VRÖ",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0031",
+    "description": "Säk bes Maskin 6 630 J=HE",
+    "location": "J=HE",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0014",
+    "description": "Uh bes Maskin 3 627 J.Tou",
+    "location": "J.Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0018",
+    "description": "Uh bes Maskin 2 626 J.Få",
+    "location": "J.Få",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0005",
+    "description": "Uh bes Maskin 2 733 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0042",
+    "description": "Uh bes Maskin 3 626 J.Bp",
+    "location": "J.Bp",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0013",
+    "description": "Säk bes Maskin 5 733 J.VRÖ",
+    "location": "J.VRÖ",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0002",
+    "description": "Säk bes Maskin 5 565 J=BTP-FUR",
+    "location": "J=BTP-FUR",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0031",
+    "description": "Uh bes Maskin 6 733 J.Hd-Ea",
+    "location": "J.Hd-Ea",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0047",
+    "description": "Säk bes Maskin 5 565 J=TEO-FABP",
+    "location": "J=TEO-FABP",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0006",
+    "description": "Säk bes Maskin 2 630 J.Kb",
+    "location": "J.Kb",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0011",
+    "description": "Säk bes Maskin 2 627 J.Lek-Få",
+    "location": "J.Lek-Få",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0026",
+    "description": "Uh bes Maskin 1 735 J=HAA-TYE",
+    "location": "J=HAA-TYE",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0023",
+    "description": "Uh bes Maskin 6 627 J=FÅ-VRÖ",
+    "location": "J=FÅ-VRÖ",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0038",
+    "description": "Uh bes Maskin 3 735 J=KST-EA",
+    "location": "J=KST-EA",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0023",
+    "description": "Uh bes Maskin 5 735 J.BTP",
+    "location": "J.BTP",
+    "competences": "EL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0009",
+    "description": "Uh bes Maskin 5 627 J.Få-Vrö",
+    "location": "J.Få-Vrö",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0003",
+    "description": "Säk bes Maskin 5 626 J=VRÖ-VB",
+    "location": "J=VRÖ-VB",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0011",
+    "description": "Säk bes Maskin 3 626 J.Tye-Teo",
+    "location": "J.Tye-Teo",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0006",
+    "description": "Uh bes Maskin 3 733 J.Lgd-Kb",
+    "location": "J.Lgd-Kb",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0004",
+    "description": "Säk bes Maskin 5 626 J=VB-HAA",
+    "location": "J=VB-HAA",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0003",
+    "description": "Säk bes Maskin 1 627 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0043",
+    "description": "Uh bes Maskin 5 627 J.Hd",
+    "location": "J.Hd",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0004",
+    "description": "Uh bes Maskin 5 626 J.Vrö",
+    "location": "J.Vrö",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0017",
+    "description": "Uh bes Maskin 3 627 J.EA",
+    "location": "J.EA",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0032",
+    "description": "Uh bes Maskin 2 735 J.Hre",
+    "location": "J.Hre",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0024",
+    "description": "Uh bes Maskin 6 733 J=TEO",
+    "location": "J=TEO",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0001",
+    "description": "Uh bes Maskin 6 656 J.Vb",
+    "location": "J.Vb",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0002",
+    "description": "Uh bes Maskin 2 733 J.Lgd",
+    "location": "J.Lgd",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0024",
+    "description": "Säk bes Maskin 2 640 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0010",
+    "description": "Uh bes Maskin 2 627 J.Bs-Vfo",
+    "location": "J.Bs-Vfo",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0029",
+    "description": "Uh bes Maskin 5 627 J.VB",
+    "location": "J.VB",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0006",
+    "description": "Uh bes Maskin 3 627 J.LEK",
+    "location": "J.LEK",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0037",
+    "description": "Uh bes Maskin 5 627 J.Ldo-Lgd",
+    "location": "J.Ldo-Lgd",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0005",
+    "description": "Säk bes Maskin 5 627 J.Hd-Ea",
+    "location": "J.Hd-Ea",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0003",
+    "description": "Uh bes Maskin 5 735 J.Vb-Haa",
+    "location": "J.Vb-Haa",
+    "competences": "EL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0032",
+    "description": "Säk bes Maskin 2 626 J.Teo",
+    "location": "J.Teo",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0022",
+    "description": "Uh bes Maskin 2 627 J=HE-BP",
+    "location": "J=HE-BP",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0069",
+    "description": "Säk bes Maskin 3 626 J=VB",
+    "location": "J=VB",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0008",
+    "description": "Uh bes Maskin 2 733 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0013",
+    "description": "Uh bes Maskin 1 630 J=TEO",
+    "location": "J=TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0022",
+    "description": "Säk bes Maskin 6 626 J=TEO",
+    "location": "J=TEO",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0030",
+    "description": "Säk bes Maskin 6 733 J=TYE",
+    "location": "J=TYE",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0004",
+    "description": "Uh bes Maskin 1 627 J=BTP",
+    "location": "J=BTP",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0012",
+    "description": "Uh bes Maskin 3 656 J.Teo-Fabp",
+    "location": "J.Teo-Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0012",
+    "description": "Säk bes Maskin 5 735 J.Lrd",
+    "location": "J.Lrd",
+    "competences": "EL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0019",
+    "description": "Säk bes Maskin 1 627 J.Bp-Btp",
+    "location": "J.Bp-Btp",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0016",
+    "description": "Säk bes Maskin 6 627 J=FABP",
+    "location": "J=FABP",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0022",
+    "description": "Uh bes Maskin 2 733 J.Vb-Haa",
+    "location": "J.Vb-Haa",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0026",
+    "description": "Uh bes Maskin 3 735 J.Teo-Fabp",
+    "location": "J.Teo-Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0005",
+    "description": "Säk bes Maskin 2 630 J.See-Hre",
+    "location": "J.See-Hre",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0005",
+    "description": "Uh bes Maskin 5 627 J.See-Hre",
+    "location": "J.See-Hre",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0014",
+    "description": "Uh bes Maskin 6 627 J.Bp-Btp",
+    "location": "J.Bp-Btp",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0025",
+    "description": "Uh bes Maskin 1 733 J=TEO-FABP",
+    "location": "J=TEO-FABP",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0007",
+    "description": "Säk bes Maskin 3 626 J.Tou",
+    "location": "J.Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0004",
+    "description": "Uh bes Maskin 1 565 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0022",
+    "description": "Uh bes Maskin 3 565 J=TEO",
+    "location": "J=TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0006",
+    "description": "Uh bes Maskin 5 733 J.Vb",
+    "location": "J.Vb",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0006",
+    "description": "Uh bes Maskin 2 627 J.Lrd",
+    "location": "J.Lrd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0040",
+    "description": "Säk bes Maskin 5 733 J.Vfo-See",
+    "location": "J.Vfo-See",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0030",
+    "description": "Uh bes Maskin 1 735 J=VRÖ",
+    "location": "J=VRÖ",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0019",
+    "description": "Uh bes Maskin 3 627 J=TYE",
+    "location": "J=TYE",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0028",
+    "description": "Uh bes Maskin 3 626 J.Btp",
+    "location": "J.Btp",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0011",
+    "description": "Säk bes Maskin 5 565 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0009",
+    "description": "Säk bes Maskin 6 627 J.Lrd",
+    "location": "J.Lrd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0007",
+    "description": "Uh bes Maskin 5 626 J.Lrd",
+    "location": "J.Lrd",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0006",
+    "description": "Uh bes Maskin 2 656 J.VRÖ",
+    "location": "J.VRÖ",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0012",
+    "description": "Uh bes Maskin 1 735 J.Teo-Fabp",
+    "location": "J.Teo-Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0023",
+    "description": "Säk bes Maskin 5 627 J.Haa-Tye",
+    "location": "J.Haa-Tye",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0019",
+    "description": "Uh bes Maskin 6 733 J.Btp-Hd",
+    "location": "J.Btp-Hd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0016",
+    "description": "Säk bes Maskin 5 626 J.Btp-Hd",
+    "location": "J.Btp-Hd",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0031",
+    "description": "Säk bes Maskin 3 627 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0040",
+    "description": "Säk bes Maskin 6 733 J.Lek",
+    "location": "J.Lek",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0001",
+    "description": "Säk bes Maskin 2 626 J.Bp-Btp",
+    "location": "J.Bp-Btp",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0063",
+    "description": "Säk bes Maskin 5 626 J.Om-Hd",
+    "location": "J.Om-Hd",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0034",
+    "description": "Säk bes Maskin 3 733 J=TEO-FABP",
+    "location": "J=TEO-FABP",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0020",
+    "description": "Säk bes Maskin 2 735 J.Btp",
+    "location": "J.Btp",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0031",
+    "description": "Säk bes Maskin 5 627 J=TEO",
+    "location": "J=TEO",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0016",
+    "description": "Uh bes Maskin 2 640 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "BANA",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0009",
+    "description": "Säk bes Maskin 5 565 J.He-Bp",
+    "location": "J.He-Bp",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0012",
+    "description": "Uh bes Maskin 1 627 J=TYE",
+    "location": "J=TYE",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0014",
+    "description": "Uh bes Maskin 2 630 J=HAA",
+    "location": "J=HAA",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0024",
+    "description": "Säk bes Maskin 6 627 J=FÅ",
+    "location": "J=FÅ",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0067",
+    "description": "Säk bes Maskin 3 627 J.Tye-Teo",
+    "location": "J.Tye-Teo",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0007",
+    "description": "Säk bes Maskin 5 735 J.Krd",
+    "location": "J.Krd",
+    "competences": "EL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0029",
+    "description": "Säk bes Maskin 3 627 J=KST-EA",
+    "location": "J=KST-EA",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0013",
+    "description": "Uh bes Maskin 1 735 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0032",
+    "description": "Säk bes Maskin 3 656 J.Fabg",
+    "location": "J.Fabg",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0018",
+    "description": "Säk bes Maskin 5 630 J.Vb-Haa",
+    "location": "J.Vb-Haa",
+    "competences": "EL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0027",
+    "description": "Uh bes Maskin 2 627 J.Teo",
+    "location": "J.Teo",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0020",
+    "description": "Säk bes Maskin 5 627 J.Tye",
+    "location": "J.Tye",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0024",
+    "description": "Säk bes Maskin 5 626 J.Vdi",
+    "location": "J.Vdi",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0007",
+    "description": "Säk bes Maskin 5 627 J.EA",
+    "location": "J.EA",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0020",
+    "description": "Uh bes Maskin 1 735 J.Få-Vrö",
+    "location": "J.Få-Vrö",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0036",
+    "description": "Uh bes Maskin 2 627 J.Mdn-Krd",
+    "location": "J.Mdn-Krd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0003",
+    "description": "Säk bes Maskin 6 627 J.Tye",
+    "location": "J.Tye",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0036",
+    "description": "Uh bes Maskin 2 627 J=KST-EA",
+    "location": "J=KST-EA",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0004",
+    "description": "Säk bes Maskin 6 626 J=TYE",
+    "location": "J=TYE",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0016",
+    "description": "Uh bes Maskin 2 627 J.Btp-Hd",
+    "location": "J.Btp-Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0064",
+    "description": "Säk bes Maskin 3 733 J=TYE-TEO",
+    "location": "J=TYE-TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0002",
+    "description": "Säk bes Maskin 2 627 J.Krd",
+    "location": "J.Krd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0035",
+    "description": "Säk bes Maskin 3 627 J=VB",
+    "location": "J=VB",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0033",
+    "description": "Säk bes Maskin 6 733 J=VB",
+    "location": "J=VB",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0010",
+    "description": "Säk bes Maskin 5 627 J.Ldo-Lgd",
+    "location": "J.Ldo-Lgd",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0001",
+    "description": "Uh bes Maskin 5 630 J.See-Hre",
+    "location": "J.See-Hre",
+    "competences": "EL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0006",
+    "description": "Uh bes Maskin 6 627 J.Vrö-Vb",
+    "location": "J.Vrö-Vb",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0003",
+    "description": "Uh bes Maskin 5 627 J.Mdn-Krd",
+    "location": "J.Mdn-Krd",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0017",
+    "description": "Uh bes Maskin 2 565 J.Vfo-See",
+    "location": "J.Vfo-See",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0003",
+    "description": "Uh bes Maskin 3 656 J.VRÖ-VB",
+    "location": "J.VRÖ-VB",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0056",
+    "description": "Säk bes Maskin 3 626 J.Vrö",
+    "location": "J.Vrö",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0006",
+    "description": "Säk bes Maskin 6 733 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0011",
+    "description": "Säk bes Maskin 5 627 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0009",
+    "description": "Uh bes Maskin 3 627 J=LEK",
+    "location": "J=LEK",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0028",
+    "description": "Uh bes Maskin 2 733 J.Om-Hd",
+    "location": "J.Om-Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0009",
+    "description": "Säk bes Maskin 6 733 J.Lrd",
+    "location": "J.Lrd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0006",
+    "description": "Uh bes Maskin 5 656 J.Tou",
+    "location": "J.Tou",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0018",
+    "description": "Uh bes Maskin 1 627 J=FÅ",
+    "location": "J=FÅ",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0006",
+    "description": "Uh bes Maskin 3 656 J.Kb",
+    "location": "J.Kb",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0030",
+    "description": "Uh bes Maskin 3 627 J.Tye-Teo",
+    "location": "J.Tye-Teo",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0039",
+    "description": "Säk bes Maskin 1 733 J=TYE",
+    "location": "J=TYE",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0018",
+    "description": "Säk bes Maskin 2 733 J.Teo-Fabp",
+    "location": "J.Teo-Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0012",
+    "description": "Säk bes Maskin 1 627 J=EA",
+    "location": "J=EA",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0044",
+    "description": "Uh bes Maskin 6 565 J=VRÖ-VB",
+    "location": "J=VRÖ-VB",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0001",
+    "description": "Uh bes Maskin 3 627 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0026",
+    "description": "Säk bes Maskin 6 656 J.See-Hre",
+    "location": "J.See-Hre",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0007",
+    "description": "Säk bes Maskin 3 733 J.Bp",
+    "location": "J.Bp",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0020",
+    "description": "Uh bes Maskin 5 626 J.Fabp-He",
+    "location": "J.Fabp-He",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0025",
+    "description": "Uh bes Maskin 1 627 J.See-Hre",
+    "location": "J.See-Hre",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0010",
+    "description": "Uh bes Maskin 3 565 J.Vb-Haa",
+    "location": "J.Vb-Haa",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0005",
+    "description": "Säk bes Maskin 3 733 J.Ldo",
+    "location": "J.Ldo",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0014",
+    "description": "Uh bes Maskin 3 735 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0025",
+    "description": "Säk bes Maskin 5 627 J.Bp",
+    "location": "J.Bp",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0036",
+    "description": "Säk bes Maskin 1 626 J.VRÖ",
+    "location": "J.VRÖ",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0001",
+    "description": "Säk bes Maskin 1 733 J.Lgd-Kb",
+    "location": "J.Lgd-Kb",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0005",
+    "description": "Säk bes Maskin 5 656 J.BP-BTP",
+    "location": "J.BP-BTP",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0063",
+    "description": "Säk bes Maskin 3 627 J.HAA",
+    "location": "J.HAA",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0042",
+    "description": "Säk bes Maskin 6 733 J=KST-EA",
+    "location": "J=KST-EA",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0005",
+    "description": "Säk bes Maskin 5 627 J.Lek",
+    "location": "J.Lek",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0023",
+    "description": "Uh bes Maskin 6 565 J.Hd",
+    "location": "J.Hd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0016",
+    "description": "Säk bes Maskin 2 626 J=LEK",
+    "location": "J=LEK",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0013",
+    "description": "Säk bes Maskin 1 565 J.Lrd",
+    "location": "J.Lrd",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0034",
+    "description": "Uh bes Maskin 5 656 J.Bp",
+    "location": "J.Bp",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0004",
+    "description": "Säk bes Maskin 6 627 J=VB-HAA",
+    "location": "J=VB-HAA",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0038",
+    "description": "Uh bes Maskin 5 735 J.HAA",
+    "location": "J.HAA",
+    "competences": "EL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0039",
+    "description": "Säk bes Maskin 1 735 J=BP-BTP",
+    "location": "J=BP-BTP",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0002",
+    "description": "Uh bes Maskin 1 626 J.See-Hre",
+    "location": "J.See-Hre",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0022",
+    "description": "Säk bes Maskin 1 626 J.Ldo-Lgd",
+    "location": "J.Ldo-Lgd",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0014",
+    "description": "Uh bes Maskin 6 630 J.Hd",
+    "location": "J.Hd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0031",
+    "description": "Säk bes Maskin 2 656 J.Mdn",
+    "location": "J.Mdn",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0020",
+    "description": "Säk bes Maskin 3 656 J.G-Mdn",
+    "location": "J.G-Mdn",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0016",
+    "description": "Säk bes Maskin 2 627 J.Få",
+    "location": "J.Få",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0007",
+    "description": "Uh bes Maskin 1 733 J.Hd-Ea",
+    "location": "J.Hd-Ea",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0047",
+    "description": "Uh bes Maskin 5 627 J.Lek-Få",
+    "location": "J.Lek-Få",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0009",
+    "description": "Säk bes Maskin 3 733 J.Tye",
+    "location": "J.Tye",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0015",
+    "description": "Uh bes Maskin 6 630 J=VRÖ",
+    "location": "J=VRÖ",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0008",
+    "description": "Säk bes Maskin 2 735 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0009",
+    "description": "Uh bes Maskin 1 656 J=FABP",
+    "location": "J=FABP",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0013",
+    "description": "Uh bes Maskin 1 627 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0003",
+    "description": "Säk bes Maskin 6 735 J=HAA",
+    "location": "J=HAA",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0021",
+    "description": "Säk bes Maskin 6 565 J.TYE",
+    "location": "J.TYE",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0001",
+    "description": "Uh bes Maskin 6 735 J.Vfo",
+    "location": "J.Vfo",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0003",
+    "description": "Uh bes Maskin 2 627 J=VB",
+    "location": "J=VB",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0057",
+    "description": "Uh bes Maskin 3 733 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0014",
+    "description": "Uh bes Maskin 1 626 J=TYE-TEO",
+    "location": "J=TYE-TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0009",
+    "description": "Uh bes Maskin 2 626 J=LEK",
+    "location": "J=LEK",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0057",
+    "description": "Säk bes Maskin 1 656 J.Vb",
+    "location": "J.Vb",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0030",
+    "description": "Säk bes Maskin 3 626 J=BTP-FURF",
+    "location": "J=BTP-FURF",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0044",
+    "description": "Uh bes Maskin 6 565 J.Vdi-Vb",
+    "location": "J.Vdi-Vb",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0011",
+    "description": "Säk bes Maskin 6 626 J.VB-HAA",
+    "location": "J.VB-HAA",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0035",
+    "description": "Säk bes Maskin 6 640 J.VB-HAA",
+    "location": "J.VB-HAA",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0028",
+    "description": "Säk bes Maskin 5 629 J.See",
+    "location": "J.See",
+    "competences": "EL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0018",
+    "description": "Säk bes Maskin 6 733 J.Teo-Fabp",
+    "location": "J.Teo-Fabp",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0010",
+    "description": "Säk bes Maskin 6 656 J=LEK",
+    "location": "J=LEK",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0006",
+    "description": "Uh bes Maskin 3 735 J.Vfo",
+    "location": "J.Vfo",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0016",
+    "description": "Säk bes Maskin 6 627 J=HAA-TYE",
+    "location": "J=HAA-TYE",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0001",
+    "description": "Säk bes Maskin 6 565 J.Få",
+    "location": "J.Få",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0002",
+    "description": "Säk bes Maskin 3 656 J.Vrö",
+    "location": "J.Vrö",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0007",
+    "description": "Uh bes Maskin 3 627 J.Om",
+    "location": "J.Om",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0019",
+    "description": "Säk bes Maskin 2 626 J.See",
+    "location": "J.See",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0019",
+    "description": "Säk bes Maskin 2 565 J.Kb",
+    "location": "J.Kb",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0024",
+    "description": "Uh bes Maskin 3 733 J=FÅ-VRÖ",
+    "location": "J=FÅ-VRÖ",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0023",
+    "description": "Säk bes Maskin 6 627 J.Hd-Ea",
+    "location": "J.Hd-Ea",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0017",
+    "description": "Uh bes Maskin 3 656 J.Lek",
+    "location": "J.Lek",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0014",
+    "description": "Uh bes Maskin 6 627 J.Kb",
+    "location": "J.Kb",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0010",
+    "description": "Uh bes Maskin 5 733 J=VRÖ",
+    "location": "J=VRÖ",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0013",
+    "description": "Säk bes Maskin 5 627 J=FABP",
+    "location": "J=FABP",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0002",
+    "description": "Säk bes Maskin 6 627 J=LEK",
+    "location": "J=LEK",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0007",
+    "description": "Säk bes Maskin 2 656 J.LEK",
+    "location": "J.LEK",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0030",
+    "description": "Säk bes Maskin 1 733 J.Vdi-Vb",
+    "location": "J.Vdi-Vb",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0003",
+    "description": "Säk bes Maskin 6 627 J.Hd",
+    "location": "J.Hd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0025",
+    "description": "Säk bes Maskin 6 733 J.Ldo-Lgd",
+    "location": "J.Ldo-Lgd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0017",
+    "description": "Säk bes Maskin 5 565 J.Fabp",
+    "location": "J.Fabp",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0005",
+    "description": "Uh bes Maskin 6 627 J=FÅ-VRÖ",
+    "location": "J=FÅ-VRÖ",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0037",
+    "description": "Säk bes Maskin 5 733 J.Ea",
+    "location": "J.Ea",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0020",
+    "description": "Säk bes Maskin 6 627 J.Hre-Vdi",
+    "location": "J.Hre-Vdi",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0008",
+    "description": "Uh bes Maskin 2 733 J=BP-BTP",
+    "location": "J=BP-BTP",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0020",
+    "description": "Uh bes Maskin 5 626 J.Mdn",
+    "location": "J.Mdn",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0006",
+    "description": "Säk bes Maskin 5 733 J.Haa",
+    "location": "J.Haa",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0022",
+    "description": "Säk bes Maskin 5 733 J.FÅ-VRÖ",
+    "location": "J.FÅ-VRÖ",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0004",
+    "description": "Säk bes Maskin 6 733 J=BP-BTP",
+    "location": "J=BP-BTP",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0005",
+    "description": "Uh bes Maskin 6 627 J=FABP",
+    "location": "J=FABP",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0009",
+    "description": "Uh bes Maskin 2 627 J=VB",
+    "location": "J=VB",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0017",
+    "description": "Säk bes Maskin 1 733 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0006",
+    "description": "Uh bes Maskin 1 626 J.Teo-Fabp",
+    "location": "J.Teo-Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0026",
+    "description": "Säk bes Maskin 5 565 J=HE",
+    "location": "J=HE",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0024",
+    "description": "Uh bes Maskin 5 565 J=HAA-TYE",
+    "location": "J=HAA-TYE",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0020",
+    "description": "Uh bes Maskin 2 656 J.Om-Hd",
+    "location": "J.Om-Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0008",
+    "description": "Säk bes Maskin 1 733 J.See-Hre",
+    "location": "J.See-Hre",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0001",
+    "description": "Säk bes Maskin 1 627 J.Ldo-Lgd",
+    "location": "J.Ldo-Lgd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0005",
+    "description": "Säk bes Maskin 1 656 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0027",
+    "description": "Uh bes Maskin 2 733 J.KST-EA",
+    "location": "J.KST-EA",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0013",
+    "description": "Uh bes Maskin 2 735 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0007",
+    "description": "Uh bes Maskin 6 627 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0038",
+    "description": "Säk bes Maskin 1 733 J.Fabg",
+    "location": "J.Fabg",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0030",
+    "description": "Uh bes Maskin 3 627 J.Btp-Hd",
+    "location": "J.Btp-Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0058",
+    "description": "Uh bes Maskin 1 733 J=VRÖ-VB",
+    "location": "J=VRÖ-VB",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0063",
+    "description": "Säk bes Maskin 3 735 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0011",
+    "description": "Säk bes Maskin 3 627 J.Lek",
+    "location": "J.Lek",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0032",
+    "description": "Säk bes Maskin 5 565 J=BTP-FURF",
+    "location": "J=BTP-FURF",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0022",
+    "description": "Säk bes Maskin 3 627 J=LEK-FÅ",
+    "location": "J=LEK-FÅ",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0014",
+    "description": "Säk bes Maskin 2 629 J.Bs-Vfo",
+    "location": "J.Bs-Vfo",
+    "competences": "BANA",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0019",
+    "description": "Säk bes Maskin 5 565 J=BP-BTP",
+    "location": "J=BP-BTP",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0007",
+    "description": "Uh bes Maskin 3 627 J=KST-EA",
+    "location": "J=KST-EA",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0024",
+    "description": "Säk bes Maskin 3 627 J.Få",
+    "location": "J.Få",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0003",
+    "description": "Säk bes Maskin 1 733 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0003",
+    "description": "Uh bes Maskin 5 630 J.Vfo",
+    "location": "J.Vfo",
+    "competences": "EL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0037",
+    "description": "Uh bes Maskin 3 630 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0006",
+    "description": "Uh bes Maskin 5 735 J.Vfo",
+    "location": "J.Vfo",
+    "competences": "EL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0016",
+    "description": "Uh bes Maskin 6 735 J=BP",
+    "location": "J=BP",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0069",
+    "description": "Säk bes Maskin 3 627 J=HAA",
+    "location": "J=HAA",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0022",
+    "description": "Uh bes Maskin 3 627 J.Bp-Btp",
+    "location": "J.Bp-Btp",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0004",
+    "description": "Uh bes Maskin 2 627 J=HE",
+    "location": "J=HE",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0032",
+    "description": "Säk bes Maskin 6 733 J=VRÖ-VB",
+    "location": "J=VRÖ-VB",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0009",
+    "description": "Uh bes Maskin 2 656 J.Lgd",
+    "location": "J.Lgd",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0004",
+    "description": "Säk bes Maskin 6 656 J.TEO",
+    "location": "J.TEO",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0005",
+    "description": "Uh bes Maskin 2 735 J.Tou",
+    "location": "J.Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0011",
+    "description": "Säk bes Maskin 6 626 J.Vrö-Vb",
+    "location": "J.Vrö-Vb",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0002",
+    "description": "Uh bes Maskin 6 626 J=VRÖ",
+    "location": "J=VRÖ",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0019",
+    "description": "Säk bes Maskin 5 626 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0024",
+    "description": "Säk bes Maskin 6 630 J=HAA-TYE",
+    "location": "J=HAA-TYE",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0036",
+    "description": "Säk bes Maskin 1 629 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0017",
+    "description": "Uh bes Maskin 5 627 J.Kb",
+    "location": "J.Kb",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0017",
+    "description": "Säk bes Maskin 2 656 J.Vb-Haa",
+    "location": "J.Vb-Haa",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0036",
+    "description": "Säk bes Maskin 1 640 J.Bp",
+    "location": "J.Bp",
+    "competences": "BANA",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0008",
+    "description": "Säk bes Maskin 6 656 J.He-Bp",
+    "location": "J.He-Bp",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0014",
+    "description": "Säk bes Maskin 1 630 J=KST-EA",
+    "location": "J=KST-EA",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0013",
+    "description": "Uh bes Maskin 2 565 J.Tye",
+    "location": "J.Tye",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0016",
+    "description": "Säk bes Maskin 2 656 J.Bp-Btp",
+    "location": "J.Bp-Btp",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0035",
+    "description": "Uh bes Maskin 2 656 J.Haa-Tye",
+    "location": "J.Haa-Tye",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0020",
+    "description": "Uh bes Maskin 6 629 J.Lgd",
+    "location": "J.Lgd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0036",
+    "description": "Uh bes Maskin 6 626 J.TEO",
+    "location": "J.TEO",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0025",
+    "description": "Säk bes Maskin 6 733 J.Fabg",
+    "location": "J.Fabg",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0032",
+    "description": "Säk bes Maskin 5 733 J.Fabg",
+    "location": "J.Fabg",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0012",
+    "description": "Uh bes Maskin 3 627 J.Haa",
+    "location": "J.Haa",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0016",
+    "description": "Uh bes Maskin 5 565 J=HAA-TYE",
+    "location": "J=HAA-TYE",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0010",
+    "description": "Uh bes Maskin 5 735 J.Fabg",
+    "location": "J.Fabg",
+    "competences": "EL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0015",
+    "description": "Säk bes Maskin 2 627 J.Fabp",
+    "location": "J.Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0022",
+    "description": "Uh bes Maskin 2 733 J.Fabp-He",
+    "location": "J.Fabp-He",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0026",
+    "description": "Säk bes Maskin 2 656 J.Få",
+    "location": "J.Få",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0038",
+    "description": "Uh bes Maskin 3 627 J.Lrd",
+    "location": "J.Lrd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0013",
+    "description": "Säk bes Maskin 6 627 J.Lgd-Kb",
+    "location": "J.Lgd-Kb",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0033",
+    "description": "Uh bes Maskin 1 656 J.Mdn",
+    "location": "J.Mdn",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0032",
+    "description": "Uh bes Maskin 6 626 J.Hre",
+    "location": "J.Hre",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0003",
+    "description": "Uh bes Maskin 6 626 J.Få",
+    "location": "J.Få",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0007",
+    "description": "Uh bes Maskin 2 627 J.Kb",
+    "location": "J.Kb",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0010",
+    "description": "Säk bes Maskin 5 656 J.Mdn",
+    "location": "J.Mdn",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0016",
+    "description": "Uh bes Maskin 5 733 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0036",
+    "description": "Uh bes Maskin 2 640 J.Fabp",
+    "location": "J.Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0010",
+    "description": "Säk bes Maskin 5 733 J=VB-HAA",
+    "location": "J=VB-HAA",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0004",
+    "description": "Säk bes Maskin 1 626 J.Tou",
+    "location": "J.Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0025",
+    "description": "Uh bes Maskin 1 629 J.Ldo-Lgd",
+    "location": "J.Ldo-Lgd",
+    "competences": "BANA",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0039",
+    "description": "Uh bes Maskin 1 627 J=TEO",
+    "location": "J=TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0021",
+    "description": "Uh bes Maskin 1 630 J.Ldo-Lgd",
+    "location": "J.Ldo-Lgd",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0014",
+    "description": "Säk bes Maskin 6 733 J=HAA-TYE",
+    "location": "J=HAA-TYE",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0039",
+    "description": "Uh bes Maskin 2 565 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0003",
+    "description": "Säk bes Maskin 3 735 J.Mdn",
+    "location": "J.Mdn",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0003",
+    "description": "Säk bes Maskin 3 629 J.Lrd",
+    "location": "J.Lrd",
+    "competences": "BANA",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0050",
+    "description": "Uh bes Maskin 2 733 J=VRÖ",
+    "location": "J=VRÖ",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0005",
+    "description": "Säk bes Maskin 1 626 J=BP",
+    "location": "J=BP",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0010",
+    "description": "Uh bes Maskin 5 626 J.Tye",
+    "location": "J.Tye",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0020",
+    "description": "Uh bes Maskin 2 626 J.Teo-Fabg",
+    "location": "J.Teo-Fabg",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0003",
+    "description": "Säk bes Maskin 5 629 J.VB",
+    "location": "J.VB",
+    "competences": "EL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0010",
+    "description": "Säk bes Maskin 5 630 J.Teo",
+    "location": "J.Teo",
+    "competences": "EL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0023",
+    "description": "Uh bes Maskin 1 733 J=TYE-TEO",
+    "location": "J=TYE-TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0058",
+    "description": "Uh bes Maskin 2 630 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0014",
+    "description": "Säk bes Maskin 1 626 J.Lgd-Kb",
+    "location": "J.Lgd-Kb",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0028",
+    "description": "Uh bes Maskin 2 733 J.Lrd",
+    "location": "J.Lrd",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0006",
+    "description": "Uh bes Maskin 5 733 J=LEK",
+    "location": "J=LEK",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0011",
+    "description": "Uh bes Maskin 5 627 J.VB",
+    "location": "J.VB",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0023",
+    "description": "Uh bes Maskin 1 627 J.TEO-FABP",
+    "location": "J.TEO-FABP",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0019",
+    "description": "Uh bes Maskin 6 627 J=TYE",
+    "location": "J=TYE",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0002",
+    "description": "Säk bes Maskin 3 627 J.Teo-Fabg",
+    "location": "J.Teo-Fabg",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0017",
+    "description": "Säk bes Maskin 2 627 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0033",
+    "description": "Uh bes Maskin 5 627 J.Kb-Lek",
+    "location": "J.Kb-Lek",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0035",
+    "description": "Uh bes Maskin 3 627 J.Kb",
+    "location": "J.Kb",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0026",
+    "description": "Säk bes Maskin 2 627 J=TEO",
+    "location": "J=TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0030",
+    "description": "Uh bes Maskin 1 656 J.Tye-Teo",
+    "location": "J.Tye-Teo",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0022",
+    "description": "Uh bes Maskin 5 565 J.Mdn-Krd",
+    "location": "J.Mdn-Krd",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0020",
+    "description": "Säk bes Maskin 1 627 J=BTP-FUR",
+    "location": "J=BTP-FUR",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0022",
+    "description": "Säk bes Maskin 5 630 J=VRÖ-VB",
+    "location": "J=VRÖ-VB",
+    "competences": "EL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0049",
+    "description": "Uh bes Maskin 5 627 J.Vdi",
+    "location": "J.Vdi",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0023",
+    "description": "Säk bes Maskin 5 627 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0015",
+    "description": "Säk bes Maskin 5 656 J.Haa",
+    "location": "J.Haa",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0009",
+    "description": "Uh bes Maskin 5 627 J.Kb",
+    "location": "J.Kb",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0009",
+    "description": "Säk bes Maskin 6 735 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0022",
+    "description": "Uh bes Maskin 3 733 J=EA",
+    "location": "J=EA",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0039",
+    "description": "Uh bes Maskin 5 733 J.Lrd",
+    "location": "J.Lrd",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0015",
+    "description": "Säk bes Maskin 6 627 J.Bp",
+    "location": "J.Bp",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0004",
+    "description": "Uh bes Maskin 3 627 J.Hre",
+    "location": "J.Hre",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0021",
+    "description": "Säk bes Maskin 1 627 J.KST-EA",
+    "location": "J.KST-EA",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0019",
+    "description": "Uh bes Maskin 2 733 J.He",
+    "location": "J.He",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0004",
+    "description": "Uh bes Maskin 1 626 J.BTP-FUR",
+    "location": "J.BTP-FUR",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0003",
+    "description": "Säk bes Maskin 6 565 J.Tye-Teo",
+    "location": "J.Tye-Teo",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0032",
+    "description": "Uh bes Maskin 1 733 J.TYE",
+    "location": "J.TYE",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0016",
+    "description": "Uh bes Maskin 1 627 J.HAA-TYE",
+    "location": "J.HAA-TYE",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0022",
+    "description": "Uh bes Maskin 6 627 J.Mdn",
+    "location": "J.Mdn",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0016",
+    "description": "Uh bes Maskin 1 627 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0026",
+    "description": "Säk bes Maskin 5 640 J.Kb-Lek",
+    "location": "J.Kb-Lek",
+    "competences": "EL",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0063",
+    "description": "Säk bes Maskin 5 627 J=BP-BTP",
+    "location": "J=BP-BTP",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0012",
+    "description": "Uh bes Maskin 5 627 J.Kb-Lek",
+    "location": "J.Kb-Lek",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0021",
+    "description": "Säk bes Maskin 3 733 J.Tou",
+    "location": "J.Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0025",
+    "description": "Uh bes Maskin 3 656 J=BP-BTP",
+    "location": "J=BP-BTP",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0033",
+    "description": "Säk bes Maskin 6 626 J.Få",
+    "location": "J.Få",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0035",
+    "description": "Säk bes Maskin 1 626 J.Bp-Btp",
+    "location": "J.Bp-Btp",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0016",
+    "description": "Säk bes Maskin 2 626 J.FÅ",
+    "location": "J.FÅ",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0001",
+    "description": "Säk bes Maskin 6 629 J.Vfo",
+    "location": "J.Vfo",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0012",
+    "description": "Uh bes Maskin 5 733 J.See",
+    "location": "J.See",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0003",
+    "description": "Uh bes Maskin 2 733 J=TEO-FABP",
+    "location": "J=TEO-FABP",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0005",
+    "description": "Uh bes Maskin 6 656 J.Fabp",
+    "location": "J.Fabp",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0005",
+    "description": "Uh bes Maskin 6 656 J.Ldo-Lgd",
+    "location": "J.Ldo-Lgd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0002",
+    "description": "Säk bes Maskin 6 627 J.Hd-Ea",
+    "location": "J.Hd-Ea",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0036",
+    "description": "Säk bes Maskin 6 627 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0014",
+    "description": "Uh bes Maskin 2 626 J.EA",
+    "location": "J.EA",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0002",
+    "description": "Uh bes Maskin 1 733 J.Teo-Fabp",
+    "location": "J.Teo-Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0019",
+    "description": "Säk bes Maskin 3 630 J.Vdi",
+    "location": "J.Vdi",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0019",
+    "description": "Säk bes Maskin 6 626 J.Vb-Haa",
+    "location": "J.Vb-Haa",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0004",
+    "description": "Säk bes Maskin 1 627 J=BP-BTP",
+    "location": "J=BP-BTP",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0042",
+    "description": "Säk bes Maskin 6 733 J.LEK-FÅ",
+    "location": "J.LEK-FÅ",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0030",
+    "description": "Säk bes Maskin 2 630 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0010",
+    "description": "Uh bes Maskin 5 627 J.Vrö",
+    "location": "J.Vrö",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0013",
+    "description": "Säk bes Maskin 5 656 J.TYE",
+    "location": "J.TYE",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0037",
+    "description": "Uh bes Maskin 3 629 J.Vfo",
+    "location": "J.Vfo",
+    "competences": "BANA",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0026",
+    "description": "Säk bes Maskin 5 627 J=TYE",
+    "location": "J=TYE",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0029",
+    "description": "Säk bes Maskin 3 565 J=HAA",
+    "location": "J=HAA",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0011",
+    "description": "Säk bes Maskin 5 627 J.Lek-Få",
+    "location": "J.Lek-Få",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0031",
+    "description": "Uh bes Maskin 2 630 J.Haa-Tye",
+    "location": "J.Haa-Tye",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0020",
+    "description": "Uh bes Maskin 6 733 J.Haa-Tye",
+    "location": "J.Haa-Tye",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0024",
+    "description": "Säk bes Maskin 3 627 J.Hre",
+    "location": "J.Hre",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0010",
+    "description": "Säk bes Maskin 1 733 J=BP-BTP",
+    "location": "J=BP-BTP",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0017",
+    "description": "Uh bes Maskin 1 627 J.Vrö-Vb",
+    "location": "J.Vrö-Vb",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0015",
+    "description": "Uh bes Maskin 6 627 J.Btp-Hd",
+    "location": "J.Btp-Hd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0038",
+    "description": "Uh bes Maskin 6 735 J.BP-BTP",
+    "location": "J.BP-BTP",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0002",
+    "description": "Uh bes Maskin 2 733 J.Lek",
+    "location": "J.Lek",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0012",
+    "description": "Uh bes Maskin 6 626 J.BP-BTP",
+    "location": "J.BP-BTP",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0019",
+    "description": "Säk bes Maskin 6 629 J.See-Hre",
+    "location": "J.See-Hre",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0037",
+    "description": "Säk bes Maskin 3 656 J.Om",
+    "location": "J.Om",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0004",
+    "description": "Säk bes Maskin 5 656 J.Om-Hd",
+    "location": "J.Om-Hd",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0006",
+    "description": "Uh bes Maskin 1 640 J.Vb-Haa",
+    "location": "J.Vb-Haa",
+    "competences": "BANA",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0036",
+    "description": "Uh bes Maskin 2 656 J=LEK",
+    "location": "J=LEK",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0012",
+    "description": "Uh bes Maskin 3 626 J.Kb-Lek",
+    "location": "J.Kb-Lek",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0011",
+    "description": "Uh bes Maskin 6 733 J.Vb-Haa",
+    "location": "J.Vb-Haa",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0014",
+    "description": "Uh bes Maskin 2 656 J.FÅ",
+    "location": "J.FÅ",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0010",
+    "description": "Säk bes Maskin 2 640 J=VB",
+    "location": "J=VB",
+    "competences": "BANA",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0034",
+    "description": "Säk bes Maskin 1 627 J=TYE",
+    "location": "J=TYE",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0038",
+    "description": "Säk bes Maskin 1 629 J=TEO",
+    "location": "J=TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0060",
+    "description": "Säk bes Maskin 5 626 J.HAA-TYE",
+    "location": "J.HAA-TYE",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0033",
+    "description": "Uh bes Maskin 2 627 J.Haa-Tye",
+    "location": "J.Haa-Tye",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0026",
+    "description": "Uh bes Maskin 2 626 J=VRÖ-VB",
+    "location": "J=VRÖ-VB",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0020",
+    "description": "Uh bes Maskin 3 733 J.G-Mdn",
+    "location": "J.G-Mdn",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0015",
+    "description": "Säk bes Maskin 3 656 J.See-Hre",
+    "location": "J.See-Hre",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0052",
+    "description": "Säk bes Maskin 1 627 J.Teo-Fabg",
+    "location": "J.Teo-Fabg",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0020",
+    "description": "Säk bes Maskin 2 627 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0024",
+    "description": "Uh bes Maskin 5 733 J.Haa",
+    "location": "J.Haa",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0016",
+    "description": "Säk bes Maskin 3 735 J.Om-Hd",
+    "location": "J.Om-Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0009",
+    "description": "Säk bes Maskin 6 626 J.Fabp-He",
+    "location": "J.Fabp-He",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0009",
+    "description": "Säk bes Maskin 3 627 J.Vdi",
+    "location": "J.Vdi",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0013",
+    "description": "Säk bes Maskin 1 630 J.Mdn-Krd",
+    "location": "J.Mdn-Krd",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0003",
+    "description": "Säk bes Maskin 6 629 J.Krd-Ldo",
+    "location": "J.Krd-Ldo",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0005",
+    "description": "Säk bes Maskin 3 627 J.See",
+    "location": "J.See",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0014",
+    "description": "Säk bes Maskin 3 656 J=HAA",
+    "location": "J=HAA",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0063",
+    "description": "Säk bes Maskin 5 735 J=FÅ-VRÖ",
+    "location": "J=FÅ-VRÖ",
+    "competences": "EL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0017",
+    "description": "Säk bes Maskin 6 630 J.Ldo",
+    "location": "J.Ldo",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0013",
+    "description": "Säk bes Maskin 5 627 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0017",
+    "description": "Uh bes Maskin 6 626 J.Lgd-Kb",
+    "location": "J.Lgd-Kb",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0019",
+    "description": "Säk bes Maskin 1 640 J.Haa",
+    "location": "J.Haa",
+    "competences": "BANA",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0026",
+    "description": "Uh bes Maskin 3 733 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0002",
+    "description": "Säk bes Maskin 6 656 J=FABP-HE",
+    "location": "J=FABP-HE",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0037",
+    "description": "Säk bes Maskin 3 627 J=LEK-FÅ",
+    "location": "J=LEK-FÅ",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0035",
+    "description": "Säk bes Maskin 5 627 J.BP-BTP",
+    "location": "J.BP-BTP",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0012",
+    "description": "Uh bes Maskin 3 627 J=LEK",
+    "location": "J=LEK",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0013",
+    "description": "Säk bes Maskin 1 627 J.Teo-Fabp",
+    "location": "J.Teo-Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0037",
+    "description": "Säk bes Maskin 2 733 J.Bp",
+    "location": "J.Bp",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0012",
+    "description": "Uh bes Maskin 1 626 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0015",
+    "description": "Säk bes Maskin 5 656 J.Kb",
+    "location": "J.Kb",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0009",
+    "description": "Säk bes Maskin 3 733 J.Vfo",
+    "location": "J.Vfo",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0014",
+    "description": "Uh bes Maskin 1 626 J=TYE-TEO",
+    "location": "J=TYE-TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0002",
+    "description": "Uh bes Maskin 3 626 J=FABP",
+    "location": "J=FABP",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0001",
+    "description": "Uh bes Maskin 1 627 J.Lgd-Kb",
+    "location": "J.Lgd-Kb",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0020",
+    "description": "Säk bes Maskin 6 733 J.G-Mdn",
+    "location": "J.G-Mdn",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0038",
+    "description": "Uh bes Maskin 6 656 J.He-Bp",
+    "location": "J.He-Bp",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0022",
+    "description": "Uh bes Maskin 3 627 J=VRÖ",
+    "location": "J=VRÖ",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0024",
+    "description": "Uh bes Maskin 2 626 J.Fabp",
+    "location": "J.Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0025",
+    "description": "Säk bes Maskin 5 656 J=TEO-FABP",
+    "location": "J=TEO-FABP",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0010",
+    "description": "Säk bes Maskin 3 627 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0042",
+    "description": "Säk bes Maskin 1 627 J.Vb",
+    "location": "J.Vb",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0059",
+    "description": "Uh bes Maskin 2 629 J.He-Bp",
+    "location": "J.He-Bp",
+    "competences": "BANA",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0001",
+    "description": "Uh bes Maskin 2 627 J.Hre-Vdi",
+    "location": "J.Hre-Vdi",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0009",
+    "description": "Uh bes Maskin 3 627 J.Få",
+    "location": "J.Få",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0059",
+    "description": "Uh bes Maskin 6 626 J.Vfo-See",
+    "location": "J.Vfo-See",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0003",
+    "description": "Säk bes Maskin 1 735 J=VRÖ-VB",
+    "location": "J=VRÖ-VB",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0027",
+    "description": "Säk bes Maskin 3 627 J.Haa",
+    "location": "J.Haa",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0031",
+    "description": "Säk bes Maskin 1 733 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0028",
+    "description": "Säk bes Maskin 3 735 J=VB",
+    "location": "J=VB",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0011",
+    "description": "Uh bes Maskin 1 565 J=BP",
+    "location": "J=BP",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0022",
+    "description": "Uh bes Maskin 2 733 J=LEK",
+    "location": "J=LEK",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0026",
+    "description": "Säk bes Maskin 6 733 J.Lek-Få",
+    "location": "J.Lek-Få",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0004",
+    "description": "Säk bes Maskin 5 627 J=HAA",
+    "location": "J=HAA",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0011",
+    "description": "Uh bes Maskin 6 630 J.Fabp",
+    "location": "J.Fabp",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0022",
+    "description": "Uh bes Maskin 1 733 J.Lgd-Kb",
+    "location": "J.Lgd-Kb",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0031",
+    "description": "Säk bes Maskin 6 626 J.Tou-Om",
+    "location": "J.Tou-Om",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0017",
+    "description": "Uh bes Maskin 2 630 J.Om-Hd",
+    "location": "J.Om-Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0011",
+    "description": "Säk bes Maskin 6 627 J.Fabp",
+    "location": "J.Fabp",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0033",
+    "description": "Säk bes Maskin 2 627 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0004",
+    "description": "Uh bes Maskin 5 627 J=FABP-HE",
+    "location": "J=FABP-HE",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0031",
+    "description": "Uh bes Maskin 3 733 J=BP-BTP",
+    "location": "J=BP-BTP",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0017",
+    "description": "Uh bes Maskin 1 656 J.Tye-Teo",
+    "location": "J.Tye-Teo",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0019",
+    "description": "Uh bes Maskin 3 627 J.HE-TEO",
+    "location": "J.HE-TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0016",
+    "description": "Uh bes Maskin 6 565 J=EA",
+    "location": "J=EA",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0050",
+    "description": "Säk bes Maskin 3 565 J.He",
+    "location": "J.He",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0016",
+    "description": "Säk bes Maskin 3 627 J=VRÖ",
+    "location": "J=VRÖ",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0007",
+    "description": "Säk bes Maskin 3 630 J=EA",
+    "location": "J=EA",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0066",
+    "description": "Säk bes Maskin 2 627 J.To-Om",
+    "location": "J.To-Om",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0008",
+    "description": "Uh bes Maskin 6 733 J.Haa-Tye",
+    "location": "J.Haa-Tye",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0029",
+    "description": "Uh bes Maskin 2 735 J.Vb",
+    "location": "J.Vb",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0002",
+    "description": "Uh bes Maskin 1 626 J=TEO",
+    "location": "J=TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0013",
+    "description": "Uh bes Maskin 3 735 J.Haa",
+    "location": "J.Haa",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0024",
+    "description": "Uh bes Maskin 6 656 J.BP",
+    "location": "J.BP",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0004",
+    "description": "Uh bes Maskin 5 656 J.Btp-Hd",
+    "location": "J.Btp-Hd",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0054",
+    "description": "Uh bes Maskin 6 565 J.Lek",
+    "location": "J.Lek",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0008",
+    "description": "Säk bes Maskin 6 735 J.Hd-Ea",
+    "location": "J.Hd-Ea",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SKMT0014",
+    "description": "Säk bes Maskin 1 656 J.Om-Hd",
+    "location": "J.Om-Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SSLI0030",
+    "description": "Säk bes Maskin 3 565 J.TEO",
+    "location": "J.TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0015",
+    "description": "Uh bes Maskin 5 733 J=KST-EA",
+    "location": "J=KST-EA",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0015",
+    "description": "Uh bes Maskin 3 627 J.Få-Vrö",
+    "location": "J.Få-Vrö",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0062",
+    "description": "Säk bes Maskin 3 733 J=HAA",
+    "location": "J=HAA",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UHAG0057",
+    "description": "Uh bes Maskin 6 733 J.Hre-Vdi",
+    "location": "J.Hre-Vdi",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0022",
+    "description": "Säk bes Maskin 6 627 J.VRÖ",
+    "location": "J.VRÖ",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UKMT0006",
+    "description": "Uh bes Maskin 3 627 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SISO0022",
+    "description": "Säk bes Maskin 3 627 J.Lrd",
+    "location": "J.Lrd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0036",
+    "description": "Uh bes Maskin 5 627 J.Bp",
+    "location": "J.Bp",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UTRU0023",
+    "description": "Uh bes Maskin 5 565 J.Bs-Vfo",
+    "location": "J.Bs-Vfo",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0060",
+    "description": "Säk bes Maskin 1 735 J.Btp",
+    "location": "J.Btp",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0023",
+    "description": "Säk bes Maskin 6 627 J.Om-Hd",
+    "location": "J.Om-Hd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SRSK0029",
+    "description": "Säk bes Maskin 2 656 J.Lek-Få",
+    "location": "J.Lek-Få",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0010",
+    "description": "Uh bes Maskin 3 733 J.Haa-Tye",
+    "location": "J.Haa-Tye",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UBAL0003",
+    "description": "Uh bes Maskin 1 565 J=LEK-FÅ",
+    "location": "J=LEK-FÅ",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "UISO0032",
+    "description": "Uh bes Maskin 1 626 J=FÅ-VRÖ",
+    "location": "J=FÅ-VRÖ",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SHAG0007",
+    "description": "Säk bes Maskin 5 565 J=TEO-FABP",
+    "location": "J=TEO-FABP",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 1,
+    "pmnum": "URSK0013",
+    "description": "Uh bes Maskin 5 627 J.LEK",
+    "location": "J.LEK",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "STRU0002",
+    "description": "Säk bes Maskin 1 627 J=VRÖ",
+    "location": "J=VRÖ",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 1,
+    "pmnum": "USLI0034",
+    "description": "Uh bes Maskin 3 626 J=FABP-HE",
+    "location": "J=FABP-HE",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 1,
+    "pmnum": "SBAL0038",
+    "description": "Säk bes Maskin 5 733 J.He",
+    "location": "J.He",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "YKMT0021",
+    "description": "Uh bes Maskin 3 627 J.Teo-Fabp",
+    "location": "J.Teo-Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "KHAG0031",
+    "description": "Uh bes Maskin 1 656 J.G-Mdn",
+    "location": "J.G-Mdn",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "QISO0025",
+    "description": "Säk bes Maskin 3 626 J.Ldo-Lgd",
+    "location": "J.Ldo-Lgd",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "PRSK0012",
+    "description": "Uh bes Maskin 1 735 J.FABP",
+    "location": "J.FABP",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "HSLI0016",
+    "description": "Säk bes Maskin 3 565 J.He",
+    "location": "J.He",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "QKMT0007",
+    "description": "Säk bes Maskin 1 565 J.Lgd-Kb",
+    "location": "J.Lgd-Kb",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "LISO0020",
+    "description": "Uh bes Maskin 6 656 J.He",
+    "location": "J.He",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "THAG0012",
+    "description": "Säk bes Maskin 3 626 J.VRÖ",
+    "location": "J.VRÖ",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0026",
+    "description": "Säk bes Maskin 5 627 J.Vb",
+    "location": "J.Vb",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÖISO0023",
+    "description": "Säk bes Maskin 3 627 J.Vdi",
+    "location": "J.Vdi",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "RBAL0023",
+    "description": "Säk bes Maskin 1 656 J=VRÖ",
+    "location": "J=VRÖ",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "DSLI0032",
+    "description": "Uh bes Maskin 6 656 J=VB-HAA",
+    "location": "J=VB-HAA",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "EHAG0060",
+    "description": "Säk bes Maskin 3 630 J.Teo",
+    "location": "J.Teo",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "NSLI0015",
+    "description": "Uh bes Maskin 5 626 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "PTRU0019",
+    "description": "Uh bes Maskin 2 735 J.See-Hre",
+    "location": "J.See-Hre",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "VISO0021",
+    "description": "Säk bes Maskin 2 627 J.Bp-Btp",
+    "location": "J.Bp-Btp",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "HBAL0022",
+    "description": "Säk bes Maskin 3 626 J.Mdn-Krd",
+    "location": "J.Mdn-Krd",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "EKMT0019",
+    "description": "Uh bes Maskin 3 627 J.Krd",
+    "location": "J.Krd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "GSLI0031",
+    "description": "Uh bes Maskin 1 627 J.Tou-Om",
+    "location": "J.Tou-Om",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÖSLI0029",
+    "description": "Säk bes Maskin 6 626 J.Få",
+    "location": "J.Få",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "KBAL0035",
+    "description": "Säk bes Maskin 5 627 J.Teo-Fabp",
+    "location": "J.Teo-Fabp",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ZHAG0015",
+    "description": "Säk bes Maskin 5 640 J=FÅ-VRÖ",
+    "location": "J=FÅ-VRÖ",
+    "competences": "EL",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÄSLI0039",
+    "description": "Säk bes Maskin 1 733 J.Tou",
+    "location": "J.Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÄISO0026",
+    "description": "Uh bes Maskin 3 627 J=VRÖ",
+    "location": "J=VRÖ",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "EHAG0044",
+    "description": "Uh bes Maskin 1 626 J.Lgd-Kb",
+    "location": "J.Lgd-Kb",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "KRSK0021",
+    "description": "Uh bes Maskin 5 626 J.Vb",
+    "location": "J.Vb",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "NISO0022",
+    "description": "Säk bes Maskin 6 735 J=BTP-FUR",
+    "location": "J=BTP-FUR",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "VHAG0034",
+    "description": "Säk bes Maskin 6 629 J=TYE",
+    "location": "J=TYE",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "RRSK0005",
+    "description": "Uh bes Maskin 3 626 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "GHAG0021",
+    "description": "Uh bes Maskin 5 733 J=FÅ-VRÖ",
+    "location": "J=FÅ-VRÖ",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "FRSK0022",
+    "description": "Uh bes Maskin 6 629 J=BTP",
+    "location": "J=BTP",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "GTRU0002",
+    "description": "Säk bes Maskin 3 627 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÖHAG0035",
+    "description": "Säk bes Maskin 3 627 J.HAA-TYE",
+    "location": "J.HAA-TYE",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "JISO0026",
+    "description": "Säk bes Maskin 6 733 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "WTRU0005",
+    "description": "Säk bes Maskin 2 627 J.Få",
+    "location": "J.Få",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÖRSK0008",
+    "description": "Uh bes Maskin 2 627 J=TEO-FABP",
+    "location": "J=TEO-FABP",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "TKMT0017",
+    "description": "Uh bes Maskin 3 627 J.Kb",
+    "location": "J.Kb",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÄISO0014",
+    "description": "Uh bes Maskin 6 733 J.Btp-Hd",
+    "location": "J.Btp-Hd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "NSLI0014",
+    "description": "Uh bes Maskin 5 627 J.Bs-Vfo",
+    "location": "J.Bs-Vfo",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÅHAG0003",
+    "description": "Säk bes Maskin 6 565 J.See",
+    "location": "J.See",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "WKMT0024",
+    "description": "Uh bes Maskin 5 626 J.Lrd",
+    "location": "J.Lrd",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "IBAL0020",
+    "description": "Uh bes Maskin 2 733 J=BTP",
+    "location": "J=BTP",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "TTRU0015",
+    "description": "Uh bes Maskin 6 629 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "XHAG0036",
+    "description": "Säk bes Maskin 1 630 J=KST-EA",
+    "location": "J=KST-EA",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "JHAG0038",
+    "description": "Uh bes Maskin 3 627 J.Få-Vrö",
+    "location": "J.Få-Vrö",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "WTRU0021",
+    "description": "Uh bes Maskin 6 630 J.Haa",
+    "location": "J.Haa",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "NBAL0024",
+    "description": "Säk bes Maskin 5 627 J.Tye",
+    "location": "J.Tye",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "BKMT0022",
+    "description": "Säk bes Maskin 5 627 J.He-Bp",
+    "location": "J.He-Bp",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "KHAG0040",
+    "description": "Säk bes Maskin 1 656 J.Ldo",
+    "location": "J.Ldo",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "KSLI0015",
+    "description": "Uh bes Maskin 6 626 J.FÅ-VRÖ",
+    "location": "J.FÅ-VRÖ",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "YTRU0001",
+    "description": "Säk bes Maskin 6 627 J=VB",
+    "location": "J=VB",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0010",
+    "description": "Uh bes Maskin 6 656 J.Fabp-He",
+    "location": "J.Fabp-He",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "LHAG0005",
+    "description": "Uh bes Maskin 6 627 J.HAA",
+    "location": "J.HAA",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÄISO0037",
+    "description": "Säk bes Maskin 1 733 J=TYE-TEO",
+    "location": "J=TYE-TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "JKMT0020",
+    "description": "Uh bes Maskin 3 627 J.Fabg",
+    "location": "J.Fabg",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "QISO0014",
+    "description": "Säk bes Maskin 5 656 J=BP",
+    "location": "J=BP",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "LBAL0003",
+    "description": "Uh bes Maskin 5 733 J.Få",
+    "location": "J.Få",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "OHAG0015",
+    "description": "Uh bes Maskin 1 733 J.Tye",
+    "location": "J.Tye",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "QBAL0037",
+    "description": "Säk bes Maskin 2 630 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "WSLI0039",
+    "description": "Uh bes Maskin 5 626 J.Mdn-Krd",
+    "location": "J.Mdn-Krd",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "NKMT0001",
+    "description": "Säk bes Maskin 5 626 J=BTP-FURF",
+    "location": "J=BTP-FURF",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "XISO0018",
+    "description": "Uh bes Maskin 3 733 J=VB",
+    "location": "J=VB",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "QBAL0037",
+    "description": "Säk bes Maskin 2 629 J.Bp",
+    "location": "J.Bp",
+    "competences": "BANA",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "DSLI0030",
+    "description": "Uh bes Maskin 5 626 J=KB-LEK",
+    "location": "J=KB-LEK",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÅRSK0004",
+    "description": "Uh bes Maskin 5 735 J.VRÖ",
+    "location": "J.VRÖ",
+    "competences": "EL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "EISO0025",
+    "description": "Uh bes Maskin 5 630 J=FABP-HE",
+    "location": "J=FABP-HE",
+    "competences": "EL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÄBAL0025",
+    "description": "Säk bes Maskin 1 735 J.Fabg",
+    "location": "J.Fabg",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ABAL0030",
+    "description": "Uh bes Maskin 3 733 J.Kb-Lek",
+    "location": "J.Kb-Lek",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "TRSK0006",
+    "description": "Uh bes Maskin 2 626 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "CSLI0021",
+    "description": "Uh bes Maskin 5 656 J.Ldo",
+    "location": "J.Ldo",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "JISO0012",
+    "description": "Uh bes Maskin 6 626 J=HE",
+    "location": "J=HE",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "FBAL0032",
+    "description": "Uh bes Maskin 2 733 J.Lek-Få",
+    "location": "J.Lek-Få",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "BRSK0003",
+    "description": "Säk bes Maskin 1 735 J.Vb",
+    "location": "J.Vb",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "DISO0015",
+    "description": "Säk bes Maskin 5 626 J.Hre-Vdi",
+    "location": "J.Hre-Vdi",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "WISO0016",
+    "description": "Säk bes Maskin 5 733 J=VB",
+    "location": "J=VB",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÄISO0011",
+    "description": "Säk bes Maskin 5 733 J.Teo",
+    "location": "J.Teo",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "CHAG0005",
+    "description": "Säk bes Maskin 6 656 J.Hre-Vdi",
+    "location": "J.Hre-Vdi",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ABAL0016",
+    "description": "Uh bes Maskin 5 656 J.Ldo",
+    "location": "J.Ldo",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "MRSK0013",
+    "description": "Uh bes Maskin 3 627 J.LEK-FÅ",
+    "location": "J.LEK-FÅ",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "NBAL0004",
+    "description": "Uh bes Maskin 3 733 J=HAA",
+    "location": "J=HAA",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ZSLI0005",
+    "description": "Säk bes Maskin 5 733 J=VRÖ-VB",
+    "location": "J=VRÖ-VB",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "QHAG0027",
+    "description": "Uh bes Maskin 2 627 J=KB-LEK",
+    "location": "J=KB-LEK",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "LBAL0038",
+    "description": "Uh bes Maskin 5 626 J.Ldo",
+    "location": "J.Ldo",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "JHAG0069",
+    "description": "Säk bes Maskin 3 627 J=TYE-TEO",
+    "location": "J=TYE-TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "YHAG0006",
+    "description": "Uh bes Maskin 5 626 J.VRÖ",
+    "location": "J.VRÖ",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "JISO0014",
+    "description": "Uh bes Maskin 2 627 J=VRÖ",
+    "location": "J=VRÖ",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "MTRU0001",
+    "description": "Uh bes Maskin 3 565 J.TYE",
+    "location": "J.TYE",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÅTRU0023",
+    "description": "Säk bes Maskin 6 565 J.Bp-Btp",
+    "location": "J.Bp-Btp",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "WHAG0023",
+    "description": "Uh bes Maskin 3 626 J.Mdn",
+    "location": "J.Mdn",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÄTRU0021",
+    "description": "Uh bes Maskin 3 627 J.Bp",
+    "location": "J.Bp",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "QBAL0025",
+    "description": "Säk bes Maskin 5 733 J.Vb",
+    "location": "J.Vb",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÄHAG0017",
+    "description": "Säk bes Maskin 6 656 J=EA",
+    "location": "J=EA",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "EISO0006",
+    "description": "Uh bes Maskin 1 627 J.Vb-Haa",
+    "location": "J.Vb-Haa",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0014",
+    "description": "Säk bes Maskin 1 626 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÖTRU0026",
+    "description": "Säk bes Maskin 3 627 J.Lek",
+    "location": "J.Lek",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "BSLI0013",
+    "description": "Säk bes Maskin 5 626 J=HE-BP",
+    "location": "J=HE-BP",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "HSLI0015",
+    "description": "Uh bes Maskin 6 627 J=HE-BP",
+    "location": "J=HE-BP",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0001",
+    "description": "Säk bes Maskin 2 627 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "RSLI0026",
+    "description": "Uh bes Maskin 3 733 J.Vb-Haa",
+    "location": "J.Vb-Haa",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "XSLI0003",
+    "description": "Säk bes Maskin 3 656 J=LEK",
+    "location": "J=LEK",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "NKMT0009",
+    "description": "Uh bes Maskin 1 627 J.Ldo-Lgd",
+    "location": "J.Ldo-Lgd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "LKMT0011",
+    "description": "Säk bes Maskin 1 626 J.Om-Hd",
+    "location": "J.Om-Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÅKMT0004",
+    "description": "Säk bes Maskin 3 733 J.Tou",
+    "location": "J.Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ERSK0029",
+    "description": "Säk bes Maskin 2 627 J=TEO-FABP",
+    "location": "J=TEO-FABP",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "LRSK0026",
+    "description": "Uh bes Maskin 2 626 J=BP",
+    "location": "J=BP",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÖISO0029",
+    "description": "Säk bes Maskin 1 626 J.Bs-Vfo",
+    "location": "J.Bs-Vfo",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "CKMT0021",
+    "description": "Uh bes Maskin 3 626 J.Fabp",
+    "location": "J.Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "CISO0002",
+    "description": "Säk bes Maskin 1 627 J.Tou",
+    "location": "J.Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÄTRU0004",
+    "description": "Säk bes Maskin 3 735 J.Lek",
+    "location": "J.Lek",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÄRSK0007",
+    "description": "Uh bes Maskin 2 733 J.Bs-Vfo",
+    "location": "J.Bs-Vfo",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "JBAL0017",
+    "description": "Säk bes Maskin 5 626 J.Lek-Få",
+    "location": "J.Lek-Få",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "AHAG0014",
+    "description": "Säk bes Maskin 5 627 J=HE-BP",
+    "location": "J=HE-BP",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "RSLI0002",
+    "description": "Uh bes Maskin 3 733 J.Få",
+    "location": "J.Få",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ABAL0017",
+    "description": "Säk bes Maskin 3 735 J.Mdn-Krd",
+    "location": "J.Mdn-Krd",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "HKMT0007",
+    "description": "Säk bes Maskin 5 565 J.Vdi",
+    "location": "J.Vdi",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÅHAG0048",
+    "description": "Säk bes Maskin 6 733 J.Lgd",
+    "location": "J.Lgd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "KSLI0032",
+    "description": "Säk bes Maskin 5 630 J.Vfo",
+    "location": "J.Vfo",
+    "competences": "EL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "OHAG0048",
+    "description": "Uh bes Maskin 3 626 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ZSLI0013",
+    "description": "Uh bes Maskin 6 627 J.TEO",
+    "location": "J.TEO",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "RSLI0016",
+    "description": "Uh bes Maskin 2 656 J.He",
+    "location": "J.He",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "TISO0017",
+    "description": "Uh bes Maskin 6 656 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "ÅISO0002",
+    "description": "Uh bes Maskin 3 630 J=VRÖ",
+    "location": "J=VRÖ",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "CRSK0021",
+    "description": "Säk bes Maskin 1 627 J.Lgd",
+    "location": "J.Lgd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "CTRU0015",
+    "description": "Uh bes Maskin 5 627 J.G-Mdn",
+    "location": "J.G-Mdn",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "AHAG0022",
+    "description": "Säk bes Maskin 3 630 J=BP-BTP",
+    "location": "J=BP-BTP",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0014",
+    "description": "Säk bes Maskin 2 627 J.Bp",
+    "location": "j.lrd-tou",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0029",
+    "description": "Säk bes Maskin 6 627 J=BP-BTP",
+    "location": "j=få",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0027",
+    "description": "Säk bes Maskin 1 630 J.Tou-Hyb",
+    "location": "j.bp-btp",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0012",
+    "description": "Uh bes Maskin 3 565 J.Hre-Vdi",
+    "location": "j=haa",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0014",
+    "description": "Säk bes Maskin 2 733 J.Vdi-Vb",
+    "location": "j=kst-ea",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0024",
+    "description": "Uh bes Maskin 3 733 J.Ldo",
+    "location": "j.fabg",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0012",
+    "description": "Uh bes Maskin 3 735 J=HAA-TYE",
+    "location": "j.tou-om",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0069",
+    "description": "Säk bes Maskin 1 656 J.Tou-Hyb",
+    "location": "j.teo",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0031",
+    "description": "Säk bes Maskin 3 733 J.Hd",
+    "location": "j.lek",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UBAL0033",
+    "description": "Uh bes Maskin 3 626 J.Vfo",
+    "location": "j=lek-få",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0007",
+    "description": "Säk bes Maskin 5 733 J=VB",
+    "location": "j.fabp-he",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0014",
+    "description": "Säk bes Maskin 3 627 J.Lek",
+    "location": "j=haa-tye",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0015",
+    "description": "Säk bes Maskin 2 733 J.Lek-Få",
+    "location": "j.ea",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0024",
+    "description": "Säk bes Maskin 6 627 J=LEK",
+    "location": "j.krd-ldo",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0016",
+    "description": "Uh bes Maskin 1 735 J=VRÖ",
+    "location": "j.teo",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0033",
+    "description": "Säk bes Maskin 3 627 J.Tye-Teo",
+    "location": "j=tye",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0059",
+    "description": "Uh bes Maskin 3 733 J.Lrd",
+    "location": "j=haa-tye",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0003",
+    "description": "Uh bes Maskin 2 733 J.Tou",
+    "location": "j.he-bp",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0039",
+    "description": "Säk bes Maskin 5 630 J.Lrd-Tou",
+    "location": "j=vrö-vb",
+    "competences": "EL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0027",
+    "description": "Uh bes Maskin 3 733 J=FABP",
+    "location": "j.lek",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0014",
+    "description": "Säk bes Maskin 3 630 J.Hre-Vdi",
+    "location": "j.lrd-tou",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0004",
+    "description": "Säk bes Maskin 1 626 J=BP",
+    "location": "j.teo-fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0023",
+    "description": "Uh bes Maskin 5 627 J=TYE",
+    "location": "j.lgd",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0011",
+    "description": "Uh bes Maskin 2 733 J.VB",
+    "location": "j.hd",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0024",
+    "description": "Säk bes Maskin 5 627 J=BTP-FUR",
+    "location": "j=bp-btp",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0015",
+    "description": "Säk bes Maskin 2 630 J.Lrd-Tou",
+    "location": "j=teo-fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UBAL0023",
+    "description": "Uh bes Maskin 6 565 J=VB",
+    "location": "j=bp",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0021",
+    "description": "Uh bes Maskin 6 733 J.Vrö-Vb",
+    "location": "j=fabp-he",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0033",
+    "description": "Uh bes Maskin 2 627 J.See-Hre",
+    "location": "j.bp-btp",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0048",
+    "description": "Uh bes Maskin 5 733 J=LEK",
+    "location": "j.kb-lek",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0015",
+    "description": "Säk bes Maskin 3 733 J.VB-HAA",
+    "location": "j.mdn-krd",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0017",
+    "description": "Säk bes Maskin 2 656 J.See",
+    "location": "j.om-hd",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0033",
+    "description": "Säk bes Maskin 1 627 J.Få-Vrö",
+    "location": "j=he",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0003",
+    "description": "Uh bes Maskin 6 626 J.Få-Vrö",
+    "location": "j.hd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0025",
+    "description": "Uh bes Maskin 1 630 J.Lrd-Tou",
+    "location": "j=haa",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UKMT0016",
+    "description": "Uh bes Maskin 5 630 J.Om-Hd",
+    "location": "j.teo-fabg",
+    "competences": "EL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UBAL0023",
+    "description": "Uh bes Maskin 5 627 J.Mdn",
+    "location": "j.lek",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0037",
+    "description": "Säk bes Maskin 1 733 J.Vdi",
+    "location": "j.ldo-lgd",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0020",
+    "description": "Uh bes Maskin 1 733 J=HE",
+    "location": "j.bp-btp",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0020",
+    "description": "Uh bes Maskin 1 733 J.Lgd",
+    "location": "j=teo",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0012",
+    "description": "Säk bes Maskin 5 627 J=TYE",
+    "location": "j.haa-tye",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0023",
+    "description": "Uh bes Maskin 3 627 J=HAA-TYE",
+    "location": "j=teo-fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0007",
+    "description": "Säk bes Maskin 2 626 J=BP",
+    "location": "j.btp-hd",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0009",
+    "description": "Säk bes Maskin 3 735 J=KB-LEK",
+    "location": "j=fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0049",
+    "description": "Uh bes Maskin 3 565 J.Hd",
+    "location": "j.lrd-tou",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0015",
+    "description": "Uh bes Maskin 1 565 J.BTP",
+    "location": "j.vfo-see",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0037",
+    "description": "Säk bes Maskin 3 627 J.BP",
+    "location": "j.hd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0046",
+    "description": "Säk bes Maskin 1 630 J.Tou",
+    "location": "j.ldo-lgd",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0025",
+    "description": "Uh bes Maskin 1 656 J=TEO",
+    "location": "j=fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0006",
+    "description": "Säk bes Maskin 5 733 J.See",
+    "location": "j.bp-btp",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0005",
+    "description": "Säk bes Maskin 3 733 J.Krd-Ldo",
+    "location": "j.ldo-lgd",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0027",
+    "description": "Säk bes Maskin 1 733 J=VRÖ",
+    "location": "j=bp-btp",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0006",
+    "description": "Säk bes Maskin 6 656 J.Bp-Btp",
+    "location": "j.hd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0001",
+    "description": "Uh bes Maskin 2 626 J.Ldo",
+    "location": "j.he-bp",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0011",
+    "description": "Säk bes Maskin 1 627 J=HE-BP",
+    "location": "j.btp-hd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0036",
+    "description": "Säk bes Maskin 3 735 J=HAA",
+    "location": "j=få-vrö",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0028",
+    "description": "Säk bes Maskin 3 656 J.Vb",
+    "location": "j=teo",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0021",
+    "description": "Säk bes Maskin 5 627 J.Hre",
+    "location": "j=fabp",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0022",
+    "description": "Uh bes Maskin 5 640 J=TYE",
+    "location": "j=vrö",
+    "competences": "EL",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0017",
+    "description": "Säk bes Maskin 3 565 J.Vfo",
+    "location": "j.hd-ea",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0019",
+    "description": "Säk bes Maskin 3 656 J.KB-LEK",
+    "location": "j.lgd",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UKMT0010",
+    "description": "Uh bes Maskin 3 733 J.FÅ-VRÖ",
+    "location": "j.ldo",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0001",
+    "description": "Uh bes Maskin 3 565 J=VB",
+    "location": "j.tou-hyb",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0021",
+    "description": "Säk bes Maskin 2 627 J=TYE-TEO",
+    "location": "j=vb",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0001",
+    "description": "Säk bes Maskin 2 733 J.Ldo",
+    "location": "j=vrö",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0021",
+    "description": "Säk bes Maskin 2 735 J.Lek",
+    "location": "j=haa",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0046",
+    "description": "Säk bes Maskin 1 733 J.Fabp-He",
+    "location": "j=få-vrö",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0015",
+    "description": "Uh bes Maskin 1 626 J.Fabp-He",
+    "location": "j.see-hre",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0017",
+    "description": "Säk bes Maskin 6 735 J.Btp-Hd",
+    "location": "j.vfo",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0009",
+    "description": "Säk bes Maskin 2 733 J.Bp-Btp",
+    "location": "j.vb",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0051",
+    "description": "Säk bes Maskin 3 629 J=VB",
+    "location": "j.ldo-lgd",
+    "competences": "BANA",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0016",
+    "description": "Uh bes Maskin 5 656 J.Vb-Haa",
+    "location": "j=tye",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0018",
+    "description": "Uh bes Maskin 6 627 J.Fabp",
+    "location": "j.vrö",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0031",
+    "description": "Säk bes Maskin 1 627 J.Bs-Vfo",
+    "location": "j.vrö",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0004",
+    "description": "Säk bes Maskin 1 630 J.Hd",
+    "location": "j=vrö",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UBAL0003",
+    "description": "Uh bes Maskin 5 630 J.Hd",
+    "location": "j.teo",
+    "competences": "EL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0027",
+    "description": "Säk bes Maskin 1 627 J=TYE-TEO",
+    "location": "j.vfo-see",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0015",
+    "description": "Uh bes Maskin 2 565 J.Vfo",
+    "location": "j.kb-lek",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0016",
+    "description": "Uh bes Maskin 1 627 J.Hd-Ea",
+    "location": "j=lek",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0020",
+    "description": "Säk bes Maskin 5 626 J.Bp",
+    "location": "j.ldo",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0018",
+    "description": "Säk bes Maskin 2 627 J.Vfo-See",
+    "location": "j=teo",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0014",
+    "description": "Säk bes Maskin 1 627 J.Hre-Vdi",
+    "location": "j.mdn",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0056",
+    "description": "Uh bes Maskin 2 640 J.He",
+    "location": "j=få-vrö",
+    "competences": "BANA",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UBAL0011",
+    "description": "Uh bes Maskin 1 733 J.Lgd-Kb",
+    "location": "j=haa",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0002",
+    "description": "Säk bes Maskin 2 627 J.Lgd-Kb",
+    "location": "j.ea",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0018",
+    "description": "Säk bes Maskin 2 735 J=VB",
+    "location": "j.krd",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0043",
+    "description": "Uh bes Maskin 3 627 J=KST-EA",
+    "location": "j.lgd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0032",
+    "description": "Säk bes Maskin 2 733 J.Krd",
+    "location": "j=lek",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UBAL0008",
+    "description": "Uh bes Maskin 5 656 J.Kb-Lek",
+    "location": "j.vfo",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0024",
+    "description": "Uh bes Maskin 5 656 J=HE-BP",
+    "location": "j.lgd-kb",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0004",
+    "description": "Säk bes Maskin 1 627 J=FÅ-VRÖ",
+    "location": "j.krd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0017",
+    "description": "Säk bes Maskin 6 626 J.Tye-Teo",
+    "location": "j.tou-hyb",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0018",
+    "description": "Säk bes Maskin 1 626 J.Hd",
+    "location": "j.lrd",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0021",
+    "description": "Uh bes Maskin 6 735 J.Bp-Btp",
+    "location": "j=btp-fur",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0022",
+    "description": "Säk bes Maskin 3 733 J.Teo",
+    "location": "j.ldo",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0005",
+    "description": "Uh bes Maskin 5 735 J.Vb-Haa",
+    "location": "j=fabp-he",
+    "competences": "EL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0023",
+    "description": "Uh bes Maskin 3 627 J=TEO",
+    "location": "j=bp-btp",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UKMT0006",
+    "description": "Uh bes Maskin 2 630 J.Bp",
+    "location": "j.mdn",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0036",
+    "description": "Uh bes Maskin 1 656 J=LEK",
+    "location": "j=kst-ea",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0028",
+    "description": "Uh bes Maskin 3 626 J.Tou-Hyb",
+    "location": "j=teo",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0023",
+    "description": "Säk bes Maskin 3 733 J.He-Bp",
+    "location": "j=tye",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0023",
+    "description": "Säk bes Maskin 2 733 J=VRÖ",
+    "location": "j.haa-tye",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0004",
+    "description": "Uh bes Maskin 2 626 J.Tye-Teo",
+    "location": "j.hd",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0002",
+    "description": "Säk bes Maskin 2 656 J.TYE",
+    "location": "j.vb",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0016",
+    "description": "Säk bes Maskin 2 735 J=HAA-TYE",
+    "location": "j.tye",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0045",
+    "description": "Uh bes Maskin 5 627 J.Vb",
+    "location": "j.btp",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0049",
+    "description": "Uh bes Maskin 6 733 J.Hd",
+    "location": "j=haa",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0007",
+    "description": "Uh bes Maskin 5 627 J.Vfo",
+    "location": "j.vdi",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0016",
+    "description": "Uh bes Maskin 1 626 J.Ldo",
+    "location": "j.teo-fabg",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UKMT0010",
+    "description": "Uh bes Maskin 1 733 J.Vrö",
+    "location": "j.hd-ea",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0063",
+    "description": "Säk bes Maskin 3 656 J.Vb",
+    "location": "j=ea",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0011",
+    "description": "Säk bes Maskin 3 627 J=HAA-TYE",
+    "location": "j.vdi-vb",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0020",
+    "description": "Uh bes Maskin 2 656 J.Hd",
+    "location": "j.teo",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0015",
+    "description": "Säk bes Maskin 1 733 J.EA",
+    "location": "j.tou-hyb",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0043",
+    "description": "Uh bes Maskin 5 626 J.VRÖ",
+    "location": "j.fabp",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0039",
+    "description": "Uh bes Maskin 5 627 J=TYE",
+    "location": "j.vfo",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0031",
+    "description": "Säk bes Maskin 5 656 J.Teo-Fabg",
+    "location": "j=lek",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0011",
+    "description": "Säk bes Maskin 6 733 J.Fabp",
+    "location": "j.haa",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0039",
+    "description": "Säk bes Maskin 5 626 J.Tou-Hyb",
+    "location": "j.vb-haa",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0023",
+    "description": "Uh bes Maskin 6 735 J=HE",
+    "location": "j=lek",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0035",
+    "description": "Säk bes Maskin 5 733 J=FABP",
+    "location": "j=vb",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0020",
+    "description": "Säk bes Maskin 3 630 J.Vdi",
+    "location": "j.tou",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0023",
+    "description": "Säk bes Maskin 1 656 J.Teo-Fabp",
+    "location": "j=he",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0012",
+    "description": "Uh bes Maskin 2 627 J.Mdn",
+    "location": "j=tye-teo",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0023",
+    "description": "Säk bes Maskin 1 626 J.See",
+    "location": "j.vrö",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UKMT0014",
+    "description": "Uh bes Maskin 2 733 J.Bp-Btp",
+    "location": "J.Bp-Btp",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0007",
+    "description": "Säk bes Maskin 5 733 J.See-Hre",
+    "location": "J.See-Hre",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UKMT0010",
+    "description": "Uh bes Maskin 5 629 J.Ldo-Lgd",
+    "location": "J.Ldo-Lgd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0058",
+    "description": "Säk bes Maskin 6 733 J.Ldo-Lgd",
+    "location": "J.Ldo-Lgd",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0065",
+    "description": "Säk bes Maskin 1 733 J=BP-BTP",
+    "location": "J=BP-BTP",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0015",
+    "description": "Uh bes Maskin 1 630 J.Ea",
+    "location": "J.Ea",
+    "competences": "EL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UBAL0037",
+    "description": "Uh bes Maskin 2 626 J.Hd-Ea",
+    "location": "J.Hd-Ea",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UBAL0001",
+    "description": "Uh bes Maskin 5 630 J.Få-Vrö",
+    "location": "J.Få-Vrö",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0027",
+    "description": "Säk bes Maskin 6 630 J.Vfo",
+    "location": "J.Vfo",
+    "competences": "EL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0039",
+    "description": "Säk bes Maskin 2 629 J.Teo",
+    "location": "J.Teo",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0039",
+    "description": "Säk bes Maskin 5 626 J=TEO-FABP",
+    "location": "J=TEO-FABP",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0015",
+    "description": "Uh bes Maskin 1 629 J.Teo-Fabp",
+    "location": "J.Teo-Fabp",
+    "competences": "EL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0016",
+    "description": "Säk bes Maskin 5 627 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0016",
+    "description": "Säk bes Maskin 2 627 J=TYE-TEO",
+    "location": "J=TYE-TEO",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0014",
+    "description": "Säk bes Maskin 3 733 J.KB-LEK",
+    "location": "J.KB-LEK",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0012",
+    "description": "Säk bes Maskin 3 627 J=TEO",
+    "location": "J=TEO",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0029",
+    "description": "Säk bes Maskin 3 627 J=HAA-TYE",
+    "location": "J=HAA-TYE",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0033",
+    "description": "Säk bes Maskin 5 627 J=KB-LEK",
+    "location": "J=KB-LEK",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0018",
+    "description": "Uh bes Maskin 1 733 J.Hd",
+    "location": "J.Hd",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0006",
+    "description": "Säk bes Maskin 5 627 J.Btp-Hd",
+    "location": "J.Btp-Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0013",
+    "description": "Uh bes Maskin 6 627 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0004",
+    "description": "Säk bes Maskin 2 627 J=HAA-TYE",
+    "location": "J=HAA-TYE",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0012",
+    "description": "Uh bes Maskin 1 733 J=TEO",
+    "location": "J=TEO",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0024",
+    "description": "Uh bes Maskin 5 627 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0007",
+    "description": "Säk bes Maskin 1 565 J.Krd-Ldo",
+    "location": "J.Krd-Ldo",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UBAL0023",
+    "description": "Uh bes Maskin 3 656 J.TEO",
+    "location": "J.TEO",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0020",
+    "description": "Säk bes Maskin 5 627 J=LEK",
+    "location": "J=LEK",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0006",
+    "description": "Säk bes Maskin 1 626 J.Haa-Tye",
+    "location": "J.Haa-Tye",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0006",
+    "description": "Säk bes Maskin 1 626 J.Teo-Fabp",
+    "location": "J.Teo-Fabp",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0061",
+    "description": "Säk bes Maskin 1 733 J.Ldo-Lgd",
+    "location": "J.Ldo-Lgd",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0009",
+    "description": "Säk bes Maskin 1 627 J=TYE-TEO",
+    "location": "J=TYE-TEO",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0014",
+    "description": "Uh bes Maskin 2 733 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UBAL0021",
+    "description": "Uh bes Maskin 1 656 J=KB-LEK",
+    "location": "J=KB-LEK",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0001",
+    "description": "Säk bes Maskin 3 626 J.Lek-Få",
+    "location": "J.Lek-Få",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0045",
+    "description": "Säk bes Maskin 6 656 J.Tye-Teo",
+    "location": "J.Tye-Teo",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0004",
+    "description": "Säk bes Maskin 2 627 J=VRÖ",
+    "location": "J=VRÖ",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0019",
+    "description": "Uh bes Maskin 3 627 J=KB-LEK",
+    "location": "J=KB-LEK",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0039",
+    "description": "Uh bes Maskin 2 627 J.BTP-FUR",
+    "location": "J.BTP-FUR",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0017",
+    "description": "Uh bes Maskin 5 656 J.Vdi",
+    "location": "J.Vdi",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0010",
+    "description": "Säk bes Maskin 6 733 J.Teo-Fabp",
+    "location": "J.Teo-Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0060",
+    "description": "Säk bes Maskin 3 629 J.Tye-Teo",
+    "location": "J.Tye-Teo",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0003",
+    "description": "Säk bes Maskin 5 656 J.Krd",
+    "location": "J.Krd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0037",
+    "description": "Uh bes Maskin 5 733 J.Vb-Haa",
+    "location": "J.Vb-Haa",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0024",
+    "description": "Säk bes Maskin 6 565 J=TYE-TEO",
+    "location": "J=TYE-TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0023",
+    "description": "Uh bes Maskin 5 627 J.Fabp-He",
+    "location": "J.Fabp-He",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0014",
+    "description": "Säk bes Maskin 1 565 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0004",
+    "description": "Säk bes Maskin 6 626 J=VB",
+    "location": "J=VB",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0016",
+    "description": "Uh bes Maskin 1 656 J.Btp",
+    "location": "J.Btp",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0025",
+    "description": "Säk bes Maskin 3 627 J.Vfo",
+    "location": "J.Vfo",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0003",
+    "description": "Uh bes Maskin 5 735 J.Lgd",
+    "location": "J.Lgd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0014",
+    "description": "Säk bes Maskin 2 629 J.Hre",
+    "location": "J.Hre",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0012",
+    "description": "Säk bes Maskin 3 627 J=FÅ",
+    "location": "J=FÅ",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0050",
+    "description": "Säk bes Maskin 1 626 J.TEO",
+    "location": "J.TEO",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0017",
+    "description": "Uh bes Maskin 2 627 J=TEO",
+    "location": "J=TEO",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UBAL0023",
+    "description": "Uh bes Maskin 6 733 J=LEK",
+    "location": "J=LEK",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0017",
+    "description": "Säk bes Maskin 3 656 J.Krd",
+    "location": "J.Krd",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0013",
+    "description": "Säk bes Maskin 3 629 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0025",
+    "description": "Säk bes Maskin 1 627 J=HAA-TYE",
+    "location": "J=HAA-TYE",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0039",
+    "description": "Uh bes Maskin 3 627 J.Tou",
+    "location": "J.Tou",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0036",
+    "description": "Uh bes Maskin 1 733 J=HE",
+    "location": "J=HE",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0066",
+    "description": "Säk bes Maskin 6 735 J=BP-BTP",
+    "location": "J=BP-BTP",
+    "competences": "EL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0006",
+    "description": "Säk bes Maskin 2 565 J=BP-BTP",
+    "location": "J=BP-BTP",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0012",
+    "description": "Säk bes Maskin 2 627 J.Hd",
+    "location": "J.Hd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0033",
+    "description": "Säk bes Maskin 5 627 J.Lek",
+    "location": "J.Lek",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0026",
+    "description": "Uh bes Maskin 6 733 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UKMT0011",
+    "description": "Uh bes Maskin 6 626 J.Bp",
+    "location": "J.Bp",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0030",
+    "description": "Uh bes Maskin 3 656 J.Få-Vrö",
+    "location": "J.Få-Vrö",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0037",
+    "description": "Säk bes Maskin 2 656 J.Teo-Fabp",
+    "location": "J.Teo-Fabp",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0017",
+    "description": "Uh bes Maskin 2 735 J=VRÖ",
+    "location": "J=VRÖ",
+    "competences": "EL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0028",
+    "description": "Säk bes Maskin 1 656 J.See-Hre",
+    "location": "J.See-Hre",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0021",
+    "description": "Säk bes Maskin 2 627 J=TYE",
+    "location": "J=TYE",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0023",
+    "description": "Säk bes Maskin 1 626 J.Vdi-Vb",
+    "location": "J.Vdi-Vb",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0003",
+    "description": "Uh bes Maskin 1 626 J=VB",
+    "location": "J=VB",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0025",
+    "description": "Uh bes Maskin 5 626 J=EA",
+    "location": "J=EA",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0019",
+    "description": "Uh bes Maskin 3 627 J.Vb",
+    "location": "J.Vb",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0016",
+    "description": "Säk bes Maskin 5 733 J.Vfo-See",
+    "location": "J.Vfo-See",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0044",
+    "description": "Säk bes Maskin 2 627 J.Ldo",
+    "location": "J.Ldo",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0067",
+    "description": "Säk bes Maskin 1 627 J.Vdi-Vb",
+    "location": "J.Vdi-Vb",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0010",
+    "description": "Uh bes Maskin 2 626 J.See-Hre",
+    "location": "J.See-Hre",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0007",
+    "description": "Säk bes Maskin 2 629 J=EA",
+    "location": "J=EA",
+    "competences": "EL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0007",
+    "description": "Uh bes Maskin 2 565 J.Fabg",
+    "location": "J.Fabg",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0037",
+    "description": "Uh bes Maskin 1 627 J=FABP-HE",
+    "location": "J=FABP-HE",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0020",
+    "description": "Säk bes Maskin 1 627 J.G-Mdn",
+    "location": "J.G-Mdn",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0012",
+    "description": "Uh bes Maskin 1 627 J.He-Bp",
+    "location": "J.He-Bp",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UKMT0023",
+    "description": "Uh bes Maskin 2 733 J=TYE",
+    "location": "J=TYE",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0021",
+    "description": "Säk bes Maskin 1 656 J=LEK",
+    "location": "J=LEK",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0031",
+    "description": "Uh bes Maskin 3 626 J.Kb-Lek",
+    "location": "J.Kb-Lek",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0034",
+    "description": "Säk bes Maskin 5 565 J=EA",
+    "location": "J=EA",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0016",
+    "description": "Uh bes Maskin 5 629 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0001",
+    "description": "Uh bes Maskin 6 735 J.Få-Vrö",
+    "location": "J.Få-Vrö",
+    "competences": "EL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0023",
+    "description": "Säk bes Maskin 2 565 J=VRÖ",
+    "location": "J=VRÖ",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0033",
+    "description": "Uh bes Maskin 2 627 J.Krd",
+    "location": "J.Krd",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0002",
+    "description": "Säk bes Maskin 1 627 J.Hd",
+    "location": "J.Hd",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0047",
+    "description": "Säk bes Maskin 3 626 J=HE-BP",
+    "location": "J=HE-BP",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0004",
+    "description": "Uh bes Maskin 3 630 J.Krd",
+    "location": "J.Krd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0002",
+    "description": "Säk bes Maskin 1 626 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0008",
+    "description": "Säk bes Maskin 5 565 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0003",
+    "description": "Uh bes Maskin 1 630 J=TEO",
+    "location": "J=TEO",
+    "competences": "EL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0034",
+    "description": "Uh bes Maskin 1 733 J.Ldo",
+    "location": "J.Ldo",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0034",
+    "description": "Säk bes Maskin 1 626 J.Ldo-Lgd",
+    "location": "J.Ldo-Lgd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0022",
+    "description": "Uh bes Maskin 6 630 J.Btp",
+    "location": "J.Btp",
+    "competences": "EL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0005",
+    "description": "Säk bes Maskin 5 629 J=LEK-FÅ",
+    "location": "J=LEK-FÅ",
+    "competences": "BANA",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0058",
+    "description": "Säk bes Maskin 1 629 J=HE-BP",
+    "location": "J=HE-BP",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0006",
+    "description": "Säk bes Maskin 2 735 J.Lek-Få",
+    "location": "J.Lek-Få",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0049",
+    "description": "Uh bes Maskin 1 627 J.Vb-Haa",
+    "location": "J.Vb-Haa",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0032",
+    "description": "Säk bes Maskin 6 656 J.Lgd-Kb",
+    "location": "J.Lgd-Kb",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0019",
+    "description": "Säk bes Maskin 3 630 J.Bp-Btp",
+    "location": "J.Bp-Btp",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0029",
+    "description": "Säk bes Maskin 3 630 J.Mdn",
+    "location": "J.Mdn",
+    "competences": "EL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UBAL0038",
+    "description": "Uh bes Maskin 3 733 J=VB",
+    "location": "J=VB",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0046",
+    "description": "Uh bes Maskin 3 627 J=BP",
+    "location": "J=BP",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UKMT0012",
+    "description": "Uh bes Maskin 2 630 J.Vdi",
+    "location": "J.Vdi",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0056",
+    "description": "Uh bes Maskin 5 565 J.Hre-Vdi",
+    "location": "J.Hre-Vdi",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0024",
+    "description": "Uh bes Maskin 2 733 J.Vfo",
+    "location": "J.Vfo",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0003",
+    "description": "Säk bes Maskin 1 733 J.Ldo",
+    "location": "J.Ldo",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0006",
+    "description": "Uh bes Maskin 5 626 J=HAA-TYE",
+    "location": "J=HAA-TYE",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0023",
+    "description": "Uh bes Maskin 3 735 J.Få-Vrö",
+    "location": "J.Få-Vrö",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0016",
+    "description": "Säk bes Maskin 6 656 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0003",
+    "description": "Säk bes Maskin 6 630 J.Vdi",
+    "location": "J.Vdi",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0014",
+    "description": "Säk bes Maskin 5 733 J=VRÖ-VB",
+    "location": "J=VRÖ-VB",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0005",
+    "description": "Säk bes Maskin 6 733 J.Teo-Fabg",
+    "location": "J.Teo-Fabg",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UBAL0022",
+    "description": "Uh bes Maskin 1 735 J.Hre-Vdi",
+    "location": "J.Hre-Vdi",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0024",
+    "description": "Säk bes Maskin 6 733 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0039",
+    "description": "Uh bes Maskin 3 627 J.Btp-Hd",
+    "location": "J.Btp-Hd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0010",
+    "description": "Säk bes Maskin 3 630 J.Teo",
+    "location": "J.Teo",
+    "competences": "EL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0025",
+    "description": "Säk bes Maskin 2 640 J.Haa-Tye",
+    "location": "J.Haa-Tye",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0031",
+    "description": "Säk bes Maskin 1 627 J=FABP",
+    "location": "J=FABP",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0015",
+    "description": "Säk bes Maskin 1 735 J.Mdn-Krd",
+    "location": "J.Mdn-Krd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0020",
+    "description": "Säk bes Maskin 5 656 J.Lek-Få",
+    "location": "J.Lek-Få",
+    "competences": "EL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0065",
+    "description": "Säk bes Maskin 2 627 J.Tye",
+    "location": "J.Tye",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0052",
+    "description": "Säk bes Maskin 1 733 J.Lek-Få",
+    "location": "J.Lek-Få",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0006",
+    "description": "Säk bes Maskin 5 656 J.Tye-Teo",
+    "location": "J.Tye-Teo",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0040",
+    "description": "Uh bes Maskin 3 735 J=HAA",
+    "location": "J=HAA",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0011",
+    "description": "Uh bes Maskin 6 735 J=VB",
+    "location": "J=VB",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0020",
+    "description": "Uh bes Maskin 3 733 J.VB",
+    "location": "J.VB",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0024",
+    "description": "Säk bes Maskin 6 630 J.Hd-Ea",
+    "location": "J.Hd-Ea",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0057",
+    "description": "Säk bes Maskin 1 656 J.Tou",
+    "location": "J.Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0023",
+    "description": "Säk bes Maskin 3 735 J.TYE",
+    "location": "J.TYE",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0011",
+    "description": "Säk bes Maskin 6 565 J.Ea",
+    "location": "J.Ea",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0016",
+    "description": "Säk bes Maskin 5 630 J.Haa-Tye",
+    "location": "J.Haa-Tye",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0018",
+    "description": "Säk bes Maskin 2 627 J.Bp",
+    "location": "J.Bp",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0023",
+    "description": "Säk bes Maskin 5 735 J.Lek-Få",
+    "location": "J.Lek-Få",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0020",
+    "description": "Säk bes Maskin 6 735 J.Teo",
+    "location": "J.Teo",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0035",
+    "description": "Uh bes Maskin 3 629 J.Vrö-Vb",
+    "location": "J.Vrö-Vb",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0003",
+    "description": "Säk bes Maskin 3 733 J.TYE-TEO",
+    "location": "J.TYE-TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0007",
+    "description": "Säk bes Maskin 3 735 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0023",
+    "description": "Uh bes Maskin 3 733 J.Vdi-Vb",
+    "location": "J.Vdi-Vb",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0035",
+    "description": "Säk bes Maskin 6 627 J.BTP",
+    "location": "J.BTP",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0004",
+    "description": "Säk bes Maskin 5 733 J=TYE-TEO",
+    "location": "J=TYE-TEO",
+    "competences": "EL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0005",
+    "description": "Uh bes Maskin 2 656 J.Teo-Fabg",
+    "location": "J.Teo-Fabg",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0037",
+    "description": "Säk bes Maskin 5 626 J.Hd",
+    "location": "J.Hd",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UBAL0020",
+    "description": "Uh bes Maskin 1 630 J.Tou",
+    "location": "J.Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0043",
+    "description": "Uh bes Maskin 5 735 J.Teo-Fabg",
+    "location": "J.Teo-Fabg",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0027",
+    "description": "Säk bes Maskin 1 626 J.HAA",
+    "location": "J.HAA",
+    "competences": "BANA",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0006",
+    "description": "Uh bes Maskin 3 627 J.Tye",
+    "location": "J.Tye",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0015",
+    "description": "Säk bes Maskin 5 656 J.See",
+    "location": "J.See",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UBAL0031",
+    "description": "Uh bes Maskin 1 733 J.Teo-Fabg",
+    "location": "J.Teo-Fabg",
+    "competences": "BANA",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UKMT0018",
+    "description": "Uh bes Maskin 5 627 J.Fabp-He",
+    "location": "J.Fabp-He",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0013",
+    "description": "Säk bes Maskin 1 735 J.Tou-Om",
+    "location": "J.Tou-Om",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0007",
+    "description": "Säk bes Maskin 1 627 J.Hre",
+    "location": "J.Hre",
+    "competences": "BANA",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0012",
+    "description": "Uh bes Maskin 5 733 J.Tou-Om",
+    "location": "J.Tou-Om",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0020",
+    "description": "Uh bes Maskin 1 627 J=BTP-FUR",
+    "location": "J=BTP-FUR",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0010",
+    "description": "Uh bes Maskin 3 630 J.Fabp-He",
+    "location": "J.Fabp-He",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0029",
+    "description": "Säk bes Maskin 6 627 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0016",
+    "description": "Uh bes Maskin 6 656 J=VB",
+    "location": "J=VB",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0021",
+    "description": "Uh bes Maskin 1 629 J=TEO",
+    "location": "J=TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0014",
+    "description": "Uh bes Maskin 1 627 J.Btp-Hd",
+    "location": "J.Btp-Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0021",
+    "description": "Uh bes Maskin 2 626 J.VB",
+    "location": "J.VB",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UBAL0005",
+    "description": "Uh bes Maskin 6 630 J.KST-EA",
+    "location": "J.KST-EA",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0008",
+    "description": "Uh bes Maskin 3 627 J.Tye",
+    "location": "J.Tye",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0025",
+    "description": "Uh bes Maskin 6 627 J.Btp-Hd",
+    "location": "J.Btp-Hd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0062",
+    "description": "Säk bes Maskin 2 627 J.Bp",
+    "location": "J.Bp",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0024",
+    "description": "Uh bes Maskin 5 733 J.Lek",
+    "location": "J.Lek",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0016",
+    "description": "Säk bes Maskin 2 656 J.Tou",
+    "location": "J.Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0022",
+    "description": "Uh bes Maskin 6 627 J=VB",
+    "location": "J=VB",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0050",
+    "description": "Säk bes Maskin 2 656 J.Fabp-He",
+    "location": "J.Fabp-He",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0015",
+    "description": "Säk bes Maskin 3 565 J.Haa",
+    "location": "J.Haa",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0001",
+    "description": "Uh bes Maskin 3 627 J.Bp",
+    "location": "J.Bp",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0011",
+    "description": "Säk bes Maskin 3 656 J.Tye",
+    "location": "J.Tye",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0030",
+    "description": "Uh bes Maskin 3 627 J.Tou",
+    "location": "J.Tou",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0063",
+    "description": "Säk bes Maskin 3 627 J=BTP-FUR",
+    "location": "J=BTP-FUR",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0058",
+    "description": "Uh bes Maskin 1 627 J.See",
+    "location": "J.See",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0036",
+    "description": "Uh bes Maskin 2 627 J=TEO",
+    "location": "J=TEO",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0020",
+    "description": "Säk bes Maskin 5 735 J.Teo-Fabg",
+    "location": "J.Teo-Fabg",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0033",
+    "description": "Säk bes Maskin 1 627 J.LEK",
+    "location": "J.LEK",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UBAL0032",
+    "description": "Uh bes Maskin 6 627 J=HE-BP",
+    "location": "J=HE-BP",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0047",
+    "description": "Uh bes Maskin 3 656 J.Lek",
+    "location": "J.Lek",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0022",
+    "description": "Säk bes Maskin 2 656 J.Bp",
+    "location": "J.Bp",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0022",
+    "description": "Säk bes Maskin 2 627 J.Kb",
+    "location": "J.Kb",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0001",
+    "description": "Säk bes Maskin 2 735 J=KST-EA",
+    "location": "J=KST-EA",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0005",
+    "description": "Säk bes Maskin 1 565 J.Fabp",
+    "location": "J.Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0060",
+    "description": "Säk bes Maskin 2 733 J=BTP-FURF",
+    "location": "J=BTP-FURF",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0004",
+    "description": "Säk bes Maskin 2 630 J=TYE",
+    "location": "J=TYE",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0002",
+    "description": "Säk bes Maskin 5 733 J.Kb",
+    "location": "J.Kb",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0034",
+    "description": "Säk bes Maskin 1 640 J=HE-BP",
+    "location": "J=HE-BP",
+    "competences": "BANA",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0010",
+    "description": "Säk bes Maskin 2 640 J=VB",
+    "location": "J=VB",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0055",
+    "description": "Säk bes Maskin 1 656 J.Bs-Vfo",
+    "location": "J.Bs-Vfo",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0037",
+    "description": "Uh bes Maskin 3 565 J.KST-EA",
+    "location": "J.KST-EA",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0046",
+    "description": "Uh bes Maskin 1 565 J=VRÖ",
+    "location": "J=VRÖ",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0034",
+    "description": "Säk bes Maskin 6 733 J.Vb-Haa",
+    "location": "J.Vb-Haa",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0009",
+    "description": "Uh bes Maskin 2 733 J.Ldo",
+    "location": "J.Ldo",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0025",
+    "description": "Uh bes Maskin 6 656 J.LEK",
+    "location": "J.LEK",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0013",
+    "description": "Uh bes Maskin 6 733 J.Tye-Teo",
+    "location": "J.Tye-Teo",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0028",
+    "description": "Säk bes Maskin 2 626 J=EA",
+    "location": "J=EA",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0022",
+    "description": "Säk bes Maskin 2 640 J=HAA-TYE",
+    "location": "J=HAA-TYE",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0039",
+    "description": "Säk bes Maskin 5 627 J.BP",
+    "location": "J.BP",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0024",
+    "description": "Säk bes Maskin 6 627 J.Bs-Vfo",
+    "location": "J.Bs-Vfo",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0002",
+    "description": "Uh bes Maskin 3 627 J.He-Bp",
+    "location": "J.He-Bp",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "STRU0004",
+    "description": "Säk bes Maskin 6 656 J.Vdi-Vb",
+    "location": "J.Vdi-Vb",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0017",
+    "description": "Uh bes Maskin 6 733 J.Lrd",
+    "location": "J.Lrd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0035",
+    "description": "Uh bes Maskin 6 627 J.Vrö",
+    "location": "J.Vrö",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0037",
+    "description": "Uh bes Maskin 5 629 J=KB-LEK",
+    "location": "J=KB-LEK",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0024",
+    "description": "Uh bes Maskin 1 630 J.See",
+    "location": "J.See",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0013",
+    "description": "Säk bes Maskin 3 627 J.Mdn",
+    "location": "J.Mdn",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0007",
+    "description": "Säk bes Maskin 2 627 J=VRÖ-VB",
+    "location": "J=VRÖ-VB",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0031",
+    "description": "Säk bes Maskin 2 565 J.He-Bp",
+    "location": "J.He-Bp",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0025",
+    "description": "Säk bes Maskin 2 627 J.Teo-Fabp",
+    "location": "J.Teo-Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0019",
+    "description": "Säk bes Maskin 5 733 J=EA",
+    "location": "J=EA",
+    "competences": "EL",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0008",
+    "description": "Säk bes Maskin 6 626 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UKMT0011",
+    "description": "Uh bes Maskin 5 627 J=FABP",
+    "location": "J=FABP",
+    "competences": "EL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0005",
+    "description": "Säk bes Maskin 3 627 J=KB-LEK",
+    "location": "J=KB-LEK",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0019",
+    "description": "Säk bes Maskin 5 627 J.Bp",
+    "location": "J.Bp",
+    "competences": "EL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0027",
+    "description": "Uh bes Maskin 3 733 J.Lrd",
+    "location": "J.Lrd",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0013",
+    "description": "Säk bes Maskin 3 627 J=BTP-FUR",
+    "location": "J=BTP-FUR",
+    "competences": "BANA",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0007",
+    "description": "Säk bes Maskin 1 626 J.He-Bp",
+    "location": "J.He-Bp",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0038",
+    "description": "Uh bes Maskin 5 630 J.Få-Vrö",
+    "location": "J.Få-Vrö",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0034",
+    "description": "Uh bes Maskin 3 626 J.Fabp",
+    "location": "J.Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0030",
+    "description": "Uh bes Maskin 6 627 J.Tou-Hyb",
+    "location": "J.Tou-Hyb",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0012",
+    "description": "Säk bes Maskin 5 627 J.Vrö-Vb",
+    "location": "J.Vrö-Vb",
+    "competences": "EL",
+    "cxlineroutenr": "565"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0015",
+    "description": "Uh bes Maskin 3 733 J.Fabp",
+    "location": "J.Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "640"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0026",
+    "description": "Säk bes Maskin 3 733 J.Teo-Fabp",
+    "location": "J.Teo-Fabp",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0008",
+    "description": "Säk bes Maskin 3 627 J.VB",
+    "location": "J.VB",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SRSK0023",
+    "description": "Säk bes Maskin 3 656 J.Mdn",
+    "location": "J.Mdn",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SKMT0001",
+    "description": "Säk bes Maskin 5 627 J.G-Mdn",
+    "location": "J.G-Mdn",
+    "competences": "EL",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0008",
+    "description": "Säk bes Maskin 6 626 J.Haa",
+    "location": "J.Haa",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "629"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0027",
+    "description": "Uh bes Maskin 5 629 J.Lrd-Tou",
+    "location": "J.Lrd-Tou",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SBAL0028",
+    "description": "Säk bes Maskin 3 626 J.Hd",
+    "location": "J.Hd",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0001",
+    "description": "Uh bes Maskin 2 626 J.See-Hre",
+    "location": "J.See-Hre",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0022",
+    "description": "Säk bes Maskin 3 629 J.TYE",
+    "location": "J.TYE",
+    "competences": "BANA",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0024",
+    "description": "Säk bes Maskin 1 735 J.Haa-Tye",
+    "location": "J.Haa-Tye",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SSLI0001",
+    "description": "Säk bes Maskin 5 627 J.LEK",
+    "location": "J.LEK",
+    "competences": "EL",
+    "cxlineroutenr": "733"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UISO0019",
+    "description": "Uh bes Maskin 5 627 J.Kb",
+    "location": "J.Kb",
+    "competences": "EL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0002",
+    "description": "Säk bes Maskin 6 627 J.KST-EA",
+    "location": "J.KST-EA",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "626"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0023",
+    "description": "Uh bes Maskin 3 733 J.Ldo",
+    "location": "J.Ldo",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SISO0029",
+    "description": "Säk bes Maskin 6 565 J.Hd",
+    "location": "J.Hd",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "USLI0024",
+    "description": "Uh bes Maskin 3 733 J.Hd-Ea",
+    "location": "J.Hd-Ea",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UHAG0020",
+    "description": "Uh bes Maskin 6 627 J=VRÖ-VB",
+    "location": "J=VRÖ-VB",
+    "competences": "SIGNAL",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "URSK0009",
+    "description": "Uh bes Maskin 3 565 J.Ea",
+    "location": "J.Ea",
+    "competences": "BANA",
+    "cxlineroutenr": "630"
+  },
+  {
+    "valid": 0,
+    "pmnum": "SHAG0031",
+    "description": "Säk bes Maskin 2 626 J.HE-BP",
+    "location": "J.HE-BP",
+    "competences": "BANA",
+    "cxlineroutenr": "627"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UKMT0003",
+    "description": "Uh bes Maskin 3 565 J.Teo",
+    "location": "J.Teo",
+    "competences": "BANA",
+    "cxlineroutenr": "656"
+  },
+  {
+    "valid": 0,
+    "pmnum": "UTRU0004",
+    "description": "Uh bes Maskin 3 733 J.He-Bp",
+    "location": "J.He-Bp",
+    "competences": "BANA",
+    "cxlineroutenr": "735"
+  }
+]
