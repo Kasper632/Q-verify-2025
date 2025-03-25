@@ -142,7 +142,7 @@ def process_uploaded_file(file_path):
 
 # Route för att ladda upp filer
 @app.route("/process-file", methods=["POST"])
-def process_file():
+def process_personal_data():
     uploaded_files = [f for f in os.listdir(DATA_DIR) if os.path.isfile(os.path.join(DATA_DIR, f))]
     if not uploaded_files:
         return jsonify({"error": "No uploaded files found."}), 400
@@ -161,6 +161,42 @@ def process_file():
         return jsonify({"error": "Uploaded file is empty."}), 400
     try:
         file_result = process_uploaded_file(latest_file_path)
+    except ValueError as e:
+        return jsonify({"error": str(e)}), 400
+    
+    response = {
+        "message": file_result["message"],
+        "anomalies": file_result["anomalies"]
+    }
+    
+    return jsonify(response)
+
+# ----------------- MAXIMO -----------------
+
+def process_maximo_data(file_path):
+    print("Processing Maximo data...")    
+
+# Route för att hantera maximo-data
+@app.route("/maximo-data", methods=["POST"])
+def process_maximo():
+    uploaded_files = [f for f in os.listdir(DATA_DIR) if os.path.isfile(os.path.join(DATA_DIR, f))]
+    if not uploaded_files:
+        return jsonify({"error": "No uploaded files found."}), 400
+    
+    latest_file = max(uploaded_files, key=lambda f: os.path.getmtime(os.path.join(DATA_DIR, f)))
+    latest_file_path = os.path.join(DATA_DIR, latest_file)
+    file_extension = latest_file.split('.')[-1].lower()
+    
+    if file_extension == "csv":
+        df = pd.read_csv(latest_file_path)
+    elif file_extension == "json":
+        df = pd.read_json(latest_file_path)
+    else:
+        return jsonify({"error": "Unsupported file type. Please upload a CSV or JSON file."}), 400
+    if df.empty:
+        return jsonify({"error": "Uploaded file is empty."}), 400
+    try:
+        file_result = process_maximo_data(latest_file_path)
     except ValueError as e:
         return jsonify({"error": str(e)}), 400
     

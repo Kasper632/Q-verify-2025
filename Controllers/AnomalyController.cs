@@ -22,7 +22,7 @@ namespace Q_verify_2025.Controllers
             }
         }
 
-        public IActionResult Index()
+        public IActionResult PersonalData()
         {
             return View();
         }
@@ -33,7 +33,7 @@ namespace Q_verify_2025.Controllers
             if (file == null || file.Length == 0)
             {
                 ViewData["Message"] = "No file selected.";
-                return View("Index");
+                return View("PersonalData");
             }
 
             try
@@ -63,12 +63,11 @@ namespace Q_verify_2025.Controllers
                 ViewData["Message"] = $"Error uploading file: {ex.Message}";
             }
 
-            return View("Index");
+            return View("PersonalData");
         }
 
-
         [HttpPost]
-        public async Task<IActionResult> Analyze()
+        public async Task<IActionResult> AnalyzePersonalData()
         {
             try
             {
@@ -78,7 +77,7 @@ namespace Q_verify_2025.Controllers
                 if (uploadedFiles.Length == 0)
                 {
                     ViewData["Message"] = "No uploaded file found.";
-                    return View("Index");
+                    return View("PersonalData");
                 }
 
                 string uploadedFilePath = uploadedFiles.OrderByDescending(f => new FileInfo(f).LastWriteTime).First();
@@ -134,7 +133,56 @@ namespace Q_verify_2025.Controllers
                 ViewData["Message"] = $"Error analyzing file: {ex.Message}";
             }
 
+            return View("PersonalData");
+        }
+
+        // HÄR BÖRJAR MAXIMO-LOGIK
+
+        public IActionResult MaximoData()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> AnalyzeMaximo()
+        {
+            try
+            {
+                string apiUrl = $"{_flaskUrl}/maximo-data";
+
+                var response = await _httpClient.PostAsync(apiUrl, null);
+                var responseString = await response.Content.ReadAsStringAsync();
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var jsonResponse = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseString);
+
+                    if (jsonResponse != null)
+                    {
+                        var anomalies = jsonResponse["anomalies"] as Newtonsoft.Json.Linq.JArray;
+
+                        if (anomalies != null)
+                        {
+                            ViewData["AnalysisResult"] = anomalies;
+                            ViewData["Message"] = "Analysis completed successfully!";
+                        }
+                        else
+                        {
+                            ViewData["Message"] = "No anomalies found.";
+                        }
+                    }
+                }
+                else
+                {
+                    ViewData["Message"] = $"Error during analysis: {responseString}";
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewData["Message"] = $"Error analyzing file: {ex.Message}";
+            }
+
             return View("Index");
         }
+
     }
 }
