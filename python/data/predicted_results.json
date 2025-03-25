@@ -7,7 +7,15 @@
       "competences": "BANA",
       "cxlineroutenr": "640"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.10141858458518982,
+      "pmnum": 0.07152097672224045,
+      "cxlineroutenr": 0.1817505657672882,
+      "location": 0.11744192987680435,
+      "description": 0.32314109802246094
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -17,7 +25,15 @@
       "competences": "BANA",
       "cxlineroutenr": "735"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08073660731315613,
+      "pmnum": 0.0635480284690857,
+      "cxlineroutenr": 0.17846505343914032,
+      "location": 0.07870464026927948,
+      "description": 0.3208692669868469
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -27,7 +43,15 @@
       "competences": "BANA",
       "cxlineroutenr": "733"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.07485819607973099,
+      "pmnum": 0.07157056778669357,
+      "cxlineroutenr": 0.16431567072868347,
+      "location": 0.07258056104183197,
+      "description": 0.28637343645095825
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -37,7 +61,15 @@
       "competences": "EL",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.0390922911465168,
+      "pmnum": 0.026856232434511185,
+      "cxlineroutenr": 0.3795568645000458,
+      "location": 0.04292914643883705,
+      "description": 0.4039432406425476
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -47,7 +79,15 @@
       "competences": "BANA",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.0808759555220604,
+      "pmnum": 0.06615088880062103,
+      "cxlineroutenr": 0.18291057646274567,
+      "location": 0.06797371804714203,
+      "description": 0.2873319387435913
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -57,7 +97,15 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.18864670395851135,
+      "pmnum": 0.15591709315776825,
+      "cxlineroutenr": 0.5638977885246277,
+      "location": 0.16110697388648987,
+      "description": 0.5946346521377563
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -67,7 +115,15 @@
       "competences": "EL",
       "cxlineroutenr": "733"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.037227217108011246,
+      "pmnum": 0.02565358392894268,
+      "cxlineroutenr": 0.3680492639541626,
+      "location": 0.034648310393095016,
+      "description": 0.3833767771720886
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -77,7 +133,15 @@
       "competences": "BANA",
       "cxlineroutenr": "733"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08545313775539398,
+      "pmnum": 0.07872812449932098,
+      "cxlineroutenr": 0.16491250693798065,
+      "location": 0.06812760978937149,
+      "description": 0.24351994693279266
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -87,7 +151,15 @@
       "competences": "BANA",
       "cxlineroutenr": "630"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08739321678876877,
+      "pmnum": 0.07032453268766403,
+      "cxlineroutenr": 0.17520546913146973,
+      "location": 0.09926917403936386,
+      "description": 0.26436537504196167
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -97,7 +169,15 @@
       "competences": "EL",
       "cxlineroutenr": "626"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.028830263763666153,
+      "pmnum": 0.019052037969231606,
+      "cxlineroutenr": 0.3670724630355835,
+      "location": 0.03396458178758621,
+      "description": 0.38709041476249695
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -107,7 +187,15 @@
       "competences": "EL",
       "cxlineroutenr": "656"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.03107001632452011,
+      "pmnum": 0.021468592807650566,
+      "cxlineroutenr": 0.3613678514957428,
+      "location": 0.02884197235107422,
+      "description": 0.3730641007423401
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -117,7 +205,15 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.18457306921482086,
+      "pmnum": 0.15577533841133118,
+      "cxlineroutenr": 0.5622129440307617,
+      "location": 0.1860172152519226,
+      "description": 0.6108173727989197
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -127,7 +223,15 @@
       "competences": "BANA",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.0865280032157898,
+      "pmnum": 0.07126420736312866,
+      "cxlineroutenr": 0.18585510551929474,
+      "location": 0.0683952197432518,
+      "description": 0.27465495467185974
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -137,7 +241,15 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "733"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.18377551436424255,
+      "pmnum": 0.15754851698875427,
+      "cxlineroutenr": 0.5648059248924255,
+      "location": 0.1843883991241455,
+      "description": 0.6142854690551758
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -147,7 +259,15 @@
       "competences": "EL",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.03362931311130524,
+      "pmnum": 0.02270626090466976,
+      "cxlineroutenr": 0.3676176965236664,
+      "location": 0.033637311309576035,
+      "description": 0.38278907537460327
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -157,7 +277,15 @@
       "competences": "BANA",
       "cxlineroutenr": "735"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.07981517910957336,
+      "pmnum": 0.06712037324905396,
+      "cxlineroutenr": 0.17883244156837463,
+      "location": 0.06472405046224594,
+      "description": 0.28418344259262085
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -167,7 +295,15 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "733"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.18143747746944427,
+      "pmnum": 0.15108245611190796,
+      "cxlineroutenr": 0.5606104731559753,
+      "location": 0.1699834167957306,
+      "description": 0.6014564037322998
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -177,7 +313,15 @@
       "competences": "BANA",
       "cxlineroutenr": "735"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.079217329621315,
+      "pmnum": 0.0665910467505455,
+      "cxlineroutenr": 0.17913363873958588,
+      "location": 0.062337979674339294,
+      "description": 0.2800023853778839
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -187,7 +331,15 @@
       "competences": "BANA",
       "cxlineroutenr": "630"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.09186770766973495,
+      "pmnum": 0.07310708612203598,
+      "cxlineroutenr": 0.1803743541240692,
+      "location": 0.10428360849618912,
+      "description": 0.2740463614463806
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -197,7 +349,15 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.19090402126312256,
+      "pmnum": 0.16203288733959198,
+      "cxlineroutenr": 0.5673964023590088,
+      "location": 0.17426742613315582,
+      "description": 0.6008830666542053
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -207,7 +367,15 @@
       "competences": "EL",
       "cxlineroutenr": "735"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.03195696324110031,
+      "pmnum": 0.022455770522356033,
+      "cxlineroutenr": 0.37025508284568787,
+      "location": 0.04135230556130409,
+      "description": 0.39659854769706726
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -217,7 +385,15 @@
       "competences": "BANA",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08099806308746338,
+      "pmnum": 0.06562433391809464,
+      "cxlineroutenr": 0.187356635928154,
+      "location": 0.0651688203215599,
+      "description": 0.28529390692710876
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -227,7 +403,15 @@
       "competences": "BANA",
       "cxlineroutenr": "626"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08971559256315231,
+      "pmnum": 0.07028921693563461,
+      "cxlineroutenr": 0.1914309710264206,
+      "location": 0.0993325412273407,
+      "description": 0.28645774722099304
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -237,7 +421,15 @@
       "competences": "BANA",
       "cxlineroutenr": "565"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.11324575543403625,
+      "pmnum": 0.09314443916082382,
+      "cxlineroutenr": 0.199578195810318,
+      "location": 0.10257499665021896,
+      "description": 0.3142510950565338
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -247,7 +439,15 @@
       "competences": "BANA",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08684135228395462,
+      "pmnum": 0.06364084780216217,
+      "cxlineroutenr": 0.19587981700897217,
+      "location": 0.07179880887269974,
+      "description": 0.2807217836380005
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -257,7 +457,15 @@
       "competences": "EL",
       "cxlineroutenr": "735"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.0326920822262764,
+      "pmnum": 0.022477256134152412,
+      "cxlineroutenr": 0.3709883689880371,
+      "location": 0.041242197155952454,
+      "description": 0.39751920104026794
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -267,7 +475,15 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "565"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.18727229535579681,
+      "pmnum": 0.1565784513950348,
+      "cxlineroutenr": 0.5631544589996338,
+      "location": 0.179965540766716,
+      "description": 0.6065489649772644
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -277,7 +493,15 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.17182132601737976,
+      "pmnum": 0.1430593729019165,
+      "cxlineroutenr": 0.5521701574325562,
+      "location": 0.1735057234764099,
+      "description": 0.6052481532096863
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -287,7 +511,15 @@
       "competences": "BANA",
       "cxlineroutenr": "735"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08411280810832977,
+      "pmnum": 0.07010217756032944,
+      "cxlineroutenr": 0.17637446522712708,
+      "location": 0.08237364888191223,
+      "description": 0.2702152729034424
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -297,7 +529,15 @@
       "competences": "BANA",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08631528913974762,
+      "pmnum": 0.06766343116760254,
+      "cxlineroutenr": 0.18525978922843933,
+      "location": 0.06781844049692154,
+      "description": 0.2749514877796173
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -307,7 +547,15 @@
       "competences": "BANA",
       "cxlineroutenr": "733"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.07409187406301498,
+      "pmnum": 0.06170854717493057,
+      "cxlineroutenr": 0.16852149367332458,
+      "location": 0.07000546902418137,
+      "description": 0.2839156985282898
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -317,7 +565,15 @@
       "competences": "BANA",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08173017203807831,
+      "pmnum": 0.06615440547466278,
+      "cxlineroutenr": 0.17425797879695892,
+      "location": 0.05972475931048393,
+      "description": 0.2622787654399872
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -327,7 +583,15 @@
       "competences": "BANA",
       "cxlineroutenr": "626"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.07691461592912674,
+      "pmnum": 0.061396483331918716,
+      "cxlineroutenr": 0.17418086528778076,
+      "location": 0.0651744157075882,
+      "description": 0.27967098355293274
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -337,7 +601,15 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "626"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.18997973203659058,
+      "pmnum": 0.15923680365085602,
+      "cxlineroutenr": 0.5661081671714783,
+      "location": 0.1651577204465866,
+      "description": 0.5926964282989502
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -347,7 +619,15 @@
       "competences": "EL",
       "cxlineroutenr": "733"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.03741256892681122,
+      "pmnum": 0.025811946019530296,
+      "cxlineroutenr": 0.3683803379535675,
+      "location": 0.03464341163635254,
+      "description": 0.38360416889190674
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -357,7 +637,15 @@
       "competences": "BANA",
       "cxlineroutenr": "565"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.07959765940904617,
+      "pmnum": 0.06633346527814865,
+      "cxlineroutenr": 0.17832697927951813,
+      "location": 0.07198138535022736,
+      "description": 0.2751861810684204
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -367,7 +655,15 @@
       "competences": "EL",
       "cxlineroutenr": "626"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.03651881963014603,
+      "pmnum": 0.0307466983795166,
+      "cxlineroutenr": 0.38006293773651123,
+      "location": 0.039222776889801025,
+      "description": 0.40467357635498047
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -377,7 +673,15 @@
       "competences": "BANA",
       "cxlineroutenr": "630"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08305418491363525,
+      "pmnum": 0.06324373185634613,
+      "cxlineroutenr": 0.16364789009094238,
+      "location": 0.09903554618358612,
+      "description": 0.30108657479286194
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -387,7 +691,15 @@
       "competences": "BANA",
       "cxlineroutenr": "565"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08360208570957184,
+      "pmnum": 0.07125315070152283,
+      "cxlineroutenr": 0.18481607735157013,
+      "location": 0.06629198789596558,
+      "description": 0.27206671237945557
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -397,7 +709,15 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "735"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.18515706062316895,
+      "pmnum": 0.155600443482399,
+      "cxlineroutenr": 0.565818727016449,
+      "location": 0.17419783771038055,
+      "description": 0.6052878499031067
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -407,7 +727,15 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.19350388646125793,
+      "pmnum": 0.16182638704776764,
+      "cxlineroutenr": 0.5644052624702454,
+      "location": 0.16602465510368347,
+      "description": 0.5910210609436035
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -417,7 +745,15 @@
       "competences": "BANA",
       "cxlineroutenr": "656"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08424869179725647,
+      "pmnum": 0.072899229824543,
+      "cxlineroutenr": 0.1818247139453888,
+      "location": 0.05792682245373726,
+      "description": 0.24951033294200897
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -427,7 +763,15 @@
       "competences": "BANA",
       "cxlineroutenr": "629"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.07902048528194427,
+      "pmnum": 0.0647946447134018,
+      "cxlineroutenr": 0.18074403703212738,
+      "location": 0.06164756417274475,
+      "description": 0.27585673332214355
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -437,7 +781,15 @@
       "competences": "BANA",
       "cxlineroutenr": "735"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.09237758070230484,
+      "pmnum": 0.07786116749048233,
+      "cxlineroutenr": 0.17811258137226105,
+      "location": 0.07440882176160812,
+      "description": 0.2593303620815277
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -447,7 +799,15 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "565"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.18855993449687958,
+      "pmnum": 0.15916338562965393,
+      "cxlineroutenr": 0.5664341449737549,
+      "location": 0.18444496393203735,
+      "description": 0.6101844310760498
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -457,7 +817,15 @@
       "competences": "BANA",
       "cxlineroutenr": "630"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.09007585793733597,
+      "pmnum": 0.07575875520706177,
+      "cxlineroutenr": 0.17438572645187378,
+      "location": 0.09821335971355438,
+      "description": 0.2945188283920288
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -467,7 +835,15 @@
       "competences": "BANA",
       "cxlineroutenr": "626"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08077342808246613,
+      "pmnum": 0.06612293422222137,
+      "cxlineroutenr": 0.18870234489440918,
+      "location": 0.06614117324352264,
+      "description": 0.28595632314682007
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -477,7 +853,15 @@
       "competences": "BANA",
       "cxlineroutenr": "630"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08026321232318878,
+      "pmnum": 0.0686100423336029,
+      "cxlineroutenr": 0.166743203997612,
+      "location": 0.09555342048406601,
+      "description": 0.2884511649608612
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -487,7 +871,15 @@
       "competences": "BANA",
       "cxlineroutenr": "733"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08707743138074875,
+      "pmnum": 0.0644872859120369,
+      "cxlineroutenr": 0.17648859322071075,
+      "location": 0.07782141119241714,
+      "description": 0.28941434621810913
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -497,7 +889,15 @@
       "competences": "BANA",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.0847862958908081,
+      "pmnum": 0.06959690153598785,
+      "cxlineroutenr": 0.1925760805606842,
+      "location": 0.0700908675789833,
+      "description": 0.27938467264175415
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -507,7 +907,15 @@
       "competences": "EL",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.03823385760188103,
+      "pmnum": 0.025905895978212357,
+      "cxlineroutenr": 0.38362324237823486,
+      "location": 0.042133063077926636,
+      "description": 0.4101915955543518
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -517,7 +925,15 @@
       "competences": "BANA",
       "cxlineroutenr": "656"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08417929708957672,
+      "pmnum": 0.06551794707775116,
+      "cxlineroutenr": 0.17110778391361237,
+      "location": 0.0759945958852768,
+      "description": 0.28614234924316406
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -527,7 +943,15 @@
       "competences": "BANA",
       "cxlineroutenr": "656"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08517461270093918,
+      "pmnum": 0.06395084410905838,
+      "cxlineroutenr": 0.17479750514030457,
+      "location": 0.07487062364816666,
+      "description": 0.28956764936447144
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -537,7 +961,15 @@
       "competences": "BANA",
       "cxlineroutenr": "656"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08242464810609818,
+      "pmnum": 0.07100473344326019,
+      "cxlineroutenr": 0.182669535279274,
+      "location": 0.07157324254512787,
+      "description": 0.2970431447029114
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -547,7 +979,15 @@
       "competences": "BANA",
       "cxlineroutenr": "733"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08981721848249435,
+      "pmnum": 0.07192020863294601,
+      "cxlineroutenr": 0.1720171421766281,
+      "location": 0.06957144290208817,
+      "description": 0.2545526623725891
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -557,7 +997,15 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.19122318923473358,
+      "pmnum": 0.16195271909236908,
+      "cxlineroutenr": 0.5671160221099854,
+      "location": 0.17624858021736145,
+      "description": 0.5996076464653015
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -567,7 +1015,15 @@
       "competences": "BANA",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.09782393276691437,
+      "pmnum": 0.07538797706365585,
+      "cxlineroutenr": 0.19009359180927277,
+      "location": 0.07735732197761536,
+      "description": 0.2918025255203247
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -577,7 +1033,15 @@
       "competences": "BANA",
       "cxlineroutenr": "629"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.08241584151983261,
+      "pmnum": 0.06983910501003265,
+      "cxlineroutenr": 0.18146155774593353,
+      "location": 0.06178506836295128,
+      "description": 0.25983527302742004
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -587,7 +1051,15 @@
       "competences": "BANA",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.09954136610031128,
+      "pmnum": 0.07537573575973511,
+      "cxlineroutenr": 0.20274825394153595,
+      "location": 0.07970314472913742,
+      "description": 0.268174946308136
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -597,7 +1069,15 @@
       "competences": "BANA",
       "cxlineroutenr": "656"
     },
-    "predicted_valid": 1
+    "predicted_valid": 1,
+    "attention_weights": {
+      "competences": 0.15766315162181854,
+      "pmnum": 0.1130492240190506,
+      "cxlineroutenr": 0.21503150463104248,
+      "location": 0.1470847874879837,
+      "description": 0.31015726923942566
+    },
+    "anomaly_fields": []
   },
   {
     "input": {
@@ -607,7 +1087,18 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "656"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.16840144991874695,
+      "pmnum": 0.7608339190483093,
+      "cxlineroutenr": 0.27004051208496094,
+      "location": 0.12227421253919601,
+      "description": 0.2792111933231354
+    },
+    "anomaly_fields": [
+      "pmnum",
+      "description"
+    ]
   },
   {
     "input": {
@@ -617,7 +1108,18 @@
       "competences": "BANA",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.21114704012870789,
+      "pmnum": 0.8650285601615906,
+      "cxlineroutenr": 0.1277054101228714,
+      "location": 0.130536288022995,
+      "description": 0.14295342564582825
+    },
+    "anomaly_fields": [
+      "pmnum",
+      "competences"
+    ]
   },
   {
     "input": {
@@ -627,7 +1129,18 @@
       "competences": "EL",
       "cxlineroutenr": "656"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.19463065266609192,
+      "pmnum": 0.8340955376625061,
+      "cxlineroutenr": 0.20666171610355377,
+      "location": 0.14429223537445068,
+      "description": 0.2290993630886078
+    },
+    "anomaly_fields": [
+      "pmnum",
+      "description"
+    ]
   },
   {
     "input": {
@@ -637,7 +1150,18 @@
       "competences": "BANA",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.22654351592063904,
+      "pmnum": 0.866273820400238,
+      "cxlineroutenr": 0.12975184619426727,
+      "location": 0.13059069216251373,
+      "description": 0.14071150124073029
+    },
+    "anomaly_fields": [
+      "pmnum",
+      "competences"
+    ]
   },
   {
     "input": {
@@ -647,7 +1171,18 @@
       "competences": "BANA",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.15956422686576843,
+      "pmnum": 0.846508800983429,
+      "cxlineroutenr": 0.06263525038957596,
+      "location": 0.06038724631071091,
+      "description": 0.07870979607105255
+    },
+    "anomaly_fields": [
+      "pmnum",
+      "competences"
+    ]
   },
   {
     "input": {
@@ -657,7 +1192,18 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "626"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.14086221158504486,
+      "pmnum": 0.7360103130340576,
+      "cxlineroutenr": 0.23412641882896423,
+      "location": 0.07755179703235626,
+      "description": 0.24475739896297455
+    },
+    "anomaly_fields": [
+      "pmnum",
+      "description"
+    ]
   },
   {
     "input": {
@@ -667,7 +1213,18 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "630"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.13550402224063873,
+      "pmnum": 0.7251208424568176,
+      "cxlineroutenr": 0.27544549107551575,
+      "location": 0.08968429267406464,
+      "description": 0.28212806582450867
+    },
+    "anomaly_fields": [
+      "pmnum",
+      "description"
+    ]
   },
   {
     "input": {
@@ -677,7 +1234,18 @@
       "competences": "EL",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.21402809023857117,
+      "pmnum": 0.8188598155975342,
+      "cxlineroutenr": 0.22838854789733887,
+      "location": 0.15981358289718628,
+      "description": 0.25058966875076294
+    },
+    "anomaly_fields": [
+      "pmnum",
+      "description"
+    ]
   },
   {
     "input": {
@@ -687,7 +1255,18 @@
       "competences": "BANA",
       "cxlineroutenr": "735"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.17118066549301147,
+      "pmnum": 0.8567031621932983,
+      "cxlineroutenr": 0.07641857117414474,
+      "location": 0.07582990825176239,
+      "description": 0.09138444066047668
+    },
+    "anomaly_fields": [
+      "pmnum",
+      "competences"
+    ]
   },
   {
     "input": {
@@ -697,7 +1276,18 @@
       "competences": "BANA",
       "cxlineroutenr": "565"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.19919273257255554,
+      "pmnum": 0.8384063243865967,
+      "cxlineroutenr": 0.11512424051761627,
+      "location": 0.13752532005310059,
+      "description": 0.14955341815948486
+    },
+    "anomaly_fields": [
+      "pmnum",
+      "competences"
+    ]
   },
   {
     "input": {
@@ -707,7 +1297,18 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "656"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.35952329635620117,
+      "pmnum": 0.33730316162109375,
+      "cxlineroutenr": 0.4892463982105255,
+      "location": 0.5318954586982727,
+      "description": 0.7408085465431213
+    },
+    "anomaly_fields": [
+      "description",
+      "location"
+    ]
   },
   {
     "input": {
@@ -717,7 +1318,18 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "733"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.2736309766769409,
+      "pmnum": 0.25666549801826477,
+      "cxlineroutenr": 0.41010382771492004,
+      "location": 0.3919840157032013,
+      "description": 0.8221800923347473
+    },
+    "anomaly_fields": [
+      "description",
+      "cxlineroutenr"
+    ]
   },
   {
     "input": {
@@ -727,7 +1339,18 @@
       "competences": "BANA",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.3740040361881256,
+      "pmnum": 0.3241211473941803,
+      "cxlineroutenr": 0.3528362214565277,
+      "location": 0.69638991355896,
+      "description": 0.5401815176010132
+    },
+    "anomaly_fields": [
+      "location",
+      "description"
+    ]
   },
   {
     "input": {
@@ -737,7 +1360,18 @@
       "competences": "EL",
       "cxlineroutenr": "656"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.23485207557678223,
+      "pmnum": 0.21180155873298645,
+      "cxlineroutenr": 0.29454848170280457,
+      "location": 0.7051239609718323,
+      "description": 0.6622681617736816
+    },
+    "anomaly_fields": [
+      "location",
+      "description"
+    ]
   },
   {
     "input": {
@@ -747,7 +1381,18 @@
       "competences": "BANA",
       "cxlineroutenr": "735"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.15964485704898834,
+      "pmnum": 0.13482427597045898,
+      "cxlineroutenr": 0.13630054891109467,
+      "location": 0.7700208425521851,
+      "description": 0.5855650901794434
+    },
+    "anomaly_fields": [
+      "location",
+      "description"
+    ]
   },
   {
     "input": {
@@ -757,7 +1402,18 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.12510979175567627,
+      "pmnum": 0.1109979897737503,
+      "cxlineroutenr": 0.24983221292495728,
+      "location": 0.6229473948478699,
+      "description": 0.6690559387207031
+    },
+    "anomaly_fields": [
+      "description",
+      "location"
+    ]
   },
   {
     "input": {
@@ -767,7 +1423,18 @@
       "competences": "EL",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.2640725374221802,
+      "pmnum": 0.24991492927074432,
+      "cxlineroutenr": 0.3378879725933075,
+      "location": 0.5039745569229126,
+      "description": 0.6799836158752441
+    },
+    "anomaly_fields": [
+      "description",
+      "location"
+    ]
   },
   {
     "input": {
@@ -777,7 +1444,18 @@
       "competences": "EL",
       "cxlineroutenr": "735"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.4332384467124939,
+      "pmnum": 0.4099904000759125,
+      "cxlineroutenr": 0.4916953444480896,
+      "location": 0.6570633053779602,
+      "description": 0.6789582967758179
+    },
+    "anomaly_fields": [
+      "description",
+      "location"
+    ]
   },
   {
     "input": {
@@ -787,7 +1465,18 @@
       "competences": "BANA",
       "cxlineroutenr": "629"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.5367338061332703,
+      "pmnum": 0.5032514333724976,
+      "cxlineroutenr": 0.5068420171737671,
+      "location": 0.7062256336212158,
+      "description": 0.8592601418495178
+    },
+    "anomaly_fields": [
+      "description",
+      "location"
+    ]
   },
   {
     "input": {
@@ -797,7 +1486,18 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "656"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.23285794258117676,
+      "pmnum": 0.21119746565818787,
+      "cxlineroutenr": 0.329720139503479,
+      "location": 0.44294241070747375,
+      "description": 0.7075235247612
+    },
+    "anomaly_fields": [
+      "description",
+      "location"
+    ]
   },
   {
     "input": {
@@ -807,7 +1507,19 @@
       "competences": "EL",
       "cxlineroutenr": "733"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.014364938251674175,
+      "pmnum": 0.00958650466054678,
+      "cxlineroutenr": 0.892238974571228,
+      "location": 0.01003889087587595,
+      "description": 0.8980789184570312
+    },
+    "anomaly_fields": [
+      "description",
+      "cxlineroutenr",
+      "competences"
+    ]
   },
   {
     "input": {
@@ -817,7 +1529,19 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.2900313138961792,
+      "pmnum": 0.2432752549648285,
+      "cxlineroutenr": 0.4062466323375702,
+      "location": 0.2492005079984665,
+      "description": 0.4654994606971741
+    },
+    "anomaly_fields": [
+      "description",
+      "cxlineroutenr",
+      "competences"
+    ]
   },
   {
     "input": {
@@ -827,7 +1551,19 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "733"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.2961066663265228,
+      "pmnum": 0.2551160454750061,
+      "cxlineroutenr": 0.32032933831214905,
+      "location": 0.28082287311553955,
+      "description": 0.41127827763557434
+    },
+    "anomaly_fields": [
+      "description",
+      "cxlineroutenr",
+      "competences"
+    ]
   },
   {
     "input": {
@@ -837,7 +1573,19 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "626"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.26158785820007324,
+      "pmnum": 0.2106807380914688,
+      "cxlineroutenr": 0.3826500177383423,
+      "location": 0.2294633537530899,
+      "description": 0.45518022775650024
+    },
+    "anomaly_fields": [
+      "description",
+      "cxlineroutenr",
+      "competences"
+    ]
   },
   {
     "input": {
@@ -847,7 +1595,19 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "733"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.2699209749698639,
+      "pmnum": 0.22463327646255493,
+      "cxlineroutenr": 0.39119625091552734,
+      "location": 0.24391229450702667,
+      "description": 0.4596737325191498
+    },
+    "anomaly_fields": [
+      "description",
+      "cxlineroutenr",
+      "competences"
+    ]
   },
   {
     "input": {
@@ -857,7 +1617,19 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "733"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.27979427576065063,
+      "pmnum": 0.23160003125667572,
+      "cxlineroutenr": 0.395346075296402,
+      "location": 0.24954365193843842,
+      "description": 0.46252214908599854
+    },
+    "anomaly_fields": [
+      "description",
+      "cxlineroutenr",
+      "competences"
+    ]
   },
   {
     "input": {
@@ -867,7 +1639,19 @@
       "competences": "EL",
       "cxlineroutenr": "565"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.04875236377120018,
+      "pmnum": 0.04346848279237747,
+      "cxlineroutenr": 0.24544650316238403,
+      "location": 0.06864680349826813,
+      "description": 0.27986636757850647
+    },
+    "anomaly_fields": [
+      "description",
+      "cxlineroutenr",
+      "competences"
+    ]
   },
   {
     "input": {
@@ -877,7 +1661,19 @@
       "competences": "EL",
       "cxlineroutenr": "656"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.014720219187438488,
+      "pmnum": 0.009596667252480984,
+      "cxlineroutenr": 0.8640400767326355,
+      "location": 0.011381505988538265,
+      "description": 0.870326578617096
+    },
+    "anomaly_fields": [
+      "description",
+      "cxlineroutenr",
+      "competences"
+    ]
   },
   {
     "input": {
@@ -887,7 +1683,19 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "626"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.2818988561630249,
+      "pmnum": 0.23162201046943665,
+      "cxlineroutenr": 0.4042486548423767,
+      "location": 0.24645335972309113,
+      "description": 0.47505638003349304
+    },
+    "anomaly_fields": [
+      "description",
+      "cxlineroutenr",
+      "competences"
+    ]
   },
   {
     "input": {
@@ -897,7 +1705,19 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "565"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.2890985608100891,
+      "pmnum": 0.24397321045398712,
+      "cxlineroutenr": 0.41239652037620544,
+      "location": 0.2598961293697357,
+      "description": 0.4719642400741577
+    },
+    "anomaly_fields": [
+      "description",
+      "cxlineroutenr",
+      "competences"
+    ]
   },
   {
     "input": {
@@ -907,7 +1727,18 @@
       "competences": "BANA",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.34808626770973206,
+      "pmnum": 0.30178552865982056,
+      "cxlineroutenr": 0.42639100551605225,
+      "location": 0.5983651280403137,
+      "description": 0.7692858576774597
+    },
+    "anomaly_fields": [
+      "description",
+      "location"
+    ]
   },
   {
     "input": {
@@ -917,7 +1748,18 @@
       "competences": "EL",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.28979039192199707,
+      "pmnum": 0.2668025493621826,
+      "cxlineroutenr": 0.3818263113498688,
+      "location": 0.5664178133010864,
+      "description": 0.7767283916473389
+    },
+    "anomaly_fields": [
+      "description",
+      "location"
+    ]
   },
   {
     "input": {
@@ -927,7 +1769,18 @@
       "competences": "BANA",
       "cxlineroutenr": "735"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.2507517635822296,
+      "pmnum": 0.20154094696044922,
+      "cxlineroutenr": 0.5878638625144958,
+      "location": 0.38595050573349,
+      "description": 0.9025751352310181
+    },
+    "anomaly_fields": [
+      "description",
+      "cxlineroutenr"
+    ]
   },
   {
     "input": {
@@ -937,7 +1790,18 @@
       "competences": "BANA",
       "cxlineroutenr": "626"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.2634134292602539,
+      "pmnum": 0.2182830274105072,
+      "cxlineroutenr": 0.4047769010066986,
+      "location": 0.5845021605491638,
+      "description": 0.796388566493988
+    },
+    "anomaly_fields": [
+      "description",
+      "location"
+    ]
   },
   {
     "input": {
@@ -947,7 +1811,18 @@
       "competences": "BANA",
       "cxlineroutenr": "656"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.2644994258880615,
+      "pmnum": 0.2085779458284378,
+      "cxlineroutenr": 0.33733880519866943,
+      "location": 0.5310983657836914,
+      "description": 0.7569255828857422
+    },
+    "anomaly_fields": [
+      "description",
+      "location"
+    ]
   },
   {
     "input": {
@@ -957,7 +1832,18 @@
       "competences": "BANA",
       "cxlineroutenr": "630"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.1966255009174347,
+      "pmnum": 0.13355177640914917,
+      "cxlineroutenr": 0.1342070996761322,
+      "location": 0.40749678015708923,
+      "description": 0.8731272220611572
+    },
+    "anomaly_fields": [
+      "description",
+      "location"
+    ]
   },
   {
     "input": {
@@ -967,7 +1853,18 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "627"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.43220052123069763,
+      "pmnum": 0.38885095715522766,
+      "cxlineroutenr": 0.6216580271720886,
+      "location": 0.430818110704422,
+      "description": 0.6791172623634338
+    },
+    "anomaly_fields": [
+      "description",
+      "cxlineroutenr"
+    ]
   },
   {
     "input": {
@@ -977,7 +1874,18 @@
       "competences": "BANA",
       "cxlineroutenr": "565"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.30877983570098877,
+      "pmnum": 0.24726438522338867,
+      "cxlineroutenr": 0.3534477651119232,
+      "location": 0.4399983882904053,
+      "description": 0.7744963765144348
+    },
+    "anomaly_fields": [
+      "description",
+      "location"
+    ]
   },
   {
     "input": {
@@ -987,7 +1895,18 @@
       "competences": "SIGNAL",
       "cxlineroutenr": "629"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.31813132762908936,
+      "pmnum": 0.29290786385536194,
+      "cxlineroutenr": 0.6390038728713989,
+      "location": 0.44719198346138,
+      "description": 0.8024656772613525
+    },
+    "anomaly_fields": [
+      "description",
+      "cxlineroutenr"
+    ]
   },
   {
     "input": {
@@ -997,6 +1916,17 @@
       "competences": "EL",
       "cxlineroutenr": "656"
     },
-    "predicted_valid": 0
+    "predicted_valid": 0,
+    "attention_weights": {
+      "competences": 0.2898883819580078,
+      "pmnum": 0.2630058825016022,
+      "cxlineroutenr": 0.40268081426620483,
+      "location": 0.5226802825927734,
+      "description": 0.7607338428497314
+    },
+    "anomaly_fields": [
+      "description",
+      "location"
+    ]
   }
 ]

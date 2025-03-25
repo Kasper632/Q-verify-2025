@@ -1,0 +1,1782 @@
+[
+  {
+    "input": {
+      "pmnum": "SISO0020",
+      "description": "S\u00c3\u00a4k bes Maskin 3 640 J.Haa",
+      "location": "J.Haa",
+      "competences": "BANA",
+      "cxlineroutenr": "640"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SKMT0018",
+      "description": "S\u00c3\u00a4k bes Maskin 2 735 J.Tye-Teo",
+      "location": "J.Tye-Teo",
+      "competences": "BANA",
+      "cxlineroutenr": "735"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "STRU0022",
+      "description": "S\u00c3\u00a4k bes Maskin 3 733 J.Tou-Hyb",
+      "location": "J.Tou-Hyb",
+      "competences": "BANA",
+      "cxlineroutenr": "733"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SISO0017",
+      "description": "S\u00c3\u00a4k bes Maskin 5 627 J.TYE",
+      "location": "J.TYE",
+      "competences": "EL",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SSLI0029",
+      "description": "S\u00c3\u00a4k bes Maskin 2 627 J.Tye",
+      "location": "J.Tye",
+      "competences": "BANA",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SBAL0003",
+      "description": "S\u00c3\u00a4k bes Maskin 6 627 J=TEO",
+      "location": "J=TEO",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "USLI0029",
+      "description": "Uh bes Maskin 5 733 J.Hd",
+      "location": "J.Hd",
+      "competences": "EL",
+      "cxlineroutenr": "733"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UBAL0006",
+      "description": "Uh bes Maskin 3 733 J=BTP-FUR",
+      "location": "J=BTP-FUR",
+      "competences": "BANA",
+      "cxlineroutenr": "733"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UHAG0037",
+      "description": "Uh bes Maskin 3 630 J.Fabg",
+      "location": "J.Fabg",
+      "competences": "BANA",
+      "cxlineroutenr": "630"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UHAG0028",
+      "description": "Uh bes Maskin 5 626 J.Fabp-He",
+      "location": "J.Fabp-He",
+      "competences": "EL",
+      "cxlineroutenr": "626"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UHAG0003",
+      "description": "Uh bes Maskin 5 656 J.Hd",
+      "location": "J.Hd",
+      "competences": "EL",
+      "cxlineroutenr": "656"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UHAG0037",
+      "description": "Uh bes Maskin 6 627 J.VB-HAA",
+      "location": "J.VB-HAA",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UBAL0013",
+      "description": "Uh bes Maskin 2 627 J.LEK",
+      "location": "J.LEK",
+      "competences": "BANA",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SISO0019",
+      "description": "S\u00c3\u00a4k bes Maskin 6 733 J.Lgd",
+      "location": "J.Lgd",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "733"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UHAG0005",
+      "description": "Uh bes Maskin 5 627 J.Bp",
+      "location": "J.Bp",
+      "competences": "EL",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SSLI0021",
+      "description": "S\u00c3\u00a4k bes Maskin 2 735 J.TYE",
+      "location": "J.TYE",
+      "competences": "BANA",
+      "cxlineroutenr": "735"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UISO0004",
+      "description": "Uh bes Maskin 6 733 J.Kb",
+      "location": "J.Kb",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "733"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SRSK0002",
+      "description": "S\u00c3\u00a4k bes Maskin 1 735 J.Mdn",
+      "location": "J.Mdn",
+      "competences": "BANA",
+      "cxlineroutenr": "735"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UHAG0055",
+      "description": "Uh bes Maskin 3 630 J.Lrd",
+      "location": "J.Lrd",
+      "competences": "BANA",
+      "cxlineroutenr": "630"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UTRU0006",
+      "description": "Uh bes Maskin 6 627 J=TYE",
+      "location": "J=TYE",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "STRU0021",
+      "description": "S\u00c3\u00a4k bes Maskin 5 735 J.Btp-Hd",
+      "location": "J.Btp-Hd",
+      "competences": "EL",
+      "cxlineroutenr": "735"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SRSK0023",
+      "description": "S\u00c3\u00a4k bes Maskin 1 627 J.Hre",
+      "location": "J.Hre",
+      "competences": "BANA",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UHAG0045",
+      "description": "Uh bes Maskin 3 626 J.He-Bp",
+      "location": "J.He-Bp",
+      "competences": "BANA",
+      "cxlineroutenr": "626"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "STRU0002",
+      "description": "S\u00c3\u00a4k bes Maskin 1 565 J=VR\u00c3\u2013",
+      "location": "J=VR\u00c3\u2013",
+      "competences": "BANA",
+      "cxlineroutenr": "565"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UISO0011",
+      "description": "Uh bes Maskin 1 627 J.Teo",
+      "location": "J.Teo",
+      "competences": "BANA",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SHAG0046",
+      "description": "S\u00c3\u00a4k bes Maskin 5 735 J.Haa",
+      "location": "J.Haa",
+      "competences": "EL",
+      "cxlineroutenr": "735"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "URSK0015",
+      "description": "Uh bes Maskin 6 565 J.Hd-Ea",
+      "location": "J.Hd-Ea",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "565"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SRSK0025",
+      "description": "S\u00c3\u00a4k bes Maskin 6 627 J.FABP-FABP",
+      "location": "J.FABP-FABP",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "USLI0017",
+      "description": "Uh bes Maskin 3 735 J.Btp-Hd",
+      "location": "J.Btp-Hd",
+      "competences": "BANA",
+      "cxlineroutenr": "735"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "USLI0013",
+      "description": "Uh bes Maskin 2 627 J.Hre",
+      "location": "J.Hre",
+      "competences": "BANA",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SKMT0002",
+      "description": "S\u00c3\u00a4k bes Maskin 3 733 J.Mdn-Krd",
+      "location": "J.Mdn-Krd",
+      "competences": "BANA",
+      "cxlineroutenr": "733"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "USLI0031",
+      "description": "Uh bes Maskin 2 627 J.Hd",
+      "location": "J.Hd",
+      "competences": "BANA",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SBAL0039",
+      "description": "S\u00c3\u00a4k bes Maskin 2 626 J.FABP",
+      "location": "J.FABP",
+      "competences": "BANA",
+      "cxlineroutenr": "626"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "URSK0003",
+      "description": "Uh bes Maskin 6 626 J=LEK",
+      "location": "J=LEK",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "626"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "USLI0034",
+      "description": "Uh bes Maskin 5 733 J.Hd",
+      "location": "J.Hd",
+      "competences": "EL",
+      "cxlineroutenr": "733"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "URSK0025",
+      "description": "Uh bes Maskin 2 565 J.Vdi-Vb",
+      "location": "J.Vdi-Vb",
+      "competences": "BANA",
+      "cxlineroutenr": "565"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SHAG0061",
+      "description": "S\u00c3\u00a4k bes Maskin 5 626 J.Lrd",
+      "location": "J.Lrd",
+      "competences": "EL",
+      "cxlineroutenr": "626"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SHAG0016",
+      "description": "S\u00c3\u00a4k bes Maskin 1 630 J.Hre-Vdi",
+      "location": "J.Hre-Vdi",
+      "competences": "BANA",
+      "cxlineroutenr": "630"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UBAL0025",
+      "description": "Uh bes Maskin 2 565 J.Vdi",
+      "location": "J.Vdi",
+      "competences": "BANA",
+      "cxlineroutenr": "565"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UKMT0007",
+      "description": "Uh bes Maskin 6 735 J.Lek",
+      "location": "J.Lek",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "735"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UTRU0016",
+      "description": "Uh bes Maskin 6 627 J=LEK",
+      "location": "J=LEK",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UBAL0029",
+      "description": "Uh bes Maskin 1 656 J=FABP",
+      "location": "J=FABP",
+      "competences": "BANA",
+      "cxlineroutenr": "656"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SBAL0033",
+      "description": "S\u00c3\u00a4k bes Maskin 2 629 J.F\u00c3\u00a5",
+      "location": "J.F\u00c3\u00a5",
+      "competences": "BANA",
+      "cxlineroutenr": "629"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "USLI0015",
+      "description": "Uh bes Maskin 3 735 J=BP-BTP",
+      "location": "J=BP-BTP",
+      "competences": "BANA",
+      "cxlineroutenr": "735"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UHAG0056",
+      "description": "Uh bes Maskin 6 565 J.Tye-Teo",
+      "location": "J.Tye-Teo",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "565"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UTRU0026",
+      "description": "Uh bes Maskin 1 630 J.Lrd-Tou",
+      "location": "J.Lrd-Tou",
+      "competences": "BANA",
+      "cxlineroutenr": "630"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SRSK0018",
+      "description": "S\u00c3\u00a4k bes Maskin 1 626 J.Tye",
+      "location": "J.Tye",
+      "competences": "BANA",
+      "cxlineroutenr": "626"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SBAL0036",
+      "description": "S\u00c3\u00a4k bes Maskin 3 630 J.Vdi-Vb",
+      "location": "J.Vdi-Vb",
+      "competences": "BANA",
+      "cxlineroutenr": "630"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UKMT0006",
+      "description": "Uh bes Maskin 2 733 J.Haa-Tye",
+      "location": "J.Haa-Tye",
+      "competences": "BANA",
+      "cxlineroutenr": "733"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UBAL0013",
+      "description": "Uh bes Maskin 1 627 J.TYE",
+      "location": "J.TYE",
+      "competences": "BANA",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SISO0025",
+      "description": "S\u00c3\u00a4k bes Maskin 5 627 J.Hre-Vdi",
+      "location": "J.Hre-Vdi",
+      "competences": "EL",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SHAG0057",
+      "description": "S\u00c3\u00a4k bes Maskin 3 656 J.Fabg",
+      "location": "J.Fabg",
+      "competences": "BANA",
+      "cxlineroutenr": "656"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SHAG0049",
+      "description": "S\u00c3\u00a4k bes Maskin 3 656 J.Om-Hd",
+      "location": "J.Om-Hd",
+      "competences": "BANA",
+      "cxlineroutenr": "656"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SSLI0004",
+      "description": "S\u00c3\u00a4k bes Maskin 2 656 J.Teo",
+      "location": "J.Teo",
+      "competences": "BANA",
+      "cxlineroutenr": "656"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UHAG0028",
+      "description": "Uh bes Maskin 3 733 J=FABP-HE",
+      "location": "J=FABP-HE",
+      "competences": "BANA",
+      "cxlineroutenr": "733"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UTRU0014",
+      "description": "Uh bes Maskin 6 627 J=LEK-F\u00c3\u2026",
+      "location": "J=LEK-F\u00c3\u2026",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "SISO0030",
+      "description": "S\u00c3\u00a4k bes Maskin 3 627 J=VB",
+      "location": "J=VB",
+      "competences": "BANA",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UTRU0016",
+      "description": "Uh bes Maskin 2 629 J.F\u00c3\u00a5",
+      "location": "J.F\u00c3\u00a5",
+      "competences": "BANA",
+      "cxlineroutenr": "629"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "UHAG0014",
+      "description": "Uh bes Maskin 2 627 J=HAA",
+      "location": "J=HAA",
+      "competences": "BANA",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "URSK0010",
+      "description": "Uh bes Maskin 3 656 J=VR\u00c3\u2013",
+      "location": "J=VR\u00c3\u2013",
+      "competences": "BANA",
+      "cxlineroutenr": "656"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 1,
+    "anomaly_fields": []
+  },
+  {
+    "input": {
+      "pmnum": "ZHAG0011",
+      "description": "S\u00c3\u00a4k bes Maskin 6 656 J.Vb-Haa",
+      "location": "J.Vb-Haa",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "656"
+    },
+    "predicted_fields": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "pmnum"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "HTRU0016",
+      "description": "S\u00c3\u00a4k bes Maskin 2 627 J.Hd",
+      "location": "J.Hd",
+      "competences": "BANA",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "pmnum"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "RISO0030",
+      "description": "S\u00c3\u00a4k bes Maskin 5 656 J.Krd",
+      "location": "J.Krd",
+      "competences": "EL",
+      "cxlineroutenr": "656"
+    },
+    "predicted_fields": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "pmnum"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "FKMT0022",
+      "description": "Uh bes Maskin 1 627 J.Tou-Hyb",
+      "location": "J.Tou-Hyb",
+      "competences": "BANA",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "pmnum"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "BSLI0006",
+      "description": "S\u00c3\u00a4k bes Maskin 1 627 J=TYE-TEO",
+      "location": "J=TYE-TEO",
+      "competences": "BANA",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "pmnum"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "QSLI0005",
+      "description": "S\u00c3\u00a4k bes Maskin 6 626 J=BP",
+      "location": "J=BP",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "626"
+    },
+    "predicted_fields": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "pmnum"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "YRSK0006",
+      "description": "Uh bes Maskin 6 630 J=LEK",
+      "location": "J=LEK",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "630"
+    },
+    "predicted_fields": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "pmnum"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "RISO0012",
+      "description": "Uh bes Maskin 5 627 J=FABP",
+      "location": "J=FABP",
+      "competences": "EL",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "pmnum"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "\u00c3\u2013ISO0018",
+      "description": "S\u00c3\u00a4k bes Maskin 2 735 J=BP",
+      "location": "J=BP",
+      "competences": "BANA",
+      "cxlineroutenr": "735"
+    },
+    "predicted_fields": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "pmnum"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "JHAG0056",
+      "description": "S\u00c3\u00a4k bes Maskin 3 565 J=VR\u00c3\u2013-VB",
+      "location": "J=VR\u00c3\u2013-VB",
+      "competences": "BANA",
+      "cxlineroutenr": "565"
+    },
+    "predicted_fields": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "pmnum"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SHAG0012",
+      "description": "S\u00c3\u00a4k bes Maskin 6 656 J=FABP",
+      "location": "j=teo",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "656"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "location"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SHAG0009",
+      "description": "S\u00c3\u00a4k bes Maskin 6 733 J=TEO-FABP",
+      "location": "j=tye",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "733"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "location"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SHAG0058",
+      "description": "S\u00c3\u00a4k bes Maskin 3 627 J=HE",
+      "location": "j.kb",
+      "competences": "BANA",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "location"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SHAG0034",
+      "description": "S\u00c3\u00a4k bes Maskin 5 656 J.He",
+      "location": "j.btp",
+      "competences": "EL",
+      "cxlineroutenr": "656"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "location"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SISO0030",
+      "description": "S\u00c3\u00a4k bes Maskin 2 735 J.Om-Hd",
+      "location": "j.tou-hyb",
+      "competences": "BANA",
+      "cxlineroutenr": "735"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "location"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SHAG0042",
+      "description": "S\u00c3\u00a4k bes Maskin 6 627 J.Btp-Hd",
+      "location": "j.vr\u00c3\u00b6-vb",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "location"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "URSK0013",
+      "description": "Uh bes Maskin 5 627 J.Tye",
+      "location": "j=vr\u00c3\u00b6",
+      "competences": "EL",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "location"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "URSK0022",
+      "description": "Uh bes Maskin 5 735 J=F\u00c3\u2026",
+      "location": "j=haa",
+      "competences": "EL",
+      "cxlineroutenr": "735"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "location"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "UISO0018",
+      "description": "Uh bes Maskin 1 629 J=FABP",
+      "location": "j=vb",
+      "competences": "BANA",
+      "cxlineroutenr": "629"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "location"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SBAL0015",
+      "description": "S\u00c3\u00a4k bes Maskin 6 656 J=TYE-TEO",
+      "location": "j.vb",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "656"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "location"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SISO0028",
+      "description": "S\u00c3\u00a4k bes Maskin 6 733 J=LEK-F\u00c3\u2026",
+      "location": "J=LEK-F\u00c3\u2026",
+      "competences": "EL",
+      "cxlineroutenr": "733"
+    },
+    "predicted_fields": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "competences"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SSLI0029",
+      "description": "S\u00c3\u00a4k bes Maskin 3 627 J=EA",
+      "location": "J=EA",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "competences"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SHAG0002",
+      "description": "S\u00c3\u00a4k bes Maskin 5 733 J.BP",
+      "location": "J.BP",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "733"
+    },
+    "predicted_fields": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "competences"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SKMT0005",
+      "description": "S\u00c3\u00a4k bes Maskin 3 626 J.Lrd-Tou",
+      "location": "J.Lrd-Tou",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "626"
+    },
+    "predicted_fields": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "competences"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "UKMT0002",
+      "description": "Uh bes Maskin 2 733 J.Fabp",
+      "location": "J.Fabp",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "733"
+    },
+    "predicted_fields": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "competences"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SRSK0011",
+      "description": "S\u00c3\u00a4k bes Maskin 3 733 J.Fabg",
+      "location": "J.Fabg",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "733"
+    },
+    "predicted_fields": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "competences"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "USLI0029",
+      "description": "Uh bes Maskin 2 565 J.G-Mdn",
+      "location": "J.G-Mdn",
+      "competences": "EL",
+      "cxlineroutenr": "565"
+    },
+    "predicted_fields": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "competences"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SSLI0026",
+      "description": "S\u00c3\u00a4k bes Maskin 6 656 J.Bp",
+      "location": "J.Bp",
+      "competences": "EL",
+      "cxlineroutenr": "656"
+    },
+    "predicted_fields": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "competences"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SISO0034",
+      "description": "S\u00c3\u00a4k bes Maskin 2 626 J.Vdi-Vb",
+      "location": "J.Vdi-Vb",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "626"
+    },
+    "predicted_fields": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "competences"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "UHAG0024",
+      "description": "Uh bes Maskin 2 565 J.Mdn",
+      "location": "J.Mdn",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "565"
+    },
+    "predicted_fields": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "competences"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "USLI0013",
+      "description": "Uh bes Maskin 1 565 J.Hd",
+      "location": "J.Hd",
+      "competences": "BANA",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "cxlineroutenr"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SRSK0006",
+      "description": "S\u00c3\u00a4k bes Maskin 5 733 J.HE",
+      "location": "J.HE",
+      "competences": "EL",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "cxlineroutenr"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "URSK0008",
+      "description": "Uh bes Maskin 1 565 J.Bp-Btp",
+      "location": "J.Bp-Btp",
+      "competences": "BANA",
+      "cxlineroutenr": "735"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "cxlineroutenr"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SISO0018",
+      "description": "S\u00c3\u00a4k bes Maskin 1 627 J.Vfo",
+      "location": "J.Vfo",
+      "competences": "BANA",
+      "cxlineroutenr": "626"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "cxlineroutenr"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "UTRU0001",
+      "description": "Uh bes Maskin 2 627 J.TEO-FABP",
+      "location": "J.TEO-FABP",
+      "competences": "BANA",
+      "cxlineroutenr": "656"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "cxlineroutenr"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SHAG0032",
+      "description": "S\u00c3\u00a4k bes Maskin 3 733 J=LEK-F\u00c3\u2026",
+      "location": "J=LEK-F\u00c3\u2026",
+      "competences": "BANA",
+      "cxlineroutenr": "630"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "cxlineroutenr"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "UISO0029",
+      "description": "Uh bes Maskin 6 630 J.Krd",
+      "location": "J.Krd",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "627"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "cxlineroutenr"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "UHAG0015",
+      "description": "Uh bes Maskin 1 656 J=TEO-FABP",
+      "location": "J=TEO-FABP",
+      "competences": "BANA",
+      "cxlineroutenr": "565"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "cxlineroutenr"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "UISO0034",
+      "description": "Uh bes Maskin 6 627 J=BTP-FUR",
+      "location": "J=BTP-FUR",
+      "competences": "SIGNAL",
+      "cxlineroutenr": "629"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "cxlineroutenr"
+    ]
+  },
+  {
+    "input": {
+      "pmnum": "SKMT0005",
+      "description": "S\u00c3\u00a4k bes Maskin 5 627 J.TEO",
+      "location": "J.TEO",
+      "competences": "EL",
+      "cxlineroutenr": "656"
+    },
+    "predicted_fields": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "predicted_valid": 0,
+    "anomaly_fields": [
+      "cxlineroutenr"
+    ]
+  }
+]

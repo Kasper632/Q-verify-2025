@@ -3,6 +3,7 @@ from datasets import Dataset
 import torch
 import json
 import numpy as np
+from tqdm import tqdm
 
 # Ladda tokenizer och tränad modell
 model_path = "Python/AI-models/maximo_model"
@@ -10,7 +11,7 @@ tokenizer = DistilBertTokenizer.from_pretrained(model_path)
 model = DistilBertForSequenceClassification.from_pretrained(model_path)
 
 # Ladda ny JSON-fil för testning
-with open("Python/data/100_60_40.json", "r") as f:
+with open("Python/data/.json", "r") as f:
     new_data = json.load(f)
 
 # Skapa samma kombinerade textsträng som vid träning
@@ -30,17 +31,22 @@ predict_dataset = Dataset.from_dict({"text": texts})
 def tokenize_function(examples):
     return tokenizer(examples['text'], padding="max_length", truncation=True)
 
+# Tokenisering utan multiprocessing (fallback)
 tokenized = predict_dataset.map(tokenize_function, batched=True)
 tokenized.set_format(type='torch', columns=['input_ids', 'attention_mask'])
 
-# Inference
+# Inference med DataLoader och GPU om tillgänglig
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model.to(device)
 model.eval()
 preds = []
 with torch.no_grad():
-    for batch in torch.utils.data.DataLoader(tokenized, batch_size=16):
-        outputs = model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask'])
+    for batch in tqdm(torch.utils.data.DataLoader(tokenized, batch_size=64)):
+        input_ids = batch['input_ids'].to(device)
+        attention_mask = batch['attention_mask'].to(device)
+        outputs = model(input_ids=input_ids, attention_mask=attention_mask)
         logits = outputs.logits
-        batch_preds = torch.argmax(logits, axis=1).numpy()
+        batch_preds = torch.argmax(logits, axis=1).cpu().numpy()
         preds.extend(batch_preds)
 
 # Skapa JSON-output
