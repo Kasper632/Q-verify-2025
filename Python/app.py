@@ -316,7 +316,6 @@ def process_maximo_data(file_path):
         "anomalies": results
     }
 
-
 # Route för att hantera maximo-data
 @app.route("/maximo-data", methods=["POST"])
 def process_maximo():

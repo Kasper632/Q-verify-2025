@@ -32,7 +32,6 @@
     var analysisResult = (Newtonsoft.Json.Linq.JArray)ViewData["AnalysisResult"];
     int anomalyCount = 0;
 
-    // Räkna bara rader med minst en avvikelse
     foreach (var anomaly in analysisResult)
     {
         var anomalies = anomaly["anomaly_fields"] as Newtonsoft.Json.Linq.JArray;
@@ -65,9 +64,22 @@
                     @foreach (var anomaly in analysisResult)
                     {
                         var input = anomaly["input"];
-                        var errors = anomaly["anomaly_fields"] as Newtonsoft.Json.Linq.JArray;
+                        var errorsRaw = anomaly["anomaly_fields"];
+                        var errorList = new List<string>();
 
-                        if (errors != null && errors.Count > 0)
+                        if (errorsRaw is Newtonsoft.Json.Linq.JArray errorArray)
+                        {
+                            foreach (var err in errorArray)
+                            {
+                                errorList.Add(err.ToString());
+                            }
+                        }
+                        else if (errorsRaw != null)
+                        {
+                            errorList.Add(errorsRaw.ToString());
+                        }
+
+                        if (errorList.Count > 0)
                         {
                             <tr>
                                 <td>@input["competences"]</td>
@@ -77,7 +89,7 @@
                                 <td>@input["description"]</td>
                                 <td>
                                     <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;">
-                                        @foreach (var error in errors)
+                                        @foreach (var error in errorList)
                                         {
                                             <li>@error</li>
                                         }
