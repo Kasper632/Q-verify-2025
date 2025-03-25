@@ -32,55 +32,62 @@
     var analysisResult = (Newtonsoft.Json.Linq.JArray)ViewData["AnalysisResult"];
     int anomalyCount = 0;
 
+    // Räkna bara rader med minst en avvikelse
     foreach (var anomaly in analysisResult)
     {
-        anomalyCount++;
+        var anomalies = anomaly["anomaly_fields"] as Newtonsoft.Json.Linq.JArray;
+        if (anomalies != null && anomalies.Count > 0)
+        {
+            anomalyCount++;
+        }
     }
 
     <h6 class="@(anomalyCount > 0 ? "text-danger bg-light" : "text-success bg-light")">
         @(anomalyCount > 0 ? "Antal avvikelser: " + anomalyCount : "Inga avvikelser upptäckta!")
     </h6>
 
-    <h4 class="mt-3">Analysresultat</h4>
-    <div class="table-responsive">
-        <table class="table table-bordered table-striped mt-3">
-            <thead class="thead-dark">
-                <tr>
-                    <th>Competences</th>
-                    <th>Pmnum</th>
-                    <th>Cxlineroutenr</th>
-                    <th>Location</th>
-                    <th>Description</th>
-                    <th>Errors</th> <!-- Ny kolumn för att visa fel -->
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var anomaly in analysisResult)
-                {
+    @if (anomalyCount > 0)
+    {
+        <h4 class="mt-3">Analysresultat</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped mt-3">
+                <thead class="thead-dark">
                     <tr>
-                        <td>@anomaly["competences"]</td>
-                        <td>@anomaly["pmnum"]</td>
-                        <td>@anomaly["cxlineroutenr"]</td>
-                        <td>@anomaly["location"]</td>
-                        <td>@anomaly["description"]</td>
-                        <td>
-                            @if (anomaly["errors"] != null)
-                            {
-                                <ul>
-                                    @foreach (var error in anomaly["errors"])
-                                    {
-                                        <li>@error</li>
-                                    }
-                                </ul>
-                            }
-                            else
-                            {
-                                <span>Inga fel</span>
-                            }
-                        </td>
+                        <th>Competences</th>
+                        <th>Pmnum</th>
+                        <th>Cxlineroutenr</th>
+                        <th>Location</th>
+                        <th>Description</th>
+                        <th>Errors</th>
                     </tr>
-                }
-            </tbody>
-        </table>
-    </div>
+                </thead>
+                <tbody>
+                    @foreach (var anomaly in analysisResult)
+                    {
+                        var input = anomaly["input"];
+                        var errors = anomaly["anomaly_fields"] as Newtonsoft.Json.Linq.JArray;
+
+                        if (errors != null && errors.Count > 0)
+                        {
+                            <tr>
+                                <td>@input["competences"]</td>
+                                <td>@input["pmnum"]</td>
+                                <td>@input["cxlineroutenr"]</td>
+                                <td>@input["location"]</td>
+                                <td>@input["description"]</td>
+                                <td>
+                                    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;">
+                                        @foreach (var error in errors)
+                                        {
+                                            <li>@error</li>
+                                        }
+                                    </ul>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
 }
