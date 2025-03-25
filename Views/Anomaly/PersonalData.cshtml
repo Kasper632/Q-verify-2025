@@ -66,20 +66,27 @@
                     !anomaly["personnummer_gender"].ToString().Contains("Godkänt");
 
                     <tr>
-                        <td>@anomaly["name"]</td>
-                        <td>@anomaly["email"]</td>
-                        <td>@anomaly["personnummer"]</td>
-                        <td
-                            class="text-center @(anomaly["name_email_validity"].ToString() == "1" ? "text-success" : "text-danger")">
-                            @(anomaly["name_email_validity"].ToString() == "1" ? "Godkänt" : "Avvikelse")
+                        <td class="@(string.IsNullOrEmpty(anomaly["name"]?.ToString()) ? "text-danger" : "")">
+                            @(string.IsNullOrEmpty(anomaly["name"]?.ToString()) ? "Värde saknas" : anomaly["name"])
                         </td>
-                        <td
-                            class="text-center @(anomaly["personnummer_gender"].ToString().Contains("Godkänt") ? "text-success" : "text-danger")">
-                            @anomaly["personnummer_gender"]
+                        <td class="@(string.IsNullOrEmpty(anomaly["email"]?.ToString()) ? "text-danger" : "")">
+                            @(string.IsNullOrEmpty(anomaly["email"]?.ToString()) ? "Värde saknas" : anomaly["email"])
                         </td>
-                        <td>@anomaly["predicted_gender"]</td>
-                    </tr>
-                }
+                        <td class="@(string.IsNullOrEmpty(anomaly["personnummer"]?.ToString()) ? "text-danger" : "")">
+                            @(string.IsNullOrEmpty(anomaly["personnummer"]?.ToString()) ? "Värde saknas" :
+                                                anomaly["personnummer"])
+                    </td>
+                    <td
+                        class="text-center @(anomaly["name_email_validity"].ToString() == "1" ? "text-success" : "text-danger")">
+                        @(anomaly["name_email_validity"].ToString() == "1" ? "Godkänt" : "Avvikelse")
+                    </td>
+                    <td
+                        class="text-center @(anomaly["personnummer_gender"].ToString().Contains("Godkänt") ? "text-success" : "text-danger")">
+                        @anomaly["personnummer_gender"]
+                    </td>
+                    <td>@anomaly["predicted_gender"]</td>
+                </tr>
+                        }
             </tbody>
         </table>
     </div>
