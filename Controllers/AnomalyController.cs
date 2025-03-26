@@ -14,7 +14,7 @@ namespace Q_verify_2025.Controllers
         {
             _httpClient = httpClient;
             _uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
-            _flaskUrl = configuration["ApiSettings:FlaskUrl"];
+            _flaskUrl = configuration["ApiSettings:FlaskUrl"] ?? throw new ArgumentNullException("FlaskUrl is not configured in appsettings.json");
 
             if (!Directory.Exists(_uploadPath))
             {
@@ -22,7 +22,7 @@ namespace Q_verify_2025.Controllers
             }
         }
 
-        public IActionResult Index()
+        public IActionResult PersonalData()
         {
             return View();
         }
@@ -33,7 +33,7 @@ namespace Q_verify_2025.Controllers
             if (file == null || file.Length == 0)
             {
                 ViewData["Message"] = "No file selected.";
-                return View("Index");
+                return View("PersonalData");
             }
 
             try
@@ -63,12 +63,11 @@ namespace Q_verify_2025.Controllers
                 ViewData["Message"] = $"Error uploading file: {ex.Message}";
             }
 
-            return View("Index");
+            return View("PersonalData");
         }
 
-
         [HttpPost]
-        public async Task<IActionResult> Analyze()
+        public async Task<IActionResult> AnalyzePersonalData()
         {
             try
             {
@@ -78,7 +77,7 @@ namespace Q_verify_2025.Controllers
                 if (uploadedFiles.Length == 0)
                 {
                     ViewData["Message"] = "No uploaded file found.";
-                    return View("Index");
+                    return View("PersonalData");
                 }
 
                 string uploadedFilePath = uploadedFiles.OrderByDescending(f => new FileInfo(f).LastWriteTime).First();
@@ -134,7 +133,123 @@ namespace Q_verify_2025.Controllers
                 ViewData["Message"] = $"Error analyzing file: {ex.Message}";
             }
 
-            return View("Index");
+            return View("PersonalData");
+        }
+
+        // HÄR BÖRJAR MAXIMO-LOGIK
+
+        public IActionResult MaximoData()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AnalyzeMaximoData()
+        {
+            try
+            {
+                string apiUrl = $"{_flaskUrl}/maximo-data";
+
+                var uploadedFiles = Directory.GetFiles(_uploadPath);
+                if (uploadedFiles.Length == 0)
+                {
+                    ViewData["Message"] = "No uploaded file found.";
+                    return View("MaximoData");
+                }
+
+                string uploadedFilePath = uploadedFiles.OrderByDescending(f => new FileInfo(f).LastWriteTime).First();
+                string uploadedFileName = Path.GetFileName(uploadedFilePath);
+
+
+                var fileInfo = new FileInfo(uploadedFilePath);
+                var fileInfoModel = new FileInfoModel
+                {
+                    FileName = uploadedFileName,
+                    FileSize = Math.Round(fileInfo.Length / 1024.0, 2),  // Storlek i KB
+                    FileFormat = Path.GetExtension(uploadedFileName).ToUpper(),
+                    UploadTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+                };
+
+                ViewData["FileInfo"] = fileInfoModel;
+
+                using (var fileStream = new FileStream(uploadedFilePath, FileMode.Open, FileAccess.Read))
+                using (var content = new MultipartFormDataContent())
+                {
+                    content.Add(new StreamContent(fileStream), "file", uploadedFileName);
+
+                    var response = await _httpClient.PostAsync(apiUrl, content);
+                    var responseString = await response.Content.ReadAsStringAsync();
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var jsonResponse = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseString);
+
+                        if (jsonResponse != null)
+                        {
+                            var anomalies = jsonResponse["anomalies"] as Newtonsoft.Json.Linq.JArray;
+
+                            if (anomalies != null)
+                            {
+                                ViewData["AnalysisResult"] = anomalies;
+                                ViewData["Message"] = "Analysis completed successfully!";
+                            }
+                            else
+                            {
+                                ViewData["Message"] = "No anomalies found.";
+                            }
+                        }
+                    }
+                    else
+                    {
+                        ViewData["Message"] = $"Error during analysis: {responseString}";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewData["Message"] = $"Error analyzing file: {ex.Message}";
+            }
+
+            return View("MaximoData");
+        }
+
+        [HttpPost]
+        public IActionResult UploadMaximoFile(IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+            {
+                ViewData["Message"] = "No file selected.";
+                return View("MaximoData");
+            }
+
+            try
+            {
+                var filePath = Path.Combine(_uploadPath, file.FileName);
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                }
+
+                // Skapa en FileInfoModel och skicka den till vyn
+                var fileInfo = new FileInfo(filePath);
+                var fileInfoModel = new FileInfoModel
+                {
+                    FileName = file.FileName,
+                    FileSize = Math.Round(file.Length / 1024.0, 2),
+                    FileFormat = Path.GetExtension(file.FileName).ToUpper(),
+                    UploadTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+                };
+
+                ViewData["Message"] = $"File '{file.FileName}' uploaded successfully!";
+                ViewData["Uploaded"] = true;
+                ViewData["FileInfo"] = fileInfoModel; // Skicka filinformationen till vyn
+            }
+            catch (Exception ex)
+            {
+                ViewData["Message"] = $"Error uploading file: {ex.Message}";
+            }
+
+            return View("MaximoData");
         }
     }
 }

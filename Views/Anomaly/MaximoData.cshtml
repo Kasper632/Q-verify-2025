@@ -1,0 +1,103 @@
+@{
+    ViewData["Title"] = "Anomaly Detection";
+}
+
+<br>
+<h4>Ladda upp fil för att validera Maximo-data</h4>
+<br>
+
+<form asp-controller="Anomaly" asp-action="UploadMaximoFile" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <input type="file" name="file" class="form-control" accept=".csv,.json" required />
+        <p><em>Följande format stöds: CSV, JSON</em></p>
+    </div>
+    <button type="submit" class="btn btn-primary">Ladda upp</button>
+</form>
+
+@if (ViewData["FileInfo"] is Q_verify_2025.Models.FileInfoModel fileInfoModel)
+{
+    @await Html.PartialAsync("FileInfoPartial", fileInfoModel)
+}
+
+@if (ViewData["Uploaded"] is true)
+{
+    <form asp-controller="Anomaly" asp-action="AnalyzeMaximoData" method="post">
+        <button type="submit" class="btn btn-success mt-3">Analysera</button>
+    </form>
+}
+
+@if (ViewData["AnalysisResult"] is Newtonsoft.Json.Linq.JArray analysisResult)
+{
+    int anomalyCount = 0;
+
+    foreach (var anomaly in analysisResult)
+    {
+        var anomalies = anomaly["anomaly_fields"] as Newtonsoft.Json.Linq.JArray;
+        if (anomalies != null && anomalies.Count > 0)
+        {
+            anomalyCount++;
+        }
+    }
+
+    <h6 class="@(anomalyCount > 0 ? "text-danger bg-light" : "text-success bg-light")">
+        @(anomalyCount > 0 ? "Antal avvikelser: " + anomalyCount : "Inga avvikelser upptäckta!")
+    </h6>
+
+    @if (anomalyCount > 0)
+    {
+        <h4 class="mt-3">Analysresultat</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped mt-3">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Competences</th>
+                        <th>Pmnum</th>
+                        <th>Cxlineroutenr</th>
+                        <th>Location</th>
+                        <th>Description</th>
+                        <th>Errors</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var anomaly in analysisResult)
+                    {
+                        var input = anomaly["input"];
+                        var errorsRaw = anomaly["anomaly_fields"];
+                        var errorList = new List<string>();
+
+                        if (errorsRaw is Newtonsoft.Json.Linq.JArray errorArray)
+                        {
+                            foreach (var err in errorArray)
+                            {
+                                errorList.Add(err.ToString());
+                            }
+                        }
+                        else if (errorsRaw != null)
+                        {
+                            errorList.Add(errorsRaw.ToString());
+                        }
+
+                        if (errorList.Count > 0)
+                        {
+                            <tr>
+                                <td>@input?["competences"]</td>
+                                <td>@input?["pmnum"]</td>
+                                <td>@input?["cxlineroutenr"]</td>
+                                <td>@input?["location"]</td>
+                                <td>@input?["description"]</td>
+                                <td>
+                                    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;">
+                                        @foreach (var error in errorList)
+                                        {
+                                            <li>@error</li>
+                                        }
+                                    </ul>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+}

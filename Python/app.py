@@ -4,7 +4,9 @@ from flask import Flask, request, jsonify
 import json
 import re
 from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
+import torch
 from datetime import datetime
+from datasets import Dataset
 
 app = Flask(__name__)
 
@@ -17,6 +19,9 @@ email_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/fine_t
 
 gender_model = DistilBertForSequenceClassification.from_pretrained("./Python/AI-models/fine_tuned_distilbert_50k_gender")
 gender_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/fine_tuned_distilbert_50k_gender")
+
+maximo_model = DistilBertForSequenceClassification.from_pretrained("./Python/AI-models/maximo_fields")
+maximo_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/maximo_fields")
 
 # Funktion för att extrahera och validera personnummer
 def extract_info(personnummer):
@@ -142,7 +147,7 @@ def process_uploaded_file(file_path):
 
 # Route för att ladda upp filer
 @app.route("/process-file", methods=["POST"])
-def process_file():
+def process_personal_data():
     uploaded_files = [f for f in os.listdir(DATA_DIR) if os.path.isfile(os.path.join(DATA_DIR, f))]
     if not uploaded_files:
         return jsonify({"error": "No uploaded files found."}), 400
@@ -161,6 +166,177 @@ def process_file():
         return jsonify({"error": "Uploaded file is empty."}), 400
     try:
         file_result = process_uploaded_file(latest_file_path)
+    except ValueError as e:
+        return jsonify({"error": str(e)}), 400
+    
+    response = {
+        "message": file_result["message"],
+        "anomalies": file_result["anomalies"]
+    }
+    
+    return jsonify(response)
+
+# ----------------- MAXIMO -----------------
+
+# def process_maximo_data(file_path):
+#     try:
+#         with open(file_path, "r", encoding="utf-8") as f:
+#             data = json.load(f)
+#     except Exception as e:
+#         raise ValueError(f"Error reading file: {e}")
+
+#     if not data:
+#         raise ValueError("Uploaded file is empty.")
+
+#     results = []
+#     for entry in data:
+#         combined_data = f"{entry['competences']} {entry['pmnum']} {entry['cxlineroutenr']} {entry['location']} {entry['description']}"
+#         inputs = maximo_tokenizer([combined_data], padding=True, truncation=True, return_tensors="pt")
+#         outputs = maximo_model(**inputs)
+#         prediction = outputs.logits.argmax(dim=-1).detach().numpy()[0]
+
+#         errors = []
+
+#         # Validering för 'pmnum' och 'description'
+#         if entry['pmnum'][0] != entry['description'][0]:
+#             errors.append(f"pmnum first letter '{entry['pmnum'][0]}' doesn't match description first letter '{entry['description'][0]}'")
+
+#         # Validering för 'location' och 'description'
+#         description_last_word = entry['description'].split()[-1]
+#         if entry['location'] != description_last_word:
+#             errors.append(f"location '{entry['location']}' doesn't match last word of description '{description_last_word}'")
+
+#         # Validering för 'competences' och 'description'
+#         mac = ""
+#         # Leta efter "Maskin" och hämta numret som följer
+#         words = entry['description'].split(" ")
+#         for i, word in enumerate(words):
+#             if "Maskin" in word:
+#                 if i + 1 < len(words):
+#                     mac = words[i + 1]  # Ta ordet efter "Maskin"
+#                 break
+#         expected_competence = ""
+#         if mac == "5":
+#             expected_competence = "EL"
+#         elif mac == "6":
+#             expected_competence = "SIGNAL"
+#         else:
+#             expected_competence = "BANA"
+        
+#         if entry['competences'] != expected_competence:
+#             errors.append(f"competences '{entry['competences']}' doesn't match expected competence for 'Maskin {mac}'")
+
+#         # Validering för 'cxlineroutenr' och 'description'
+#         if entry['cxlineroutenr'] != entry['description'].split(" ")[-2]:  # Assuming number is second-to-last word
+#             errors.append(f"cxlineroutenr '{entry['cxlineroutenr']}' doesn't match number in description '{entry['description'].split()[-2]}'")
+
+#         # Om det finns några fel, lägg till resultatet
+#         if errors:
+#             results.append({
+#                 "competences": entry["competences"],
+#                 "pmnum": entry["pmnum"],
+#                 "cxlineroutenr": entry["cxlineroutenr"],
+#                 "location": entry["location"],
+#                 "description": entry["description"],
+#                 "prediction": int(prediction),
+#                 "errors": errors
+#             })
+
+#     return {
+#         "message": "File processed successfully",
+#         "anomalies": results
+#     }
+
+# Modell och tokenizer
+MODEL_PATH = "Python/AI-models/maximo_fields"
+tokenizer = DistilBertTokenizer.from_pretrained(MODEL_PATH)
+model = DistilBertForSequenceClassification.from_pretrained(MODEL_PATH)
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model.to(device)
+model.eval()
+
+def process_maximo_data(file_path):
+    # 1. Läs in data (JSON eller CSV)
+    if file_path.endswith(".json"):
+        with open(file_path, "r", encoding="utf-8") as f:
+            new_data = json.load(f)
+    elif file_path.endswith(".csv"):
+        df = pd.read_csv(file_path)
+        new_data = df.to_dict(orient="records")
+    else:
+        raise ValueError("Unsupported file format. Must be .json or .csv")
+
+    if not new_data:
+        raise ValueError("Datafilen är tom.")
+
+    # 2. Förbered text för modellinmatning
+    texts = []
+    for entry in new_data:
+        competences = entry.get("competences", "")
+        pmnum = entry.get("pmnum", "")
+        cxlineroutenr = str(entry.get("cxlineroutenr", ""))
+        location = entry.get("location", "")
+        description = entry.get("description", "")
+        combined = f"competences={competences}; pmnum={pmnum}; cxlineroutenr={cxlineroutenr}; location={location}; description={description}"
+        texts.append(combined)
+
+    # 3. Skapa dataset
+    predict_dataset = Dataset.from_dict({"text": texts})
+    tokenized = predict_dataset.map(lambda x: tokenizer(x["text"], padding="max_length", truncation=True), batched=True)
+    tokenized.set_format(type='torch', columns=['input_ids', 'attention_mask'])
+
+    # 4. Prediktion
+    all_preds = []
+    with torch.no_grad():
+        for batch in torch.utils.data.DataLoader(tokenized, batch_size=32):
+            input_ids = batch['input_ids'].to(device)
+            attention_mask = batch['attention_mask'].to(device)
+            outputs = model(input_ids=input_ids, attention_mask=attention_mask)
+            probs = torch.sigmoid(outputs.logits)
+            preds = (probs > 0.02).int().cpu().numpy()
+            all_preds.extend(preds)
+
+    # 5. Strukturera resultat
+    column_names = ["competences", "pmnum", "cxlineroutenr", "location"]
+    results = []
+    for i, entry in enumerate(new_data):
+        pred_fields = all_preds[i].tolist()
+        valid = int(sum(pred_fields) == 0)
+        anomalies = [col for j, col in enumerate(column_names) if pred_fields[j] == 1]
+        results.append({
+            "input": entry,
+            "predicted_fields": pred_fields,
+            "predicted_valid": valid,
+            "anomaly_fields": anomalies
+        })
+
+    # 6. Returnera JSON-liknande objekt
+    return {
+        "message": f"{len(results)} rader processade.",
+        "anomalies": results
+    }
+
+# Route för att hantera maximo-data
+@app.route("/maximo-data", methods=["POST"])
+def process_maximo():
+    uploaded_files = [f for f in os.listdir(DATA_DIR) if os.path.isfile(os.path.join(DATA_DIR, f))]
+    if not uploaded_files:
+        return jsonify({"error": "No uploaded files found."}), 400
+    
+    latest_file = max(uploaded_files, key=lambda f: os.path.getmtime(os.path.join(DATA_DIR, f)))
+    latest_file_path = os.path.join(DATA_DIR, latest_file)
+    file_extension = latest_file.split('.')[-1].lower()
+    
+    if file_extension == "csv":
+        df = pd.read_csv(latest_file_path)
+    elif file_extension == "json":
+        df = pd.read_json(latest_file_path)
+    else:
+        return jsonify({"error": "Unsupported file type. Please upload a CSV or JSON file."}), 400
+    if df.empty:
+        return jsonify({"error": "Uploaded file is empty."}), 400
+    try:
+        file_result = process_maximo_data(latest_file_path)
     except ValueError as e:
         return jsonify({"error": str(e)}), 400
     
