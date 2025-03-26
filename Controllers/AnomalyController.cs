@@ -14,7 +14,7 @@ namespace Q_verify_2025.Controllers
         {
             _httpClient = httpClient;
             _uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
-            _flaskUrl = configuration["ApiSettings:FlaskUrl"];
+            _flaskUrl = configuration["ApiSettings:FlaskUrl"] ?? throw new ArgumentNullException("FlaskUrl is not configured in appsettings.json");
 
             if (!Directory.Exists(_uploadPath))
             {

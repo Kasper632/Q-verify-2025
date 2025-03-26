@@ -14,22 +14,20 @@
     <button type="submit" class="btn btn-primary">Ladda upp</button>
 </form>
 
-@if (ViewData["FileInfo"] != null)
+@if (ViewData["FileInfo"] is Q_verify_2025.Models.FileInfoModel fileInfoModel)
 {
-    var fileInfoModel = (Q_verify_2025.Models.FileInfoModel)ViewData["FileInfo"];
     @await Html.PartialAsync("FileInfoPartial", fileInfoModel)
 }
 
-@if (ViewData["Uploaded"] != null && (bool)ViewData["Uploaded"] == true)
+@if (ViewData["Uploaded"] is true)
 {
     <form asp-controller="Anomaly" asp-action="AnalyzeMaximoData" method="post">
         <button type="submit" class="btn btn-success mt-3">Analysera</button>
     </form>
 }
 
-@if (ViewData["AnalysisResult"] != null)
+@if (ViewData["AnalysisResult"] is Newtonsoft.Json.Linq.JArray analysisResult)
 {
-    var analysisResult = (Newtonsoft.Json.Linq.JArray)ViewData["AnalysisResult"];
     int anomalyCount = 0;
 
     foreach (var anomaly in analysisResult)
@@ -82,11 +80,11 @@
                         if (errorList.Count > 0)
                         {
                             <tr>
-                                <td>@input["competences"]</td>
-                                <td>@input["pmnum"]</td>
-                                <td>@input["cxlineroutenr"]</td>
-                                <td>@input["location"]</td>
-                                <td>@input["description"]</td>
+                                <td>@input?["competences"]</td>
+                                <td>@input?["pmnum"]</td>
+                                <td>@input?["cxlineroutenr"]</td>
+                                <td>@input?["location"]</td>
+                                <td>@input?["description"]</td>
                                 <td>
                                     <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;">
                                         @foreach (var error in errorList)

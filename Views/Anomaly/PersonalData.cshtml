@@ -13,28 +13,29 @@
     <button type="submit" class="btn btn-primary">Ladda upp</button>
 </form>
 
-@if (ViewData["FileInfo"] != null)
+@if (ViewData["FileInfo"] is Q_verify_2025.Models.FileInfoModel fileInfoModel)
 {
-    var fileInfoModel = (Q_verify_2025.Models.FileInfoModel)ViewData["FileInfo"];
     @await Html.PartialAsync("FileInfoPartial", fileInfoModel)
 }
 
-@if (ViewData["Uploaded"] != null && (bool)ViewData["Uploaded"] == true)
+@if (ViewData["Uploaded"] is true)
 {
     <form asp-controller="Anomaly" asp-action="AnalyzePersonalData" method="post">
         <button type="submit" class="btn btn-success mt-3">Analysera</button>
     </form>
 }
 
-@if (ViewData["AnalysisResult"] != null)
+@if (ViewData["AnalysisResult"] is Newtonsoft.Json.Linq.JArray analysisResult)
 {
-    var analysisResult = (Newtonsoft.Json.Linq.JArray)ViewData["AnalysisResult"];
     int anomalyCount = 0;
 
     foreach (var anomaly in analysisResult)
     {
-        bool hasAnomaly = anomaly["name_email_validity"].ToString() != "1" ||
-        !anomaly["personnummer_gender"].ToString().Contains("Godkänt");
+        string? nameEmailValidity = anomaly["name_email_validity"]?.ToString();
+        string? personnummerGender = anomaly["personnummer_gender"]?.ToString();
+
+        bool hasAnomaly = nameEmailValidity != "1" ||
+        !(personnummerGender?.Contains("Godkänt") ?? false);
 
         if (hasAnomaly)
         {
@@ -62,31 +63,36 @@
             <tbody>
                 @foreach (var anomaly in analysisResult)
                 {
-                    bool hasAnomaly = anomaly["name_email_validity"].ToString() != "1" ||
-                    !anomaly["personnummer_gender"].ToString().Contains("Godkänt");
+                    string? name = anomaly["name"]?.ToString();
+                    string? email = anomaly["email"]?.ToString();
+                    string? personnummer = anomaly["personnummer"]?.ToString();
+                    string? nameEmailValidity = anomaly["name_email_validity"]?.ToString();
+                    string? personnummerGender = anomaly["personnummer_gender"]?.ToString();
+                    string? predictedGender = anomaly["predicted_gender"]?.ToString();
+
+                    bool hasAnomaly = nameEmailValidity != "1" ||
+                    !(personnummerGender?.Contains("Godkänt") ?? false);
 
                     <tr>
-                        <td class="@(string.IsNullOrEmpty(anomaly["name"]?.ToString()) ? "text-danger" : "")">
-                            @(string.IsNullOrEmpty(anomaly["name"]?.ToString()) ? "Värde saknas" : anomaly["name"])
+                        <td class="@(string.IsNullOrEmpty(name) ? "text-danger" : "")">
+                            @(string.IsNullOrEmpty(name) ? "Värde saknas" : name)
                         </td>
-                        <td class="@(string.IsNullOrEmpty(anomaly["email"]?.ToString()) ? "text-danger" : "")">
-                            @(string.IsNullOrEmpty(anomaly["email"]?.ToString()) ? "Värde saknas" : anomaly["email"])
+                        <td class="@(string.IsNullOrEmpty(email) ? "text-danger" : "")">
+                            @(string.IsNullOrEmpty(email) ? "Värde saknas" : email)
                         </td>
-                        <td class="@(string.IsNullOrEmpty(anomaly["personnummer"]?.ToString()) ? "text-danger" : "")">
-                            @(string.IsNullOrEmpty(anomaly["personnummer"]?.ToString()) ? "Värde saknas" :
-                                                anomaly["personnummer"])
-                    </td>
-                    <td
-                        class="text-center @(anomaly["name_email_validity"].ToString() == "1" ? "text-success" : "text-danger")">
-                        @(anomaly["name_email_validity"].ToString() == "1" ? "Godkänt" : "Avvikelse")
-                    </td>
-                    <td
-                        class="text-center @(anomaly["personnummer_gender"].ToString().Contains("Godkänt") ? "text-success" : "text-danger")">
-                        @anomaly["personnummer_gender"]
-                    </td>
-                    <td>@anomaly["predicted_gender"]</td>
-                </tr>
-                        }
+                        <td class="@(string.IsNullOrEmpty(personnummer) ? "text-danger" : "")">
+                            @(string.IsNullOrEmpty(personnummer) ? "Värde saknas" : personnummer)
+                        </td>
+                        <td class="text-center @(nameEmailValidity == "1" ? "text-success" : "text-danger")">
+                            @(nameEmailValidity == "1" ? "Godkänt" : "Avvikelse")
+                        </td>
+                        <td
+                            class="text-center @(personnummerGender?.Contains("Godkänt") == true ? "text-success" : "text-danger")">
+                            @personnummerGender
+                        </td>
+                        <td>@predictedGender</td>
+                    </tr>
+                }
             </tbody>
         </table>
     </div>

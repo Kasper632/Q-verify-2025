@@ -293,7 +293,7 @@ def process_maximo_data(file_path):
             attention_mask = batch['attention_mask'].to(device)
             outputs = model(input_ids=input_ids, attention_mask=attention_mask)
             probs = torch.sigmoid(outputs.logits)
-            preds = (probs > 0.5).int().cpu().numpy()
+            preds = (probs > 0.05).int().cpu().numpy()
             all_preds.extend(preds)
 
     # 5. Strukturera resultat
