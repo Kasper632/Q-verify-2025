@@ -247,13 +247,8 @@ def process_personal_data():
 #         "anomalies": results
 #     }
 
-# Modell och tokenizer
-MODEL_PATH = "Python/AI-models/maximo_fields"
-tokenizer = DistilBertTokenizer.from_pretrained(MODEL_PATH)
-model = DistilBertForSequenceClassification.from_pretrained(MODEL_PATH)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model.to(device)
-model.eval()
+maximo_model.to(device)
 
 def process_maximo_data(file_path):
     # 1. Läs in data (JSON eller CSV)
@@ -282,7 +277,7 @@ def process_maximo_data(file_path):
 
     # 3. Skapa dataset
     predict_dataset = Dataset.from_dict({"text": texts})
-    tokenized = predict_dataset.map(lambda x: tokenizer(x["text"], padding="max_length", truncation=True), batched=True)
+    tokenized = predict_dataset.map(lambda x: maximo_tokenizer(x["text"], padding="max_length", truncation=True), batched=True)
     tokenized.set_format(type='torch', columns=['input_ids', 'attention_mask'])
 
     # 4. Prediktion
@@ -291,7 +286,7 @@ def process_maximo_data(file_path):
         for batch in torch.utils.data.DataLoader(tokenized, batch_size=32):
             input_ids = batch['input_ids'].to(device)
             attention_mask = batch['attention_mask'].to(device)
-            outputs = model(input_ids=input_ids, attention_mask=attention_mask)
+            outputs = maximo_model(input_ids=input_ids, attention_mask=attention_mask)
             probs = torch.sigmoid(outputs.logits)
             preds = (probs > 0.02).int().cpu().numpy()
             all_preds.extend(preds)
