@@ -20,8 +20,8 @@ email_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/fine_t
 gender_model = DistilBertForSequenceClassification.from_pretrained("./Python/AI-models/fine_tuned_distilbert_50k_gender")
 gender_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/fine_tuned_distilbert_50k_gender")
 
-maximo_model = DistilBertForSequenceClassification.from_pretrained("./Python/AI-models/maximo_fields")
-maximo_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/maximo_fields")
+maximo_model = DistilBertForSequenceClassification.from_pretrained("./Python/AI-models/maximo_model")
+maximo_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/maximo_model")
 
 # Funktion för att extrahera och validera personnummer
 def extract_info(personnummer):
@@ -175,77 +175,6 @@ def process_personal_data():
     }
     
     return jsonify(response)
-
-# ----------------- MAXIMO -----------------
-
-# def process_maximo_data(file_path):
-#     try:
-#         with open(file_path, "r", encoding="utf-8") as f:
-#             data = json.load(f)
-#     except Exception as e:
-#         raise ValueError(f"Error reading file: {e}")
-
-#     if not data:
-#         raise ValueError("Uploaded file is empty.")
-
-#     results = []
-#     for entry in data:
-#         combined_data = f"{entry['competences']} {entry['pmnum']} {entry['cxlineroutenr']} {entry['location']} {entry['description']}"
-#         inputs = maximo_tokenizer([combined_data], padding=True, truncation=True, return_tensors="pt")
-#         outputs = maximo_model(**inputs)
-#         prediction = outputs.logits.argmax(dim=-1).detach().numpy()[0]
-
-#         errors = []
-
-#         # Validering för 'pmnum' och 'description'
-#         if entry['pmnum'][0] != entry['description'][0]:
-#             errors.append(f"pmnum first letter '{entry['pmnum'][0]}' doesn't match description first letter '{entry['description'][0]}'")
-
-#         # Validering för 'location' och 'description'
-#         description_last_word = entry['description'].split()[-1]
-#         if entry['location'] != description_last_word:
-#             errors.append(f"location '{entry['location']}' doesn't match last word of description '{description_last_word}'")
-
-#         # Validering för 'competences' och 'description'
-#         mac = ""
-#         # Leta efter "Maskin" och hämta numret som följer
-#         words = entry['description'].split(" ")
-#         for i, word in enumerate(words):
-#             if "Maskin" in word:
-#                 if i + 1 < len(words):
-#                     mac = words[i + 1]  # Ta ordet efter "Maskin"
-#                 break
-#         expected_competence = ""
-#         if mac == "5":
-#             expected_competence = "EL"
-#         elif mac == "6":
-#             expected_competence = "SIGNAL"
-#         else:
-#             expected_competence = "BANA"
-        
-#         if entry['competences'] != expected_competence:
-#             errors.append(f"competences '{entry['competences']}' doesn't match expected competence for 'Maskin {mac}'")
-
-#         # Validering för 'cxlineroutenr' och 'description'
-#         if entry['cxlineroutenr'] != entry['description'].split(" ")[-2]:  # Assuming number is second-to-last word
-#             errors.append(f"cxlineroutenr '{entry['cxlineroutenr']}' doesn't match number in description '{entry['description'].split()[-2]}'")
-
-#         # Om det finns några fel, lägg till resultatet
-#         if errors:
-#             results.append({
-#                 "competences": entry["competences"],
-#                 "pmnum": entry["pmnum"],
-#                 "cxlineroutenr": entry["cxlineroutenr"],
-#                 "location": entry["location"],
-#                 "description": entry["description"],
-#                 "prediction": int(prediction),
-#                 "errors": errors
-#             })
-
-#     return {
-#         "message": "File processed successfully",
-#         "anomalies": results
-#     }
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 maximo_model.to(device)
