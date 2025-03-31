@@ -20,8 +20,8 @@ email_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/fine_t
 gender_model = DistilBertForSequenceClassification.from_pretrained("./Python/AI-models/fine_tuned_distilbert_50k_gender")
 gender_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/fine_tuned_distilbert_50k_gender")
 
-maximo_model = DistilBertForSequenceClassification.from_pretrained("./Python/AI-models/maximo_fields")
-maximo_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/maximo_fields")
+maximo_model = DistilBertForSequenceClassification.from_pretrained("./Python/AI-models/maximo_model")
+maximo_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/maximo_model")
 
 # Funktion för att extrahera och validera personnummer
 def extract_info(personnummer):
@@ -176,84 +176,8 @@ def process_personal_data():
     
     return jsonify(response)
 
-# ----------------- MAXIMO -----------------
-
-# def process_maximo_data(file_path):
-#     try:
-#         with open(file_path, "r", encoding="utf-8") as f:
-#             data = json.load(f)
-#     except Exception as e:
-#         raise ValueError(f"Error reading file: {e}")
-
-#     if not data:
-#         raise ValueError("Uploaded file is empty.")
-
-#     results = []
-#     for entry in data:
-#         combined_data = f"{entry['competences']} {entry['pmnum']} {entry['cxlineroutenr']} {entry['location']} {entry['description']}"
-#         inputs = maximo_tokenizer([combined_data], padding=True, truncation=True, return_tensors="pt")
-#         outputs = maximo_model(**inputs)
-#         prediction = outputs.logits.argmax(dim=-1).detach().numpy()[0]
-
-#         errors = []
-
-#         # Validering för 'pmnum' och 'description'
-#         if entry['pmnum'][0] != entry['description'][0]:
-#             errors.append(f"pmnum first letter '{entry['pmnum'][0]}' doesn't match description first letter '{entry['description'][0]}'")
-
-#         # Validering för 'location' och 'description'
-#         description_last_word = entry['description'].split()[-1]
-#         if entry['location'] != description_last_word:
-#             errors.append(f"location '{entry['location']}' doesn't match last word of description '{description_last_word}'")
-
-#         # Validering för 'competences' och 'description'
-#         mac = ""
-#         # Leta efter "Maskin" och hämta numret som följer
-#         words = entry['description'].split(" ")
-#         for i, word in enumerate(words):
-#             if "Maskin" in word:
-#                 if i + 1 < len(words):
-#                     mac = words[i + 1]  # Ta ordet efter "Maskin"
-#                 break
-#         expected_competence = ""
-#         if mac == "5":
-#             expected_competence = "EL"
-#         elif mac == "6":
-#             expected_competence = "SIGNAL"
-#         else:
-#             expected_competence = "BANA"
-        
-#         if entry['competences'] != expected_competence:
-#             errors.append(f"competences '{entry['competences']}' doesn't match expected competence for 'Maskin {mac}'")
-
-#         # Validering för 'cxlineroutenr' och 'description'
-#         if entry['cxlineroutenr'] != entry['description'].split(" ")[-2]:  # Assuming number is second-to-last word
-#             errors.append(f"cxlineroutenr '{entry['cxlineroutenr']}' doesn't match number in description '{entry['description'].split()[-2]}'")
-
-#         # Om det finns några fel, lägg till resultatet
-#         if errors:
-#             results.append({
-#                 "competences": entry["competences"],
-#                 "pmnum": entry["pmnum"],
-#                 "cxlineroutenr": entry["cxlineroutenr"],
-#                 "location": entry["location"],
-#                 "description": entry["description"],
-#                 "prediction": int(prediction),
-#                 "errors": errors
-#             })
-
-#     return {
-#         "message": "File processed successfully",
-#         "anomalies": results
-#     }
-
-# Modell och tokenizer
-MODEL_PATH = "Python/AI-models/maximo_fields"
-tokenizer = DistilBertTokenizer.from_pretrained(MODEL_PATH)
-model = DistilBertForSequenceClassification.from_pretrained(MODEL_PATH)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model.to(device)
-model.eval()
+maximo_model.to(device)
 
 def process_maximo_data(file_path):
     # 1. Läs in data (JSON eller CSV)
@@ -282,7 +206,7 @@ def process_maximo_data(file_path):
 
     # 3. Skapa dataset
     predict_dataset = Dataset.from_dict({"text": texts})
-    tokenized = predict_dataset.map(lambda x: tokenizer(x["text"], padding="max_length", truncation=True), batched=True)
+    tokenized = predict_dataset.map(lambda x: maximo_tokenizer(x["text"], padding="max_length", truncation=True), batched=True)
     tokenized.set_format(type='torch', columns=['input_ids', 'attention_mask'])
 
     # 4. Prediktion
@@ -291,7 +215,7 @@ def process_maximo_data(file_path):
         for batch in torch.utils.data.DataLoader(tokenized, batch_size=32):
             input_ids = batch['input_ids'].to(device)
             attention_mask = batch['attention_mask'].to(device)
-            outputs = model(input_ids=input_ids, attention_mask=attention_mask)
+            outputs = maximo_model(input_ids=input_ids, attention_mask=attention_mask)
             probs = torch.sigmoid(outputs.logits)
             preds = (probs > 0.02).int().cpu().numpy()
             all_preds.extend(preds)
