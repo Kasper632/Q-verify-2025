@@ -146,7 +146,7 @@ def process_uploaded_file(file_path):
     }
 
 # Route för att ladda upp filer
-@app.route("/process-file", methods=["POST"])
+@app.route("/analyze-personal-data", methods=["POST"])
 def process_personal_data():
     uploaded_files = [f for f in os.listdir(DATA_DIR) if os.path.isfile(os.path.join(DATA_DIR, f))]
     if not uploaded_files:
@@ -241,7 +241,7 @@ def process_maximo_data(file_path):
     }
 
 # Route för att hantera maximo-data
-@app.route("/maximo-data", methods=["POST"])
+@app.route("/analyze-maximo-data", methods=["POST"])
 def process_maximo():
     uploaded_files = [f for f in os.listdir(DATA_DIR) if os.path.isfile(os.path.join(DATA_DIR, f))]
     if not uploaded_files:
