@@ -8,6 +8,7 @@
 <form asp-controller="Anomaly" asp-action="UploadFile" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <input type="file" name="file" class="form-control" accept=".csv,.json" required />
+        <input type="hidden" name="view" value="PersonalData" />
         <p><em>Följande format stöds: CSV, JSON</em></p>
     </div>
     <button type="submit" class="btn btn-primary">Ladda upp</button>
@@ -20,7 +21,9 @@
 
 @if (ViewData["Uploaded"] is true)
 {
-    <form asp-controller="Anomaly" asp-action="AnalyzePersonalData" method="post">
+    <form asp-controller="Anomaly" asp-action="Analyze" method="post">
+        <input type="hidden" name="view" value="PersonalData" />
+        <input type="hidden" name="route" value="analyze-personal-data" />
         <button type="submit" class="btn btn-success mt-3">Analysera</button>
     </form>
 }

@@ -6,9 +6,10 @@
 <h4>Ladda upp fil för att validera Maximo-data</h4>
 <br>
 
-<form asp-controller="Anomaly" asp-action="UploadMaximoFile" method="post" enctype="multipart/form-data">
+<form asp-controller="Anomaly" asp-action="UploadFile" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <input type="file" name="file" class="form-control" accept=".csv,.json" required />
+        <input type="hidden" name="view" value="MaximoData" />
         <p><em>Följande format stöds: CSV, JSON</em></p>
     </div>
     <button type="submit" class="btn btn-primary">Ladda upp</button>
@@ -21,7 +22,9 @@
 
 @if (ViewData["Uploaded"] is true)
 {
-    <form asp-controller="Anomaly" asp-action="AnalyzeMaximoData" method="post">
+    <form asp-controller="Anomaly" asp-action="Analyze" method="post">
+        <input type="hidden" name="view" value="MaximoData" />
+        <input type="hidden" name="route" value="analyze-maximo-data" />
         <button type="submit" class="btn btn-success mt-3">Analysera</button>
     </form>
 }
