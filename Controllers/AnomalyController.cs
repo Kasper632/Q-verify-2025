@@ -11,11 +11,14 @@ namespace Q_verify_2025.Controllers
         private readonly string _uploadPath;
         private readonly string _flaskUrl;
 
-        public AnomalyController(HttpClient httpClient, IConfiguration configuration)
+        private readonly ApplicationDbContext _db;
+
+        public AnomalyController(HttpClient httpClient, IConfiguration configuration, ApplicationDbContext db)
         {
             _httpClient = httpClient;
             _uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
             _flaskUrl = configuration["ApiUrl:FlaskUrl"] ?? throw new ArgumentNullException("FlaskUrl is not configured in appsettings.json");
+            _db = db;
 
             if (!Directory.Exists(_uploadPath))
             {
@@ -113,6 +116,56 @@ namespace Q_verify_2025.Controllers
                             {
                                 ViewData["AnalysisResult"] = anomalies;
                                 ViewData["Message"] = "Analysis completed successfully!";
+
+                                var errorEntities = new List<ErrorModel>();
+                                var correctEntities = new List<CorrectModel>();
+
+                                foreach (var anomaly in anomalies)
+                                {
+                                    var anomalyFields = anomaly["anomaly_fields"] as Newtonsoft.Json.Linq.JArray;
+                                    var input = anomaly["input"];
+
+                                    if (anomalyFields != null && anomalyFields.Count > 0)
+                                    {
+                                        errorEntities.Add(new ErrorModel
+                                        {
+                                            Competences = input["competences"]?.ToString(),
+                                            Pmnum = input["pmnum"]?.ToString(),
+                                            Cxlineroutenr = input["cxlineroutenr"]?.ToString(),
+                                            Location = input["location"]?.ToString(),
+                                            Description = input["description"]?.ToString(),
+                                            AnomalyFields = string.Join(", ", anomalyFields.Select(f => f.ToString())),
+                                            UploadTime = DateTime.Now
+                                        });
+                                    }
+                                    else
+                                    {
+                                        correctEntities.Add(new CorrectModel
+                                        {
+                                            Competences = input["competences"]?.ToString(),
+                                            Pmnum = input["pmnum"]?.ToString(),
+                                            Cxlineroutenr = input["cxlineroutenr"]?.ToString(),
+                                            Location = input["location"]?.ToString(),
+                                            Description = input["description"]?.ToString(),
+                                            UploadTime = DateTime.Now
+                                        });
+                                    }
+                                }
+
+                                if (errorEntities.Count > 0)
+                                {
+                                    _db.Errors.AddRange(errorEntities);
+                                }
+
+                                if (correctEntities.Count > 0)
+                                {
+                                    _db.Corrects.AddRange(correctEntities);
+                                }
+
+                                if (errorEntities.Count > 0 || correctEntities.Count > 0)
+                                {
+                                    await _db.SaveChangesAsync();
+                                }
                             }
                             else
                             {
@@ -132,6 +185,76 @@ namespace Q_verify_2025.Controllers
             }
 
             return View(view);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AnalyzePersonalData()
+        {
+            try
+            {
+                string apiUrl = $"{_flaskUrl}/process-file";
+
+                var uploadedFiles = Directory.GetFiles(_uploadPath);
+                if (uploadedFiles.Length == 0)
+                {
+                    ViewData["Message"] = "No uploaded file found.";
+                    return View("PersonalData");
+                }
+
+                string uploadedFilePath = uploadedFiles.OrderByDescending(f => new FileInfo(f).LastWriteTime).First();
+                string uploadedFileName = Path.GetFileName(uploadedFilePath);
+
+
+                var fileInfo = new FileInfo(uploadedFilePath);
+                var fileInfoModel = new FileInfoModel
+                {
+                    FileName = uploadedFileName,
+                    FileSize = Math.Round(fileInfo.Length / 1024.0, 2),  // Storlek i KB
+                    FileFormat = Path.GetExtension(uploadedFileName).ToUpper(),
+                    UploadTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+                };
+
+                ViewData["FileInfo"] = fileInfoModel;
+
+                using (var fileStream = new FileStream(uploadedFilePath, FileMode.Open, FileAccess.Read))
+                using (var content = new MultipartFormDataContent())
+                {
+                    content.Add(new StreamContent(fileStream), "file", uploadedFileName);
+
+                    var response = await _httpClient.PostAsync(apiUrl, content);
+                    var responseString = await response.Content.ReadAsStringAsync();
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var jsonResponse = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseString);
+
+                        if (jsonResponse != null)
+                        {
+                            var anomalies = jsonResponse["anomalies"] as Newtonsoft.Json.Linq.JArray;
+
+                            if (anomalies != null)
+                            {
+                                ViewData["AnalysisResult"] = anomalies;
+                                ViewData["Message"] = "Analysis completed successfully!";
+                            }
+                            else
+                            {
+                                ViewData["Message"] = "No anomalies found.";
+                            }
+                        }
+                    }
+                    else
+                    {
+                        ViewData["Message"] = $"Error during analysis: {responseString}";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewData["Message"] = $"Error analyzing file: {ex.Message}";
+            }
+
+            return View("PersonalData");
         }
     }
 }
