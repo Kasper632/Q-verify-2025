@@ -69,122 +69,192 @@ namespace Q_verify_2025.Controllers
         }
 
         [HttpPost]
-public async Task<IActionResult> Analyze(string view, string route)
-{
-    try
-    {
-        string apiUrl = $"{_flaskUrl}/{route}";
-
-        var uploadedFiles = Directory.GetFiles(_uploadPath);
-        if (uploadedFiles.Length == 0)
+        public async Task<IActionResult> Analyze(string view, string route)
         {
-            ViewData["Message"] = "No uploaded file found.";
-            return View(view);
-        }
-
-        string uploadedFilePath = uploadedFiles.OrderByDescending(f => new FileInfo(f).LastWriteTime).First();
-        string uploadedFileName = Path.GetFileName(uploadedFilePath);
-
-        var fileInfo = new FileInfo(uploadedFilePath);
-        var fileInfoModel = new FileInfoModel
-        {
-            FileName = uploadedFileName,
-            FileSize = Math.Round(fileInfo.Length / 1024.0, 2),
-            FileFormat = Path.GetExtension(uploadedFileName).ToUpper(),
-            UploadTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
-        };
-
-        ViewData["FileInfo"] = fileInfoModel;
-
-        using (var fileStream = new FileStream(uploadedFilePath, FileMode.Open, FileAccess.Read))
-        using (var content = new MultipartFormDataContent())
-        {
-            content.Add(new StreamContent(fileStream), "file", uploadedFileName);
-
-            var response = await _httpClient.PostAsync(apiUrl, content);
-            var responseString = await response.Content.ReadAsStringAsync();
-
-            if (response.IsSuccessStatusCode)
+            try
             {
-                var jsonResponse = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseString);
+                string apiUrl = $"{_flaskUrl}/{route}";
 
-                if (jsonResponse != null)
+                var uploadedFiles = Directory.GetFiles(_uploadPath);
+                if (uploadedFiles.Length == 0)
                 {
-                    var anomalies = jsonResponse["anomalies"] as Newtonsoft.Json.Linq.JArray;
+                    ViewData["Message"] = "No uploaded file found.";
+                    return View(view);
+                }
 
-                    if (anomalies != null)
+                string uploadedFilePath = uploadedFiles.OrderByDescending(f => new FileInfo(f).LastWriteTime).First();
+                string uploadedFileName = Path.GetFileName(uploadedFilePath);
+
+                var fileInfo = new FileInfo(uploadedFilePath);
+                var fileInfoModel = new FileInfoModel
+                {
+                    FileName = uploadedFileName,
+                    FileSize = Math.Round(fileInfo.Length / 1024.0, 2),
+                    FileFormat = Path.GetExtension(uploadedFileName).ToUpper(),
+                    UploadTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+                };
+
+                ViewData["FileInfo"] = fileInfoModel;
+
+                using (var fileStream = new FileStream(uploadedFilePath, FileMode.Open, FileAccess.Read))
+                using (var content = new MultipartFormDataContent())
+                {
+                    content.Add(new StreamContent(fileStream), "file", uploadedFileName);
+
+                    var response = await _httpClient.PostAsync(apiUrl, content);
+                    var responseString = await response.Content.ReadAsStringAsync();
+
+                    if (response.IsSuccessStatusCode)
                     {
-                        ViewData["AnalysisResult"] = anomalies;
-                        ViewData["Message"] = "Analysis completed successfully!";
+                        var jsonResponse = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseString);
 
-                        var errorEntities = new List<ErrorModel>();
-                        var correctEntities = new List<CorrectModel>();
-
-                        foreach (var anomaly in anomalies)
+                        if (jsonResponse != null)
                         {
-                            var anomalyFields = anomaly["anomaly_fields"] as Newtonsoft.Json.Linq.JArray;
-                            var input = anomaly["input"];
+                            var anomalies = jsonResponse["anomalies"] as Newtonsoft.Json.Linq.JArray;
 
-                            if (anomalyFields != null && anomalyFields.Count > 0)
+                            if (anomalies != null)
                             {
-                                errorEntities.Add(new ErrorModel
+                                ViewData["AnalysisResult"] = anomalies;
+                                ViewData["Message"] = "Analysis completed successfully!";
+
+                                var errorEntities = new List<ErrorModel>();
+                                var correctEntities = new List<CorrectModel>();
+
+                                foreach (var anomaly in anomalies)
                                 {
-                                    Competences = input["competences"]?.ToString(),
-                                    Pmnum = input["pmnum"]?.ToString(),
-                                    Cxlineroutenr = input["cxlineroutenr"]?.ToString(),
-                                    Location = input["location"]?.ToString(),
-                                    Description = input["description"]?.ToString(),
-                                    AnomalyFields = string.Join(", ", anomalyFields.Select(f => f.ToString())),
-                                    UploadTime = DateTime.Now
-                                });
+                                    var anomalyFields = anomaly["anomaly_fields"] as Newtonsoft.Json.Linq.JArray;
+                                    var input = anomaly["input"];
+
+                                    if (anomalyFields != null && anomalyFields.Count > 0)
+                                    {
+                                        errorEntities.Add(new ErrorModel
+                                        {
+                                            Competences = input["competences"]?.ToString(),
+                                            Pmnum = input["pmnum"]?.ToString(),
+                                            Cxlineroutenr = input["cxlineroutenr"]?.ToString(),
+                                            Location = input["location"]?.ToString(),
+                                            Description = input["description"]?.ToString(),
+                                            AnomalyFields = string.Join(", ", anomalyFields.Select(f => f.ToString())),
+                                            UploadTime = DateTime.Now
+                                        });
+                                    }
+                                    else
+                                    {
+                                        correctEntities.Add(new CorrectModel
+                                        {
+                                            Competences = input["competences"]?.ToString(),
+                                            Pmnum = input["pmnum"]?.ToString(),
+                                            Cxlineroutenr = input["cxlineroutenr"]?.ToString(),
+                                            Location = input["location"]?.ToString(),
+                                            Description = input["description"]?.ToString(),
+                                            UploadTime = DateTime.Now
+                                        });
+                                    }
+                                }
+
+                                if (errorEntities.Count > 0)
+                                {
+                                    _db.Errors.AddRange(errorEntities);
+                                }
+
+                                if (correctEntities.Count > 0)
+                                {
+                                    _db.Corrects.AddRange(correctEntities);
+                                }
+
+                                if (errorEntities.Count > 0 || correctEntities.Count > 0)
+                                {
+                                    await _db.SaveChangesAsync();
+                                }
                             }
                             else
                             {
-                                correctEntities.Add(new CorrectModel
-                                {
-                                    Competences = input["competences"]?.ToString(),
-                                    Pmnum = input["pmnum"]?.ToString(),
-                                    Cxlineroutenr = input["cxlineroutenr"]?.ToString(),
-                                    Location = input["location"]?.ToString(),
-                                    Description = input["description"]?.ToString(),
-                                    UploadTime = DateTime.Now
-                                });
+                                ViewData["Message"] = "No anomalies found.";
                             }
-                        }
-
-                        if (errorEntities.Count > 0)
-                        {
-                            _db.Errors.AddRange(errorEntities);
-                        }
-
-                        if (correctEntities.Count > 0)
-                        {
-                            _db.Corrects.AddRange(correctEntities);
-                        }
-
-                        if (errorEntities.Count > 0 || correctEntities.Count > 0)
-                        {
-                            await _db.SaveChangesAsync();
                         }
                     }
                     else
                     {
-                        ViewData["Message"] = "No anomalies found.";
+                        ViewData["Message"] = $"Error during analysis: {responseString}";
                     }
                 }
             }
-            else
+            catch (Exception ex)
             {
-                ViewData["Message"] = $"Error during analysis: {responseString}";
+                ViewData["Message"] = $"Error analyzing file: {ex.Message}";
             }
-        }
-    }
-    catch (Exception ex)
-    {
-        ViewData["Message"] = $"Error analyzing file: {ex.Message}";
-    }
 
-    return View(view);
-}
+            return View(view);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AnalyzePersonalData()
+        {
+            try
+            {
+                string apiUrl = $"{_flaskUrl}/process-file";
+
+                var uploadedFiles = Directory.GetFiles(_uploadPath);
+                if (uploadedFiles.Length == 0)
+                {
+                    ViewData["Message"] = "No uploaded file found.";
+                    return View("PersonalData");
+                }
+
+                string uploadedFilePath = uploadedFiles.OrderByDescending(f => new FileInfo(f).LastWriteTime).First();
+                string uploadedFileName = Path.GetFileName(uploadedFilePath);
+
+
+                var fileInfo = new FileInfo(uploadedFilePath);
+                var fileInfoModel = new FileInfoModel
+                {
+                    FileName = uploadedFileName,
+                    FileSize = Math.Round(fileInfo.Length / 1024.0, 2),  // Storlek i KB
+                    FileFormat = Path.GetExtension(uploadedFileName).ToUpper(),
+                    UploadTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+                };
+
+                ViewData["FileInfo"] = fileInfoModel;
+
+                using (var fileStream = new FileStream(uploadedFilePath, FileMode.Open, FileAccess.Read))
+                using (var content = new MultipartFormDataContent())
+                {
+                    content.Add(new StreamContent(fileStream), "file", uploadedFileName);
+
+                    var response = await _httpClient.PostAsync(apiUrl, content);
+                    var responseString = await response.Content.ReadAsStringAsync();
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var jsonResponse = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseString);
+
+                        if (jsonResponse != null)
+                        {
+                            var anomalies = jsonResponse["anomalies"] as Newtonsoft.Json.Linq.JArray;
+
+                            if (anomalies != null)
+                            {
+                                ViewData["AnalysisResult"] = anomalies;
+                                ViewData["Message"] = "Analysis completed successfully!";
+                            }
+                            else
+                            {
+                                ViewData["Message"] = "No anomalies found.";
+                            }
+                        }
+                    }
+                    else
+                    {
+                        ViewData["Message"] = $"Error during analysis: {responseString}";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewData["Message"] = $"Error analyzing file: {ex.Message}";
+            }
+
+            return View("PersonalData");
+        }
     }
 }
