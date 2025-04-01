@@ -205,7 +205,7 @@ namespace Q_verify_2025.Controllers
         {
             try
             {
-                string apiUrl = $"{_flaskUrl}/process-file";
+                string apiUrl = $"{_flaskUrl}/analyze-personal-data";
 
                 var uploadedFiles = Directory.GetFiles(_uploadPath);
                 if (uploadedFiles.Length == 0)
