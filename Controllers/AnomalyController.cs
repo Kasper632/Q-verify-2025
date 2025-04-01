@@ -118,13 +118,15 @@ public async Task<IActionResult> Analyze(string view, string route)
                         ViewData["Message"] = "Analysis completed successfully!";
 
                         var errorEntities = new List<ErrorModel>();
+                        var correctEntities = new List<CorrectModel>();
 
                         foreach (var anomaly in anomalies)
                         {
                             var anomalyFields = anomaly["anomaly_fields"] as Newtonsoft.Json.Linq.JArray;
+                            var input = anomaly["input"];
+
                             if (anomalyFields != null && anomalyFields.Count > 0)
                             {
-                                var input = anomaly["input"];
                                 errorEntities.Add(new ErrorModel
                                 {
                                     Competences = input["competences"]?.ToString(),
@@ -136,11 +138,32 @@ public async Task<IActionResult> Analyze(string view, string route)
                                     UploadTime = DateTime.Now
                                 });
                             }
+                            else
+                            {
+                                correctEntities.Add(new CorrectModel
+                                {
+                                    Competences = input["competences"]?.ToString(),
+                                    Pmnum = input["pmnum"]?.ToString(),
+                                    Cxlineroutenr = input["cxlineroutenr"]?.ToString(),
+                                    Location = input["location"]?.ToString(),
+                                    Description = input["description"]?.ToString(),
+                                    UploadTime = DateTime.Now
+                                });
+                            }
                         }
 
                         if (errorEntities.Count > 0)
                         {
                             _db.Errors.AddRange(errorEntities);
+                        }
+
+                        if (correctEntities.Count > 0)
+                        {
+                            _db.Corrects.AddRange(correctEntities);
+                        }
+
+                        if (errorEntities.Count > 0 || correctEntities.Count > 0)
+                        {
                             await _db.SaveChangesAsync();
                         }
                     }

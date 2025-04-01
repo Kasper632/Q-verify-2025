@@ -9,5 +9,6 @@ namespace Q_verify_2025.Controllers
             : base(options) { }
 
         public DbSet<ErrorModel> Errors { get; set; }
+        public DbSet<CorrectModel> Corrects { get; set; }
     }
 }
