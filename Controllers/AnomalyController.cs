@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
 using Newtonsoft.Json;
 using Q_verify_2025.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Q_verify_2025.Controllers
 {
@@ -29,6 +30,18 @@ namespace Q_verify_2025.Controllers
         public IActionResult PersonalData() => View();
 
         public IActionResult MaximoData() => View();
+
+        public async Task<IActionResult> MaximoDatabase()
+        {
+            var result = await GetAllMaximoDataAsync();
+            return View(result);
+        }
+
+        public async Task<List<MaximoDataModel>> GetAllMaximoDataAsync()
+        {
+            var result = await _db.maximo_data.ToListAsync();
+            return result;
+        }
 
         [HttpPost]
         public IActionResult UploadFile(IFormFile file, string view)

@@ -10,5 +10,6 @@ namespace Q_verify_2025.Controllers
 
         public DbSet<ErrorModel> Errors { get; set; }
         public DbSet<CorrectModel> Corrects { get; set; }
+        public DbSet<MaximoDataModel> maximo_data { get; set; }
     }
 }

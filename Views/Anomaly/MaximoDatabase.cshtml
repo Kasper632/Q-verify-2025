@@ -1,7 +1,33 @@
+@model List<MaximoDataModel>
 @{
     ViewData["Title"] = "Maximo Database";
 }
 
 <br>
-<h4>yes</h4>
+<h4>Realtidsövervakning av databas</h4>
 <br>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Competences</th>
+            <th>Pmnum</th>
+            <th>Cxlineroutenr</th>
+            <th>Location</th>
+            <th>Description</th>
+            <th>Errors</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Competences</td>
+                <td>@item.Pmnum</td>
+                <td>@item.Cxlineroutenr</td>
+                <td>@item.Location</td>
+                <td>@item.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
