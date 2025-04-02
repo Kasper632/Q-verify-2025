@@ -36,40 +36,34 @@ namespace Q_verify_2025.Controllers
             var result = await GetAllMaximoDataAsync();
             return View(result);
         }
-        public async Task<List<MaximoDataModel>> GetAllMaximoDataAsync()
-        {
-        var correctResults = await _db.Corrects
-        
-        .Select(c => new MaximoDataModel
-        {
-            Id = c.Id,
-            Competences = c.Competences,
-            Pmnum = c.Pmnum,
-            Cxlineroutenr = c.Cxlineroutenr,
-            Location = c.Location,
-            Description = c.Description,
-            Status = c.Status // Lägg till en statusindikator
-        })
-        .ToListAsync();
 
-         var errorResults = await _db.Errors
-        .Select(e => new MaximoDataModel
+        public async Task<MaximoDataResult> GetAllMaximoDataAsync()
         {
-            Id = e.Id,
-            Competences = e.Competences,
-            Pmnum = e.Pmnum,
-            Cxlineroutenr = e.Cxlineroutenr,
-            Location = e.Location,
-            Description = e.Description,
-            Status = e.Status // Lägg till en statusindikator
-        })
-        .ToListAsync();
+            return new MaximoDataResult
+            {
+                Corrects = await _db.Corrects.Select(c => new CorrectModel
+                {
+                    Id = c.Id,
+                    Competences = c.Competences,
+                    Pmnum = c.Pmnum,
+                    Cxlineroutenr = c.Cxlineroutenr,
+                    Location = c.Location,
+                    Description = c.Description,
+                    Status = c.Status
+                }).ToListAsync(),
 
-    // Slå samman listorna
-    var combinedResults = correctResults.Concat(errorResults).ToList();
-
-    return combinedResults;
-    }
+                Errors = await _db.Errors.Select(e => new ErrorModel
+                {
+                    Id = e.Id,
+                    Competences = e.Competences,
+                    Pmnum = e.Pmnum,
+                    Cxlineroutenr = e.Cxlineroutenr,
+                    Location = e.Location,
+                    Description = e.Description,
+                    Status = e.Status
+                }).ToListAsync()
+            };
+        }
 
         [HttpPost]
         public IActionResult UploadFile(IFormFile file, string view)
@@ -300,34 +294,73 @@ namespace Q_verify_2025.Controllers
             return View("PersonalData");
         }
 
-    public async Task<IActionResult> ToggleStatus(int id)
-{
-    // Kolla först om objektet finns i Errors-tabellen
-    var errorItem = await _db.Errors.FindAsync(id);
-    if (errorItem != null)
-    {
-        // Flytta från Errors till Corrects
-        var correctItem = new CorrectModel
+        // public async Task<IActionResult> ToggleStatus(int id)
+        // {
+        //     // Kolla först om objektet finns i Errors-tabellen
+        //     var errorItem = await _db.Errors.FindAsync(id);
+        //     if (errorItem != null)
+        //     {
+        //         // Flytta från Errors till Corrects
+        //         var correctItem = new CorrectModel
+        //         {
+        //             Competences = errorItem.Competences,
+        //             Pmnum = errorItem.Pmnum,
+        //             Cxlineroutenr = errorItem.Cxlineroutenr,
+        //             Location = errorItem.Location,
+        //             Description = errorItem.Description,
+        //             Status = true, // Sätt status till true för korrekt
+        //         };
+
+        //         _db.Errors.Remove(errorItem);
+        //         _db.Corrects.Add(correctItem);
+        //         await _db.SaveChangesAsync();
+
+        //         return RedirectToAction("MaximoDatabase");
+        //     }
+
+        //     return RedirectToAction("MaximoDatabase");
+        // }
+
+        public async Task<IActionResult> Delete(int id, string table)
         {
-            Competences = errorItem.Competences,
-            Pmnum = errorItem.Pmnum,
-            Cxlineroutenr = errorItem.Cxlineroutenr,
-            Location = errorItem.Location,
-            Description = errorItem.Description,
-            Status = true, // Sätt status till true för korrekt
-        };
+            if (table.Equals("corrects"))
+            {
+                var correctItem = await _db.Corrects.FindAsync(id);
 
-        _db.Errors.Remove(errorItem);
-        _db.Corrects.Add(correctItem);
-        await _db.SaveChangesAsync();
+                if (correctItem != null) _db.Corrects.Remove(correctItem);
 
-        return RedirectToAction("MaximoDatabase");
-}
+            }
+            else
+            {
+                var errorItem = await _db.Errors.FindAsync(id);
+                if (errorItem != null) _db.Errors.Remove(errorItem);
 
-    return RedirectToAction("MaximoDatabase");
+            }
 
-}
+            await _db.SaveChangesAsync();
 
-}
+            return RedirectToAction("MaximoDatabase");
+        }
 
+        public async Task<IActionResult> Edit(int id, string competences, string pmnum, string cxlineroutenr, string location, string description)
+        {
+            var item = await _db.Errors.FindAsync(id);
+            if (item != null) _db.Errors.Remove(item);
+
+            var newMaximomodel = new MaximoDataModel
+            {
+                Competences = competences,
+                Pmnum = pmnum,
+                Cxlineroutenr = cxlineroutenr,
+                Location = location,
+                Description = description
+            };
+
+            _db.maximo_data.Add(newMaximomodel);
+
+            await _db.SaveChangesAsync();
+
+            return RedirectToAction("MaximoDatabase");
+        }
+    }
 }

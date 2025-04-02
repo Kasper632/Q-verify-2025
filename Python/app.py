@@ -7,6 +7,7 @@ from transformers import DistilBertTokenizer, DistilBertForSequenceClassificatio
 import torch
 from datetime import datetime
 from datasets import Dataset
+import pyodbc
  
 app = Flask(__name__)
 
@@ -22,6 +23,9 @@ gender_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/fine_
 
 maximo_model = DistilBertForSequenceClassification.from_pretrained("./Python/AI-models/maximo_model")
 maximo_tokenizer = DistilBertTokenizer.from_pretrained("./Python/AI-models/maximo_model")
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+maximo_model.to(device)
 
 # Funktion för att extrahera och validera personnummer
 def extract_info(personnummer):
@@ -176,9 +180,6 @@ def process_personal_data():
     
     return jsonify(response)
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-maximo_model.to(device)
-
 def process_maximo_data(file_path):
     # 1. Läs in data (JSON eller CSV)
     if file_path.endswith(".json"):
@@ -270,6 +271,62 @@ def process_maximo():
     }
     
     return jsonify(response)
+
+@app.route("/analyze-maximo-from-db", methods=["POST"])
+def analyze_maximo_from_db():
+    try:
+        new_data = request.get_json()
+        if not new_data:
+            return jsonify({"error": "Ingen data mottagen."}), 400
+
+        # Samma logik som process_maximo_data men utan fil
+        texts = []
+        for entry in new_data:
+            competences = entry.get("competences") or entry.get("Competences") or ""
+            pmnum = entry.get("Pmnum", "")
+            cxlineroutenr = str(entry.get("Cxlineroutenr", ""))
+            location = entry.get("Location", "")
+            description = entry.get("Description", "")
+            combined = f"competences={competences}; pmnum={pmnum}; cxlineroutenr={cxlineroutenr}; location={location}; description={description}"
+            texts.append(combined)
+
+        predict_dataset = Dataset.from_dict({"text": texts})
+        tokenized = predict_dataset.map(
+            lambda x: maximo_tokenizer(x["text"], padding="max_length", truncation=True),
+            batched=True
+        )
+        tokenized.set_format(type='torch', columns=['input_ids', 'attention_mask'])
+
+        all_preds = []
+        with torch.no_grad():
+            for batch in torch.utils.data.DataLoader(tokenized, batch_size=32):
+                input_ids = batch['input_ids'].to(device)
+                attention_mask = batch['attention_mask'].to(device)
+                outputs = maximo_model(input_ids=input_ids, attention_mask=attention_mask)
+                probs = torch.sigmoid(outputs.logits)
+                preds = (probs > 0.02).int().cpu().numpy()
+                all_preds.extend(preds)
+
+        column_names = ["competences", "pmnum", "cxlineroutenr", "location"]
+        results = []
+        for i, entry in enumerate(new_data):
+            pred_fields = all_preds[i].tolist()
+            valid = int(sum(pred_fields) == 0)
+            anomalies = [col for j, col in enumerate(column_names) if pred_fields[j] == 1]
+            results.append({
+                "input": entry,
+                "predicted_fields": pred_fields,
+                "predicted_valid": valid,
+                "anomaly_fields": anomalies
+            })
+
+        return jsonify({
+            "message": f"{len(results)} rader analyserade frÃ¥n databasen.",
+            "anomalies": results
+        })
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000, debug=True)

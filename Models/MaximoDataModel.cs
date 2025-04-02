@@ -9,5 +9,4 @@ public class MaximoDataModel
     public string? Cxlineroutenr { get; set; }
     public string? Location { get; set; }
     public string? Description { get; set; }
-    public bool? Status { get; set; } // true for correct, false for error
 }
