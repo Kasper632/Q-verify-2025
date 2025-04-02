@@ -36,12 +36,39 @@ namespace Q_verify_2025.Controllers
             var result = await GetAllMaximoDataAsync();
             return View(result);
         }
-
         public async Task<List<MaximoDataModel>> GetAllMaximoDataAsync()
         {
-            var result = await _db.maximo_data.ToListAsync();
-            return result;
-        }
+    var correctResults = await _db.Corrects
+        .Select(c => new MaximoDataModel
+        {
+            Id = c.Id,
+            Competences = c.Competences,
+            Pmnum = c.Pmnum,
+            Cxlineroutenr = c.Cxlineroutenr,
+            Location = c.Location,
+            Description = c.Description,
+            Status = c.Status // Lägg till en statusindikator
+        })
+        .ToListAsync();
+
+    var errorResults = await _db.Errors
+        .Select(e => new MaximoDataModel
+        {
+            Id = e.Id,
+            Competences = e.Competences,
+            Pmnum = e.Pmnum,
+            Cxlineroutenr = e.Cxlineroutenr,
+            Location = e.Location,
+            Description = e.Description,
+            Status = e.Status // Lägg till en statusindikator
+        })
+        .ToListAsync();
+
+    // Slå samman listorna
+    var combinedResults = correctResults.Concat(errorResults).ToList();
+
+    return combinedResults;
+}
 
         [HttpPost]
         public IActionResult UploadFile(IFormFile file, string view)
@@ -148,7 +175,8 @@ namespace Q_verify_2025.Controllers
                                             Location = input["location"]?.ToString(),
                                             Description = input["description"]?.ToString(),
                                             AnomalyFields = string.Join(", ", anomalyFields.Select(f => f.ToString())),
-                                            UploadTime = DateTime.Now
+                                            UploadTime = DateTime.Now,
+                                            Status = false
                                         });
                                     }
                                     else
@@ -160,7 +188,8 @@ namespace Q_verify_2025.Controllers
                                             Cxlineroutenr = input["cxlineroutenr"]?.ToString(),
                                             Location = input["location"]?.ToString(),
                                             Description = input["description"]?.ToString(),
-                                            UploadTime = DateTime.Now
+                                            UploadTime = DateTime.Now,
+                                            Status = true
                                         });
                                     }
                                 }
@@ -269,5 +298,35 @@ namespace Q_verify_2025.Controllers
 
             return View("PersonalData");
         }
-    }
+
+    public async Task<IActionResult> ToggleStatus(int id)
+{
+    // Kolla först om objektet finns i Errors-tabellen
+    var errorItem = await _db.Errors.FindAsync(id);
+    if (errorItem != null)
+    {
+        // Flytta från Errors till Corrects
+        var correctItem = new CorrectModel
+        {
+            Competences = errorItem.Competences,
+            Pmnum = errorItem.Pmnum,
+            Cxlineroutenr = errorItem.Cxlineroutenr,
+            Location = errorItem.Location,
+            Description = errorItem.Description,
+            Status = true, // Sätt status till true för korrekt
+        };
+
+        _db.Errors.Remove(errorItem);
+        _db.Corrects.Add(correctItem);
+        await _db.SaveChangesAsync();
+
+        return RedirectToAction("MaximoDatabase");
+}
+
+    return RedirectToAction("MaximoDatabase");
+
+}
+
+}
+
 }

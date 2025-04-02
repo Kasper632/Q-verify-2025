@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Q_verify_2025
 {
@@ -14,5 +15,8 @@ namespace Q_verify_2025
         public string? Description { get; set; }
         public string? AnomalyFields { get; set; } // comma-separated
         public DateTime UploadTime { get; set; }
+
+        [Column(TypeName = "bit")]
+         public bool Status { get; set; } // true for correct, false for error
     }
 }

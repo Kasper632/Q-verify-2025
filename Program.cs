@@ -14,6 +14,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient<AnomalyController>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddHostedService<DbAnalyzerService>();
 
 var app = builder.Build();
 

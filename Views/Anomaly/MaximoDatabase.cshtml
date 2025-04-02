@@ -7,26 +7,65 @@
 <h4>Realtidsövervakning av databas</h4>
 <br>
 
+<h5>Korrekta objekt</h5>
 <table class="table">
     <thead>
         <tr>
+            <th>Id</th>
             <th>Competences</th>
             <th>Pmnum</th>
             <th>Cxlineroutenr</th>
             <th>Location</th>
             <th>Description</th>
-            <th>Errors</th>
+            
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var item in Model.Where(x => x.Status == true))
         {
-            <tr>
+            <tr class="table-success">
+                <td>@item.Id</td>
                 <td>@item.Competences</td>
                 <td>@item.Pmnum</td>
                 <td>@item.Cxlineroutenr</td>
                 <td>@item.Location</td>
                 <td>@item.Description</td>
+                <td>
+                    <a asp-action="ToggleStatus" asp-route-id="@item.Id" class="btn btn-warning">Växla Status</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Ta bort</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h5>Felaktiga objekt</h5>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Competences</th>
+            <th>Pmnum</th>
+            <th>Cxlineroutenr</th>
+            <th>Location</th>
+            <th>Description</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Where(x => x.Status == false))
+        {
+            <tr class="table-danger">
+                <td>@item.Id</td>
+                <td>@item.Competences</td>
+                <td>@item.Pmnum</td>
+                <td>@item.Cxlineroutenr</td>
+                <td>@item.Location</td>
+                <td>@item.Description</td>
+                <td>
+                    <a asp-action="ToggleStatus" asp-route-id="@item.Id" class="btn btn-warning">Växla Status</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Ta bort</a>
+                </td>
             </tr>
         }
     </tbody>
