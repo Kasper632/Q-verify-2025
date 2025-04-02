@@ -7,7 +7,6 @@ from transformers import DistilBertTokenizer, DistilBertForSequenceClassificatio
 import torch
 from datetime import datetime
 from datasets import Dataset
-import pyodbc
  
 app = Flask(__name__)
 
