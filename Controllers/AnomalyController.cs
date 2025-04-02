@@ -38,7 +38,8 @@ namespace Q_verify_2025.Controllers
         }
         public async Task<List<MaximoDataModel>> GetAllMaximoDataAsync()
         {
-    var correctResults = await _db.Corrects
+        var correctResults = await _db.Corrects
+        
         .Select(c => new MaximoDataModel
         {
             Id = c.Id,
@@ -51,7 +52,7 @@ namespace Q_verify_2025.Controllers
         })
         .ToListAsync();
 
-    var errorResults = await _db.Errors
+         var errorResults = await _db.Errors
         .Select(e => new MaximoDataModel
         {
             Id = e.Id,
@@ -68,7 +69,7 @@ namespace Q_verify_2025.Controllers
     var combinedResults = correctResults.Concat(errorResults).ToList();
 
     return combinedResults;
-}
+    }
 
         [HttpPost]
         public IActionResult UploadFile(IFormFile file, string view)
