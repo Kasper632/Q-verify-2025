@@ -294,33 +294,6 @@ namespace Q_verify_2025.Controllers
             return View("PersonalData");
         }
 
-        // public async Task<IActionResult> ToggleStatus(int id)
-        // {
-        //     // Kolla först om objektet finns i Errors-tabellen
-        //     var errorItem = await _db.Errors.FindAsync(id);
-        //     if (errorItem != null)
-        //     {
-        //         // Flytta från Errors till Corrects
-        //         var correctItem = new CorrectModel
-        //         {
-        //             Competences = errorItem.Competences,
-        //             Pmnum = errorItem.Pmnum,
-        //             Cxlineroutenr = errorItem.Cxlineroutenr,
-        //             Location = errorItem.Location,
-        //             Description = errorItem.Description,
-        //             Status = true, // Sätt status till true för korrekt
-        //         };
-
-        //         _db.Errors.Remove(errorItem);
-        //         _db.Corrects.Add(correctItem);
-        //         await _db.SaveChangesAsync();
-
-        //         return RedirectToAction("MaximoDatabase");
-        //     }
-
-        //     return RedirectToAction("MaximoDatabase");
-        // }
-
         public async Task<IActionResult> Delete(int id, string table)
         {
             if (table.Equals("corrects"))

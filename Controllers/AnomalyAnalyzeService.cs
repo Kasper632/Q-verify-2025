@@ -10,12 +10,16 @@ namespace Q_verify_2025.Controllers
         private readonly IServiceProvider _services;
         private readonly ILogger<DbAnalyzerService> _logger;
         private readonly IHttpClientFactory _httpClientFactory;
+        private readonly string _flaskUrl;
 
-        public DbAnalyzerService(IServiceProvider services, ILogger<DbAnalyzerService> logger, IHttpClientFactory httpClientFactory)
+
+        public DbAnalyzerService(IServiceProvider services, ILogger<DbAnalyzerService> logger, IHttpClientFactory httpClientFactory, IConfiguration configuration)
         {
             _services = services;
             _logger = logger;
             _httpClientFactory = httpClientFactory;
+            _flaskUrl = configuration["ApiUrl:FlaskUrl"] ?? throw new ArgumentNullException("FlaskUrl is not configured in appsettings.json");
+
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -35,7 +39,7 @@ namespace Q_verify_2025.Controllers
                 {
                     var payload = JsonConvert.SerializeObject(maximoRows);
                     var content = new StringContent(payload, Encoding.UTF8, "application/json");
-                    var response = await httpClient.PostAsync("http://localhost:5000/analyze-maximo-from-db", content);
+                    var response = await httpClient.PostAsync($"{_flaskUrl}/analyze-maximo-from-db", content);
 
                     _logger.LogInformation($"Skickade POST-förfrågan. Statuskod: {response.StatusCode}");
 
