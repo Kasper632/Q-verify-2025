@@ -8,8 +8,6 @@ import torch
 from datetime import datetime
 from datasets import Dataset
 
-
- 
 app = Flask(__name__)
 
 # Sökväg för uppladdade filer
