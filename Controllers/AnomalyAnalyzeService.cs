@@ -33,10 +33,13 @@ namespace Q_verify_2025.Controllers
                 var httpClient = _httpClientFactory.CreateClient();
 
                 var maximoRows = db.maximo_data.ToList();
-                _logger.LogInformation($"Hämtade {maximoRows.Count} rader från maximo_data-tabellen.");
+                var message = $"Hämtade {maximoRows.Count} rader från maximo_data-tabellen.";
+                _logger.LogInformation(message);
+                StatusController.UpdateMessage(message);
 
                 if (maximoRows.Any())
                 {
+
                     var payload = JsonConvert.SerializeObject(maximoRows);
                     var content = new StringContent(payload, Encoding.UTF8, "application/json");
                     var response = await httpClient.PostAsync($"{_flaskUrl}/analyze-maximo-from-db", content);
