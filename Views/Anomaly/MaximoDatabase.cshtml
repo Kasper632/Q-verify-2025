@@ -3,6 +3,38 @@
     ViewData["Title"] = "Maximo Database";
 }
 
+<style>
+    /* Döljer knappar och input-fält tills hover */
+    .editable-row input,
+    .editable-row .action-btn {
+        display: none;
+    }
+
+    /* När användaren hovrar över raden visas input-fält och knappar */
+    .editable-row:hover input,
+    .editable-row:hover .action-btn {
+        display: inline-block;
+    }
+
+    /* Döljer redigeringsknappar i korrekt-listan tills hover */
+    .correct-row .action-btn {
+        display: none;
+    }
+
+    .correct-row:hover .action-btn {
+        display: inline-block;
+    }
+
+    /* Styling för knappar */
+    .btn-icon {
+        border: none;
+        background: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+</style>
+
 <br>
 <h4>Realtidsövervakning av databas</h4>
 <br>
@@ -17,14 +49,13 @@
             <th>Cxlineroutenr</th>
             <th>Location</th>
             <th>Description</th>
-            <th></th>
-
+            <th>Åtgärder</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model.Corrects)
         {
-            <tr class="table-success">
+            <tr class="table-success correct-row">
                 <td>@item.Id</td>
                 <td>@item.Competences</td>
                 <td>@item.Pmnum</td>
@@ -32,8 +63,8 @@
                 <td>@item.Location</td>
                 <td>@item.Description</td>
                 <td>
-                    <a asp-action="Delete" asp-route-id="@item.Id" asp-route-table="corrects" class="btn btn-danger">Ta
-                        bort</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" asp-route-table="corrects" 
+                       class="btn btn-danger btn-icon action-btn">❌</a>
                 </td>
             </tr>
         }
@@ -56,24 +87,35 @@
     <tbody>
         @foreach (var item in Model.Errors)
         {
-            <tr class="table-danger">
+            <tr class="table-danger editable-row">
                 <td>@item.Id</td>
-                <td><input type="text" name="competences" form="form-@item.Id" value="@item.Competences"
-                        class="form-control" /></td>
-                <td><input type="text" name="pmnum" form="form-@item.Id" value="@item.Pmnum" class="form-control" /></td>
-                <td><input type="text" name="cxlineroutenr" form="form-@item.Id" value="@item.Cxlineroutenr"
-                        class="form-control" /></td>
-                <td><input type="text" name="location" form="form-@item.Id" value="@item.Location" class="form-control" />
-                </td>
-                <td><input type="text" name="description" form="form-@item.Id" value="@item.Description"
-                        class="form-control" /></td>
                 <td>
-                    <form id="form-@item.Id" asp-action="Edit" method="post">
+                    <span class="text">@item.Competences</span>
+                    <input type="text" name="competences" form="form-@item.Id" value="@item.Competences" class="form-control" />
+                </td>
+                <td>
+                    <span class="text">@item.Pmnum</span>
+                    <input type="text" name="pmnum" form="form-@item.Id" value="@item.Pmnum" class="form-control" />
+                </td>
+                <td>
+                    <span class="text">@item.Cxlineroutenr</span>
+                    <input type="text" name="cxlineroutenr" form="form-@item.Id" value="@item.Cxlineroutenr" class="form-control" />
+                </td>
+                <td>
+                    <span class="text">@item.Location</span>
+                    <input type="text" name="location" form="form-@item.Id" value="@item.Location" class="form-control" />
+                </td>
+                <td>
+                    <span class="text">@item.Description</span>
+                    <input type="text" name="description" form="form-@item.Id" value="@item.Description" class="form-control" />
+                </td>
+                <td>
+                    <form id="form-@item.Id" asp-action="Edit" method="post" class="action-btn">
                         <input type="hidden" name="id" value="@item.Id" />
-                        <button type="submit" class="btn btn-warning">Redigera</button>
+                        <button type="submit" class="btn btn-success btn-icon">✔️</button>
                     </form>
-                    <a asp-action="Delete" asp-route-id="@item.Id" asp-route-table="errors" class="btn btn-danger">Ta
-                        bort</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" asp-route-table="errors" 
+                       class="btn btn-danger btn-icon action-btn">❌</a>
                 </td>
             </tr>
         }
