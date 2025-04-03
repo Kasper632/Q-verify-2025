@@ -99,12 +99,7 @@
                     <button class="btn-sm btn-custom d-none confirm-btn confirm-no" onclick="cancelDelete(this);">
                         <i class="bi bi-x"></i>
                     </button>
-
-                    <!-- Papperskorg för borttagning -->
-                    <button class="btn-sm btn-custom" onclick="showConfirmButtons(this);">
-                        <i class="bi bi-trash"></i>
-                    </button>
-
+                                    
                     <!-- Formulär för att skicka redigeringar (dolt) -->
                     <form id="form-@item.Id" asp-action="Edit" method="post" class="d-inline">
                         <input type="hidden" name="id" value="@item.Id" />
@@ -117,6 +112,18 @@
                     <button class="btn-sm btn-custom d-none cancel-btn">
                         <i class="bi bi-x"></i>
                     </button>
+
+
+                    <!-- Papperskorg för borttagning -->
+                    <button class="btn-sm btn-custom" onclick="showConfirmButtons(this);">
+                        <i class="bi bi-trash"></i>
+                    </button>
+
+                    
+                    
+                    
+
+                    
                 </td>
             </tr>
         }
@@ -145,6 +152,9 @@
                 row.querySelector(".save-btn").classList.remove("d-none");
                 row.querySelector(".cancel-btn").classList.remove("d-none");
                 this.classList.add("d-none");
+
+                // Dölj papperskorgen efter att ha klickat på pennan
+                row.querySelector(".bi-trash").closest("button").classList.add("d-none");
             });
         });
 
@@ -168,6 +178,9 @@
             row.querySelector(".save-btn").classList.add("d-none");
             row.querySelector(".edit-btn").classList.remove("d-none");
             row.querySelector(".cancel-btn").classList.add("d-none");
+
+            // Visa papperskorgen igen
+            row.querySelector(".bi-trash").closest("button").classList.remove("d-none");
         }
 
         // Funktion för att visa bekräftelseknappar vid klick på papperskorgen
@@ -224,3 +237,4 @@
         });
     });
 </script>
+
