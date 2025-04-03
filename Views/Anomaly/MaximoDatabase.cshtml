@@ -123,13 +123,19 @@
         }
     </tbody>
 </table>
-
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         // Redigeringsfunktionalitet
         document.querySelectorAll(".edit-btn").forEach(button => {
             button.addEventListener("click", function () {
                 let row = this.closest("tr");
+
+                // Om ett objekt redan är redigerat, stäng det
+                document.querySelectorAll("tr").forEach(otherRow => {
+                    if (otherRow !== row && otherRow.querySelector(".save-btn") && !otherRow.querySelector(".save-btn").classList.contains("d-none")) {
+                        resetRow(otherRow);
+                    }
+                });
 
                 // Visa inmatningsfälten och göm den statiska texten
                 row.querySelectorAll(".text").forEach(el => el.classList.add("d-none"));
@@ -148,42 +154,61 @@
                 let row = this.closest("tr");
 
                 // Återställ text och fält
-                row.querySelectorAll(".text").forEach(el => el.classList.remove("d-none"));
-                row.querySelectorAll("input").forEach(el => el.classList.add("d-none"));
-
-                // Göm spara- och avbrytknappar, visa redigeringsknappen igen
-                row.querySelector(".save-btn").classList.add("d-none");
-                row.querySelector(".edit-btn").classList.remove("d-none");
-                this.classList.add("d-none");
+                resetRow(row);
             });
         });
+
+        // Funktion för att återställa en rad till sitt ursprungliga tillstånd
+        function resetRow(row) {
+            // Återställ text och dolda fält
+            row.querySelectorAll(".text").forEach(el => el.classList.remove("d-none"));
+            row.querySelectorAll("input").forEach(el => el.classList.add("d-none"));
+
+            // Göm spara- och avbrytknappar, visa redigeringsknappen igen
+            row.querySelector(".save-btn").classList.add("d-none");
+            row.querySelector(".edit-btn").classList.remove("d-none");
+            row.querySelector(".cancel-btn").classList.add("d-none");
+        }
+
+        // Funktion för att visa bekräftelseknappar vid klick på papperskorgen
+        document.querySelectorAll(".btn-sm.btn-custom").forEach(button => {
+            button.addEventListener("click", function () {
+                // Kontrollera om det är papperskorgsknappen
+                if (this.querySelector(".bi-trash")) {
+                    let row = this.closest("tr");
+
+                    // Om ett objekt redan har bekräftelseknappar visade, stäng det
+                    document.querySelectorAll("tr").forEach(otherRow => {
+                        if (otherRow !== row && otherRow.querySelector(".confirm-yes") && !otherRow.querySelector(".confirm-yes").classList.contains("d-none")) {
+                            cancelDelete(otherRow.querySelector(".confirm-no"));
+                        }
+                    });
+
+                    // Dölja papperskorgsknappen och visa bekräftelseknappar
+                    this.classList.add("d-none");
+                    row.querySelector(".confirm-yes").classList.remove("d-none");
+                    row.querySelector(".confirm-no").classList.remove("d-none");
+                }
+            });
+        });
+
+        // Funktion för att bekräfta borttagning och ta bort raden
+        function confirmDelete(button) {
+            let row = button.closest("tr");
+
+            // Ta bort raden från tabellen
+            row.remove();
+        }
+
+        // Funktion för att avböja borttagning och återställa till ursprungligt tillstånd
+        function cancelDelete(button) {
+            let row = button.closest("tr");
+
+            // Återställ bekräftelseknappar och visa papperskorg
+            row.querySelector(".bi-trash").closest("button").classList.remove("d-none");
+            row.querySelector(".confirm-yes").classList.add("d-none");
+            row.querySelector(".confirm-no").classList.add("d-none");
+        }
     });
-
-    // Funktion för att visa bekräftelseknappar vid klick på papperskorgen
-    function showConfirmButtons(button) {
-        let row = button.closest("tr");
-
-        // Dölja papperskorgsknappen och visa bekräftelseknappar (bock och kryss)
-        button.classList.add("d-none");
-        row.querySelector(".confirm-yes").classList.remove("d-none");
-        row.querySelector(".confirm-no").classList.remove("d-none");
-    }
-
-    // Funktion för att bekräfta borttagning och ta bort raden
-    function confirmDelete(button) {
-        let row = button.closest("tr");
-
-        // Ta bort raden från tabellen
-        row.remove();
-    }
-
-    // Funktion för att avböja borttagning och återställa till ursprungligt tillstånd
-    function cancelDelete(button) {
-        let row = button.closest("tr");
-
-        // Återställ bekräftelseknappar och visa papperskorg
-        row.querySelector(".bi-trash").closest("button").classList.remove("d-none");
-        row.querySelector(".confirm-yes").classList.add("d-none");
-        row.querySelector(".confirm-no").classList.add("d-none");
-    }
 </script>
+
