@@ -1,47 +1,10 @@
-@model MaximoDataResult
-@{
-    ViewData["Title"] = "Maximo Database";
-}
-
-<style>
-    /* Döljer knappar och input-fält tills hover */
-    .editable-row input,
-    .editable-row .action-btn {
-        display: none;
-    }
-
-    /* När användaren hovrar över raden visas input-fält och knappar */
-    .editable-row:hover input,
-    .editable-row:hover .action-btn {
-        display: inline-block;
-    }
-
-    /* Döljer redigeringsknappar i korrekt-listan tills hover */
-    .correct-row .action-btn {
-        display: none;
-    }
-
-    .correct-row:hover .action-btn {
-        display: inline-block;
-    }
-
-    /* Styling för knappar */
-    .btn-icon {
-        border: none;
-        background: none;
-        font-size: 1.2rem;
-        cursor: pointer;
-        margin-left: 5px;
-    }
-</style>
-
 <br>
 <h4>Realtidsövervakning av databas</h4>
 <br>
 
 <h5>Korrekta objekt</h5>
-<table class="table">
-    <thead>
+<table class="table table-striped">
+    <thead class="table-dark">
         <tr>
             <th>Id</th>
             <th>Competences</th>
@@ -55,7 +18,7 @@
     <tbody>
         @foreach (var item in Model.Corrects)
         {
-            <tr class="table-success correct-row">
+            <tr class="table-success editable-row">
                 <td>@item.Id</td>
                 <td>@item.Competences</td>
                 <td>@item.Pmnum</td>
@@ -63,8 +26,20 @@
                 <td>@item.Location</td>
                 <td>@item.Description</td>
                 <td>
-                    <a asp-action="Delete" asp-route-id="@item.Id" asp-route-table="corrects" 
-                       class="btn btn-danger btn-icon action-btn">❌</a>
+                    <!-- Papperskorg för borttagning -->
+                    <button class="btn-sm btn-custom" onclick="showConfirmButtons(this);">
+                        <i class="bi bi-trash"></i>
+                    </button>
+
+                    <!-- Bekräftelseknappar: bock och kryss (initialt dolda) -->
+                    <a asp-action="Delete" asp-route-id="@item.Id" asp-route-table="corrects">
+                        <button class="btn-sm btn-custom d-none confirm-btn confirm-yes">
+                            <i class="bi bi-check"></i>
+                        </button>
+                    </a>
+                    <button class="btn-sm btn-custom d-none confirm-btn confirm-no" onclick="cancelDelete(this);">
+                        <i class="bi bi-x"></i>
+                    </button>
                 </td>
             </tr>
         }
@@ -72,8 +47,8 @@
 </table>
 
 <h5>Felaktiga objekt</h5>
-<table class="table">
-    <thead>
+<table class="table table-striped">
+    <thead class="table-danger">
         <tr>
             <th>Id</th>
             <th>Competences</th>
@@ -87,37 +62,128 @@
     <tbody>
         @foreach (var item in Model.Errors)
         {
-            <tr class="table-danger editable-row">
+            <tr class="table-warning editable-row">
                 <td>@item.Id</td>
                 <td>
                     <span class="text">@item.Competences</span>
-                    <input type="text" name="competences" form="form-@item.Id" value="@item.Competences" class="form-control" />
+                    <input type="text" name="competences" form="form-@item.Id" value="@item.Competences" class="form-control d-none" />
                 </td>
                 <td>
                     <span class="text">@item.Pmnum</span>
-                    <input type="text" name="pmnum" form="form-@item.Id" value="@item.Pmnum" class="form-control" />
+                    <input type="text" name="pmnum" form="form-@item.Id" value="@item.Pmnum" class="form-control d-none" />
                 </td>
                 <td>
                     <span class="text">@item.Cxlineroutenr</span>
-                    <input type="text" name="cxlineroutenr" form="form-@item.Id" value="@item.Cxlineroutenr" class="form-control" />
+                    <input type="text" name="cxlineroutenr" form="form-@item.Id" value="@item.Cxlineroutenr" class="form-control d-none" />
                 </td>
                 <td>
                     <span class="text">@item.Location</span>
-                    <input type="text" name="location" form="form-@item.Id" value="@item.Location" class="form-control" />
+                    <input type="text" name="location" form="form-@item.Id" value="@item.Location" class="form-control d-none" />
                 </td>
                 <td>
                     <span class="text">@item.Description</span>
-                    <input type="text" name="description" form="form-@item.Id" value="@item.Description" class="form-control" />
+                    <input type="text" name="description" form="form-@item.Id" value="@item.Description" class="form-control d-none" />
                 </td>
                 <td>
-                    <form id="form-@item.Id" asp-action="Edit" method="post" class="action-btn">
+                    <!-- Redigeringsknapp (pennan) -->
+                    <button class="btn-sm btn-custom edit-btn">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+
+                    <!-- Bekräftelseknappar: bock och kryss (initialt dolda) -->
+                    <a asp-action="Delete" asp-route-id="@item.Id" asp-route-table="errors">
+                        <button class="btn-sm btn-custom d-none confirm-btn confirm-yes">
+                            <i class="bi bi-check"></i>
+                        </button>
+                    </a>
+                    <button class="btn-sm btn-custom d-none confirm-btn confirm-no" onclick="cancelDelete(this);">
+                        <i class="bi bi-x"></i>
+                    </button>
+
+                    <!-- Papperskorg för borttagning -->
+                    <button class="btn-sm btn-custom" onclick="showConfirmButtons(this);">
+                        <i class="bi bi-trash"></i>
+                    </button>
+
+                    
+                    <!-- Formulär för att skicka redigeringar (dolt) -->
+                    <form id="form-@item.Id" asp-action="Edit" method="post" class="d-inline">
                         <input type="hidden" name="id" value="@item.Id" />
-                        <button type="submit" class="btn btn-success btn-icon">✔️</button>
+                        <button type="submit" class="btn-sm btn-custom d-none save-btn">
+                            <i class="bi bi-check"></i>
+                        </button>
                     </form>
-                    <a asp-action="Delete" asp-route-id="@item.Id" asp-route-table="errors" 
-                       class="btn btn-danger btn-icon action-btn">❌</a>
+
+                    <!-- Avbrytknapp (dold) -->
+                    <button class="btn-sm btn-custom d-none cancel-btn">
+                        <i class="bi bi-x"></i>
+                    </button>
                 </td>
             </tr>
         }
     </tbody>
 </table>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Redigeringsfunktionalitet
+        document.querySelectorAll(".edit-btn").forEach(button => {
+            button.addEventListener("click", function () {
+                let row = this.closest("tr");
+
+                // Visa inmatningsfälten och göm den statiska texten
+                row.querySelectorAll(".text").forEach(el => el.classList.add("d-none"));
+                row.querySelectorAll("input").forEach(el => el.classList.remove("d-none"));
+
+                // Visa spara- och avbrytknappar, göm redigeringsknappen
+                row.querySelector(".save-btn").classList.remove("d-none");
+                row.querySelector(".cancel-btn").classList.remove("d-none");
+                this.classList.add("d-none");
+            });
+        });
+
+        // Funktionalitet för avbrytknappen (återställ till ursprungligt tillstånd)
+        document.querySelectorAll(".cancel-btn").forEach(button => {
+            button.addEventListener("click", function () {
+                let row = this.closest("tr");
+
+                // Återställ text och fält
+                row.querySelectorAll(".text").forEach(el => el.classList.remove("d-none"));
+                row.querySelectorAll("input").forEach(el => el.classList.add("d-none"));
+
+                // Göm spara- och avbrytknappar, visa redigeringsknappen igen
+                row.querySelector(".save-btn").classList.add("d-none");
+                row.querySelector(".edit-btn").classList.remove("d-none");
+                this.classList.add("d-none");
+            });
+        });
+    });
+
+    // Funktion för att visa bekräftelseknappar vid klick på papperskorgen
+    function showConfirmButtons(button) {
+        let row = button.closest("tr");
+
+        // Dölja papperskorgsknappen och visa bekräftelseknappar (bock och kryss)
+        button.classList.add("d-none");
+        row.querySelector(".confirm-yes").classList.remove("d-none");
+        row.querySelector(".confirm-no").classList.remove("d-none");
+    }
+
+    // Funktion för att bekräfta borttagning och ta bort raden
+    function confirmDelete(button) {
+        let row = button.closest("tr");
+
+        // Ta bort raden från tabellen
+        row.remove();
+    }
+
+    // Funktion för att avböja borttagning och återställa till ursprungligt tillstånd
+    function cancelDelete(button) {
+        let row = button.closest("tr");
+
+        // Återställ bekräftelseknappar och visa papperskorg
+        row.querySelector(".bi-trash").closest("button").classList.remove("d-none");
+        row.querySelector(".confirm-yes").classList.add("d-none");
+        row.querySelector(".confirm-no").classList.add("d-none");
+    }
+</script>

@@ -58,6 +58,11 @@ body {
   border-radius: 0.25rem;
 }
 
+.btn-custom {
+  font-size: 1.5rem;
+  padding: 8px 12px;
+}
+
 .btn {
     transform: scale(0.75);
     color: #ce003b;
@@ -74,6 +79,51 @@ body {
     overflow: hidden;
     margin-left: -17px;  
   }
+
+  .btn-custom {
+    transform: none; 
+    color: inherit; 
+    text-transform: none; 
+    text-decoration: none;
+    border: none; 
+    padding: 10px 20px;
+    font-size: 1rem; 
+    font-weight: normal; 
+    background: transparent; 
+    margin-left: 0; 
+    cursor: pointer; 
+    transition: all 0.3s ease;
+}
+
+.btn-sm {
+  font-size: 1.0rem; 
+  padding: 10px 20px; 
+}
+
+.bi-x, .bi-check {
+  font-size: 1.3rem; 
+  padding: 10px 20px;  
+}
+
+.btn-custom.btn-danger {
+    color: #ce003b; 
+    border: 2px solid #ce003b;
+}
+
+.btn-custom.btn-primary {
+    background-color: #007bff; 
+    border-color: #007bff;
+}
+
+.btn-custom.btn-success {
+    background-color: #28a745; 
+    border-color: #28a745;
+}
+
+.btn-custom.btn-secondary {
+    background-color: #6c757d; 
+    border-color: #6c757d;
+}
   
   .btn:hover {
     color: white;
