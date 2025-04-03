@@ -18,7 +18,7 @@
     <tbody>
         @foreach (var item in Model.Corrects)
         {
-            <tr class="table-success editable-row">
+            <tr class="editable-row">
                 <td>@item.Id</td>
                 <td>@item.Competences</td>
                 <td>@item.Pmnum</td>
@@ -48,7 +48,7 @@
 
 <h5>Felaktiga objekt</h5>
 <table class="table table-striped">
-    <thead class="table-danger">
+    <thead class="table-dark">
         <tr>
             <th>Id</th>
             <th>Competences</th>
@@ -62,7 +62,7 @@
     <tbody>
         @foreach (var item in Model.Errors)
         {
-            <tr class="table-warning editable-row">
+            <tr class="editable-row">
                 <td>@item.Id</td>
                 <td>
                     <span class="text">@item.Competences</span>
