@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link href="https://fonts.cdnfonts.com/css/signpainter" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -20,6 +22,10 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Startsida</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" class="dropdown-item" asp-controller="Anomaly"
+                        asp-action="MaximoDatabase">Realtidsövervakning</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-dark" href="#" id="validateDropdown" role="button"
@@ -58,6 +64,51 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+  <div id="toast-container" style="
+    position: fixed;
+    top: 210px;
+    left: 20px;
+    z-index: 9999;
+">
+    <div id="data-toast" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true" style="display:none; min-width: 250px;">
+        <div class="d-flex">
+            <div class="toast-body" id="toast-message"></div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" onclick="hideNotification()"></button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    let lastMessage = "";
+
+    function showNotification(message) {
+        //if (message === lastMessage || !message) return;
+        lastMessage = message;
+
+        const toast = document.getElementById('data-toast');
+        const msg = document.getElementById('toast-message');
+        msg.textContent = message;
+        toast.style.setProperty('display', 'block', 'important');
+        setTimeout(() => toast.style.display = 'none', 5000);
+    }
+
+   function pollLatestMessage() {
+    console.log("🔁 Försöker hämta senaste status...");
+    fetch('/api/status')
+        .then(res => res.json())
+        .then(data => {
+            console.log("📦 Svar från API:", data);
+            showNotification(data.message.trim());
+        })
+        .catch(error => console.error("❌ API-fel:", error));
+}
+
+    setInterval(pollLatestMessage, 302000);
+    pollLatestMessage();
+</script>
+
 </body>
 
 </html>
