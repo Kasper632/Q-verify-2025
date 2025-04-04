@@ -1,7 +1,7 @@
 <br>
 <h4>Realtidsövervakning av databas</h4>
 <br>
-
+<script src="~/js/maximo.js"></script>
 <h5>Korrekta objekt</h5>
 <table class="table table-striped">
     <thead class="table-dark">
@@ -66,7 +66,8 @@
                 <td>@item.Id</td>
                 <td>
                     <span class="text">@item.Competences</span>
-                    <input type="text" name="competences" form="form-@item.Id" value="@item.Competences" class="form-control d-none" />
+                    <input type="text" name="competences" form="form-@item.Id" value="@item.Competences"
+                        class="form-control d-none" />
                 </td>
                 <td>
                     <span class="text">@item.Pmnum</span>
@@ -74,23 +75,23 @@
                 </td>
                 <td>
                     <span class="text">@item.Cxlineroutenr</span>
-                    <input type="text" name="cxlineroutenr" form="form-@item.Id" value="@item.Cxlineroutenr" class="form-control d-none" />
+                    <input type="text" name="cxlineroutenr" form="form-@item.Id" value="@item.Cxlineroutenr"
+                        class="form-control d-none" />
                 </td>
                 <td>
                     <span class="text">@item.Location</span>
-                    <input type="text" name="location" form="form-@item.Id" value="@item.Location" class="form-control d-none" />
+                    <input type="text" name="location" form="form-@item.Id" value="@item.Location"
+                        class="form-control d-none" />
                 </td>
                 <td>
                     <span class="text">@item.Description</span>
-                    <input type="text" name="description" form="form-@item.Id" value="@item.Description" class="form-control d-none" />
+                    <input type="text" name="description" form="form-@item.Id" value="@item.Description"
+                        class="form-control d-none" />
                 </td>
                 <td>
-                    <!-- Redigeringsknapp (pennan) -->
                     <button class="btn-sm btn-custom edit-btn">
                         <i class="bi bi-pencil"></i>
                     </button>
-
-                    <!-- Bekräftelseknappar: bock och kryss (initialt dolda) -->
                     <a asp-action="Delete" asp-route-id="@item.Id" asp-route-table="errors">
                         <button class="btn-sm btn-custom d-none confirm-btn confirm-yes">
                             <i class="bi bi-check"></i>
@@ -99,142 +100,20 @@
                     <button class="btn-sm btn-custom d-none confirm-btn confirm-no" onclick="cancelDelete(this);">
                         <i class="bi bi-x"></i>
                     </button>
-                                    
-                    <!-- Formulär för att skicka redigeringar (dolt) -->
                     <form id="form-@item.Id" asp-action="Edit" method="post" class="d-inline">
                         <input type="hidden" name="id" value="@item.Id" />
                         <button type="submit" class="btn-sm btn-custom d-none save-btn">
                             <i class="bi bi-check"></i>
                         </button>
                     </form>
-
-                    <!-- Avbrytknapp (dold) -->
                     <button class="btn-sm btn-custom d-none cancel-btn">
                         <i class="bi bi-x"></i>
                     </button>
-
-
-                    <!-- Papperskorg för borttagning -->
                     <button class="btn-sm btn-custom" onclick="showConfirmButtons(this);">
                         <i class="bi bi-trash"></i>
                     </button>
-
-                    
-                    
-                    
-
-                    
                 </td>
             </tr>
         }
     </tbody>
 </table>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Redigeringsfunktionalitet
-        document.querySelectorAll(".edit-btn").forEach(button => {
-            button.addEventListener("click", function () {
-                let row = this.closest("tr");
-
-                // Om ett objekt redan är redigerat, stäng det
-                document.querySelectorAll("tr").forEach(otherRow => {
-                    if (otherRow !== row && otherRow.querySelector(".save-btn") && !otherRow.querySelector(".save-btn").classList.contains("d-none")) {
-                        resetRow(otherRow);
-                    }
-                });
-
-                // Visa inmatningsfälten och göm den statiska texten
-                row.querySelectorAll(".text").forEach(el => el.classList.add("d-none"));
-                row.querySelectorAll("input").forEach(el => el.classList.remove("d-none"));
-
-                // Visa spara- och avbrytknappar, göm redigeringsknappen
-                row.querySelector(".save-btn").classList.remove("d-none");
-                row.querySelector(".cancel-btn").classList.remove("d-none");
-                this.classList.add("d-none");
-
-                // Dölj papperskorgen efter att ha klickat på pennan
-                row.querySelector(".bi-trash").closest("button").classList.add("d-none");
-            });
-        });
-
-        // Funktionalitet för avbrytknappen (återställ till ursprungligt tillstånd)
-        document.querySelectorAll(".cancel-btn").forEach(button => {
-            button.addEventListener("click", function () {
-                let row = this.closest("tr");
-
-                // Återställ text och fält
-                resetRow(row);
-            });
-        });
-
-        // Funktion för att återställa en rad till sitt ursprungliga tillstånd
-        function resetRow(row) {
-            // Återställ text och dolda fält
-            row.querySelectorAll(".text").forEach(el => el.classList.remove("d-none"));
-            row.querySelectorAll("input").forEach(el => el.classList.add("d-none"));
-
-            // Göm spara- och avbrytknappar, visa redigeringsknappen igen
-            row.querySelector(".save-btn").classList.add("d-none");
-            row.querySelector(".edit-btn").classList.remove("d-none");
-            row.querySelector(".cancel-btn").classList.add("d-none");
-
-            // Visa papperskorgen igen
-            row.querySelector(".bi-trash").closest("button").classList.remove("d-none");
-        }
-
-        // Funktion för att visa bekräftelseknappar vid klick på papperskorgen
-        document.querySelectorAll(".btn-sm.btn-custom").forEach(button => {
-            button.addEventListener("click", function () {
-                // Kontrollera om det är papperskorgsknappen
-                if (this.querySelector(".bi-trash")) {
-                    let row = this.closest("tr");
-
-                    // Om ett objekt redan har bekräftelseknappar visade, stäng det
-                    document.querySelectorAll("tr").forEach(otherRow => {
-                        if (otherRow !== row && otherRow.querySelector(".confirm-yes") && !otherRow.querySelector(".confirm-yes").classList.contains("d-none")) {
-                            cancelDelete(otherRow.querySelector(".confirm-no"));
-                        }
-                    });
-
-                    // Dölja papperskorgsknappen och visa bekräftelseknappar
-                    this.classList.add("d-none");
-                    row.querySelector(".confirm-yes").classList.remove("d-none");
-                    row.querySelector(".confirm-no").classList.remove("d-none");
-                }
-            });
-        });
-
-        // Funktion för att bekräfta borttagning och ta bort raden
-        function confirmDelete(button) {
-            let row = button.closest("tr");
-
-            // Ta bort raden från tabellen
-            row.remove();
-        }
-
-        // Funktion för att avböja borttagning och återställa till ursprungligt tillstånd
-        function cancelDelete(button) {
-            let row = button.closest("tr");
-
-            // Återställ bekräftelseknappar och visa papperskorg
-            row.querySelector(".bi-trash").closest("button").classList.remove("d-none");
-            row.querySelector(".confirm-yes").classList.add("d-none");
-            row.querySelector(".confirm-no").classList.add("d-none");
-        }
-
-        // Lägg till event listeners på bekräftelseknapparna (bock och kryss)
-        document.querySelectorAll(".confirm-yes").forEach(button => {
-            button.addEventListener("click", function () {
-                confirmDelete(this);
-            });
-        });
-
-        document.querySelectorAll(".confirm-no").forEach(button => {
-            button.addEventListener("click", function () {
-                cancelDelete(this);
-            });
-        });
-    });
-</script>
-
