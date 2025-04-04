@@ -1,7 +1,16 @@
+<div id="toast-container">
+    <div id="data-toast" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true" style="display:none; min-width: 250px;">
+        <div class="d-flex">
+            <div class="toast-body" id="toast-message"></div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" onclick="hideNotification()"></button>
+        </div>
+    </div>
+</div>
+
 <br>
 <h4>Realtidsövervakning av databas</h4>
 <br>
-<script src="~/js/maximo.js"></script>
+
 <h5>Korrekta objekt</h5>
 <table class="table table-striped">
     <thead class="table-dark">
@@ -117,3 +126,4 @@
         }
     </tbody>
 </table>
+

@@ -259,6 +259,16 @@ h1.text-center.mb-4 {
   text-align: center;
   margin-top: 40px; /* Justera detta värde efter behov */
 }
+
+#toast-container {
+
+  position: fixed;
+  top: 210px;
+  right: 11.55rem !important;
+  z-index: 9999 !important;
+  
+}
+
 /* Responsive design - Hamburger menu */
 @media (max-width: 767px) {
   .navbar {
@@ -298,5 +308,14 @@ h1.text-center.mb-4 {
       display: block;
   }
 
+  #toast-container {
+
+    position: fixed;
+    top: 210px;
+    right: 20px !important;
+    z-index: 9999 !important;
+    
+  }
+  
   
 }
