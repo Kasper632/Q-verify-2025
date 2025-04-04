@@ -101,6 +101,7 @@ body {
 }
 
 .bi-x, .bi-check {
+  color:#000;
   font-size: 1.3rem; 
   padding: 10px 20px;  
 }
@@ -111,8 +112,8 @@ body {
 }
 
 .btn-custom.btn-primary {
-    background-color: #007bff; 
-    border-color: #007bff;
+    background-color: #000000; 
+    border-color: #000000;
 }
 
 .btn-custom.btn-success {
@@ -243,7 +244,6 @@ h1.text-center.mb-4 {
 
 }
 
-
 .team-member {
   color: #ce003b; 
   text-decoration: none; /
@@ -308,14 +308,6 @@ h1.text-center.mb-4 {
       display: block;
   }
 
-  #toast-container {
-
-    position: fixed;
-    top: 210px;
-    right: 20px !important;
-    z-index: 9999 !important;
-    
-  }
   
   
 }
