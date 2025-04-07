@@ -3,6 +3,7 @@ using Microsoft.Extensions.Primitives;
 using Newtonsoft.Json;
 using Q_verify_2025.Models;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json.Linq;
 
 namespace Q_verify_2025.Controllers
 {
@@ -159,17 +160,17 @@ namespace Q_verify_2025.Controllers
                                 foreach (var anomaly in anomalies)
                                 {
                                     var anomalyFields = anomaly["anomaly_fields"] as Newtonsoft.Json.Linq.JArray;
-                                    var input = anomaly["input"];
+                                    var input = anomaly["input"] as JObject ?? new JObject();
 
                                     if (anomalyFields != null && anomalyFields.Count > 0)
                                     {
                                         errorEntities.Add(new ErrorModel
                                         {
-                                            Competences = input["competences"]?.ToString(),
-                                            Pmnum = input["pmnum"]?.ToString(),
-                                            Cxlineroutenr = input["cxlineroutenr"]?.ToString(),
-                                            Location = input["location"]?.ToString(),
-                                            Description = input["description"]?.ToString(),
+                                            Competences = input["competences"]?.ToString() ?? string.Empty,
+                                            Pmnum = input["pmnum"]?.ToString() ?? string.Empty,
+                                            Cxlineroutenr = input["cxlineroutenr"]?.ToString() ?? string.Empty,
+                                            Location = input["location"]?.ToString() ?? string.Empty,
+                                            Description = input["description"]?.ToString() ?? string.Empty,
                                             AnomalyFields = string.Join(", ", anomalyFields.Select(f => f.ToString())),
                                             UploadTime = DateTime.Now,
                                             Status = false
@@ -179,11 +180,11 @@ namespace Q_verify_2025.Controllers
                                     {
                                         correctEntities.Add(new CorrectModel
                                         {
-                                            Competences = input["competences"]?.ToString(),
-                                            Pmnum = input["pmnum"]?.ToString(),
-                                            Cxlineroutenr = input["cxlineroutenr"]?.ToString(),
-                                            Location = input["location"]?.ToString(),
-                                            Description = input["description"]?.ToString(),
+                                            Competences = input["competences"]?.ToString() ?? string.Empty,
+                                            Pmnum = input["pmnum"]?.ToString() ?? string.Empty,
+                                            Cxlineroutenr = input["cxlineroutenr"]?.ToString() ?? string.Empty,
+                                            Location = input["location"]?.ToString() ?? string.Empty,
+                                            Description = input["description"]?.ToString() ?? string.Empty,
                                             UploadTime = DateTime.Now,
                                             Status = true
                                         });
