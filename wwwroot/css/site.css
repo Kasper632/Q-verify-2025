@@ -97,12 +97,15 @@ body {
 
 .btn-sm {
   font-size: 1.0rem; 
-  padding: 10px 20px; 
+  padding: 10px 20px;
+  
 }
 
 .bi-x, .bi-check {
+  color:#000;
   font-size: 1.3rem; 
-  padding: 10px 20px;  
+  padding: 10px 20px;
+  display: inline-block;  
 }
 
 .btn-custom.btn-danger {
@@ -111,8 +114,8 @@ body {
 }
 
 .btn-custom.btn-primary {
-    background-color: #007bff; 
-    border-color: #007bff;
+    background-color: #000000; 
+    border-color: #000000;
 }
 
 .btn-custom.btn-success {
@@ -243,7 +246,6 @@ h1.text-center.mb-4 {
 
 }
 
-
 .team-member {
   color: #ce003b; 
   text-decoration: none; /
@@ -259,6 +261,16 @@ h1.text-center.mb-4 {
   text-align: center;
   margin-top: 40px; /* Justera detta värde efter behov */
 }
+
+#toast-container {
+
+  position: fixed;
+  top: 210px;
+  right: 11.5rem !important;
+  z-index: 9999 !important;
+  
+}
+
 /* Responsive design - Hamburger menu */
 @media (max-width: 767px) {
   .navbar {
@@ -298,5 +310,6 @@ h1.text-center.mb-4 {
       display: block;
   }
 
+  
   
 }

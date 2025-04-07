@@ -60,6 +60,7 @@ namespace Q_verify_2025.Controllers
                     Cxlineroutenr = e.Cxlineroutenr,
                     Location = e.Location,
                     Description = e.Description,
+                    AnomalyFields = e.AnomalyFields,
                     Status = e.Status
                 }).ToListAsync()
             };
