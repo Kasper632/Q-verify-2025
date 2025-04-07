@@ -16,126 +16,153 @@
 
 <br>
 <h4>Realtidsövervakning av databas</h4>
-<br>
 
-<h5>Korrekta objekt</h5>
-<table class="table table-striped">
-    <thead class="table-dark">
-        <tr>
-            <th>Id</th>
-            <th>Competences</th>
-            <th>Pmnum</th>
-            <th>Cxlineroutenr</th>
-            <th>Location</th>
-            <th>Description</th>
-            <th>Åtgärder</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.Corrects)
-        {
-            <tr class="editable-row">
-                <td>@item.Id</td>
-                <td>@item.Competences</td>
-                <td>@item.Pmnum</td>
-                <td>@item.Cxlineroutenr</td>
-                <td>@item.Location</td>
-                <td>@item.Description</td>
-                <td>
-                    <!-- Papperskorg för borttagning -->
-                    <button class="btn-sm btn-custom" onclick="showConfirmButtons(this);">
-                        <i class="bi bi-trash"></i>
-                    </button>
+<div class="mb-3">
+    <input type="text" class="form-control" id="tableSearchInput" placeholder="Sök efter pmnum, competence, location...">
+</div>
 
-                    <!-- Bekräftelseknappar: bock och kryss (initialt dolda) -->
-                    <a asp-action="Delete" asp-route-id="@item.Id" asp-route-table="corrects">
-                        <button class="btn-sm btn-custom d-none confirm-btn confirm-yes">
-                            <i class="bi bi-check"></i>
-                        </button>
-                    </a>
-                    <button class="btn-sm btn-custom d-none confirm-btn confirm-no" onclick="cancelDelete(this);">
-                        <i class="bi bi-x"></i>
-                    </button>
-                </td>
+
+<div class="mb-3 table-search">
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="toggleCorrect" checked>
+        <label class="form-check-label" for="toggleCorrect">Visa korrekta rader</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="toggleErrors" checked>
+        <label class="form-check-label" for="toggleErrors">Visa felaktiga rader</label>
+    </div>
+</div>
+
+
+<div id="correctSection">
+    <h5>Korrekta objekt</h5>
+    <table id="correctTable" class="table table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Competences</th>
+                <th>Pmnum</th>
+                <th>Cxlineroutenr</th>
+                <th>Location</th>
+                <th>Description</th>
+                <th>Åtgärder</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody id="correctsTableBody">
+            @foreach (var item in Model.Corrects)
+            {
+                <tr class="filter-row"
+                    data-competences="@item.Competences"
+                    data-pmnum="@item.Pmnum"
+                    data-cxlineroutenr="@item.Cxlineroutenr"
+                    data-location="@item.Location"
+                    data-description="@item.Description">
+                    <td>@item.Id</td>
+                    <td>@item.Competences</td>
+                    <td>@item.Pmnum</td>
+                    <td>@item.Cxlineroutenr</td>
+                    <td>@item.Location</td>
+                    <td>@item.Description</td>
+                    <td>
+                        <button class="btn-sm btn-custom" onclick="showConfirmButtons(this);">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                        <a asp-action="Delete" asp-route-id="@item.Id" asp-route-table="corrects">
+                            <button class="btn-sm btn-custom d-none confirm-btn confirm-yes">
+                                <i class="bi bi-check"></i>
+                            </button>
+                        </a>
+                        <button class="btn-sm btn-custom d-none confirm-btn confirm-no" onclick="cancelDelete(this);">
+                            <i class="bi bi-x"></i>
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
 
-<h5>Felaktiga objekt</h5>
-<table class="table table-striped">
-    <thead class="table-dark">
-        <tr>
-            <th>Id</th>
-            <th>Competences</th>
-            <th>Pmnum</th>
-            <th>Cxlineroutenr</th>
-            <th>Location</th>
-            <th>Description</th>
-            <th>Fel</th>
-            <th>Åtgärder</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.Errors)
-        {
-            <tr class="editable-row">
-                <td>@item.Id</td>
-                <td>
-                    <span class="text">@item.Competences</span>
-                    <input type="text" name="competences" form="form-@item.Id" value="@item.Competences"
-                        class="form-control d-none" />
-                </td>
-                <td>
-                    <span class="text">@item.Pmnum</span>
-                    <input type="text" name="pmnum" form="form-@item.Id" value="@item.Pmnum" class="form-control d-none" />
-                </td>
-                <td>
-                    <span class="text">@item.Cxlineroutenr</span>
-                    <input type="text" name="cxlineroutenr" form="form-@item.Id" value="@item.Cxlineroutenr"
-                        class="form-control d-none" />
-                </td>
-                <td>
-                    <span class="text">@item.Location</span>
-                    <input type="text" name="location" form="form-@item.Id" value="@item.Location"
-                        class="form-control d-none" />
-                </td>
-                <td>
-                    <span class="text">@item.Description</span>
-                    <input type="text" name="description" form="form-@item.Id" value="@item.Description"
-                        class="form-control d-none" />
-                </td>
-                <td>
-                    <span class="text">@item.AnomalyFields</span>
-                    <input type="=text" name="AnomalyFields" form="form=@item.Id" value="@item.AnomalyFields"
-                        class="form-control d-none">
-                </td>
-                <td>
-                    <button class="btn-sm btn-custom edit-btn">
-                        <i class="bi bi-pencil"></i>
-                    </button>
-                    <a asp-action="Delete" asp-route-id="@item.Id" asp-route-table="errors">
-                        <button class="btn-sm btn-custom d-none confirm-btn confirm-yes">
-                            <i class="bi bi-check"></i>
-                        </button>
-                    </a>
-                    <button class="btn-sm btn-custom d-none confirm-btn confirm-no" onclick="cancelDelete(this);">
-                        <i class="bi bi-x"></i>
-                    </button>
-                    <form id="form-@item.Id" asp-action="Edit" method="post" class="d-inline">
-                        <input type="hidden" name="id" value="@item.Id" />
-                        <button type="submit" class="btn-sm btn-custom d-none save-btn">
-                            <i class="bi bi-check"></i>
-                        </button>
-                    </form>
-                    <button class="btn-sm btn-custom d-none cancel-btn">
-                        <i class="bi bi-x"></i>
-                    </button>
-                    <button class="btn-sm btn-custom" onclick="showConfirmButtons(this);">
-                        <i class="bi bi-trash"></i>
-                    </button>
-                </td>
+
+<div id="errorSection">
+    <h5>Felaktiga objekt</h5>
+    <table id="errorTable" class="table table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Competences</th>
+                <th>Pmnum</th>
+                <th>Cxlineroutenr</th>
+                <th>Location</th>
+                <th>Description</th>
+                <th>Fel</th>
+                <th>Åtgärder</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody id="errorsTableBody">
+            @foreach (var item in Model.Errors)
+            {
+                <tr class="filter-row"
+                    data-competences="@item.Competences"
+                    data-pmnum="@item.Pmnum"
+                    data-cxlineroutenr="@item.Cxlineroutenr"
+                    data-location="@item.Location"
+                    data-description="@item.Description"
+                    data-anomalyfields="@item.AnomalyFields">
+                    <td>@item.Id</td>
+                    <td>
+                        <span class="text">@item.Competences</span>
+                        <input type="text" name="competences" form="form-@item.Id" value="@item.Competences" class="form-control d-none" />
+                    </td>
+                    <td>
+                        <span class="text">@item.Pmnum</span>
+                        <input type="text" name="pmnum" form="form-@item.Id" value="@item.Pmnum" class="form-control d-none" />
+                    </td>
+                    <td>
+                        <span class="text">@item.Cxlineroutenr</span>
+                        <input type="text" name="cxlineroutenr" form="form-@item.Id" value="@item.Cxlineroutenr" class="form-control d-none" />
+                    </td>
+                    <td>
+                        <span class="text">@item.Location</span>
+                        <input type="text" name="location" form="form-@item.Id" value="@item.Location" class="form-control d-none" />
+                    </td>
+                    <td>
+                        <span class="text">@item.Description</span>
+                        <input type="text" name="description" form="form-@item.Id" value="@item.Description" class="form-control d-none" />
+                    </td>
+                    <td>
+                        <span class="text">@item.AnomalyFields</span>
+                        <input type="text" name="AnomalyFields" form="form-@item.Id" value="@item.AnomalyFields" class="form-control d-none" />
+                    </td>
+                    <td>
+                        <button class="btn-sm btn-custom edit-btn">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        <a asp-action="Delete" asp-route-id="@item.Id" asp-route-table="errors">
+                            <button class="btn-sm btn-custom d-none confirm-btn confirm-yes">
+                                <i class="bi bi-check"></i>
+                            </button>
+                        </a>
+                        <button class="btn-sm btn-custom d-none confirm-btn confirm-no" onclick="cancelDelete(this);">
+                            <i class="bi bi-x"></i>
+                        </button>
+                        <form id="form-@item.Id" asp-action="Edit" method="post" class="d-inline">
+                            <input type="hidden" name="id" value="@item.Id" />
+                            <button type="submit" class="btn-sm btn-custom d-none save-btn">
+                                <i class="bi bi-check"></i>
+                            </button>
+                        </form>
+                        <button class="btn-sm btn-custom d-none cancel-btn">
+                            <i class="bi bi-x"></i>
+                        </button>
+                        <button class="btn-sm btn-custom" onclick="showConfirmButtons(this);">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
