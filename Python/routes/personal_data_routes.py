@@ -8,8 +8,8 @@ personal_bp = Blueprint("personal_bp", __name__)
 DATA_DIR = "wwwroot/uploads"
 
 # Ladda modeller
-email_model, email_tokenizer, _ = load_model_and_tokenizer("./Python/AI-models/fine_tuned_distilbert_50k_Email_Name")
-gender_model, gender_tokenizer, _ = load_model_and_tokenizer("./Python/AI-models/fine_tuned_distilbert_50k_gender")
+email_model, email_tokenizer, _ = load_model_and_tokenizer("./Python/AI_models/fine_tuned_distilbert_50k_Email_Name")
+gender_model, gender_tokenizer, _ = load_model_and_tokenizer("./Python/AI_models/fine_tuned_distilbert_50k_gender")
 
 @personal_bp.route("/analyze-personal-data", methods=["POST"])
 def process_personal_data():

@@ -8,7 +8,7 @@ def load_model_and_tokenizer(path, use_cuda=True):
     model.to(device)
     return model, tokenizer, device
 
-def load_maximo_model_and_tokenizer(model_path="./Python/AI-models/maximo_model"):
+def load_maximo_model_and_tokenizer(model_path="./Python/AI_models/maximo_model"):
     model = DistilBertForSequenceClassification.from_pretrained(model_path)
     tokenizer = DistilBertTokenizer.from_pretrained(model_path)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
