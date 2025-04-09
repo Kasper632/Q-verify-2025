@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from flask import Blueprint, request, jsonify
-from utils.model_loader import load_maximo_model_and_tokenizer
+from AI_models.model_loader import load_maximo_model_and_tokenizer
 from services.maximo_validation import predict_maximo
 
 maximo_bp = Blueprint('maximo_bp', __name__)
