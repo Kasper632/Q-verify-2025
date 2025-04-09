@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from flask import Blueprint, request, jsonify
 from services.personal_data_handler import process_uploaded_file
-from AI_models.model_loader import load_model_and_tokenizer
+from utils.model_loader import load_model_and_tokenizer
 
 personal_bp = Blueprint("personal_bp", __name__)
 DATA_DIR = "wwwroot/uploads"
