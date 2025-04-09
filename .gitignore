@@ -7,8 +7,8 @@ env/
 .idea/
 
 # Ignorera innehållet i AI-models men spåra mappen
-Python/AI-models/*
-!Python/AI-models/.gitkeep
+Python/AI_models/*
+!Python/AI_models/.gitkeep
 
 # Ignorera innehållet i uploads men spåra mappen
 wwwroot/uploads/*
