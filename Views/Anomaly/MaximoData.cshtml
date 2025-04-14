@@ -50,7 +50,7 @@
     {
           
         <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
-            <table class="table table-bordered table-striped mt-3">
+            <table id="anomalyTable" class="table table-bordered table-striped mt-3">
                 <thead class="thead-dark">
                     <tr>
                         <th>Competences</th>
@@ -121,50 +121,3 @@
 </div>
     }
 }
-
-<script>
-    let currentPage = 1;
-    let rowsPerPage = 5;
-    const rows = document.querySelectorAll("table tbody tr");
-    const totalRows = rows.length;
-    const totalPages = Math.ceil(totalRows / rowsPerPage);
-
-    function updateTable() {
-        const startRow = (currentPage - 1) * rowsPerPage;
-        const endRow = startRow + rowsPerPage;
-
-        rows.forEach((row, index) => {
-            if (index >= startRow && index < endRow) {
-                row.style.display = "";
-            } else {
-                row.style.display = "none";
-            }
-        });
-
-        document.getElementById("prevPage").style.opacity = currentPage === 1 ? 0.4 : 0.6;
-        document.getElementById("nextPage").style.opacity = currentPage === totalPages ? 0.4 : 0.6;
-    }
-
-    document.getElementById("rowsPerPage").addEventListener("change", function() {
-        rowsPerPage = parseInt(this.value);
-        currentPage = 1;  // Reset to the first page
-        updateTable();
-    });
-
-    document.getElementById("prevPage").addEventListener("click", function() {
-        if (currentPage > 1) {
-            currentPage--;
-            updateTable();
-        }
-    });
-
-    document.getElementById("nextPage").addEventListener("click", function() {
-        if (currentPage < totalPages) {
-            currentPage++;
-            updateTable();
-        }
-    });
-
-    // Initialize table on load
-    updateTable();
-</script>

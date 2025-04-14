@@ -4,6 +4,7 @@
     ViewData["Title"] = "Maximo database";
 }
 
+
 <div id="toast-container">
     <div id="data-toast" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive"
         aria-atomic="true" style="display:none; min-width: 250px;">
@@ -20,7 +21,6 @@
 <div class="mb-3">
     <input type="text" class="form-control" id="tableSearchInput" placeholder="Sök efter pmnum, competence, location...">
 </div>
-
 
 <div class="mb-3 table-search">
     <div class="form-check form-check-inline">
@@ -48,15 +48,10 @@
                 <th>Åtgärder</th>
             </tr>
         </thead>
-        <tbody id="correctsTableBody">
+        <tbody>
             @foreach (var item in Model.Corrects)
             {
-                <tr class="filter-row"
-                    data-competences="@item.Competences"
-                    data-pmnum="@item.Pmnum"
-                    data-cxlineroutenr="@item.Cxlineroutenr"
-                    data-location="@item.Location"
-                    data-description="@item.Description">
+                <tr>
                     <td>@item.Id</td>
                     <td>@item.Competences</td>
                     <td>@item.Pmnum</td>
@@ -64,6 +59,7 @@
                     <td>@item.Location</td>
                     <td>@item.Description</td>
                     <td>
+                       
                         <button class="btn-sm btn-custom" onclick="showConfirmButtons(this);">
                             <i class="bi bi-trash"></i>
                         </button>
@@ -80,7 +76,22 @@
             }
         </tbody>
     </table>
+
+    
+    <div class="d-flex align-items-center">
+    <label for="rowsPerPageCorrect" class="me-2">Visa:</label>
+    <select id="rowsPerPageCorrect" class="form-control" style="width: auto;">
+        <option value="5">5 rader</option>
+        <option value="10">10 rader</option>
+        <option value="25">25 rader</option>
+        <option value="50">50 rader</option>
+    </select>
+    <i id="prevPageCorrect" class="bi bi-arrow-left-circle ms-3 me-2" style="font-size: 1.5rem; cursor: pointer; opacity: 0.6;"></i>
+    <i id="nextPageCorrect" class="bi bi-arrow-right-circle" style="font-size: 1.5rem; cursor: pointer; opacity: 0.6;"></i>
+</div
 </div>
+
+<hr>
 
 
 <div id="errorSection">
@@ -98,53 +109,19 @@
                 <th>Åtgärder</th>
             </tr>
         </thead>
-        <tbody id="errorsTableBody">
+        <tbody>
             @foreach (var item in Model.Errors)
             {
-                <tr class="filter-row"
-                    data-competences="@item.Competences"
-                    data-pmnum="@item.Pmnum"
-                    data-cxlineroutenr="@item.Cxlineroutenr"
-                    data-location="@item.Location"
-                    data-description="@item.Description"
-                    data-anomalyfields="@item.AnomalyFields">
+                <tr>
                     <td>@item.Id</td>
+                    <td>@item.Competences</td>
+                    <td>@item.Pmnum</td>
+                    <td>@item.Cxlineroutenr</td>
+                    <td>@item.Location</td>
+                    <td>@item.Description</td>
+                    <td>@item.AnomalyFields</td>
                     <td>
-                        <span class="text">@item.Competences</span>
-                        <input type="text" name="competences" form="form-@item.Id" value="@item.Competences" class="form-control d-none" />
-                    </td>
-                    <td>
-                        <span class="text">@item.Pmnum</span>
-                        <input type="text" name="pmnum" form="form-@item.Id" value="@item.Pmnum" class="form-control d-none" />
-                    </td>
-                    <td>
-                        <span class="text">@item.Cxlineroutenr</span>
-                        <input type="text" name="cxlineroutenr" form="form-@item.Id" value="@item.Cxlineroutenr" class="form-control d-none" />
-                    </td>
-                    <td>
-                        <span class="text">@item.Location</span>
-                        <input type="text" name="location" form="form-@item.Id" value="@item.Location" class="form-control d-none" />
-                    </td>
-                    <td>
-                        <span class="text">@item.Description</span>
-                        <input type="text" name="description" form="form-@item.Id" value="@item.Description" class="form-control d-none" />
-                    </td>
-                    <td>
-                        <span class="text">@item.AnomalyFields</span>
-                        <input type="text" name="AnomalyFields" form="form-@item.Id" value="@item.AnomalyFields" class="form-control d-none" />
-                    </td>
-                    <td>
-                        <button class="btn-sm btn-custom edit-btn">
-                            <i class="bi bi-pencil"></i>
-                        </button>
-                        <a asp-action="Delete" asp-route-id="@item.Id" asp-route-table="errors">
-                            <button class="btn-sm btn-custom d-none confirm-btn confirm-yes">
-                                <i class="bi bi-check"></i>
-                            </button>
-                        </a>
-                        <button class="btn-sm btn-custom d-none confirm-btn confirm-no" onclick="cancelDelete(this);">
-                            <i class="bi bi-x"></i>
-                        </button>
+                        
                         <form id="form-@item.Id" asp-action="Edit" method="post" class="d-inline">
                             <input type="hidden" name="id" value="@item.Id" />
                             <button type="submit" class="btn-sm btn-custom d-none save-btn">
@@ -157,12 +134,33 @@
                         <button class="btn-sm btn-custom" onclick="showConfirmButtons(this);">
                             <i class="bi bi-trash"></i>
                         </button>
+                        <a asp-action="Delete" asp-route-id="@item.Id" asp-route-table="errors">
+                            <button class="btn-sm btn-custom d-none confirm-btn confirm-yes">
+                                <i class="bi bi-check"></i>
+                            </button>
+                        </a>
+                        <button class="btn-sm btn-custom d-none confirm-btn confirm-no" onclick="cancelDelete(this);">
+                            <i class="bi bi-x"></i>
+                        </button>
                     </td>
                 </tr>
             }
         </tbody>
     </table>
+
+    
+    <div class="d-flex align-items-center">
+    <label for="rowsPerPageError" class="me-2">Visa:</label>
+    <select id="rowsPerPageError" class="form-control" style="width: auto;">
+        <option value="5">5 rader</option>
+        <option value="10">10 rader</option>
+        <option value="25">25 rader</option>
+        <option value="50">50 rader</option>
+    </select>
+    <i id="prevPageError" class="bi bi-arrow-left-circle ms-3 me-2" style="font-size: 1.5rem; cursor: pointer; opacity: 0.6;"></i>
+    <i id="nextPageError" class="bi bi-arrow-right-circle" style="font-size: 1.5rem; cursor: pointer; opacity: 0.6;"></i>
 </div>
 
+</div>
 
 
