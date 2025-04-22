@@ -19,7 +19,8 @@
 <h4>Realtidsövervakning av databas</h4>
 
 <div class="mb-3">
-    <input type="text" class="form-control" id="tableSearchInput" placeholder="Sök efter pmnum, competence, location...">
+    <input type="text" class="form-control" id="tableSearchInput"
+        placeholder="Sök efter pmnum, competence, location...">
 </div>
 
 <div class="mb-3 table-search">
@@ -59,7 +60,7 @@
                     <td>@item.Location</td>
                     <td>@item.Description</td>
                     <td>
-                       
+
                         <button class="btn-sm btn-custom" onclick="showConfirmButtons(this);">
                             <i class="bi bi-trash"></i>
                         </button>
@@ -77,18 +78,20 @@
         </tbody>
     </table>
 
-    
+
     <div class="d-flex align-items-center">
-    <label for="rowsPerPageCorrect" class="me-2">Visa:</label>
-    <select id="rowsPerPageCorrect" class="form-control" style="width: auto;">
-        <option value="5">5 rader</option>
-        <option value="10">10 rader</option>
-        <option value="25">25 rader</option>
-        <option value="50">50 rader</option>
-    </select>
-    <i id="prevPageCorrect" class="bi bi-arrow-left-circle ms-3 me-2" style="font-size: 1.5rem; cursor: pointer; opacity: 0.6;"></i>
-    <i id="nextPageCorrect" class="bi bi-arrow-right-circle" style="font-size: 1.5rem; cursor: pointer; opacity: 0.6;"></i>
-</div
+        <label for="rowsPerPageCorrect" class="me-2">Visa:</label>
+        <select id="rowsPerPageCorrect" class="form-control" style="width: auto;">
+            <option value="5">5 rader</option>
+            <option value="10">10 rader</option>
+            <option value="25">25 rader</option>
+            <option value="50">50 rader</option>
+        </select>
+        <i id="prevPageCorrect" class="bi bi-arrow-left-circle ms-3 me-2"
+            style="font-size: 1.5rem; cursor: pointer; opacity: 0.6;"></i>
+        <i id="nextPageCorrect" class="bi bi-arrow-right-circle"
+            style="font-size: 1.5rem; cursor: pointer; opacity: 0.6;"></i>
+    </div>
 </div>
 
 <hr>
@@ -121,7 +124,7 @@
                     <td>@item.Description</td>
                     <td>@item.AnomalyFields</td>
                     <td>
-                        
+
                         <form id="form-@item.Id" asp-action="Edit" method="post" class="d-inline">
                             <input type="hidden" name="id" value="@item.Id" />
                             <button type="submit" class="btn-sm btn-custom d-none save-btn">
@@ -148,19 +151,19 @@
         </tbody>
     </table>
 
-    
+
     <div class="d-flex align-items-center">
-    <label for="rowsPerPageError" class="me-2">Visa:</label>
-    <select id="rowsPerPageError" class="form-control" style="width: auto;">
-        <option value="5">5 rader</option>
-        <option value="10">10 rader</option>
-        <option value="25">25 rader</option>
-        <option value="50">50 rader</option>
-    </select>
-    <i id="prevPageError" class="bi bi-arrow-left-circle ms-3 me-2" style="font-size: 1.5rem; cursor: pointer; opacity: 0.6;"></i>
-    <i id="nextPageError" class="bi bi-arrow-right-circle" style="font-size: 1.5rem; cursor: pointer; opacity: 0.6;"></i>
-</div>
+        <label for="rowsPerPageError" class="me-2">Visa:</label>
+        <select id="rowsPerPageError" class="form-control" style="width: auto;">
+            <option value="5">5 rader</option>
+            <option value="10">10 rader</option>
+            <option value="25">25 rader</option>
+            <option value="50">50 rader</option>
+        </select>
+        <i id="prevPageError" class="bi bi-arrow-left-circle ms-3 me-2"
+            style="font-size: 1.5rem; cursor: pointer; opacity: 0.6;"></i>
+        <i id="nextPageError" class="bi bi-arrow-right-circle"
+            style="font-size: 1.5rem; cursor: pointer; opacity: 0.6;"></i>
+    </div>
 
 </div>
-
-
