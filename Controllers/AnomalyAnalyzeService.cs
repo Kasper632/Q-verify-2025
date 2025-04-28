@@ -19,7 +19,6 @@ namespace Q_verify_2025.Controllers
             _logger = logger;
             _httpClientFactory = httpClientFactory;
             _flaskUrl = configuration["ApiUrl:FlaskUrl"] ?? throw new ArgumentNullException("FlaskUrl is not configured in appsettings.json");
-
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -64,7 +63,7 @@ namespace Q_verify_2025.Controllers
                             {
                                 var anomalyFields = row["anomaly_fields"] as JArray;
                                 var inputRaw = row["input"] as JObject;
-                                var input = inputRaw.Properties().ToDictionary(
+                                var input = inputRaw?.Properties().ToDictionary(
                                     p => p.Name.ToLowerInvariant(),
                                     p => p.Value?.ToString());
 
@@ -75,12 +74,12 @@ namespace Q_verify_2025.Controllers
                                 {
                                     errors.Add(new ErrorModel
                                     {
-                                        Competences = input.GetValueOrDefault("competences"),
-                                        Pmnum = input.GetValueOrDefault("pmnum"),
-                                        Cxlineroutenr = input.GetValueOrDefault("cxlineroutenr"),
-                                        Location = input.GetValueOrDefault("location"),
-                                        Description = input.GetValueOrDefault("description"),
-                                        AnomalyFields = string.Join(", ", anomalyFields.Select(f => f.ToString())),
+                                        Competences = input.GetValueOrDefault("competences") ?? string.Empty,
+                                        Pmnum = input.GetValueOrDefault("pmnum") ?? string.Empty,
+                                        Cxlineroutenr = input.GetValueOrDefault("cxlineroutenr") ?? string.Empty,
+                                        Location = input.GetValueOrDefault("location") ?? string.Empty,
+                                        Description = input.GetValueOrDefault("description") ?? string.Empty,
+                                        AnomalyFields = string.Join(", ", anomalyFields.Select(f => f.ToString())) ?? string.Empty,
                                         UploadTime = DateTime.Now,
                                         Status = false
                                     });
@@ -89,11 +88,11 @@ namespace Q_verify_2025.Controllers
                                 {
                                     correct.Add(new CorrectModel
                                     {
-                                        Competences = input.GetValueOrDefault("competences"),
-                                        Pmnum = input.GetValueOrDefault("pmnum"),
-                                        Cxlineroutenr = input.GetValueOrDefault("cxlineroutenr"),
-                                        Location = input.GetValueOrDefault("location"),
-                                        Description = input.GetValueOrDefault("description"),
+                                        Competences = input.GetValueOrDefault("competences") ?? string.Empty,
+                                        Pmnum = input.GetValueOrDefault("pmnum") ?? string.Empty,
+                                        Cxlineroutenr = input.GetValueOrDefault("cxlineroutenr") ?? string.Empty,
+                                        Location = input.GetValueOrDefault("location") ?? string.Empty,
+                                        Description = input.GetValueOrDefault("description") ?? string.Empty,
                                         UploadTime = DateTime.Now,
                                         Status = true
                                     });

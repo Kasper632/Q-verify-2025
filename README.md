@@ -32,7 +32,7 @@ Följ stegen nedan för att lägga till modellen i projektet:
    - `maximo_model`
 
 2. **Placera filer i rätt katalog**  
-   Lägg till dem i `Python`-mappen i en undermapp som heter `AI-models`.
+   Lägg till dem i `Python`-mappen i en undermapp som heter `AI_models`.
 
 ## Köra projektet
 

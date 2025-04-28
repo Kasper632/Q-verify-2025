@@ -3,6 +3,14 @@ using Microsoft.Extensions.Primitives;
 using Newtonsoft.Json;
 using Q_verify_2025.Models;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json.Linq;
+using QuestPDF.Fluent;
+using QuestPDF.Helpers;
+using QuestPDF.Infrastructure;
+using QuestPDF.Previewer;
+using System.Text;
+
+
 
 namespace Q_verify_2025.Controllers
 {
@@ -11,7 +19,6 @@ namespace Q_verify_2025.Controllers
         private readonly HttpClient _httpClient;
         private readonly string _uploadPath;
         private readonly string _flaskUrl;
-
         private readonly ApplicationDbContext _db;
 
         public AnomalyController(HttpClient httpClient, IConfiguration configuration, ApplicationDbContext db)
@@ -25,6 +32,84 @@ namespace Q_verify_2025.Controllers
             {
                 Directory.CreateDirectory(_uploadPath);
             }
+        }
+        private static Dictionary<string, string> NormalizeKeys(JObject inputRaw)
+        {
+            return inputRaw.Properties()
+                .ToDictionary(
+                    prop => prop.Name.ToLowerInvariant(),
+                    prop => prop.Value.ToString());
+        }
+
+        [HttpGet]
+        public IActionResult DownloadAnalysisPdf()
+        {
+            var latestFile = Directory.GetFiles(_uploadPath)
+                .OrderByDescending(f => new FileInfo(f).LastWriteTime)
+                .FirstOrDefault();
+
+            if (latestFile == null)
+                return NotFound("Ingen uppladdad fil hittades.");
+
+            var uploadedTimestamp = new FileInfo(latestFile).LastWriteTime;
+
+            var thresholdTime = uploadedTimestamp.AddSeconds(-5);
+
+            var data = _db.Errors
+                .Where(e => e.UploadTime >= thresholdTime)
+                .ToList();
+
+            var stream = new MemoryStream();
+
+            Document.Create(container =>
+            {
+                container.Page(page =>
+                {
+                    page.Size(PageSizes.A4.Landscape());
+                    page.Margin(30);
+                    page.DefaultTextStyle(x => x.FontSize(10));
+
+                    page.Header().Text("Analysresultat").FontSize(18).Bold().AlignCenter();
+
+                    page.Content().Table(table =>
+                    {
+                        table.ColumnsDefinition(columns =>
+                        {
+                            columns.ConstantColumn(100);
+                            columns.ConstantColumn(100);
+                            columns.ConstantColumn(100);
+                            columns.ConstantColumn(100);
+                            columns.RelativeColumn();
+                            columns.RelativeColumn();
+                            columns.ConstantColumn(100);
+                        });
+
+                        table.Header(header =>
+                        {
+                            header.Cell().Text("Competences").Bold();
+                            header.Cell().Text("Pmnum").Bold();
+                            header.Cell().Text("Cxlineroutenr").Bold();
+                            header.Cell().Text("Location").Bold();
+                            header.Cell().Text("Description").Bold();
+                            header.Cell().Text("Errors").Bold();
+                            header.Cell().Text("UploadTime").Bold();
+                        });
+
+                        foreach (var row in data)
+                        {
+                            table.Cell().Text(row.Competences);
+                            table.Cell().Text(row.Pmnum);
+                            table.Cell().Text(row.Cxlineroutenr);
+                            table.Cell().Text(row.Location);
+                            table.Cell().Text(row.Description);
+                            table.Cell().Text(row.AnomalyFields);
+                            table.Cell().Text(row.UploadTime.ToString("yyyy-MM-dd HH:mm"));
+                        }
+                    });
+                });
+            }).GeneratePdf(stream);
+
+            return File(stream.ToArray(), "application/pdf", "analysresultat.pdf");
         }
 
         public IActionResult PersonalData() => View();
@@ -159,17 +244,17 @@ namespace Q_verify_2025.Controllers
                                 foreach (var anomaly in anomalies)
                                 {
                                     var anomalyFields = anomaly["anomaly_fields"] as Newtonsoft.Json.Linq.JArray;
-                                    var input = anomaly["input"];
+                                    var input = anomaly["input"] as JObject ?? new JObject();
 
                                     if (anomalyFields != null && anomalyFields.Count > 0)
                                     {
                                         errorEntities.Add(new ErrorModel
                                         {
-                                            Competences = input["competences"]?.ToString(),
-                                            Pmnum = input["pmnum"]?.ToString(),
-                                            Cxlineroutenr = input["cxlineroutenr"]?.ToString(),
-                                            Location = input["location"]?.ToString(),
-                                            Description = input["description"]?.ToString(),
+                                            Competences = input["competences"]?.ToString() ?? string.Empty,
+                                            Pmnum = input["pmnum"]?.ToString() ?? string.Empty,
+                                            Cxlineroutenr = input["cxlineroutenr"]?.ToString() ?? string.Empty,
+                                            Location = input["location"]?.ToString() ?? string.Empty,
+                                            Description = input["description"]?.ToString() ?? string.Empty,
                                             AnomalyFields = string.Join(", ", anomalyFields.Select(f => f.ToString())),
                                             UploadTime = DateTime.Now,
                                             Status = false
@@ -179,11 +264,11 @@ namespace Q_verify_2025.Controllers
                                     {
                                         correctEntities.Add(new CorrectModel
                                         {
-                                            Competences = input["competences"]?.ToString(),
-                                            Pmnum = input["pmnum"]?.ToString(),
-                                            Cxlineroutenr = input["cxlineroutenr"]?.ToString(),
-                                            Location = input["location"]?.ToString(),
-                                            Description = input["description"]?.ToString(),
+                                            Competences = input["competences"]?.ToString() ?? string.Empty,
+                                            Pmnum = input["pmnum"]?.ToString() ?? string.Empty,
+                                            Cxlineroutenr = input["cxlineroutenr"]?.ToString() ?? string.Empty,
+                                            Location = input["location"]?.ToString() ?? string.Empty,
+                                            Description = input["description"]?.ToString() ?? string.Empty,
                                             UploadTime = DateTime.Now,
                                             Status = true
                                         });

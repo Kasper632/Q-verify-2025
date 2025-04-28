@@ -270,6 +270,15 @@ h1.text-center.mb-4 {
   z-index: 9999 !important;
   
 }
+.table-search .form-check-input:checked {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.table-search .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem rgba(220, 53, 69, 0.25);
+  border-color: #dc3545;
+}
 
 /* Responsive design - Hamburger menu */
 @media (max-width: 767px) {
